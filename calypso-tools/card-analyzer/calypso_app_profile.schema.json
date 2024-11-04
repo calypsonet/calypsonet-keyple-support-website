@@ -1,0 +1,199 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Calypso Application Profile",
+  "description": "JSON Schema for Calypso Application Profile",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the profile"
+    },
+    "version": {
+      "type": "integer",
+      "description": "Version number of the profile"
+    },
+    "applicationList": {
+      "type": "array",
+      "description": "List of Calypso applications",
+      "items": {
+        "type": "object",
+        "properties": {
+          "calypsoRevision": {
+            "type": "string",
+            "description": "Version of the Calypso specification used",
+            "enum": ["PRIME_REVISION_3", "LIGHT", "BASIC"]
+          },
+          "aid": {
+            "type": "string",
+            "description": "Application Identifier (AID)"
+          },
+          "applicationType": {
+            "type": "string",
+            "description": "Type of product (2 hexadecimal characters)",
+            "pattern": "^[0-9A-Fa-f]{2}$"
+          },
+          "applicationSubtype": {
+            "type": "string",
+            "description": "Identifier of the application's file structure (2 hexadecimal characters)",
+            "pattern": "^[0-9A-Fa-f]{2}$"
+          },
+          "accessConditions": {
+            "type": "object",
+            "description": "Access conditions for the application",
+            "properties": {
+              "group0": {
+                "$ref": "#/definitions/accessCondition"
+              },
+              "group1": {
+                "$ref": "#/definitions/accessCondition"
+              },
+              "group2": {
+                "$ref": "#/definitions/accessCondition"
+              },
+              "group3": {
+                "$ref": "#/definitions/accessCondition"
+              }
+            },
+            "required": ["group0", "group1", "group2", "group3"]
+          },
+          "status": {
+            "type": "string",
+            "description": "Status of the application (2 hexadecimal characters)",
+            "pattern": "^[0-9A-Fa-f]{2}$"
+          },
+          "kif1": {
+            "type": "string",
+            "description": "Key Identifier for Issuer Key (2 hexadecimal characters)",
+            "pattern": "^[0-9A-Fa-f]{2}$"
+          },
+          "kif2": {
+            "type": "string",
+            "description": "Key Identifier for Load Key (2 hexadecimal characters)",
+            "pattern": "^[0-9A-Fa-f]{2}$"
+          },
+          "kif3": {
+            "type": "string",
+            "description": "Key Identifier for Debit Key (2 hexadecimal characters)",
+            "pattern": "^[0-9A-Fa-f]{2}$"
+          },
+          "kvc1": {
+            "type": "string",
+            "description": "Key Version and Category for Issuer Key (2 hexadecimal characters)",
+            "pattern": "^[0-9A-Fa-f]{2}$"
+          },
+          "kvc2": {
+            "type": "string",
+            "description": "Key Version and Category for Load Key (2 hexadecimal characters)",
+            "pattern": "^[0-9A-Fa-f]{2}$"
+          },
+          "kvc3": {
+            "type": "string",
+            "description": "Key Version and Category for Debit Key (2 hexadecimal characters)",
+            "pattern": "^[0-9A-Fa-f]{2}$"
+          },
+          "lid": {
+            "type": "string",
+            "description": "Long File Identifier of the DF (4 hexadecimal characters)",
+            "pattern": "^[0-9A-Fa-f]{4}$"
+          },
+          "fileList": {
+            "type": "array",
+            "description": "List of files within the application",
+            "items": {
+              "type": "object",
+              "properties": {
+                "sfi": {
+                  "type": "string",
+                  "description": "Short File Identifier (2 hexadecimal characters)",
+                  "pattern": "^[0-9A-Fa-f]{2}$"
+                },
+                "lid": {
+                  "type": "string",
+                  "description": "Long File Identifier (4 hexadecimal characters)",
+                  "pattern": "^[0-9A-Fa-f]{4}$"
+                },
+                "efType": {
+                  "type": "string",
+                  "description": "Elementary File type (2 hexadecimal characters)",
+                  "pattern": "^[0-9A-Fa-f]{2}$"
+                },
+                "recSize": {
+                  "type": "string",
+                  "description": "Record size in bytes (4 hexadecimal characters)",
+                  "pattern": "^[0-9A-Fa-f]{4}$"
+                },
+                "numRec": {
+                  "type": "string",
+                  "description": "Number of records in the file (2 hexadecimal characters)",
+                  "pattern": "^[0-9A-Fa-f]{2}$"
+                },
+                "accessConditions": {
+                  "type": "object",
+                  "description": "Access conditions for the file",
+                  "properties": {
+                    "group0": {
+                      "$ref": "#/definitions/accessCondition"
+                    },
+                    "group1": {
+                      "$ref": "#/definitions/accessCondition"
+                    },
+                    "group2": {
+                      "$ref": "#/definitions/accessCondition"
+                    },
+                    "group3": {
+                      "$ref": "#/definitions/accessCondition"
+                    }
+                  },
+                  "required": ["group0", "group1", "group2", "group3"]
+                }
+              },
+              "required": [
+                "sfi",
+                "lid",
+                "efType",
+                "recSize",
+                "numRec",
+                "accessConditions"
+              ]
+            }
+          }
+        },
+        "required": [
+          "calypsoRevision",
+          "aid",
+          "applicationType",
+          "applicationSubtype",
+          "accessConditions",
+          "status",
+          "kif1",
+          "kif2",
+          "kif3",
+          "kvc1",
+          "kvc2",
+          "kvc3",
+          "lid",
+          "fileList"
+        ]
+      }
+    }
+  },
+  "required": ["id", "version", "applicationList"],
+  "definitions": {
+    "accessCondition": {
+      "type": "object",
+      "properties": {
+        "accessCondition": {
+          "type": "string",
+          "description": "Specifies the access condition (2 hexadecimal characters)",
+          "pattern": "^[0-9A-Fa-f]{2}$"
+        },
+        "keyLevel": {
+          "type": "string",
+          "description": "Key level for access validation (2 hexadecimal characters)",
+          "pattern": "^[0-9A-Fa-f]{2}$"
+        }
+      },
+      "required": ["accessCondition", "keyLevel"]
+    }
+  }
+}
