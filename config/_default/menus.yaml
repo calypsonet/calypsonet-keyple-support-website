@@ -4,15 +4,10 @@
 #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: Ticketing demo
-    url: '/ticketing-demo/'
+  - name: Keyple support
+    url: '/keyple-support/'
     weight: 10
-  - name: Reader plugins
-    url: '/reader-plugins/'
+
+  - name: Assistance tools
+    url: '/assistance-tools/'
     weight: 20
-  - name: Compliance
-    url: '/compliance/'
-    weight: 30
-  - name: Calypso tools
-    url: '/calypso-tools/overview/'
-    weight: 40

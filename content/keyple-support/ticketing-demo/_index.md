@@ -1,5 +1,8 @@
 ---
 title: Ticketing demo using Keyple
+type: book
+toc: false
+weight: 20
 ---
 
 <br>
