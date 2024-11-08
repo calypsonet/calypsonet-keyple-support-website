@@ -7,19 +7,9 @@ weight = 20
   columns = "1"
 +++
 
-#### Enable ticketing applications to be portable independently of terminal solutions:
+Keyple is probably the **most powerful and complete open-source middleware for integrating Calypso card processing into ticketing terminals**.
+This technical support site provides:
+- a practical introduction to understanding and getting started with the Keyple solution.
+- It also hosts some add-ons (open or closed) to the Eclipse Keyple open-source project: reader plug-ins, demos and support for declaring the compliance of a Keyple-based terminal with ticketing terminal requirements.
 
-- **CNA** has standardized interfaces for the different software layers of a terminal: the [ticketing terminal APIs](https://terminal-api.calypsonet.org/).
-- **CNA** has published Java and C++ versions of these interfaces for ticketing terminals, hosted by the [**Eclipse
-  Keypop** open-source project](https://keypop.org/). This code, licensed under the permissive MIT license, allows any solution to implement
-  them without constraint.
-
-#### Facilitate the implementation of ticketing terminals:
-
-- **CNA** is also behind a reference implementation of the ticketing terminal interfaces:  with the
-  [**Eclipse Keyple** open-source project](https://keyple.org/). This code is licensed under the **Eclipse Public License version 2.0**, it offers a high
-  degree of flexibility for the design of ticketing terminals (open or closed) integrating these libraries.
-
-The technical support site offers advanced complements to the Eclipse APIs and projects sites:
-demonstrators, reader plug-ins, examples of Keyple-based tools (some publicly accessible, some reserved for **CNA**
-members).
+CNA also provides Keyple-based tools Keyple-based tools (some publicly accessible, some reserved for CNA members).

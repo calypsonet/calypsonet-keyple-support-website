@@ -7,16 +7,16 @@ weight: 10
 ---
 ## Objectives for ticketing terminals
 
-**Enable ticketing applications to be portable independently of terminal solutions**
+<span style="color: red;">**Enable ticketing applications to be portable independently of terminal solutions**</span>
 
 - [CNA (the Calypso Networks Association)](https://calypsonet.org/) has standardized interfaces for the different software layers of a terminal: the [ticketing terminal APIs](https://terminal-api.calypsonet.org/).
 - the [open-source **Eclipse Keypop**  project](https://keypop.org/) offers Java and C++ code translations of these interfaces for ticketing terminals .
 
-**Facilitate the implementation of ticketing terminals**
+<span style="color: red;">**Facilitate the implementation of ticketing terminals**</span>
 
 - The [open-source **Eclipse Keyple** project](https://keyple.org/) initiated by CNA is a first reference implementation of the ticketing terminal interfaces.
 
-**Ensure interoperability between ticketing terminals and contactless cards**
+<span style="color: red;">**Ensure interoperability between ticketing terminals and contactless cards**</span>
 - CNA has specified a set of [requirements for the different software layers of a ticketing terminal](https://keyple-support.calypsonet.org/keyple-support/introduction/#ticketing-terminal-requirements).
 
 ## Ticketing terminal requirements
