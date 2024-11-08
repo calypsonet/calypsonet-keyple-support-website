@@ -1,5 +1,5 @@
 ---
-title: Reader plugins provided by CNA
+title: Reader plugins
 type: book
 toc: false
 weight: 30

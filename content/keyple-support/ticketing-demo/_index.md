@@ -1,8 +1,8 @@
 ---
-title: Ticketing demo using Keyple
+title: Advanced ticketing demo
 type: book
 toc: false
-weight: 20
+weight: 40
 ---
 
 <br>

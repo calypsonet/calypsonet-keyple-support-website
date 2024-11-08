@@ -1,7 +1,7 @@
 ---
-title: Keyple-based terminal compliance
+title: Interoperability & compliance
 type: book
 toc: true
-weight: 40
+weight: 20
 ---
 Coming soon

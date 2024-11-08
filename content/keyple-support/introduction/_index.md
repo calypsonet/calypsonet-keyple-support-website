@@ -1,5 +1,5 @@
 ---
-title: Introduction to Keyple
+title: Keyple Introduction
 linkTitle: Introduction to Keyple
 type: book
 toc: false
@@ -46,7 +46,7 @@ These interfaces guarantee the independence of the terminal applications using t
 
 ### Openness
 Two implementations of Keyple are available in Java and C++, hosted by the Eclipse Foundation under the Eclipse Public License version 2.0. This license offers great flexibility to terminal solutions (proprietary or open source) using Keyple libraries.
-Keyple is a truly open project: it does not belong to one particular company, which can decide at any time to close the project for further development. The advantage of joining the Eclipse Foundation is that it guarantees that the solution respects intellectual property rights, and that the project's governance is open. Anyone in the open source community can contribute, and the project is driven by its contributors.
+<br>Keyple is a truly open project: it does not belong to one particular company, which can decide at any time to close the project for further development. The advantage of joining the Eclipse Foundation is that it guarantees that the solution respects intellectual property rights, and that the project's governance is open. Anyone in the open source community can contribute, the project is driven by its contributors.
 
 ### Scalability
 In addition to implementing the terminal APIs in compliance with the terminal's requirements, the Keyple solution also provides extension capabilities:
