@@ -1,18 +1,32 @@
 ---
-title: Keyple Introduction
+title: Introduction to Keyple
 linkTitle: Introduction to Keyple
 type: book
-toc: false
+toc: true
 weight: 10
 ---
+## Objectives for ticketing terminals
+
+**Enable ticketing applications to be portable independently of terminal solutions**
+
+- [CNA (the Calypso Networks Association)](https://calypsonet.org/) has standardized interfaces for the different software layers of a terminal: the [ticketing terminal APIs](https://terminal-api.calypsonet.org/).
+- the [open-source **Eclipse Keypop**  project](https://keypop.org/) offers Java and C++ code translations of these interfaces for ticketing terminals .
+
+**Facilitate the implementation of ticketing terminals**
+
+- The [open-source **Eclipse Keyple** project](https://keyple.org/) initiated by CNA is a first reference implementation of the ticketing terminal interfaces.
+
+**Ensure interoperability between ticketing terminals and contactless cards**
+- CNA has specified a set of [requirements for the different software layers of a ticketing terminal](https://keyple-support.calypsonet.org/keyple-support/introduction/#ticketing-terminal-requirements).
+
 ## Ticketing terminal requirements
 In order to ensure interoperability between ticketing terminal solutions and contactless card solutions, CNA has specified requirements addressing specifically the 3 different software layers of ticketing terminals:
 - [reader layer requirements](https://calypsonet.org/document/reader-layer-requirements-v2-0-200422/)
 - [solution layer requirements](https://calypsonet.org/document/calypso-layer-requirements-v2-0-200423/)
 - [ticketing layer requirements](https://calypsonet.org/document/ticketing-layer-requirements-v2-0-200430/)
-<br>(These 3 documents can be downloaded by registering on the CNA website.)
+  <br>(These 3 documents can be downloaded by registering on the CNA website.)
 
-In our experience, interoperability problems between cards and terminals are often due to non-compliance with one of these requirements.
+Generally, interoperability problems between cards and terminals are often due to non-compliance with one of these requirements.
 
 Most of these terminal requirements are universal:
 - The reader layer requirements are generic and have no connection with the Calypso solution; they apply to any terminal solution operating smart card readers.

@@ -1,5 +1,6 @@
 ---
-title: Advanced ticketing demo
+title: Keyple-based advanced ticketing demonstrator
+linkTitle: Advanced Keyple demo
 type: book
 toc: false
 weight: 40
