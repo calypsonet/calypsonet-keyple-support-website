@@ -1,6 +1,6 @@
 ---
-title: Calypso Card Configuration Auditor
-linkTitle: Calypso Card Configuration Auditor
+title: Calypso card configuration audit tool
+linkTitle: Card Configuration Audit
 type: book
 toc: true
 weight: 20

@@ -19,7 +19,7 @@ weight: 10
 
 
 ## Ticketing terminal requirements
-In order to ensure interoperability between ticketing terminal solutions and contactless card solutions, CNA has specified requirements addressing specifically the 3 different software layers of ticketing terminals:
+To ensure interoperability between ticketing terminal solutions and contactless card solutions, CNA has specified requirements addressing specifically the 3 different software layers of ticketing terminals:
 - [reader layer requirements](https://calypsonet.org/document/reader-layer-requirements-v2-0-200422/)
 - [solution layer requirements](https://calypsonet.org/document/calypso-layer-requirements-v2-0-200423/)
 - [ticketing layer requirements](https://calypsonet.org/document/ticketing-layer-requirements-v2-0-200430/)
@@ -42,10 +42,6 @@ Another advantage of standardizing terminal APIs is that it also brings portabil
 In the near future, for example, CNA plans to offer a certification service to check whether ticketing terminal solutions actually comply with terminal requirements for the reader and Calypso layers.
 The middleware to be certified will then have to be based on standardized ticketing terminal APIs in order to be verified by the certification tool.
 
-### Development targets
-The [ticketing terminal APIs specifications](https://terminal-api.calypsonet.org/specifications/) are differentiated according to development objectives:
-- in “green”, high-level public reader and Calypso APIs dedicated to the design of applications on ticketing terminals.
-- in “orange”, internal APIs dedicated to the design of middleware for smart card solutions (Calypso or others).
 
 ## Keypop API
 [Eclipse Keypop](https://keypop.org/) offers Java and C++ code conversions of the API definitions for ticketing terminals: these faithfully follow the interface definitions issued by CNA.

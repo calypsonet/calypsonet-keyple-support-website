@@ -1,6 +1,6 @@
 ---
-title: Basic Legacy SAM Personalization Tool
-linkTitle: Basic Legacy SAM Personalizer
+title: Basic keyset legacy SAM personalization tool
+linkTitle: Basic SAM Personalization
 type: book
 toc: true
 weight: 30

@@ -1,6 +1,6 @@
 ---
-title: Calypso Basic Card Personalization Tool
-linkTitle: Calypso Basic Card Personalizer
+title: Calypso keyset basic card personalization tool
+linkTitle: Basic Card Personalization
 type: book
 toc: true
 weight: 40
