@@ -18,7 +18,7 @@ weight: 10
 - The [open-source **Eclipse Keyple** project](https://keyple.org/) initiated by CNA is a first reference implementation of the ticketing terminal interfaces.
 
 
-## Ticketing terminal requirements
+## [Ticketing terminal requirements](https://calypsonet.org/calypso-for-terminals/#section-how-to-implement-calypso-in-a-ticketing-terminal)
 To ensure interoperability between ticketing terminal solutions and contactless card solutions, CNA has specified requirements addressing specifically the 3 different software layers of ticketing terminals:
 - [reader layer requirements](https://calypsonet.org/document/reader-layer-requirements-v2-0-200422/)
 - [solution layer requirements](https://calypsonet.org/document/calypso-layer-requirements-v2-0-200423/)
@@ -78,4 +78,5 @@ To use, integrate or extend Keyple, it is not necessary to have complete knowled
 
 The Keyple project also includes many simple [examples in Java and C++ code](https://keyple.org/learn/code-samples/) to illustrate all these types of development.
 
-CNA's technical support also offers a more advanced Calypso example on implementing the Keyple solution with an open source [complete Keyple ticketing demonstrator](https://keyple-support.calypsonet.org/keyple-support/ticketing-demo/): including remote ticket reloading, embedded validation and control.
+CNA's technical support also offers a more advanced Calypso example on implementing the Keyple solution with an open source [complete Keyple ticketing demonstrator]({{< relref "keyple-support/ticketing-demo/" >}}): including remote ticket reloading, embedded validation and control.
+<br>CNA also [supplies test cards and SAMs](./keyple-support/test-kit/) for running Keyple.
