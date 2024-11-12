@@ -18,8 +18,8 @@ weight: 10
 - The [open-source **Eclipse Keyple** project](https://keyple.org/) initiated by CNA is a first reference implementation of the ticketing terminal interfaces.
 
 
-## [Ticketing terminal requirements](https://calypsonet.org/calypso-for-terminals/#section-how-to-implement-calypso-in-a-ticketing-terminal)
-To ensure interoperability between ticketing terminal solutions and contactless card solutions, CNA has specified requirements addressing specifically the 3 different software layers of ticketing terminals:
+## Ticketing terminal requirements
+To ensure [interoperability between ticketing terminal solutions and contactless card solutions](https://calypsonet.org/calypso-for-terminals/#section-how-to-implement-calypso-in-a-ticketing-terminal), CNA has specified requirements addressing specifically the 3 different software layers of ticketing terminals:
 - [reader layer requirements](https://calypsonet.org/document/reader-layer-requirements-v2-0-200422/)
 - [solution layer requirements](https://calypsonet.org/document/calypso-layer-requirements-v2-0-200423/)
 - [ticketing layer requirements](https://calypsonet.org/document/ticketing-layer-requirements-v2-0-200430/)
@@ -32,8 +32,8 @@ Most of these terminal requirements are universal:
 - For a ticketing system using a contactless solution other than Calypso, solution-specific requirements can be defined for the software layer specific to this solution (as for Calypso).
 - The requirements for the ticketing layer target terminal applications according to specific ticketing use cases: they are not necessarily linked to the Calypso solution.
 
-## [Ticketing terminal APIs](https://terminal-api.calypsonet.org/)
-The 'reader' and 'Calypso' APIs have been designed with a structure compatible with the terminal architecture on which the terminal requirements are based. So a solution implementing these APIs can meet the requirements of the reader and Calypso layers (responsibility for fulfilling the requirements of the ticketing layer lies with the applications).
+## Ticketing terminal APIs
+The 'reader' and 'Calypso' interfaces of the [Ticketing Terminal APIs](https://terminal-api.calypsonet.org/) have been designed with a structure compatible with the terminal architecture on which the terminal requirements are based. So a solution implementing these APIs can meet the requirements of the reader and Calypso layers (responsibility for fulfilling the requirements of the ticketing layer lies with the applications).
 
 ### Portability of ticketing terminal applications
 Another advantage of standardizing terminal APIs is that it also brings portability of terminal applications independently of reader or Calypso middleware solutions.
@@ -43,15 +43,15 @@ In the near future, for example, CNA plans to offer a certification service to c
 The middleware to be certified will then have to be based on standardized ticketing terminal APIs in order to be verified by the certification tool.
 
 
-## [Keypop API](https://keypop.org/)
-Eclipse Keypop offers Java and C++ code conversions of the API definitions for ticketing terminals: these faithfully follow the interface definitions issued by CNA.
+## Keypop API
+[Eclipse Keypop](https://keypop.org/) offers Java and C++ code conversions of the API definitions for ticketing terminals: these faithfully follow the interface definitions issued by CNA.
 These Java and C++ APIs are hosted by the Eclipse Foundation under the MIT open source license: a very permissive license that offers great flexibility to the middleware solutions implementing them (proprietary or open source).
 These interfaces guarantee the independence of the terminal applications using them, from the middleware solutions implementing them.
 - Eclipse Keyple is an initial reference implementation.
 - Other projects have expressed interest in proposing alternative implementations of Keypop APIs.
 
-## [Keyple middleware](https://keyple.org/)
-Eclipse Keyple is an open source middleware solution implementing the Keypop APIs.
+## Keyple middleware
+[Eclipse Keyple](https://keyple.org/) is an open source middleware solution implementing the Keypop APIs.
 
 ### Openness
 Two implementations of Keyple are available in Java and C++, hosted by the Eclipse Foundation under the Eclipse Public License version 2.0. This license offers great flexibility to terminal solutions (proprietary or open source) using Keyple libraries.
