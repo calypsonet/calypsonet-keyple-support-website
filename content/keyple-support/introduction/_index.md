@@ -51,7 +51,7 @@ These interfaces guarantee the independence of the terminal applications using t
 - Other projects have expressed interest in proposing alternative implementations of Keypop APIs.
 
 ## Keyple middleware
-[Eclispe Keyple] is an open source middleware solution implementing the Keypop APIs.
+[Eclispe Keyple](https://keyple.org/) is an open source middleware solution implementing the Keypop APIs.
 
 ### Openness
 Two implementations of Keyple are available in Java and C++, hosted by the Eclipse Foundation under the Eclipse Public License version 2.0. This license offers great flexibility to terminal solutions (proprietary or open source) using Keyple libraries.

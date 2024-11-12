@@ -3,7 +3,7 @@ title: Calypso cards & SAMs for Keyple
 linkTitle: Test cards & SAMs
 type: book
 toc: true
-weight: 25
+weight: 20
 ---
 
 ## Mock of readers and smartcards

@@ -3,5 +3,5 @@ title: Interoperability & compliance of Keyple-based ticketing terminal solution
 linkTitle: Compliance
 type: book
 toc: true
-weight: 20
+weight: 25
 ---
