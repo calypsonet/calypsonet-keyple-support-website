@@ -14,14 +14,14 @@ dedicated to the personalization of **Calypso Basic** cards by injecting the nec
 
 **Key Features:**
 - **SAM Dump**: Displays the SAM parameters and keys settings.
-- **SAM Personalization**: Enables the transfer of keys and configurations from a origin **SAM SP** to a blank 
+- **SAM Personalization**: Enables the transfer of keys and configurations from an origin **SAM SP** to a blank 
   **SAM CPP**.
 - **Dual Reader Setup**: Requires a Target SAM Reader for the blank SAM and an Origin SAM Reader containing the 
   **SAM SP** with desired settings and keys.
 
 #### Why use the Calypso Basic Legacy SAM Personalization Tool?
 This tool helps for operators who need to prepare **SAM CPP** for field deployment of **Calypso Basic** card 
-personalized with the [basic-card-personalizer](../basic-card-personalizer/) tool.
+personalized with the [basic-card-personalizer]({{< relref "../basic-card-personalizer" >}}) tool.
 
 <br>
 
@@ -108,19 +108,19 @@ If you connect or disconnect SAM readers while the application is running, you m
 ## Screenshots
 
 ### Installation
-![Installation](/media/cna-tool-basic-legacysam-perso-app/install-dialog.png)
+{{< figure src="/media/cna-tool-basic-legacysam-perso-app/install-dialog.png" alt="Installation" >}}
 
 ### Settings
-![Settings](/media/cna-tool-basic-legacysam-perso-app/settings-dialog.png)
+{{< figure src="/media/cna-tool-basic-legacysam-perso-app/settings-dialog.png" alt="Settings" >}}
 
 ### SAM dump
-![SAM dump](/media/cna-tool-basic-legacysam-perso-app/dump-tab.png)
+{{< figure src="/media/cna-tool-basic-legacysam-perso-app/dump-tab.png" alt="SAM dump" >}}
 
 ### SAM personalization
-![SAM personalization](/media/cna-tool-basic-legacysam-perso-app/personalization-tab.png)
+{{< figure src="/media/cna-tool-basic-legacysam-perso-app/personalization-tab.png" alt="SAM personalization" >}}
 
 ### Application info
-![Application info](/media/cna-tool-basic-legacysam-perso-app/info-and-logs-tab.png)
+{{< figure src="/media/cna-tool-basic-legacysam-perso-app/info-and-logs-tab.png" alt="Application info" >}}
 
 <br>
 

@@ -21,7 +21,7 @@ injecting Application Identifiers (AID) and security keys.
 
 This tool is essential for operators seeking to personalize **Calypso Basic** cards for use on their network by
 injecting keys stored in the **SAM CV/CV** available in the field. It utilizes a **SAM CPP** that has
-been personalized using the [basic-legacysam-personalizer](../basic-legacysam-personalizer/) tool.
+been personalized using the [basic-legacysam-personalizer]({{< relref "../basic-legacysam-personalizer" >}}) tool.
 
 <br>
 
@@ -110,16 +110,16 @@ Personalization, Application Info) to make the application recognize the changes
 ## Screenshots
 
 ### Installation
-![Installation](/media/cna-tool-basic-card-perso-app/install-dialog.png)
+{{< figure src="/media/cna-tool-basic-card-perso-app/install-dialog.png" alt="Installation" >}}
 
 ### Settings
-![Settings](/media/cna-tool-basic-card-perso-app/settings-dialog.png)
+{{< figure src="/media/cna-tool-basic-card-perso-app/settings-dialog.png" alt="Settings" >}}
 
 ### Card personalization
-![Card personalization](/media/cna-tool-basic-card-perso-app/personalization-tab.png)
+{{< figure src="/media/cna-tool-basic-card-perso-app/personalization-tab.png" alt="Card personalization" >}}
 
 ### Application info
-![Application info](/media/cna-tool-basic-card-perso-app/info-and-logs-tab.png)
+{{< figure src="/media/cna-tool-basic-card-perso-app/info-and-logs-tab.png" alt="Application info" >}}
 
 <br>
 

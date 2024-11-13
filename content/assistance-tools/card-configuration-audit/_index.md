@@ -36,7 +36,7 @@ analyze the contents of a Calypso card and to verify its compliance against a re
 ## Prerequisites
 
 - **Java:** ensure you have a Java Runtime Environment (JRE) installed on your system. You can download it
-  from [www.java.com](www.java.com).
+  from [www.java.com](https://www.java.com).
 - **PC/SC card reader:** a contactless PC/SC compliant card reader is required to interact with the Calypso card.
 
 <br>
