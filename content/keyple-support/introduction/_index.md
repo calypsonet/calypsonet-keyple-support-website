@@ -1,6 +1,6 @@
 ---
 title: Introduction to Keyple
-linkTitle: Introduction to Keyple
+linkTitle: Keyple Introduction
 type: book
 toc: true
 weight: 10

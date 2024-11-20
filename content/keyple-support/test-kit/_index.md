@@ -1,6 +1,6 @@
 ---
-title: Calypso cards & SAMs for Keyple
-linkTitle: Test cards & SAMs
+title: Calypso cards & SAMs for running Keyple
+linkTitle: Card & SAM testing
 type: book
 toc: true
 weight: 20
