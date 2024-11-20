@@ -77,7 +77,14 @@ document.body.onload = function() {
 
 <style>
     .rotated { writing-mode: vertical-rl; transform: rotate(220deg);}
-
+    .rotatedd {
+        display: inline-block; /* Nécessaire pour que transform fonctionne correctement */
+        transform: rotate(-50deg); /* Pivote de 270 degrés dans le sens horaire */
+        transform-origin: center; /* Définit le point de rotation au centre */
+    }
+    .rotateddd {
+        transform: rotate(-50deg); /* Pivote de 270 degrés dans le sens horaire */
+    }
     .hachured {
         background-image: repeating-linear-gradient(
         45deg,
@@ -94,8 +101,8 @@ document.body.onload = function() {
 		<tr>
 			<th scope="col" colspan="2">Plugin API implemented interfaces for each plugin</th>
 			<th scope="col" style="writing-mode: vertical-rl; transform: rotate(220deg);">Coppernic</th>
-			<th scope="col" class="rotated">Famoco</th>
-			<th scope="col" class="rotated">Flowbird</th>
+			<th scope="col" class="rotatedd">Famoco</th>
+			<th scope="col" class="rotateddd">Flowbird</th>
 			<th scope="col" class="rotated">Bluebird</th>
 			<th scope="col" class="rotated">Legacy<br>HSM</th>			
 		</tr>
