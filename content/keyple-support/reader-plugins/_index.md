@@ -77,13 +77,7 @@ document.body.onload = function() {
 
 <style>
     .rotated {
-        writing-mode: vertical-rl;
-        transform: rotate(220deg);
-    }
-    @supports (-webkit-touch-callout: none) { 
-        .rotated {
-            writing-mode: sideways-lr;
-        }
+        writing-mode: sideways-lr;
     }
 
     .hachured {
