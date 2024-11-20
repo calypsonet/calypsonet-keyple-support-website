@@ -104,7 +104,7 @@ document.body.onload = function() {
 	</thead>
 	<tbody>
 		<tr>
-			<th scope="rowgroup" rowspan="4" style="transform: rotate(-90deg);">plugin</th>
+			<th scope="rowgroup" rowspan="4" style="writing-mode: vertical-lr;">plugin</th>
 			<td>PluginSpi</td>
 			<td>✓</td>
 			<td>✓</td>
@@ -137,7 +137,7 @@ document.body.onload = function() {
 			<td>✓</td>
 		</tr>
 		<tr>
-			<th scope="rowgroup" rowspan="4" style="transform: rotate(-90deg);">contact</th>
+			<th scope="rowgroup" rowspan="4" style="writing-mode: vertical-lr;">contact</th>
 			<td>ReaderSpi</td>
 			<td>✓</td>
 			<td>✓</td>
@@ -170,7 +170,7 @@ document.body.onload = function() {
 			<td>✓</td>
 		</tr>
 		<tr>
-			<th scope="rowgroup" rowspan="12" style="transform: rotate(-90deg);">contactless</th>
+			<th scope="rowgroup" rowspan="12" style="writing-mode: vertical-lr;">contactless</th>
 			<td>ReaderSpi</td>
 			<td>✓</td>
 			<td rowspan="12" class="hachured"></td>
