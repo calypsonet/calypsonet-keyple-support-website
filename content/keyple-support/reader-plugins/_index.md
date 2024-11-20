@@ -76,11 +76,6 @@ document.body.onload = function() {
 </script>
 
 <style>
-    .rotated {
-        transform: rotate(-90deg);
-        transform-origin: 30px 40px;
-    }
-
     .hachured {
         background-image: repeating-linear-gradient(
         45deg,
@@ -96,11 +91,11 @@ document.body.onload = function() {
 	<thead>
 		<tr>
 			<th scope="col" colspan="2">Plugin API implemented interfaces for each plugin</th>
-			<th scope="col" class="rotated">Coppernic</th>
-			<th scope="col" class="rotated">Famoco</th>
-			<th scope="col" class="rotated">Flowbird</th>
-			<th scope="col" class="rotated">Bluebird</th>
-			<th scope="col" class="rotated">Legacy<br>HSM</th>			
+			<th scope="col">Coppernic</th>
+			<th scope="col">Famoco</th>
+			<th scope="col">Flowbird</th>
+			<th scope="col">Bluebird</th>
+			<th scope="col">Legacy<br>HSM</th>			
 		</tr>
 	</thead>
 	<tbody>
@@ -234,13 +229,15 @@ document.body.onload = function() {
 			<td></td>
 		</tr>
 		<tr>
-			<td><s>DontWaitForCardRemovalDuringProcessingSpi</s></td>
+			<td><s>DontWaitForCardRemovalDuring
+-ProcessingSpi</s></td>
 			<td>✓</td>
 			<td>✓</td>
 			<td>✓</td>
 		</tr>
 		<tr>
-			<td><s>WaitForCardRemovalDuringProcessingBlockingSpi</s></td>
+			<td><s>WaitForCardRemovalDuring
+-ProcessingBlockingSpi</s></td>
 			<td></td>
 			<td></td>
 			<td></td>
