@@ -76,15 +76,10 @@ document.body.onload = function() {
 </script>
 
 <style>
-    .rotated { writing-mode: vertical-rl; transform: rotate(220deg);}
-    .rotatedd {
-        display: inline-block; /* Nécessaire pour que transform fonctionne correctement */
+    .rotated {
         transform: rotate(-50deg); /* Pivote de 270 degrés dans le sens horaire */
-        transform-origin: center; /* Définit le point de rotation au centre */
-    }
-    .rotateddd {
-        transform: rotate(-50deg); /* Pivote de 270 degrés dans le sens horaire */
-    }
+        text-align: left;
+}
     .hachured {
         background-image: repeating-linear-gradient(
         45deg,
@@ -101,15 +96,15 @@ document.body.onload = function() {
 		<tr>
 			<th scope="col" colspan="2">Plugin API implemented interfaces for each plugin</th>
 			<th scope="col" style="writing-mode: vertical-rl; transform: rotate(220deg);">Coppernic</th>
-			<th scope="col" class="rotatedd">Famoco</th>
-			<th scope="col" class="rotateddd">Flowbird</th>
+			<th scope="col" class="rotated">Famoco</th>
+			<th scope="col" class="rotated">Flowbird</th>
 			<th scope="col" class="rotated">Bluebird</th>
 			<th scope="col" class="rotated">Legacy<br>HSM</th>			
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<th scope="rowgroup" rowspan="4">plugin</th>
+			<th scope="rowgroup" rowspan="4" class="rotated">plugin</th>
 			<td>PluginSpi</td>
 			<td>✓</td>
 			<td>✓</td>
@@ -142,7 +137,7 @@ document.body.onload = function() {
 			<td>✓</td>
 		</tr>
 		<tr>
-			<th scope="rowgroup" rowspan="4">contact</th>
+			<th scope="rowgroup" rowspan="4" class="rotated">contact</th>
 			<td>ReaderSpi</td>
 			<td>✓</td>
 			<td>✓</td>
@@ -175,7 +170,7 @@ document.body.onload = function() {
 			<td>✓</td>
 		</tr>
 		<tr>
-			<th scope="rowgroup" rowspan="12">contactless</th>
+			<th scope="rowgroup" rowspan="12" class="rotated">contactless</th>
 			<td>ReaderSpi</td>
 			<td>✓</td>
 			<td rowspan="12" class="hachured"></td>
