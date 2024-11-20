@@ -166,7 +166,7 @@ document.body.onload = function() {
 			<td>✓</td>
 		</tr>
 		<tr>
-			<th scope="rowgroup" rowspan="12">contactless</th>
+			<th scope="rowgroup" rowspan="12">contact -less</th>
 			<td>ReaderSpi</td>
 			<td>✓</td>
 			<td rowspan="12" class="hachured"></td>
