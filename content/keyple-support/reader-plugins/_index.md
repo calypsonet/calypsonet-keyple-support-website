@@ -77,7 +77,7 @@ document.body.onload = function() {
 
 <style>
     .rotated {
-        writing-mode: sideways-lr;
+        transform: rotate(-90deg);
     }
 
     .hachured {
