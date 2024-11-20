@@ -101,41 +101,39 @@ This demo requires a client/server environment:
 	<thead>
 		<tr>
 			<th scope="col" colspan="2">Terminal application</th>
-			<th scope="col">Language</th>
+			<th scope="col">Language / folder</th>
 			<th scope="col">OS</th>
 			<th scope="col">Supported devices</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<th scope="row" colspan="2">Sales/Reloading server<br>(Keyple based)</th>
-			<td>Java</td>
+			<th scope="row" colspan="2">Sales / Reloading server<br>(Keyple based)</th>
+			<td><a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/tree/main/server" target="_blank" rel="noopener">Java</a></td>
 			<td>Windows, Linux, macOS</td>
 			<td>Java Server with PC/SC SAM readers</td>
 		</tr>
 		<tr>
-			<th scope="rowgroup" rowspan="4">Sales/Reloading client</th>
+			<th scope="rowgroup" rowspan="4">Sales / Reloading client</th>
 			<th scope="row">Keyple-based</th>
-			<td>Kotlin</td>
-			<td>Android</td>
-			<td>Android NFC phone</td>
+			<td><a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/tree/main/client/android" target="_blank" rel="noopener">Kotlin</a></td>
+			<td rowspan="2">Android</td>
+			<td rowspan="2">Android NFC phone</td>
 		</tr>
 		<tr>
 			<th scope="rowgroup" rowspan="3">Keyple-less</th>
-			<td>Kotlin</td>
-			<td>Android</td>
-			<td>Android NFC phone</td>
+			<td><a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/tree/main/client/android-light" target="_blank" rel="noopener">Kotlin</a></td>
 		</tr>
 		<tr>
-			<td>.NET C#</td>
+			<td><a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/tree/main/client/dotnet" target="_blank" rel="noopener">.NET C#</a></td>
 			<td>Windows</td>
 			<td>Windows PC with a PC/SC reader</td>
 		</tr>
 		<tr>
-			<td>
+			<td><a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/tree/kmm/client/kmp" target="_blank" rel="noopener">
                 <ul><li>Kotlin Multiplatform</li>
                 <li>& Compose Multiplatform</li></ul>
-            </td>
+            </a></td>
 			<td>Windows, Linux, macOS, Android, iOS</td>
 			<td>
                 <ul><li><span style="color: red;">any</span> NFC mobile</li>
