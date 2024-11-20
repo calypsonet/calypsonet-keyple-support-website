@@ -95,7 +95,7 @@ document.body.onload = function() {
 	<thead>
 		<tr>
 			<th scope="col" colspan="2">Plugin API implemented interfaces for each plugin</th>
-			<th scope="col" style="writing-mode: vertical-rl; transform: rotate(220deg);">Coppernic</th>
+			<th scope="col" class="rotated">Coppernic</th>
 			<th scope="col" class="rotated">Famoco</th>
 			<th scope="col" class="rotated">Flowbird</th>
 			<th scope="col" class="rotated">Bluebird</th>
@@ -104,7 +104,7 @@ document.body.onload = function() {
 	</thead>
 	<tbody>
 		<tr>
-			<th scope="rowgroup" rowspan="4" class="rotated">plugin</th>
+			<th scope="rowgroup" rowspan="4" style="transform: rotate(-90deg);">plugin</th>
 			<td>PluginSpi</td>
 			<td>✓</td>
 			<td>✓</td>
@@ -137,7 +137,7 @@ document.body.onload = function() {
 			<td>✓</td>
 		</tr>
 		<tr>
-			<th scope="rowgroup" rowspan="4" class="rotated">contact</th>
+			<th scope="rowgroup" rowspan="4" style="transform: rotate(-90deg);">contact</th>
 			<td>ReaderSpi</td>
 			<td>✓</td>
 			<td>✓</td>
@@ -170,7 +170,7 @@ document.body.onload = function() {
 			<td>✓</td>
 		</tr>
 		<tr>
-			<th scope="rowgroup" rowspan="12" class="rotated">contactless</th>
+			<th scope="rowgroup" rowspan="12" style="transform: rotate(-90deg);">contactless</th>
 			<td>ReaderSpi</td>
 			<td>✓</td>
 			<td rowspan="12" class="hachured"></td>
