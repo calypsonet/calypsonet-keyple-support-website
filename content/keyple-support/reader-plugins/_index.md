@@ -105,6 +105,9 @@ document.body.onload = function() {
     .rotated {
         writing-mode: sideways-lr;
     }
+    .rotatedd {
+        writing-mode: vertical-rl;
+    }
     .hachured {
         background-image: repeating-linear-gradient(
         45deg,
@@ -195,7 +198,7 @@ document.body.onload = function() {
 			<td>✓</td>
 		</tr>
 		<tr>
-			<th scope="rowgroup" rowspan="12">contact -less</th>
+			<th scope="rowgroup" rowspan="12" class="rotatedd">contact -less</th>
 			<td>ReaderSpi</td>
 			<td>✓</td>
 			<td rowspan="12" class="hachured"></td>
