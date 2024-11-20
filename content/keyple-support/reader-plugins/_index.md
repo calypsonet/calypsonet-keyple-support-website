@@ -29,14 +29,14 @@ For a Keyple-based terminal, a dedicated plug-in for any smart card reader solut
     - detection of card withdrawal at the end of a transaction, managed autonomously (synchronous or asynchronous) or non-autonomous,
     - ability to detect card removal during a card transaction
 
-The Keyple project offers a [guide to developing a plugin](https://keyple.org/learn/developer-guide/reader-plugin-add-on/) to integrate a smartcard reader solution.
+The Keyple project offers a [guide for developing plugins](https://keyple.org/learn/developer-guide/reader-plugin-add-on/) to integrate smartcard reader solutions.
 
-## Additional 'Reader Plugins' from CNA
+## Additional 'Reader Plugins' provided by CNA
 The Keyple project already hosts several [plugins for interfacing with "standard" smartcard reader solutions](https://keyple.org/components/standard-reader-plugins/) (PC/SC, Android NFC / OMAPI), or for emulating readers.
 
 To illustrate some other ways of designing plugins, CNA has also released additional plugins under the [Eclipse Public License version 2](https://www.eclipse.org/legal/epl-2.0/):
 - For some of these plugins, the native libraries of the reader solutions are public, in this case, the plugin can be compiled autonomously.
-- In the opposite case, a plug-in compensates for the absence of the native library, meaning that it is necessary to contact the manufacturer in order to compile the plugin.
+- In the opposite case, a mock is used to compensate the unavailability of the native reader library, meaning that it is necessary to contact the manufacturer in order to compile the plugin.
 
 4 plugins are designed for integration into Android based embedded ticketing terminals equipped with a contactless card reader, as well as one or more contact readers for SAMs.
 - The Famoco plugin interfaces only with SAM readers, as the contactless reader on the Famoco supported terminals is based on the standard Android NFC API (natively supported by Keyple).
