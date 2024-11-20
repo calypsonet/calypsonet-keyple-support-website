@@ -77,9 +77,15 @@ document.body.onload = function() {
 
 <style>
     .rotated {
-        transform: rotate(-50deg); /* Pivote de 270 degrés dans le sens horaire */
-        text-align: left;
-}
+        writing-mode: vertical-rl;
+        transform: rotate(220deg);
+    }
+    @supports (-webkit-touch-callout: none) { 
+        .rotated {
+            writing-mode: sideways-lr;
+        }
+    }
+
     .hachured {
         background-image: repeating-linear-gradient(
         45deg,
@@ -104,7 +110,7 @@ document.body.onload = function() {
 	</thead>
 	<tbody>
 		<tr>
-			<th scope="rowgroup" rowspan="4" style="writing-mode: sideways-lr;">plugin</th>
+			<th scope="rowgroup" rowspan="4" class="rotated">plugin</th>
 			<td>PluginSpi</td>
 			<td>✓</td>
 			<td>✓</td>
@@ -137,7 +143,7 @@ document.body.onload = function() {
 			<td>✓</td>
 		</tr>
 		<tr>
-			<th scope="rowgroup" rowspan="4" style="writing-mode: vertical-lr;">contact</th>
+			<th scope="rowgroup" rowspan="4" class="rotated">contact</th>
 			<td>ReaderSpi</td>
 			<td>✓</td>
 			<td>✓</td>
@@ -170,7 +176,7 @@ document.body.onload = function() {
 			<td>✓</td>
 		</tr>
 		<tr>
-			<th scope="rowgroup" rowspan="12" style="writing-mode: vertical-lr;">contactless</th>
+			<th scope="rowgroup" rowspan="12" class="rotated">contactless</th>
 			<td>ReaderSpi</td>
 			<td>✓</td>
 			<td rowspan="12" class="hachured"></td>
