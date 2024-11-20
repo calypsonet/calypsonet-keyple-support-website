@@ -104,7 +104,7 @@ document.body.onload = function() {
 	</thead>
 	<tbody>
 		<tr>
-			<th scope="rowgroup" rowspan="4" style="writing-mode: vertical-lr;">plugin</th>
+			<th scope="rowgroup" rowspan="4" style="writing-mode: sideways-lr;">plugin</th>
 			<td>PluginSpi</td>
 			<td>✓</td>
 			<td>✓</td>
