@@ -2,10 +2,10 @@
 title: Keyple-based advanced ticketing demonstrator
 linkTitle: Advanced Keyple demo
 type: book
-toc: false
+toc: true
 weight: 40
 ---
-To illustrate an advanced implementation of the Keyple Java middleware for Calypso-based ticketing systems, CNA has released a full ticketing demonstrator under the Eclipse Public License version 2.0.
+To illustrate an advanced implementation of the Keyple Java middleware for Calypso-based ticketing systems, CNA has released a full ticketing demonstrator under the <a href="https://www.eclipse.org/legal/epl-2.0/" target="_blank" rel="noopener">Eclipse Public License version 2.0</a>.
 
 <table>
 	<thead>
