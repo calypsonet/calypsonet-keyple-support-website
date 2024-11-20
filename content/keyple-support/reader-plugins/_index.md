@@ -15,14 +15,14 @@ In general, all “contactless” reader solutions are observable, because for t
 On the other hand, for some “contact” reader solutions, card presence is statically defined: these readers don't need to be observed.
 
 ## Properties of a smartcard reader solution through the Keyple Service API
-For a Keyple-based terminal, smartcard reader solutions are interfaced using reader plug-ins. Keyple's Service API enables ticket terminal applications to access “locally” 3 categories of reader solutions:
+For a Keyple-based terminal, smartcard reader solutions are interfaced using reader plug-ins. Keyple's Service API enables ticketing terminal applications to access “locally” 3 categories of reader solutions:
 - a “simple” plugin enables only static configuration of smartcard readers → the most common case in embedded systems.
 - an “observable” plugin enables the management of reader solutions that can be hot-plugged or hot-disconnected. → mainly 2 uses: readers connected over serial links (e.g. USB), or mobile solutions with an energy-saving mode (reader power supply cut off at standby).
 - a “pool” plugin for interfacing with solutions offering dynamic allocation of reader resources according to the need. → this is how an HSM-type solution works.
 
 ## Integrating a smartcard reader solution into Keyple through the Plugin API
 For a Keyple-based terminal, a dedicated plug-in for any smart card reader solution must implement Keyple's Plugin API:
-- SPIs are differentiated for the 2 reader types and the 3 plug-in categories in particular
+- SPIs are differentiated in particular for the 2 reader types and the 3 plug-in categories.
 - other features are linked to the native API capabilities of reader solutions:
     - autonomy to manage the Select Application command
     - autonomous synchronous, autonomous asynchronous or non-autonomous card insertion detection,
@@ -102,6 +102,9 @@ document.body.onload = function() {
 </script>
 
 <style>
+    .rotated {
+        writing-mode: sideways-lr;
+    }
     .hachured {
         background-image: repeating-linear-gradient(
         45deg,
@@ -126,7 +129,7 @@ document.body.onload = function() {
 	</thead>
 	<tbody>
 		<tr>
-			<th scope="rowgroup" rowspan="4">plugin</th>
+			<th scope="rowgroup" rowspan="4" class="rotated">plugin</th>
 			<td>PluginSpi</td>
 			<td>✓</td>
 			<td>✓</td>
@@ -159,7 +162,7 @@ document.body.onload = function() {
 			<td>✓</td>
 		</tr>
 		<tr>
-			<th scope="rowgroup" rowspan="4">contact</th>
+			<th scope="rowgroup" rowspan="4" class="rotated">contact</th>
 			<td>ReaderSpi</td>
 			<td>✓</td>
 			<td>✓</td>
