@@ -103,10 +103,10 @@ document.body.onload = function() {
 
 <style>
     .rotated {
-        writing-mode: sideways-lr;
+        writing-mode: sideways-lr; text-orientation: mixed;
     }
     .rotatedd {
-        writing-mode: vertical-rl;
+        writing-mode: vertical-rl; text-orientation: mixed;
     }
     .hachured {
         background-image: repeating-linear-gradient(
