@@ -126,8 +126,8 @@ document.body.onload = function() {
 	<thead>
 		<tr>
 			<th scope="col" colspan="2">Plugin API implemented interfaces for each plugin</th>
-			<th scope="col" class="rotateddd">Coppernic</th>
-			<th scope="col" class="rotateddd">Famoco</th>
+			<th scope="col">Coppernic</th>
+			<th scope="col">Famoco</th>
 			<th scope="col">Flowbird</th>
 			<th scope="col">Bluebird</th>
 			<th scope="col">Legacy<br>HSM</th>			
@@ -135,7 +135,7 @@ document.body.onload = function() {
 	</thead>
 	<tbody>
 		<tr>
-			<th scope="rowgroup" rowspan="4" class="rotated">plugin</th>
+			<th scope="rowgroup" rowspan="4">plugin</th>
 			<td>PluginSpi</td>
 			<td>✓</td>
 			<td>✓</td>
@@ -168,7 +168,7 @@ document.body.onload = function() {
 			<td>✓</td>
 		</tr>
 		<tr>
-			<th scope="rowgroup" rowspan="4" class="rotatedd">contact</th>
+			<th scope="rowgroup" rowspan="4">contact</th>
 			<td>ReaderSpi</td>
 			<td>✓</td>
 			<td>✓</td>
@@ -201,7 +201,7 @@ document.body.onload = function() {
 			<td>✓</td>
 		</tr>
 		<tr>
-			<th scope="rowgroup" rowspan="12" class="rotateddd">contact -less</th>
+			<th scope="rowgroup" rowspan="12">contact<br>-less</th>
 			<td>ReaderSpi</td>
 			<td>✓</td>
 			<td rowspan="12" class="hachured"></td>
