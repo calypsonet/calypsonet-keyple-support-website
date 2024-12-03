@@ -45,10 +45,16 @@ This tool requires two PC/SC readers:
    the GitHub repository is private. Please request access from [CNA](https://calypsonet.org)). Choose the installation
    file that matches your operating system:
     * **Windows:** `.msi` package
-    * **macOS:** `.dmg` package
+    * **macOS:** `.dmg` package (available in both arm64 version for Apple Silicon Macs and x64 version for Intel Macs)
     * **Linux:** `.deb` package
 2. **Windows:** double-click the `.msi` package to start the installation process.
-3. **macOS:** open the `.dmg` file and drag the application to the Applications folder.
+3. **macOS:**
+    * Open the `.dmg` file and drag the application to the Applications folder
+    * Since the application is not signed with an Apple developer certificate, you'll need to authorize it:
+        1. When first launching the app, you may see a security warning
+        2. Go to System Settings > Privacy & Security
+        3. Scroll down to find the message about the blocked application
+        4. Click "Open Anyway" to authorize the application
 4. **Linux:** use your distribution's package manager to install the `.deb` package.
 5. **Important note:** currently, the installer does not automatically create a shortcut in the Start Menu (Windows) or
    Applications menu (macOS). If you want quick access, you will need to create a shortcut manually.
