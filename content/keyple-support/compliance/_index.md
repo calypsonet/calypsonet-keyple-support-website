@@ -196,7 +196,7 @@ For the various Keyple Calypso library sets, all applicabilities and terminal re
 			<li>keypop-calypso-crypto-legacysam-java-api (external API) : 0.3 to 0.6+</li>
 			<li>keypop-calypso-crypto-symmetric-java-api (internal API): 0.1+</li>
 			<li>keyple-card-calypso-java-lib: 3.0.0 to 3.1.2+</li>
-			<li>keyple-card-calypso-crypto-legacysam-java-lib: 0.4.0 to 0.7.1+	</li>
+			<li>keyple-card-calypso-crypto-legacysam-java-lib: 0.4.0 to 0.7.1+</li>
 		</ul></td>
 	</tr>
 </tbody>
