@@ -17,6 +17,4 @@ To test Keyple middleware without hardware (no smart card reader, and no smart c
 For “operational” testing, smart card reader solutions need to be integrated into the terminal with reader plugins (based on the Plugin API).
 <br>CNA [sells test kits](https://calypsonet.org/technical-support-documentation/) including [various Calypso cards](https://calypsonet.org/document/keyple-test-kit-user-manual-v2-190207/) from [all ranges (Prime, Light, Basic)](https://calypsonet.org/calypso-for-cards/) and samples of [test legacy SAMs](https://calypsonet.org/document/calypso-sam-test-f5-user-manual-v8-110619/).
 
-### Calypso Prime PKI Profile - settings
-
-<iframe src="https://keyple-support.calypsonet.org/keyple-support-test-kit/210813-KeypleTestKit-CalypsoPrimePkiProfile_v3.htm"></iframe>
+- [Calypso Prime PKI Profile - settings](https://keyple-support.calypsonet.org/media/keyple-support-test-kit/210813-KeypleTestKit-CalypsoPrimePkiProfile_v3.htm)
