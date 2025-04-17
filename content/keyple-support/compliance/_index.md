@@ -33,6 +33,12 @@ Pending the future certification programme for Calypso layer libraries, CNA has 
 
 ### Terminal requirements support declarations
 For the various Keyple Calypso library sets, all applicabilities and terminal requirements are supported, with the exception of those listed in the table below.
+- For requirements for which support is conditional on the availability of specific features, support has been integrated at the same time as the addition of the corresponding feature.
+- Prior to the integration of Eclipse Keypop, Keyple libraries were based on terminal APIs implemented and published by CNA: the Keyple libraries sets corresponding to these old configurations contain the word “legacy” in their name.
+
+For older configurations where support for the 'CL-CSS-RESPLE.1' requirement is indicated as “partial”: the countermeasure was initially implemented in a ‘permissive’ way, requiring applications to set only card commands for which the response size can be predetermined. More recent configurations benefit from a more 'strict' implementation of the countermeasure, which is compliant regardless of the processing set at application level as indicated [in the Calypso development guide](https://keyple.org/learn/user-guide/calypso-application/#legacy-card-authentication).
+
+The lack of official support for the “HCE” functionality and the related 'CL-SEL-SNHEADER.2' requirement is not a limitation to correctly processing Calypso HCE solutions, as the HCE token data can still be recovered as described [in the Calypso development guide](https://keyple.org/learn/user-guide/calypso-application/#hce-service-handling).
 
 <table>
 	<thead>
@@ -48,13 +54,34 @@ For the various Keyple Calypso library sets, all applicabilities and terminal re
 	</thead>
 <tbody>
 	<tr>
-		<th scope="row">Calypso Prime <b>PKI</b> set</th>
+		<th scope="row">Calypso Prime <b>PKI</b> set <b>2</b></th>
 		<td><ul><li>HCE</li></ul></td>
 		<td>-</td>
 		<td><ul><li>CL-SEL-SNHEADER.2</li></ul></td>
 	</tr>
 	<tr>
+		<th scope="row">Calypso Prime <b>PKI</b> set</th>
+		<td><ul><li>HCE</li></ul></td>
+		<td>-</td>
+		<td><ul><li>CL-SEL-SNHEADER.2</li>
+		<li>partial CL-CSS-RESPLE.1 (permissive implementation)</li></ul></td>
+	</tr>
+	<tr>
 		<th scope="row">Calypso Prime <b>Extended</b> set</th>
+		<td><ul><li>Prime PKI</li><li>HCE</li></ul></td>
+		<td>-</td>
+		<td><ul>
+			<li>CL-SEL-SNHEADER.2</li>
+			<li>CL-RAT-PKIMODE.2</li>
+			<li>CL-SV-PKIMODE.1</li>
+			<li>CL-PKI-ALGO.1</li>
+			<li>CL-PKI-VERIF.2</li>
+			<li>CL-PKI-PUBKEY.1</li>
+			<li>CL-PKI-RQMODE.1</li>			
+		</ul></td>
+	</tr>
+	<tr>
+		<th scope="row"><b>Legacy</b> Calypso Prime <b>Extended</b> set 2</th>
 		<td><ul><li>Prime PKI</li><li>HCE</li></ul></td>
 		<td>-</td>
 		<td><ul>
@@ -73,6 +100,21 @@ For the various Keyple Calypso library sets, all applicabilities and terminal re
 		<td>-</td>
 		<td><ul>
 			<li>CL-SEL-SNHEADER.2</li>
+			<li>partial CL-CSS-RESPLE.1 (permissive implementation)</li>
+			<li>CL-RAT-PKIMODE.2</li>
+			<li>CL-SV-PKIMODE.1</li>
+			<li>CL-PKI-ALGO.1</li>
+			<li>CL-PKI-VERIF.2</li>
+			<li>CL-PKI-PUBKEY.1</li>
+			<li>CL-PKI-RQMODE.1</li>			
+		</ul></td>
+	</tr>
+	<tr>
+		<th scope="row"><b>Legacy</b> Calypso Prime <b>Regular</b> set 2</th>
+		<td><ul><li>Prime PKI</li><li>Prime Extended</li><li>HCE</li></ul></td>
+		<td>-</td>
+		<td><ul>
+			<li>CL-SEL-SNHEADER.2</li>
 			<li>CL-RAT-PKIMODE.2</li>
 			<li>CL-SV-PKIMODE.1</li>
 			<li>CL-PKI-ALGO.1</li>
@@ -87,6 +129,7 @@ For the various Keyple Calypso library sets, all applicabilities and terminal re
 		<td>-</td>
 		<td><ul>
 			<li>CL-SEL-SNHEADER.2</li>
+			<li>partial CL-CSS-RESPLE.1 (permissive implementation)</li>
 			<li>CL-RAT-PKIMODE.2</li>
 			<li>CL-SV-PKIMODE.1</li>
 			<li>CL-PKI-ALGO.1</li>
@@ -98,7 +141,7 @@ For the various Keyple Calypso library sets, all applicabilities and terminal re
 </tbody>
 </table>
 
-### 'Keyple Java Calypso Prime PKI set' definition
+### 'Keyple Java Calypso Prime PKI set 2' definition
 
 <table>
 	<thead>
@@ -113,18 +156,18 @@ For the various Keyple Calypso library sets, all applicabilities and terminal re
 	</tr>
 	<tr>
 		<th scope="row">Set Version</th>
-		<td>2024/04/17 or after</td>
+		<td>2025/04/11 or after</td>
 	</tr>
 	<tr>
 		<th scope="row">Library Versions</th>
 		<td><ul>
 			<li>keypop-calypso-card-java-api (external API): 2.1+</li>
-			<li>keypop-calypso-crypto-legacysam-java-api (external API) : 0.5 to 0.6+</li>
+			<li>keypop-calypso-crypto-legacysam-java-api (external API) : 0.7+</li>
 			<li>keypop-calypso-crypto-symmetric-java-api (internal API): 0.1+</li>
 			<li>keypop-calypso-crypto-asymmetric-java-api (internal API): 0.2+</li>
-			<li>keyple-card-calypso-java-lib: 3.1.1 to 3.1.2+</li>
-			<li>keyple-card-calypso-crypto-legacysam-java-lib: 0.6.0 to 0.7.1+</li>
-			<li>keyple-card-calypso-crypto-pki-java-lib: 0.2.0+</li>
+			<li>keyple-card-calypso-java-lib: 3.1.8+</li>
+			<li>keyple-card-calypso-crypto-legacysam-java-lib: 0.9.0+</li>
+			<li>keyple-card-calypso-crypto-pki-java-lib: 0.2.1+</li>
 		</ul></td>
 	</tr>
 </tbody>
@@ -145,7 +188,7 @@ For the various Keyple Calypso library sets, all applicabilities and terminal re
 			<li>keyple-plugin-java-api (internal API): 2.2 to 2.3+</li>
 			<li>keyple-common-java-api (internal API): 2.0+</li>
 			<li>keyple-service-java-lib: 3.0.0 to 3.2.3+</li>
-			<li>keyple-util-java-lib: 2.3.0 to 2.4.0+</li>
+			<li>keyple-util-java-lib: 2.4.0+</li>
 		</ul>Integrated with reader plugin implementing the Keyple Plugin API.</td>
 	</tr>
 	<tr>
@@ -153,7 +196,68 @@ For the various Keyple Calypso library sets, all applicabilities and terminal re
 		<td>Any ticketing application based on:<ul>			
 			<li>keypop-reader-java-api (external API): 2.0+</li>
 			<li>keypop-calypso-card-java-api (external API): 2.1+</li>
+			<li>keypop-calypso-crypto-legacysam-java-api (external API) : 0.7+</li>
+		</ul></td>
+	</tr>
+</tbody>
+</table>
+
+### 'Keyple Java Calypso Prime PKI set' definition
+
+<table>
+	<thead>
+		<tr>
+			<th scope="col" colspan="2">Product Identification</th>
+		</tr>
+	</thead>
+<tbody>
+	<tr>
+		<th scope="row">Set Name</th>
+		<td>Keyple <b>Java</b> Calypso Prime <b>PKI</b> set</td>
+	</tr>
+	<tr>
+		<th scope="row">Set Version</th>
+		<td>2024/04/17 to 2025/04/10</td>
+	</tr>
+	<tr>
+		<th scope="row">Library Versions</th>
+		<td><ul>
+			<li>keypop-calypso-card-java-api (external API): 2.1+</li>
 			<li>keypop-calypso-crypto-legacysam-java-api (external API) : 0.5 to 0.6+</li>
+			<li>keypop-calypso-crypto-symmetric-java-api (internal API): 0.1+</li>
+			<li>keypop-calypso-crypto-asymmetric-java-api (internal API): 0.2+</li>
+			<li>keyple-card-calypso-java-lib: 3.1.1 to 3.1.7</li>
+			<li>keyple-card-calypso-crypto-legacysam-java-lib: 0.6.0 to 0.9.0</li>
+			<li>keyple-card-calypso-crypto-pki-java-lib: 0.2.0 to 0.2.1</li>
+		</ul></td>
+	</tr>
+</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th scope="col" colspan="2">Product Compatibility</th>
+		</tr>
+	</thead>
+<tbody>
+	<tr>
+		<th scope="row">Reader Layer</th>
+		<td>Keyple Core Java set:<ul>			
+			<li>keypop-reader-java-api (external API): 2.0+</li>
+			<li>keypop-card-java-api (internal API): 2.0+</li>
+			<li>keyple-plugin-java-api (internal API): 2.2 to 2.3+</li>
+			<li>keyple-common-java-api (internal API): 2.0+</li>
+			<li>keyple-service-java-lib: 3.0.0 to 3.3.5</li>
+			<li>keyple-util-java-lib: 2.3.0 to 2.4.0</li>
+		</ul>Integrated with reader plugin implementing the Keyple Plugin API.</td>
+	</tr>
+	<tr>
+		<th scope="row">Ticketing Layer</th>
+		<td>Any ticketing application based on:<ul>			
+			<li>keypop-reader-java-api (external API): 2.0+</li>
+			<li>keypop-calypso-card-java-api (external API): 2.1+</li>
+			<li>keypop-calypso-crypto-legacysam-java-api (external API) : 0.5 to 0.7</li>
 		</ul></td>
 	</tr>
 </tbody>
@@ -216,6 +320,64 @@ For the various Keyple Calypso library sets, all applicabilities and terminal re
 	</tr>
 </tbody>
 </table>
+
+### 'Keyple Legacy Java Calypso Prime Extended set 2' definition
+<table>
+	<thead>
+		<tr>
+			<th scope="col" colspan="2">Product Identification</th>
+		</tr>
+	</thead>
+<tbody>
+	<tr>
+		<th scope="row">Set Name</th>
+		<td>Keyple <b>Lecacy Java</b> Calypso Prime <b>Extended</b> set <b>2</b></td>
+	</tr>
+	<tr>
+		<th scope="row">Set Version</th>
+		<td>2025/04/11</td>
+	</tr>
+	<tr>
+		<th scope="row">Library Versions</th>
+		<td><ul>
+			<li>calypsonet-terminal-calypso-java-api (external API): 1.8</li>
+			<li>calypsonet-terminal-calypso-crypto-legacysam-java-api (external API): 0.2</li>
+			<li>keyple-card-calypso-java-lib: 2.3.15+ (<3.0.0)</li>
+			<li>keyple-card-calypso-crypto-legacysam-java-lib: 0.3.0</li>
+		</ul></td>
+	</tr>
+</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th scope="col" colspan="2">Product Compatibility</th>
+		</tr>
+	</thead>
+<tbody>
+	<tr>
+		<th scope="row">Reader Layer</th>
+		<td>Keyple Core Java set:<ul>			
+			<li>calypsonet-terminal-reader-java-api (external API): 1.2 to 1.3</li>
+			<li>calypsonet-terminal-card-java-api (internal API): 1.0</li>
+			<li>keyple-plugin-java-api (internal API): 2.1 to 2.3</li>
+			<li>keyple-common-java-api (internal API): 2.0</li>
+			<li>keyple-service-java-lib: 2.2.0 to 2.3.6+ (<3.0.0)</li>
+			<li>keyple-util-java-lib: 2.3.0 to 2.3.1</li>
+		</ul>Integrated with reader plugin implementing the Keyple Plugin API.</td>
+	</tr>
+	<tr>
+		<th scope="row">Ticketing Layer</th>
+		<td>Any ticketing application based on:<ul>
+			<li>calypsonet-terminal-reader-java-api (external API): 1.2 to 1.3</li>
+			<li>calypsonet-terminal-calypso-java-api (external API): 1.8</li>
+			<li>calypsonet-terminal-calypso-crypto-legacysam-java-api (external API) : 0.2</li>
+		</ul></td>
+	</tr>
+</tbody>
+</table>
+
 
 ### 'Keyple Legacy Java Calypso Prime Extended set' definition
 <table>
@@ -331,6 +493,60 @@ For the various Keyple Calypso library sets, all applicabilities and terminal re
 </tbody>
 </table>
 
+### 'Keyple Legacy C++ Calypso Prime PKI set 2' definition
+<table>
+	<thead>
+		<tr>
+			<th scope="col" colspan="2">Product Identification</th>
+		</tr>
+	</thead>
+<tbody>
+	<tr>
+		<th scope="row">Set Name</th>
+		<td>Keyple <b>Lecacy C++</b> Calypso Prime <b>Regular</b> set <b>2</b></td>
+	</tr>
+	<tr>
+		<th scope="row">Set Version</th>
+		<td>2025/04/17</td>
+	</tr>
+	<tr>
+		<th scope="row">Library Versions</th>
+		<td><ul>
+			<li>calypsonet-terminal-calypso-cpp-api (external API): 1.4</li>
+			<li>keyple-card-calypso-cpp-lib: 2.2.5.5</li>
+		</ul></td>
+	</tr>
+</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th scope="col" colspan="2">Product Compatibility</th>
+		</tr>
+	</thead>
+<tbody>
+	<tr>
+		<th scope="row">Reader Layer</th>
+		<td>Keyple Core Java set:<ul>
+			<li>calypsonet-terminal-reader-cpp-api (external API): 1.0 to 1.1</li>
+			<li>calypsonet-terminal-card-cpp-api (internal API): 1.0</li>
+			<li>keyple-plugin-cpp-api (internal API): 2.0</li>
+			<li>keyple-common-cpp-api (internal API): 2.0</li>
+			<li>keyple-service-cpp-lib: 2.0.1 to 2.1.1.1</li>
+			<li>keyple-util-cpp-lib: 2.3.0.0 to 2.3.0.4</li>
+		</ul>Integrated with reader plugin implementing the Keyple Plugin API.</td>
+	</tr>
+	<tr>
+		<th scope="row">Ticketing Layer</th>
+		<td>Any ticketing application based on:<ul>
+			<li>calypsonet-terminal-reader-cpp-api (external API): 1.0 to 1.1</li>
+			<li>calypsonet-terminal-calypso-cpp-api (external API): 1.4</li>
+		</ul></td>
+	</tr>
+</tbody>
+</table>
+
 ### 'Keyple Legacy C++ Calypso Prime PKI set' definition
 <table>
 	<thead>
@@ -345,13 +561,13 @@ For the various Keyple Calypso library sets, all applicabilities and terminal re
 	</tr>
 	<tr>
 		<th scope="row">Set Version</th>
-		<td>2022/02/01 to 2023/06/20</td>
+		<td>2022/02/01 to 2025/04/17</td>
 	</tr>
 	<tr>
 		<th scope="row">Library Versions</th>
 		<td><ul>
 			<li>calypsonet-terminal-calypso-cpp-api (external API): 1.0 to 1.4</li>
-			<li>keyple-card-calypso-cpp-lib: 2.1.0 to 2.2.5.3</li>
+			<li>keyple-card-calypso-cpp-lib: 2.1.0 to 2.2.5.4</li>
 		</ul></td>
 	</tr>
 </tbody>
