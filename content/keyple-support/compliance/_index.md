@@ -64,7 +64,7 @@ The lack of official support for the “HCE” functionality and the related 'CL
 		<td><ul><li>HCE</li></ul></td>
 		<td>-</td>
 		<td><ul><li>CL-SEL-SNHEADER.2</li>
-		<li>partial CL-CSS-RESPLE.1 (permissive implementation)</li></ul></td>
+		<li>partial CL-CSS-RESPLE.1</li></ul></td>
 	</tr>
 	<tr>
 		<th scope="row">Calypso Prime <b>Extended</b> set</th>
@@ -100,7 +100,7 @@ The lack of official support for the “HCE” functionality and the related 'CL
 		<td>-</td>
 		<td><ul>
 			<li>CL-SEL-SNHEADER.2</li>
-			<li>partial CL-CSS-RESPLE.1 (permissive implementation)</li>
+			<li>partial CL-CSS-RESPLE.1</li>
 			<li>CL-RAT-PKIMODE.2</li>
 			<li>CL-SV-PKIMODE.1</li>
 			<li>CL-PKI-ALGO.1</li>
@@ -129,7 +129,7 @@ The lack of official support for the “HCE” functionality and the related 'CL
 		<td>-</td>
 		<td><ul>
 			<li>CL-SEL-SNHEADER.2</li>
-			<li>partial CL-CSS-RESPLE.1 (permissive implementation)</li>
+			<li>partial CL-CSS-RESPLE.1</li>
 			<li>CL-RAT-PKIMODE.2</li>
 			<li>CL-SV-PKIMODE.1</li>
 			<li>CL-PKI-ALGO.1</li>
@@ -152,7 +152,7 @@ The lack of official support for the “HCE” functionality and the related 'CL
 <tbody>
 	<tr>
 		<th scope="row">Set Name</th>
-		<td>Keyple <b>Java</b> Calypso Prime <b>PKI</b> set</td>
+		<td>Keyple <b>Java</b> Calypso Prime <b>PKI</b> set <b>2</b></td>
 	</tr>
 	<tr>
 		<th scope="row">Set Version</th>
