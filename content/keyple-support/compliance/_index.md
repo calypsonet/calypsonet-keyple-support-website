@@ -23,6 +23,8 @@ For terminals integrating contactless and/or contact readers, the [Keyple's ‘C
 
 Pending the future certification programme for reader layer libraries, CNA plans to [publish the self-declarations of conformity of the Keyple Core libraries for reader solutions](https://calypsonet.org/registered-readers/) interfaced with PC/SC and Android NFC plugins. 
 
+Examples for PC/SC & Android NFC plugins
+
 ### Properties of PC/SC and NFC reader solutions
 
 <table>
@@ -45,7 +47,7 @@ Pending the future certification programme for reader layer libraries, CNA plans
 	<tr>
 		<td>Contactless</td>
 		<td><ul>
-            <li>yes, the PC/SC readers with a contactless interface (at least both ISO 14443-4 type A & B protocols are supported)</li>
+            <li>yes, for PC/SC readers with a contactless interface (at least both ISO 14443-4 type A & B protocols are supported)</li>
             <li>no, otherwise</li>
         </ul></td>
 		<td>yes</td>
@@ -82,7 +84,7 @@ Pending the future certification programme for reader layer libraries, CNA plans
 	</tr>
 	<tr>
 		<td>Selection</td>
-		<td>yes<ul><li>on </li></ul></td>
+		<td>yes<br/>(on 'legacy' library sets, the DF Name selection API was managed at the Calypso software layer, instead of the reader software layer)</td>
 		<td>yes</td>
 	</tr>
 	<tr>
@@ -95,37 +97,45 @@ Pending the future certification programme for reader layer libraries, CNA plans
 
 ### Terminal requirements support declarations
 
-With the exception of RF certification and ‘DF Name’ selection rules, all other terminal requirements defined by CNA for the reader layer, applicable according to the properties of the PC/SC or NFC reader solutions, are fully supported by default.
+Except for RF certification and ‘DF Name’ selection rules, all other terminal requirements defined by CNA for the reader layer, applicable according to the properties of the PC/SC or NFC reader solutions, are fully supported by default.
 
 For "contactless" readers, the 'RL-CL-RFSTA.2' rule defines the need for the product's RF properties to be certified according to the scheme defined by the STA.
-- Most NFC readers are "self-declared" by by NFC reader manufacturers as compliant with the NFC Forum. This NFC declaration is recognized by the STA
+- Most NFC readers are "self-declared" by NFC reader manufacturers as compliant with the NFC Forum. This NFC declaration is recognized by the STA
 - and thus implicitly considered as compliant with STA certification.
 - By default, PC/SC contactless readers are not STA-certified.
 
+### Variations of Keyple libraries sets
 
-### 'Keyple Java Service sets' definition
+Different sets of Keyple libraries are available depending on the programming <span style="color: DarkOrange;">language</span>: Java or C++.
+
+For the reader and Calypso software layers, Keyple maintenance is performed for the last two <span style="color: DarkOrange;">generation</span>s of libraries:
+- the nominal branch based on Eclipse Keypop terminal APIs, for which upgrades and fixes are actively produced: Service & Calypso Card Keyple libraries with a major version number greater than or equal to 2.
+- and the <b>legacy</b> branch based on CNA terminal APIs, for which only patches continue to be supplied: Service & Calypso Card Keyple libraries with a major version number prior to 2.
+
+Finally, Keyple's Calypso libraries have evolved with functional coverage increases: first Prime Regular, then Extended and PKI. Command injection countermeasures have also moved from a permissive to a stricter implementation.
+
+### 'Keyple Java Service sets' definitions for PC/SC & Android NFC plugins
 
 <table>
 	<thead>
 		<tr>
-			<th scope="col" colspan="3">Product Identification</th>
+			<th scope="col" colspan="2"><i>Generic</i> Product Identification</th>
 		</tr>
 	</thead>
 <tbody>
 	<tr>
 		<th scope="row">Set Name</th>
-		<td>Keyple <b>Java</b> Service with <b>PC/SC</b> plugin set</td>
-		<td>Keyple <b>Java</b> Service with <b>Android NFC</b> plugin set</td>
+		<td>Keyple <b>Java</b> Service + <i>specific plugin</i> set</td>
 	</tr>
 	<tr>
 		<th scope="row">Set Version</th>
-		<td colspan="2">2023/11/28 or after</td>
+		<td>2023/11/28 or after</td>
 	</tr>
 	<tr>
 		<th scope="row" rowspan="2">Library Versions</th>
-		<td colspan="2"><ul>
-			<li>keypop-card-java-api (external API) : 2.0+</li>
-			<li>keypop-reader-java-api (external API): 2.0+</li>
+		<td><ul>
+			<li>keypop-card-java-api (internal API) : 2.0+</li>
+			<li>keypop-reader-java-api (public API): 2.0+</li>
             <br/>
 			<li>keyple-common-java-api (internal API): 2.0+</li>
 			<li>keyple-plugin-java-api (internal API): 2.2 to 2.3+</li>
@@ -134,13 +144,36 @@ For "contactless" readers, the 'RL-CL-RFSTA.2' rule defines the need for the pro
 		</ul></td>
 	</tr>
 	<tr>
+		<td>library of a reader plugin implementing the Keyple Plugin API</td>
+    </tr>
+</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th scope="col" colspan="3"><i>Specific</i> Product Identification</th>
+		</tr>
+	</thead>
+<tbody>
+	<tr>
+		<th scope="row">Set Name</th>
+		<td><span style="color: DarkOrange;">Keyple <b>Java</b> Service with <b>PC/SC</b> plugin set</span></td>
+		<td><span style="color: DarkOrange;">Keyple <b>Java</b> Service with <b>Android NFC</b> plugin set</span></td>
+	</tr>
+	<tr>
+		<th scope="row">Set Version</th>
+		<td colspan="2">2023/11/28 or <span style="color: DarkOrange;">after</span></td>
+	</tr>
+	<tr>
+		<th scope="row" rowspan="2"><i>Specific</i> Plugin Library Version<br/>(in addition of Keyple Java Service libraries</th>
 		<td><ul>
 			<li>keyple-plugin-pcsc-java-lib: 2.0.0 to 2.4.2+</li>   
 		</ul></td>
 		<td><ul>
 			<li>keyple-plugin-android-nfc-java-lib: 2.0.0 to 3.0.0+</li>   
 		</ul></td>
-    </tr>
+	</tr>
 </tbody>
 </table>
 
@@ -152,27 +185,185 @@ For "contactless" readers, the 'RL-CL-RFSTA.2' rule defines the need for the pro
 	</thead>
 <tbody>
 	<tr>
-		<th scope="row">Reader Layer</th>
-		<td>Keyple Core Java set:<ul>			
-			<li>keypop-reader-java-api (external API): 2.0+</li>
+		<th scope="row">Smart Card<br/>Solution Layer</th>
+		<td>Any smart card solution library based on:<ul>
 			<li>keypop-card-java-api (internal API): 2.0+</li>
-			<li>keyple-plugin-java-api (internal API): 2.2 to 2.3+</li>
-			<li>keyple-common-java-api (internal API): 2.0+</li>
-			<li>keyple-service-java-lib: 3.0.0 to 3.2.3+</li>
-			<li>keyple-util-java-lib: 2.4.0+</li>
-		</ul>Integrated with reader plugin implementing the Keyple Plugin API.</td>
+        </ul></td>
 	</tr>
 	<tr>
 		<th scope="row">Ticketing Layer</th>
 		<td>Any ticketing application based on:<ul>			
-			<li>keypop-reader-java-api (external API): 2.0+</li>
-			<li>keypop-calypso-card-java-api (external API): 2.1+</li>
-			<li>keypop-calypso-crypto-legacysam-java-api (external API) : 0.7+</li>
+			<li>keypop-reader-java-api (public API): 2.0+</li>
 		</ul></td>
 	</tr>
 </tbody>
 </table>
 
+### 'Keyple Legacy Java Service sets' definitions for PC/SC & Android NFC plugins
+
+<table>
+	<thead>
+		<tr>
+			<th scope="col" colspan="2"><i>Generic</i> Product Identification</th>
+		</tr>
+	</thead>
+<tbody>
+	<tr>
+		<th scope="row">Set Name</th>
+		<td>Keyple <b>Legacy Java</b> Service + <i>specific plugin</i> set</td>
+	</tr>
+	<tr>
+		<th scope="row">Set Version</th>
+		<td>2022/10/26 or after</td>
+	</tr>
+	<tr>
+		<th scope="row" rowspan="2">Library Versions</th>
+		<td><ul>
+            <li>calypsonet-terminal-reader-java-api (public API): 1.0 to 1.3</li>
+            <li>calypsonet-terminal-card-java-api (internal API): 1.0</li>
+            <br/>
+            <li>keyple-plugin-java-api (internal API): 2.0 to 2.3</li>
+            <li>keyple-common-java-api (internal API): 2.0</li>
+            <li>keyple-service-java-lib: 2.1.1 to 2.3.6+ (<3.0.0)</li>
+            <li>keyple-util-java-lib: 2.3.0 to 2.3.1</li>
+		</ul></td>
+	</tr>
+	<tr>
+		<td>library of a reader plugin implementing the Keyple Plugin API</td>
+    </tr>
+</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th scope="col" colspan="3"><i>Specific</i> Product Identification</th>
+		</tr>
+	</thead>
+<tbody>
+	<tr>
+		<th scope="row">Set Name</th>
+		<td><span style="color: DarkOrange;">Keyple <b>Java</b> Service with <b>PC/SC</b> plugin set</span></td>
+		<td><span style="color: DarkOrange;">Keyple <b>Java</b> Service with <b>Android NFC</b> plugin set</span></td>
+	</tr>
+	<tr>
+		<th scope="row">Set Version</th>
+		<td colspan="2">2022/10/26 or <span style="color: DarkOrange;">after</span></td>
+	</tr>
+	<tr>
+		<th scope="row" rowspan="2"><i>Specific</i> Plugin Library Version<br/>(in addition of Keyple Java Service libraries</th>
+		<td><ul>
+			<li>keyple-plugin-pcsc-java-lib: 2.0.0 to 2.4.2+</li>   
+		</ul></td>
+		<td><ul>
+			<li>keyple-plugin-android-nfc-java-lib: 2.0.0 to 3.0.0+</li>   
+		</ul></td>
+	</tr>
+</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th scope="col" colspan="2">Product Compatibility</th>
+		</tr>
+	</thead>
+<tbody>
+	<tr>
+		<th scope="row">Smart Card<br/>Solution Layer</th>
+		<td>Any smart card solution library based on:<ul>
+			<li>keypop-card-java-api (internal API): 2.0+</li>
+        </ul></td>
+	</tr>
+	<tr>
+		<th scope="row">Ticketing Layer</th>
+		<td>Any ticketing application based on:<ul>			
+			<li>keypop-reader-java-api (public API): 2.0+</li>
+		</ul></td>
+	</tr>
+</tbody>
+</table>
+
+### 'Keyple Legacy C++ Service set' definition for PC/SC plugin
+
+<table>
+	<thead>
+		<tr>
+			<th scope="col" colspan="2"><i>Generic</i> Product Identification</th>
+		</tr>
+	</thead>
+<tbody>
+	<tr>
+		<th scope="row">Set Name</th>
+		<td>Keyple <b>Legacy C++</b> Service + <i>specific plugin</i> set</td>
+	</tr>
+	<tr>
+		<th scope="row">Set Version</th>
+		<td>2022/10/26 or after</td>
+	</tr>
+	<tr>
+		<th scope="row" rowspan="2">Library Versions</th>
+		<td><ul>
+            <li>calypsonet-terminal-reader-cpp-api (public API): 1.0 to 1.1</li>
+            <li>calypsonet-terminal-card-cpp-api (internal API): 1.0</li>
+            <br/>
+            <li>keyple-plugin-cpp-api (internal API): 2.0</li>
+            <li>keyple-common-cpp-api (internal API): 2.0</li>
+            <li>keyple-service-cpp-lib: 2.0.1 to 2.1.1.1+ (<2.2)</li>
+            <li>keyple-util-cpp-lib: 2.0.0 to 2.3.0.4</li>
+		</ul></td>
+	</tr>
+	<tr>
+		<td>library of a reader plugin implementing the Keyple Plugin API</td>
+    </tr>
+</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th scope="col" colspan="2"><i>Specific</i> Product Identification</th>
+		</tr>
+	</thead>
+<tbody>
+	<tr>
+		<th scope="row">Set Name</th>
+		<td><span style="color: DarkOrange;">Keyple <b>C++</b> Service with <b>PC/SC</b> plugin set</span></td>
+	</tr>
+	<tr>
+		<th scope="row">Set Version</th>
+		<td colspan="2">2022/10/26 or <span style="color: DarkOrange;">after</span></td>
+	</tr>
+	<tr>
+		<th scope="row" rowspan="2"><i>Specific</i> Plugin Library Version<br/>(in addition of Keyple Java Service libraries</th>
+		<td><ul>
+			<li>keyple-plugin-pcsc-cpp-lib: 2.0.0 to 2.1.0.1+</li>   
+		</ul></td>
+	</tr>
+</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th scope="col" colspan="2">Product Compatibility</th>
+		</tr>
+	</thead>
+<tbody>
+	<tr>
+		<th scope="row">Smart Card<br/>Solution Layer</th>
+		<td>Any smart card solution library based on:<ul>
+			<li>keypop-card-cpp-api (internal API): 2.0+</li>
+        </ul></td>
+	</tr>
+	<tr>
+		<th scope="row">Ticketing Layer</th>
+		<td>Any ticketing application based on:<ul>			
+			<li>keypop-reader-cpp-api (public API): 2.0+</li>
+		</ul></td>
+	</tr>
+</tbody>
+</table>
 
 ## **Calypso** software layer
 The [Keyple's ‘Calypso’ libraries](https://keyple.org/components/card-extensions/) have also been implemented to meet the terminal requirements for the Calypso layer, regardless of the reader solutions used.
@@ -183,11 +374,11 @@ The [Keyple's ‘Calypso’ libraries](https://keyple.org/components/card-extens
 Pending the future certification programme for Calypso layer libraries, CNA has [published the self-declarations of conformity of the Keyple Calypso libraries ](https://calypsonet.org/registered-calypso-layer-libraries/) (independently of interfaced reader solutions, but on the basis of a compliant reader software layer).
 
 ### Terminal requirements support declarations
-For the various Keyple Calypso library sets, all applicabilities and terminal requirements are supported, with the exception of those listed in the table below.
+For the various Keyple Calypso library sets, all applicabilities and terminal requirements are supported, except for those listed in the table below.
 - For requirements for which support is conditional on the availability of specific features, support has been integrated at the same time as the addition of the corresponding feature.
 - Prior to the integration of Eclipse Keypop, Keyple libraries were based on terminal APIs implemented and published by CNA: the Keyple libraries sets corresponding to these old configurations contain the word “legacy” in their name.
 
-For older configurations where support for the 'CL-CSS-RESPLE.1' requirement is indicated as “partial”: the countermeasure was initially implemented in a ‘permissive’ way, requiring applications to set only card commands for which the response size can be predetermined. More recent configurations benefit from a more 'strict' implementation of the countermeasure, which is compliant regardless of the processing set at application level as indicated [in the Calypso development guide](https://keyple.org/learn/user-guide/calypso-application/#legacy-card-authentication).
+For older configurations, the 'CL-CSS-RESPLE.1' requirement, the countermeasure was initially implemented in a ‘permissive’ way, requiring applications to set only card commands for which the response size can be predetermined. More recent configurations benefit from a more 'strict' implementation of the countermeasure, which is compliant regardless of the processing set at application level as indicated [in the Calypso development guide](https://keyple.org/learn/user-guide/calypso-application/#legacy-card-authentication).
 
 The lack of official support for the “HCE” functionality and the related 'CL-SEL-SNHEADER.2' requirement is not a limitation to correctly processing Calypso HCE solutions, as the HCE token data can still be recovered as described [in the Calypso development guide](https://keyple.org/learn/user-guide/calypso-application/#hce-service-handling).
 
@@ -195,47 +386,39 @@ The lack of official support for the “HCE” functionality and the related 'CL
 	<thead>
 		<tr>
 			<th scope="col" rowspan="2">Keyple Calypso layer libraries</th>
-			<th scope="colgroup" colspan="2">Unsupported applicability</th>
-			<th scope="col" rowspan="2">Unsupported Requirement</th>
+			<th scope="colgroup" colspan="2">Active maintenance</th>
+			<th scope="col" rowspan="2">Limitation</th>
+			<th scope="colgroup" colspan="2">Unsupported</th>
 		</tr>
 		<tr>
-			<th scope="col">Calypso card</th>
-			<th scope="col">Feature</th>
+			<th scope="col">Java</th>
+			<th scope="col">C++</th>
+            <th scope="col">Calypso card applicability</th>
+			<th scope="col">Requirement</th>
 		</tr>
 	</thead>
 <tbody>
 	<tr>
 		<th scope="row">Calypso Prime <b>PKI</b> set <b>2</b></th>
-		<td><ul><li>HCE</li></ul></td>
+		<td><span style="color: DarkOrange;">evolution</span></td>
+		<td><span style="color: DarkOrange;">evolution</span></td>
 		<td>-</td>
-		<td><ul><li>CL-SEL-SNHEADER.2</li></ul></td>
+		<td rowspan="2"><ul><li>HCE</li></ul></td>
+		<td rowspan="2"><ul><li>CL-SEL-SNHEADER.2</li></ul></td>
 	</tr>
 	<tr>
 		<th scope="row">Calypso Prime <b>PKI</b> set</th>
-		<td><ul><li>HCE</li></ul></td>
+		<td>no</td>
 		<td>-</td>
-		<td><ul><li>CL-SEL-SNHEADER.2</li>
-		<li>partial CL-CSS-RESPLE.1</li></ul></td>
-	</tr>
-	<tr>
-		<th scope="row">Calypso Prime <b>Extended</b> set</th>
-		<td><ul><li>Prime PKI</li><li>HCE</li></ul></td>
-		<td>-</td>
-		<td><ul>
-			<li>CL-SEL-SNHEADER.2</li>
-			<li>CL-RAT-PKIMODE.2</li>
-			<li>CL-SV-PKIMODE.1</li>
-			<li>CL-PKI-ALGO.1</li>
-			<li>CL-PKI-VERIF.2</li>
-			<li>CL-PKI-PUBKEY.1</li>
-			<li>CL-PKI-RQMODE.1</li>			
-		</ul></td>
+		<td>permissive CL-CSS-RESPLE.1</td>
 	</tr>
 	<tr>
 		<th scope="row"><b>Legacy</b> Calypso Prime <b>Extended</b> set 2</th>
-		<td><ul><li>Prime PKI</li><li>HCE</li></ul></td>
+		<td><span style="color: DarkOrange;">patch</span></td>
 		<td>-</td>
-		<td><ul>
+		<td>-</td>
+		<td rowspan="3"><ul><li>Prime PKI</li><li>HCE</li></ul></td>
+		<td rowspan="3"><ul>
 			<li>CL-SEL-SNHEADER.2</li>
 			<li>CL-RAT-PKIMODE.2</li>
 			<li>CL-SV-PKIMODE.1</li>
@@ -244,27 +427,25 @@ The lack of official support for the “HCE” functionality and the related 'CL
 			<li>CL-PKI-PUBKEY.1</li>
 			<li>CL-PKI-RQMODE.1</li>			
 		</ul></td>
+	</tr>
+	<tr>
+		<th scope="row">Calypso Prime <b>Extended</b> set</th>
+		<td>no</td>
+		<td>-</td>
+		<td rowspan="2">permissive CL-CSS-RESPLE.1</td>
 	</tr>
 	<tr>
 		<th scope="row"><b>Legacy</b> Calypso Prime <b>Extended</b> set</th>
-		<td><ul><li>Prime PKI</li><li>HCE</li></ul></td>
+		<td>no</td>
 		<td>-</td>
-		<td><ul>
-			<li>CL-SEL-SNHEADER.2</li>
-			<li>partial CL-CSS-RESPLE.1</li>
-			<li>CL-RAT-PKIMODE.2</li>
-			<li>CL-SV-PKIMODE.1</li>
-			<li>CL-PKI-ALGO.1</li>
-			<li>CL-PKI-VERIF.2</li>
-			<li>CL-PKI-PUBKEY.1</li>
-			<li>CL-PKI-RQMODE.1</li>			
-		</ul></td>
 	</tr>
 	<tr>
 		<th scope="row"><b>Legacy</b> Calypso Prime <b>Regular</b> set 2</th>
-		<td><ul><li>Prime PKI</li><li>Prime Extended</li><li>HCE</li></ul></td>
 		<td>-</td>
-		<td><ul>
+		<td><span style="color: DarkOrange;">patch</span></td>
+		<td>-</td>
+		<td rowspan="2"><ul><li>Prime PKI</li><li>Prime Extended</li><li>HCE</li></ul></td>
+		<td rowspan="2"><ul>
 			<li>CL-SEL-SNHEADER.2</li>
 			<li>CL-RAT-PKIMODE.2</li>
 			<li>CL-SV-PKIMODE.1</li>
@@ -276,23 +457,14 @@ The lack of official support for the “HCE” functionality and the related 'CL
 	</tr>
 	<tr>
 		<th scope="row"><b>Legacy</b> Calypso Prime <b>Regular</b> set</th>
-		<td><ul><li>Prime PKI</li><li>Prime Extended</li><li>HCE</li></ul></td>
-		<td>-</td>
-		<td><ul>
-			<li>CL-SEL-SNHEADER.2</li>
-			<li>partial CL-CSS-RESPLE.1</li>
-			<li>CL-RAT-PKIMODE.2</li>
-			<li>CL-SV-PKIMODE.1</li>
-			<li>CL-PKI-ALGO.1</li>
-			<li>CL-PKI-VERIF.2</li>
-			<li>CL-PKI-PUBKEY.1</li>
-			<li>CL-PKI-RQMODE.1</li>			
-		</ul></td>
+		<td>no</td>
+		<td>no</td>
+		<td>permissive CL-CSS-RESPLE.1</td>
 	</tr>
 </tbody>
 </table>
 
-### 'Keyple Java Calypso Prime PKI set 2' definition
+### 'Keyple Java Calypso Prime PKI set 2' definition (evolution <span style="color: DarkOrange;">maintained</span>)
 
 <table>
 	<thead>
@@ -303,19 +475,20 @@ The lack of official support for the “HCE” functionality and the related 'CL
 <tbody>
 	<tr>
 		<th scope="row">Set Name</th>
-		<td>Keyple <b>Java</b> Calypso Prime <b>PKI</b> set <b>2</b></td>
+		<td><span style="color: DarkOrange;">Keyple <b>Java</b> Calypso Prime <b>PKI</b> set <b>2</b></span></td>
 	</tr>
 	<tr>
 		<th scope="row">Set Version</th>
-		<td>2025/04/11 or after</td>
+		<td>2025/04/11 or <span style="color: DarkOrange;">after</span></td>
 	</tr>
 	<tr>
 		<th scope="row">Library Versions</th>
 		<td><ul>
-			<li>keypop-calypso-card-java-api (external API): 2.1+</li>
-			<li>keypop-calypso-crypto-legacysam-java-api (external API) : 0.7+</li>
+			<li>keypop-calypso-card-java-api (public API): 2.1+</li>
+			<li>keypop-calypso-crypto-legacysam-java-api (public API) : 0.7+</li>
 			<li>keypop-calypso-crypto-symmetric-java-api (internal API): 0.1+</li>
 			<li>keypop-calypso-crypto-asymmetric-java-api (internal API): 0.2+</li>
+            <br/>
 			<li>keyple-card-calypso-java-lib: 3.1.8+</li>
 			<li>keyple-card-calypso-crypto-legacysam-java-lib: 0.9.0+</li>
 			<li>keyple-card-calypso-crypto-pki-java-lib: 0.2.1+</li>
@@ -334,8 +507,9 @@ The lack of official support for the “HCE” functionality and the related 'CL
 	<tr>
 		<th scope="row">Reader Layer</th>
 		<td>Keyple Core Java set:<ul>			
-			<li>keypop-reader-java-api (external API): 2.0+</li>
+			<li>keypop-reader-java-api (public API): 2.0+</li>
 			<li>keypop-card-java-api (internal API): 2.0+</li>
+            <br/>
 			<li>keyple-plugin-java-api (internal API): 2.2 to 2.3+</li>
 			<li>keyple-common-java-api (internal API): 2.0+</li>
 			<li>keyple-service-java-lib: 3.0.0 to 3.2.3+</li>
@@ -345,9 +519,9 @@ The lack of official support for the “HCE” functionality and the related 'CL
 	<tr>
 		<th scope="row">Ticketing Layer</th>
 		<td>Any ticketing application based on:<ul>			
-			<li>keypop-reader-java-api (external API): 2.0+</li>
-			<li>keypop-calypso-card-java-api (external API): 2.1+</li>
-			<li>keypop-calypso-crypto-legacysam-java-api (external API) : 0.7+</li>
+			<li>keypop-reader-java-api (public API): 2.0+</li>
+			<li>keypop-calypso-card-java-api (public API): 2.1+</li>
+			<li>keypop-calypso-crypto-legacysam-java-api (public API) : 0.7+</li>
 		</ul></td>
 	</tr>
 </tbody>
@@ -364,7 +538,7 @@ The lack of official support for the “HCE” functionality and the related 'CL
 <tbody>
 	<tr>
 		<th scope="row">Set Name</th>
-		<td>Keyple <b>Java</b> Calypso Prime <b>PKI</b> set</td>
+		<td><span style="color: DarkOrange;">Keyple <b>Java</b> Calypso Prime <b>PKI</b> set</span></td>
 	</tr>
 	<tr>
 		<th scope="row">Set Version</th>
@@ -373,10 +547,11 @@ The lack of official support for the “HCE” functionality and the related 'CL
 	<tr>
 		<th scope="row">Library Versions</th>
 		<td><ul>
-			<li>keypop-calypso-card-java-api (external API): 2.1+</li>
-			<li>keypop-calypso-crypto-legacysam-java-api (external API) : 0.5 to 0.6+</li>
+			<li>keypop-calypso-card-java-api (public API): 2.1+</li>
+			<li>keypop-calypso-crypto-legacysam-java-api (public API) : 0.5 to 0.6+</li>
 			<li>keypop-calypso-crypto-symmetric-java-api (internal API): 0.1+</li>
 			<li>keypop-calypso-crypto-asymmetric-java-api (internal API): 0.2+</li>
+            <br/>
 			<li>keyple-card-calypso-java-lib: 3.1.1 to 3.1.7</li>
 			<li>keyple-card-calypso-crypto-legacysam-java-lib: 0.6.0 to 0.9.0</li>
 			<li>keyple-card-calypso-crypto-pki-java-lib: 0.2.0 to 0.2.1</li>
@@ -395,8 +570,9 @@ The lack of official support for the “HCE” functionality and the related 'CL
 	<tr>
 		<th scope="row">Reader Layer</th>
 		<td>Keyple Core Java set:<ul>			
-			<li>keypop-reader-java-api (external API): 2.0+</li>
+			<li>keypop-reader-java-api (public API): 2.0+</li>
 			<li>keypop-card-java-api (internal API): 2.0+</li>
+            <br/>
 			<li>keyple-plugin-java-api (internal API): 2.2 to 2.3+</li>
 			<li>keyple-common-java-api (internal API): 2.0+</li>
 			<li>keyple-service-java-lib: 3.0.0 to 3.3.5</li>
@@ -406,9 +582,9 @@ The lack of official support for the “HCE” functionality and the related 'CL
 	<tr>
 		<th scope="row">Ticketing Layer</th>
 		<td>Any ticketing application based on:<ul>			
-			<li>keypop-reader-java-api (external API): 2.0+</li>
-			<li>keypop-calypso-card-java-api (external API): 2.1+</li>
-			<li>keypop-calypso-crypto-legacysam-java-api (external API) : 0.5 to 0.7</li>
+			<li>keypop-reader-java-api (public API): 2.0+</li>
+			<li>keypop-calypso-card-java-api (public API): 2.1+</li>
+			<li>keypop-calypso-crypto-legacysam-java-api (public API) : 0.5 to 0.7</li>
 		</ul></td>
 	</tr>
 </tbody>
@@ -424,18 +600,19 @@ The lack of official support for the “HCE” functionality and the related 'CL
 <tbody>
 	<tr>
 		<th scope="row">Set Name</th>
-		<td>Keyple <b>Java</b> Calypso Prime <b>Extended</b> set</td>
+		<td><span style="color: DarkOrange;">Keyple <b>Java</b> Calypso Prime <b>Extended</b> set</span></td>
 	</tr>
 	<tr>
 		<th scope="row">Set Version</th>
-		<td>2023/11/28 or after</td>
+		<td>2023/11/28 or after to fix</td>
 	</tr>
 	<tr>
 		<th scope="row">Library Versions</th>
 		<td><ul>
-			<li>keypop-calypso-card-java-api (external API): 2.0 to 2.1+</li>
-			<li>keypop-calypso-crypto-legacysam-java-api (external API) : 0.3 to 0.6+</li>
+			<li>keypop-calypso-card-java-api (public API): 2.0 to 2.1+</li>
+			<li>keypop-calypso-crypto-legacysam-java-api (public API) : 0.3 to 0.6+</li>
 			<li>keypop-calypso-crypto-symmetric-java-api (internal API): 0.1+</li>
+            <br/>
 			<li>keyple-card-calypso-java-lib: 3.0.0 to 3.1.2+</li>
 			<li>keyple-card-calypso-crypto-legacysam-java-lib: 0.4.0 to 0.7.1+</li>
 		</ul></td>
@@ -453,8 +630,9 @@ The lack of official support for the “HCE” functionality and the related 'CL
 	<tr>
 		<th scope="row">Reader Layer</th>
 		<td>Keyple Core Java set:<ul>			
-			<li>keypop-reader-java-api (external API): 2.0+</li>
+			<li>keypop-reader-java-api (public API): 2.0+</li>
 			<li>keypop-card-java-api (internal API): 2.0+</li>
+            <br/>
 			<li>keyple-plugin-java-api (internal API): 2.2 to 2.3+</li>
 			<li>keyple-common-java-api (internal API): 2.0+</li>
 			<li>keyple-service-java-lib: 3.0.0 to 3.2.3+</li>
@@ -464,15 +642,15 @@ The lack of official support for the “HCE” functionality and the related 'CL
 	<tr>
 		<th scope="row">Ticketing Layer</th>
 		<td>Any ticketing application based on:<ul>			
-			<li>keypop-reader-java-api (external API): 2.0+</li>
-			<li>keypop-calypso-card-java-api (external API): 2.0 to 2.1+</li>
-			<li>keypop-calypso-crypto-legacysam-java-api (external API) : 0.3 to 0.6+</li>
+			<li>keypop-reader-java-api (public API): 2.0+</li>
+			<li>keypop-calypso-card-java-api (public API): 2.0 to 2.1+</li>
+			<li>keypop-calypso-crypto-legacysam-java-api (public API) : 0.3 to 0.6+</li>
 		</ul></td>
 	</tr>
 </tbody>
 </table>
 
-### 'Keyple Legacy Java Calypso Prime Extended set 2' definition
+### 'Keyple Legacy Java Calypso Prime Extended set 2' definition (patch <span style="color: DarkOrange;">maintained</span>)
 <table>
 	<thead>
 		<tr>
@@ -482,17 +660,18 @@ The lack of official support for the “HCE” functionality and the related 'CL
 <tbody>
 	<tr>
 		<th scope="row">Set Name</th>
-		<td>Keyple <b>Lecacy Java</b> Calypso Prime <b>Extended</b> set <b>2</b></td>
+		<td><span style="color: DarkOrange;">Keyple <b>Legacy Java</b> Calypso Prime <b>Extended</b> set <b>2</b></span></td>
 	</tr>
 	<tr>
 		<th scope="row">Set Version</th>
-		<td>2025/04/11</td>
+		<td>2025/04/11 or <span style="color: DarkOrange;">after</span></td>
 	</tr>
 	<tr>
 		<th scope="row">Library Versions</th>
 		<td><ul>
-			<li>calypsonet-terminal-calypso-java-api (external API): 1.8</li>
-			<li>calypsonet-terminal-calypso-crypto-legacysam-java-api (external API): 0.2</li>
+			<li>calypsonet-terminal-calypso-java-api (public API): 1.8</li>
+			<li>calypsonet-terminal-calypso-crypto-legacysam-java-api (public API): 0.2</li>
+            <br/>
 			<li>keyple-card-calypso-java-lib: 2.3.15+ (<3.0.0)</li>
 			<li>keyple-card-calypso-crypto-legacysam-java-lib: 0.3.0</li>
 		</ul></td>
@@ -510,8 +689,9 @@ The lack of official support for the “HCE” functionality and the related 'CL
 	<tr>
 		<th scope="row">Reader Layer</th>
 		<td>Keyple Core Java set:<ul>			
-			<li>calypsonet-terminal-reader-java-api (external API): 1.2 to 1.3</li>
+			<li>calypsonet-terminal-reader-java-api (public API): 1.2 to 1.3</li>
 			<li>calypsonet-terminal-card-java-api (internal API): 1.0</li>
+            <br/>
 			<li>keyple-plugin-java-api (internal API): 2.1 to 2.3</li>
 			<li>keyple-common-java-api (internal API): 2.0</li>
 			<li>keyple-service-java-lib: 2.2.0 to 2.3.6+ (<3.0.0)</li>
@@ -521,9 +701,9 @@ The lack of official support for the “HCE” functionality and the related 'CL
 	<tr>
 		<th scope="row">Ticketing Layer</th>
 		<td>Any ticketing application based on:<ul>
-			<li>calypsonet-terminal-reader-java-api (external API): 1.2 to 1.3</li>
-			<li>calypsonet-terminal-calypso-java-api (external API): 1.8</li>
-			<li>calypsonet-terminal-calypso-crypto-legacysam-java-api (external API) : 0.2</li>
+			<li>calypsonet-terminal-reader-java-api (public API): 1.2 to 1.3</li>
+			<li>calypsonet-terminal-calypso-java-api (public API): 1.8</li>
+			<li>calypsonet-terminal-calypso-crypto-legacysam-java-api (public API) : 0.2</li>
 		</ul></td>
 	</tr>
 </tbody>
@@ -540,7 +720,7 @@ The lack of official support for the “HCE” functionality and the related 'CL
 <tbody>
 	<tr>
 		<th scope="row">Set Name</th>
-		<td>Keyple <b>Lecacy Java</b> Calypso Prime <b>Extended</b> set</td>
+		<td><span style="color: DarkOrange;">Keyple <b>Legacy Java</b> Calypso Prime <b>Extended</b> set</span></td>
 	</tr>
 	<tr>
 		<th scope="row">Set Version</th>
@@ -549,8 +729,9 @@ The lack of official support for the “HCE” functionality and the related 'CL
 	<tr>
 		<th scope="row">Library Versions</th>
 		<td><ul>
-			<li>calypsonet-terminal-calypso-java-api (external API): 1.5 to 1.8</li>
-			<li>calypsonet-terminal-calypso-crypto-legacysam-java-api (external API): 0.1 to 0.2</li>
+			<li>calypsonet-terminal-calypso-java-api (public API): 1.5 to 1.8</li>
+			<li>calypsonet-terminal-calypso-crypto-legacysam-java-api (public API): 0.1 to 0.2</li>
+            <br/>
 			<li>keyple-card-calypso-java-lib: 2.3.1 to 2.3.12+ (<3.0.0)</li>
 			<li>keyple-card-calypso-crypto-legacysam-java-lib: 0.1.0 to 0.3.0</li>
 		</ul></td>
@@ -568,20 +749,21 @@ The lack of official support for the “HCE” functionality and the related 'CL
 	<tr>
 		<th scope="row">Reader Layer</th>
 		<td>Keyple Core Java set:<ul>			
-			<li>calypsonet-terminal-reader-java-api (external API): 1.0 to 1.3</li>
+			<li>calypsonet-terminal-reader-java-api (public API): 1.0 to 1.3</li>
 			<li>calypsonet-terminal-card-java-api (internal API): 1.0</li>
+            <br/>
 			<li>keyple-plugin-java-api (internal API): 2.0 to 2.3</li>
 			<li>keyple-common-java-api (internal API): 2.0</li>
-			<li>keyple-service-java-lib: 2.1.1 to 2.3.5+ (<3.0.0)</li>
+			<li>keyple-service-java-lib: 2.1.1 to 2.3.6</li>
 			<li>keyple-util-java-lib: 2.3.0 to 2.3.1</li>
 		</ul>Integrated with reader plugin implementing the Keyple Plugin API.</td>
 	</tr>
 	<tr>
 		<th scope="row">Ticketing Layer</th>
 		<td>Any ticketing application based on:<ul>
-			<li>calypsonet-terminal-reader-java-api (external API): 1.0 to 1.3</li>
-			<li>calypsonet-terminal-calypso-java-api (external API): 1.5 to 1.8</li>
-			<li>calypsonet-terminal-calypso-crypto-legacysam-java-api (external API) : 0.1 to 0.2</li>
+			<li>calypsonet-terminal-reader-java-api (public API): 1.0 to 1.3</li>
+			<li>calypsonet-terminal-calypso-java-api (public API): 1.5 to 1.8</li>
+			<li>calypsonet-terminal-calypso-crypto-legacysam-java-api (public API) : 0.1 to 0.2</li>
 		</ul></td>
 	</tr>
 </tbody>
@@ -597,7 +779,7 @@ The lack of official support for the “HCE” functionality and the related 'CL
 <tbody>
 	<tr>
 		<th scope="row">Set Name</th>
-		<td>Keyple <b>Lecacy Java</b> Calypso Prime <b>Regular</b> set</td>
+		<td><span style="color: DarkOrange;">Keyple <b>Legacy Java</b> Calypso Prime <b>Regular</b> set</span></td>
 	</tr>
 	<tr>
 		<th scope="row">Set Version</th>
@@ -606,8 +788,9 @@ The lack of official support for the “HCE” functionality and the related 'CL
 	<tr>
 		<th scope="row">Library Versions</th>
 		<td><ul>
-			<li>calypsonet-terminal-calypso-java-api (external API): 1.1 to 1.4</li>
-			<li>calypsonet-terminal-calypso-crypto-legacysam-java-api (external API): 0.1</li>
+			<li>calypsonet-terminal-calypso-java-api (public API): 1.1 to 1.4</li>
+			<li>calypsonet-terminal-calypso-crypto-legacysam-java-api (public API): 0.1</li>
+            <br/>
 			<li>keyple-card-calypso-java-lib: 2.1.0 to 2.3.0</li>
 			<li>keyple-card-calypso-crypto-legacysam-java-lib: 0.0.0 to 0.2.0</li>
 		</ul></td>
@@ -625,8 +808,9 @@ The lack of official support for the “HCE” functionality and the related 'CL
 	<tr>
 		<th scope="row">Reader Layer</th>
 		<td>Keyple Core Java set:<ul>			
-			<li>calypsonet-terminal-reader-java-api (external API): 1.0 to 1.3</li>
+			<li>calypsonet-terminal-reader-java-api (public API): 1.0 to 1.3</li>
 			<li>calypsonet-terminal-card-java-api (internal API): 1.0</li>
+            <br/>
 			<li>keyple-plugin-java-api (internal API): 2.0 to 2.3</li>
 			<li>keyple-common-java-api (internal API): 2.0</li>
 			<li>keyple-service-java-lib: 2.1.1 to 2.3.5+ (<3.0.0)</li>
@@ -636,15 +820,15 @@ The lack of official support for the “HCE” functionality and the related 'CL
 	<tr>
 		<th scope="row">Ticketing Layer</th>
 		<td>Any ticketing application based on:<ul>
-			<li>calypsonet-terminal-reader-java-api (external API): 1.0 to 1.1</li>
-			<li>calypsonet-terminal-calypso-java-api (external API): 1.1 to 1.4</li>
-			<li>calypsonet-terminal-calypso-crypto-legacysam-java-api (external API) : 0.1</li>
+			<li>calypsonet-terminal-reader-java-api (public API): 1.0 to 1.1</li>
+			<li>calypsonet-terminal-calypso-java-api (public API): 1.1 to 1.4</li>
+			<li>calypsonet-terminal-calypso-crypto-legacysam-java-api (public API) : 0.1</li>
 		</ul></td>
 	</tr>
 </tbody>
 </table>
 
-### 'Keyple Legacy C++ Calypso Prime PKI set 2' definition
+### 'Keyple Legacy C++ Calypso Prime Regular set 2' definition (patch <span style="color: DarkOrange;">maintained</span>)
 <table>
 	<thead>
 		<tr>
@@ -654,17 +838,18 @@ The lack of official support for the “HCE” functionality and the related 'CL
 <tbody>
 	<tr>
 		<th scope="row">Set Name</th>
-		<td>Keyple <b>Lecacy C++</b> Calypso Prime <b>Regular</b> set <b>2</b></td>
+		<td><span style="color: DarkOrange;">Keyple <b>Legacy C++</b> Calypso Prime <b>Regular</b> set <b>2</b></span></td>
 	</tr>
 	<tr>
 		<th scope="row">Set Version</th>
-		<td>2025/04/17</td>
+		<td>2025/04/17 or <span style="color: DarkOrange;">after</span></td>
 	</tr>
 	<tr>
 		<th scope="row">Library Versions</th>
 		<td><ul>
-			<li>calypsonet-terminal-calypso-cpp-api (external API): 1.4</li>
-			<li>keyple-card-calypso-cpp-lib: 2.2.5.5</li>
+			<li>calypsonet-terminal-calypso-cpp-api (public API): 1.4</li>
+            <br/>
+			<li>keyple-card-calypso-cpp-lib: 2.2.5.5+ (<2.2.6.0)</li>
 		</ul></td>
 	</tr>
 </tbody>
@@ -680,25 +865,26 @@ The lack of official support for the “HCE” functionality and the related 'CL
 	<tr>
 		<th scope="row">Reader Layer</th>
 		<td>Keyple Core Java set:<ul>
-			<li>calypsonet-terminal-reader-cpp-api (external API): 1.0 to 1.1</li>
+			<li>calypsonet-terminal-reader-cpp-api (public API): 1.0 to 1.1</li>
 			<li>calypsonet-terminal-card-cpp-api (internal API): 1.0</li>
+            <br/>
 			<li>keyple-plugin-cpp-api (internal API): 2.0</li>
 			<li>keyple-common-cpp-api (internal API): 2.0</li>
-			<li>keyple-service-cpp-lib: 2.0.1 to 2.1.1.1</li>
+			<li>keyple-service-cpp-lib: 2.0.1.0 to 2.1.1.1+ (<2.2.0.0)</li>
 			<li>keyple-util-cpp-lib: 2.3.0.0 to 2.3.0.4</li>
 		</ul>Integrated with reader plugin implementing the Keyple Plugin API.</td>
 	</tr>
 	<tr>
 		<th scope="row">Ticketing Layer</th>
 		<td>Any ticketing application based on:<ul>
-			<li>calypsonet-terminal-reader-cpp-api (external API): 1.0 to 1.1</li>
-			<li>calypsonet-terminal-calypso-cpp-api (external API): 1.4</li>
+			<li>calypsonet-terminal-reader-cpp-api (public API): 1.0 to 1.1</li>
+			<li>calypsonet-terminal-calypso-cpp-api (public API): 1.4</li>
 		</ul></td>
 	</tr>
 </tbody>
 </table>
 
-### 'Keyple Legacy C++ Calypso Prime PKI set' definition
+### 'Keyple Legacy C++ Calypso Prime Regular set' definition
 <table>
 	<thead>
 		<tr>
@@ -708,16 +894,17 @@ The lack of official support for the “HCE” functionality and the related 'CL
 <tbody>
 	<tr>
 		<th scope="row">Set Name</th>
-		<td>Keyple <b>Lecacy C++</b> Calypso Prime <b>Regular</b> set</td>
+		<td><span style="color: DarkOrange;">Keyple <b>Legacy C++</b> Calypso Prime <b>Regular</b> set</span></td>
 	</tr>
 	<tr>
 		<th scope="row">Set Version</th>
-		<td>2022/02/01 to 2025/04/17</td>
+		<td>2022/07/06 to 2025/04/17</td>
 	</tr>
 	<tr>
 		<th scope="row">Library Versions</th>
 		<td><ul>
-			<li>calypsonet-terminal-calypso-cpp-api (external API): 1.0 to 1.4</li>
+			<li>calypsonet-terminal-calypso-cpp-api (public API): 1.0 to 1.4</li>
+            <br/>
 			<li>keyple-card-calypso-cpp-lib: 2.1.0 to 2.2.5.4</li>
 		</ul></td>
 	</tr>
@@ -734,8 +921,9 @@ The lack of official support for the “HCE” functionality and the related 'CL
 	<tr>
 		<th scope="row">Reader Layer</th>
 		<td>Keyple Core Java set:<ul>
-			<li>calypsonet-terminal-reader-cpp-api (external API): 1.0 to 1.1</li>
+			<li>calypsonet-terminal-reader-cpp-api (public API): 1.0 to 1.1</li>
 			<li>calypsonet-terminal-card-cpp-api (internal API): 1.0</li>
+            <br/>
 			<li>keyple-plugin-cpp-api (internal API): 2.0</li>
 			<li>keyple-common-cpp-api (internal API): 2.0</li>
 			<li>keyple-service-cpp-lib: 2.0.1 to 2.1.1.1</li>
@@ -745,8 +933,8 @@ The lack of official support for the “HCE” functionality and the related 'CL
 	<tr>
 		<th scope="row">Ticketing Layer</th>
 		<td>Any ticketing application based on:<ul>
-			<li>calypsonet-terminal-reader-cpp-api (external API): 1.0 to 1.1</li>
-			<li>calypsonet-terminal-calypso-cpp-api (external API): 1.0 to 1.4</li>
+			<li>calypsonet-terminal-reader-cpp-api (public API): 1.0 to 1.1</li>
+			<li>calypsonet-terminal-calypso-cpp-api (public API): 1.0 to 1.4</li>
 		</ul></td>
 	</tr>
 </tbody>
