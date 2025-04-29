@@ -392,6 +392,12 @@ For older configurations, the 'CL-CSS-RESPLE.1' requirement, the countermeasure 
 
 The lack of official support for the “HCE” functionality and the related 'CL-SEL-SNHEADER.2' requirement is not a limitation to correctly processing Calypso HCE solutions, as the HCE token data can still be recovered as described [in the Calypso development guide](https://keyple.org/learn/user-guide/calypso-application/#hce-service-handling).
 
+About the 'CL-PERF-HFLOW.1' requirement, the Keyple Calypso libraries have been designed to optimize card & SAM command exchanges with the best possible performance, depending on the terminal architecture:
+- for an [embedded architecture](https://terminal-api.calypsonet.org/specifications/calypso-layer/calypso-card-api/#_regular_-secure-session-span-stylecolor-redoptimized-for-fast-embedded-performancespan) (saving latencies of between 1 and 10 milliseconds on transmissions with local readers),
+- for a [distributed architecture](https://terminal-api.calypsonet.org/specifications/calypso-layer/calypso-card-api/#_regular_-secure-session-span-stylecolor-redoptimized-for-an-efficient-distributed-systemspan) (saving latencies of between 10 and 100 milliseconds on network exchanges with remote readers).
+
+Concerning the 'CL-CMD-GETPUT.1' requirement, the “Get/Put Data” applicability support is limited to the management of the 'Get Data' command. The optional 'Put Data' command is not supported.
+
 <table>
 	<thead>
 		<tr>
