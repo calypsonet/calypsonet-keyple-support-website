@@ -240,8 +240,8 @@ All other reader layer requirements are fully supported if the reader plugin is 
 <tbody>
 	<tr>
 		<th scope="row">Set Name</th>
-		<td><span style="color: DarkOrange;">Keyple <b>Java</b> Service with <b>PC/SC</b> plugin set</span></td>
-		<td><span style="color: DarkOrange;">Keyple <b>Java</b> Service with <b>Android NFC</b> plugin set</span></td>
+		<td><span style="color: DarkOrange;">Keyple <b>Legacy Java</b> Service with <b>PC/SC</b> plugin set</span></td>
+		<td><span style="color: DarkOrange;">Keyple <b>Legacy Java</b> Service with <b>Android NFC</b> plugin set</span></td>
 	</tr>
 	<tr>
 		<th scope="row">Set Version</th>
