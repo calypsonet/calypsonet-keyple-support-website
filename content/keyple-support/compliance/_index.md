@@ -28,7 +28,12 @@ Further, Keyple's Calypso libraries' <span style="color: DarkOrange;">feature</s
 For terminals integrating contactless and/or contact readers, the [Keyple's ‘Core’ libraries](https://keyple.org/components/core/) have been designed to meet the terminal requirements for the reader layer.
 - In order to declare that a configuration of Keyple Core libraries and a smart card reader plugin are indeed compliant with the terminal requirements for the reader layer, the main condition is that the plugin used to interface the reader has been implemented according to the [Keyple plugin development guide](https://keyple.org/learn/developer-guide/reader-plugin-add-on/).
 
-The Keyple project hosts plugins for interfacing reader solutions based on standardized APIs: PC/SC and Android NFC. Pending the future certification programme for reader layer libraries, CNA plans to [publish the self-declarations of conformity of the Keyple Core libraries for reader solutions](https://calypsonet.org/registered-readers/) interfaced with these plugins. 
+The Keyple project hosts plugins for interfacing reader solutions based on standardized APIs: PC/SC and Android NFC. Pending the future certification programme for reader layer libraries, CNA plans to [publish the self-declarations of conformity of the Keyple Core libraries for reader solutions](https://calypsonet.org/registered-readers/) interfaced with these plugins:
+- [Keyple Java Service with PC/SC plugin set](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-java-service-sets-definitions-for-pcsc--android-nfc-plugins-still-span-stylecolor-darkorangeupdatedspan)
+- [Keyple Java Service with Android NFC plugin set](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-java-service-sets-definitions-for-pcsc--android-nfc-plugins-still-span-stylecolor-darkorangeupdatedspan)
+- [Keyple Legacy Java Service with PC/SC plugin set](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-legacy-java-service-sets-definitions-for-pcsc--android-nfc-plugins-still-span-stylecolor-darkorangefixedspan)
+- [Keyple Legacy Java Service with Android NFC plugin set](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-legacy-java-service-sets-definitions-for-pcsc--android-nfc-plugins-still-span-stylecolor-darkorangefixedspan)
+- [Keyple C++ Service with PC/SC plugin set](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-legacy-c-service-set-definition-for-pcsc-plugin-still-span-stylecolor-darkorangefixedspan)
 
 ### Properties of PC/SC and NFC reader solutions
 <table>
@@ -368,7 +373,15 @@ The [Keyple's ‘Calypso’ libraries](https://keyple.org/components/card-extens
 - the versions of Keyple's Calypso libraries must be [compliant with versions 2.0 or higher of the terminal Calypso APIs](https://terminal-api.calypsonet.org/compliance/#from-reader-api-version-20--calypso-card-api-version-20),
 - & the reader software layer used as a basis (Keyple's ‘Core’ libraries + reader plugins) must comply with the terminal requirements for the reader layer.
 
-Pending the future certification programme for Calypso layer libraries, CNA has [published the self-declarations of conformity of the Keyple Calypso libraries ](https://calypsonet.org/registered-calypso-layer-libraries/) (independently of interfaced reader solutions, but on the basis of a compliant reader software layer).
+Pending the future certification programme for Calypso layer libraries, CNA has [published the self-declarations of conformity of the Keyple Calypso libraries ](https://calypsonet.org/registered-calypso-layer-libraries/) (independently of interfaced reader solutions, but on the basis of a compliant reader software layer):
+- [Keyple Java Calypso Prime PKI set 2](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-java-calypso-prime-pki-set-2-definition-still-span-stylecolor-darkorangeupdatedspan)
+- [Keyple Java Calypso Prime PKI set](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-java-calypso-prime-pki-set-definition)
+- [Keyple Java Calypso Prime Extended set](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-java-calypso-prime-extended-set-definition)
+- [Keyple Legacy Java Calypso Prime Extended set 2](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-legacy-java-calypso-prime-extended-set-2-definition-still-span-stylecolor-darkorangefixedspan)
+- [Keyple Legacy Java Calypso Prime Extended set](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-legacy-java-calypso-prime-extended-set-definition)
+- [Keyple Legacy Java Calypso Prime Regular set](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-legacy-java-calypso-prime-regular-set-definition)
+- [Keyple Legacy C++ Calypso Prime Regular set 2](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-legacy-c-calypso-prime-regular-set-2-definition-still-span-stylecolor-darkorangefixedspan)
+- [Keyple Legacy C++ Calypso Prime Regular set](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-legacy-c-calypso-prime-regular-set-definition)
 
 ### Terminal requirements support declarations
 For the various Keyple Calypso library sets, all applicabilities and terminal requirements are supported, except for those listed in the table below.
