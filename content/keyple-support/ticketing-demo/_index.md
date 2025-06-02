@@ -114,30 +114,27 @@ This demo requires a client/server environment:
 			<td>Java Server with PC/SC SAM readers</td>
 		</tr>
 		<tr>
-			<th scope="rowgroup" rowspan="4">Sales / Reloading client</th>
+			<th scope="rowgroup" rowspan="3">Sales / Reloading client</th>
 			<th scope="row">Keyple-based</th>
-			<td><a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/tree/main/client/android" target="_blank" rel="noopener">Kotlin</a></td>
-			<td rowspan="2">Android</td>
-			<td rowspan="2">Android NFC phone</td>
+			<td><a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/tree/main/client/keyple-mobile-android" target="_blank" rel="noopener">Kotlin</a></td>
+			<td rowspan="1">Android</td>
+			<td rowspan="1">Android NFC phone</td>
 		</tr>
 		<tr>
-			<th scope="rowgroup" rowspan="3">Keyple-less</th>
-			<td><a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/tree/main/client/android-light" target="_blank" rel="noopener">Kotlin</a></td>
-		</tr>
-		<tr>
-			<td><a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/tree/main/client/dotnet" target="_blank" rel="noopener">.NET C#</a></td>
+			<th scope="rowgroup" rowspan="2">Keyple-less</th>
+			<td><a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/tree/main/client/pc-dotnet" target="_blank" rel="noopener">.NET C#</a><br/>(without "interop" libs)</td>
 			<td>Windows</td>
 			<td>Windows PC with a PC/SC reader</td>
 		</tr>
 		<tr>
-			<td><a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/tree/kmm/client/kmp" target="_blank" rel="noopener">
+			<td><a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/tree/main/client/interop-mobile-multiplatform" target="_blank" rel="noopener">
                 <ul><li>Kotlin Multiplatform</li>
                 <li>& Compose Multiplatform</li></ul>
-            </a></td>
-			<td>Windows, Linux, macOS, Android, iOS</td>
+            </a><br/>(with "interop" libs)</td>
+			<td><!--Windows, Linux, macOS, -->Android, iOS</td>
 			<td>
                 <ul><li><span style="color: red;">any</span> NFC mobile</li>
-                <li><span style="color: red;">any</span> PC with a PC/SC reader</li></ul>
+                <!--<li><span style="color: red;">any</span> PC with a PC/SC reader</li>--></ul>
             </td>
 		</tr>
 	</tbody>
