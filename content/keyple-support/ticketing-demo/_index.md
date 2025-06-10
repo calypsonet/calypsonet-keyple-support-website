@@ -3,7 +3,7 @@ title: Keyple-based advanced ticketing demonstrator
 linkTitle: Advanced demo
 type: book
 toc: true
-weight: 40
+weight: 60
 ---
 To illustrate an advanced implementation of the Keyple Java middleware for Calypso-based ticketing systems, CNA has released a full ticketing demonstrator under the <a href="https://opensource.org/license/bsd-3-clause" target="_blank" rel="noopener">3-Clause BSD License</a>.
 

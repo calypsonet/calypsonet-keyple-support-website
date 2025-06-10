@@ -3,7 +3,7 @@ title: Interoperability & compliance of Keyple-based ticketing terminal solution
 linkTitle: Terminal compliance
 type: book
 toc: true
-weight: 25
+weight: 30
 ---
 In order to guarantee interoperability between smart cards and terminals, the [‘Calypso Networks Association’ (CNA)](https://calypsonet.org/) encourages ticketing operators to [follow various specifications and certification processes](https://calypsonet.org/calypso-certification/#section-certification-for-terminals).
 

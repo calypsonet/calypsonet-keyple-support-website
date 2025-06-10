@@ -3,7 +3,7 @@ title: Integrating a smartcard reader solution
 linkTitle: Reader integration
 type: book
 toc: true
-weight: 30
+weight: 40
 ---
 ## Properties of a smartcard reader solution through the Reader API
 In order to operate smartcard reader solutions, a ticketing application on a Keyple-based terminal uses the « generic » [terminal reader API](https://terminal-api.calypsonet.org/specifications/reader-layer/reader-api/).
