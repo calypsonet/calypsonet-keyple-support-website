@@ -1,9 +1,12 @@
 ---
-title: Assistance Tools
-linkTitle: Overview
+title: Assistance Tools built with Keyple
+linkTitle: "Assistance Tools"
+aliases:
+  - /assistance-tools/overview/
+  - /assistance-tools/
 type: book
 toc: false
-weight: 10
+weight: 40
 ---
 
 <br>
@@ -21,7 +24,7 @@ weight: 10
     </thead>
     <tbody id="external-resource-table-3-content">
     <tr>
-        <td class="text-center"><a href='{{< relref "../card-configuration-audit/" >}}'>Calypso Card Analyzer</a></td>
+        <td class="text-center"><a href='{{< relref "../card-audit/" >}}'>Calypso Card Analyzer</a></td>
         <td class="text-center">Windows, Linux, macOS</td>
         <td class="text-center">Java/Kotlin</td>
         <td class="text-center"><a href="https://www.eclipse.org/legal/epl-2.0/" target="_blank" rel="noopener">EPL-2.0</a></td>
@@ -34,7 +37,7 @@ Java-based ticketing terminals, to help check the configuration and file structu
         </td>
     </tr>
     <tr>
-        <td class="text-center"><a href='{{< relref "../basic-legacysam-personalizer/" >}}'>Calypso Basic Legacy SAM Personalizer</a></td>
+        <td class="text-center"><a href='{{< relref "../basic-sam/" >}}'>Calypso Basic Legacy SAM Personalizer</a></td>
         <td class="text-center">Windows, Linux, macOS</td>
         <td class="text-center">Java/Kotlin</td>
         <td class="text-center">CNA Member</td>
@@ -46,7 +49,7 @@ The Calypso Basic Legacy SAM Personalization Tool is dedicated to personalizatio
         </td>
     </tr>
     <tr>
-        <td class="text-center"><a href='{{< relref "../basic-card-personalizer/" >}}'>Calypso Basic Card Personalizer</a></td>
+        <td class="text-center"><a href='{{< relref "../basic-card/" >}}'>Calypso Basic Card Personalizer</a></td>
         <td class="text-center">Windows, Linux, macOS</td>
         <td class="text-center">Java/Kotlin</td>
         <td class="text-center">CNA Member</td>

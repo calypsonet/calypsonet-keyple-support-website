@@ -1,6 +1,8 @@
 ---
 title: Introduction to Keyple
 linkTitle: Keyple Introduction
+aliases:
+  - /keyple-support/introduction/
 type: book
 toc: true
 weight: 10
@@ -78,5 +80,5 @@ To use, integrate or extend Keyple, it is not necessary to have complete knowled
 
 The Keyple project also includes many simple [examples in Java and C++ code](https://keyple.org/learn/code-samples/) to illustrate all these types of development.
 
-CNA's technical support also offers a more advanced Calypso example on implementing the Keyple solution with an open source [complete Keyple ticketing demonstrator](../ticketing-demo/): including remote ticket reloading, embedded validation and control.
+CNA's technical support also offers a more advanced Calypso example on implementing the Keyple solution with an open source [complete Keyple ticketing demonstrator](../../add-ons/demo/ticketing/): including remote ticket reloading, embedded validation and control.
 <br>CNA also [supplies test cards and SAMs](../test-kit/) for running Keyple.

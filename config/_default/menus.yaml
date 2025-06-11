@@ -4,10 +4,10 @@
 #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: Keyple support
-    url: '/keyple-support/'
+  - name: Keyple Basics
+    url: '/basics/'
     weight: 10
 
-  - name: Assistance tools
-    url: '/assistance-tools/'
+  - name: Keyple Add-ons
+    url: '/add-ons/'
     weight: 20

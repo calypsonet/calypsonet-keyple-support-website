@@ -1,6 +1,8 @@
 ---
 title: Interoperability & compliance of Keyple-based ticketing terminal solutions
 linkTitle: Terminal compliance
+aliases:
+  - /keyple-support/compliance/
 type: book
 toc: true
 weight: 30

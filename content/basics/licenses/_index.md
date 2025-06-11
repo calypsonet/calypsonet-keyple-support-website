@@ -1,19 +1,21 @@
 ---
 title: Software Licenses
 linkTitle: Licenses
+aliases:
+  - /keyple-support/licenses/
 type: book
 toc: true
 weight: 50
 ---
 
-All Keypop and Keyple projects components are open source and hosted by the Eclipse Foundation.
+All Keypop and Keyple projects components are 🌍 **open source** and hosted by the Eclipse Foundation.
 In addition, CNA also offers a multitude of Keyple extensions, Keyple example applications and Keyple-based tools.
-- Most of these supplements and tools are also published as open source.
-- A few are restricted to CNA members.
+- Most of these supplements and tools are also published as 🌍 **open source**.
+- A few are 🚫 **restricted to CNA members**.
 
 Depending on the type of components, different software licenses are applied:
-- For APIs, examples and demonstrators: so-called “permissive” licenses: use, implementation or modification of the component is totally free.
-- For libraries: “copyleft” licenses: use and integration are free, but any modification of the component must be shared and returned to the community.
+- For APIs, examples and demonstrators: so-called **permissive** licenses: use, implementation or modification of the component is totally free.
+- For libraries: **copyleft** licenses: use and integration are free, but any modification of the component must be shared and returned to the community.
 
 <table>
 <thead>
