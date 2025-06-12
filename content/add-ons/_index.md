@@ -4,4 +4,4 @@ linkTitle: "Assistance Tools"
 
 type: book
 ---
-{{< redirect "/add-ons/overview/" >}}
+{{< redirect "/add-ons/demo/" >}}
