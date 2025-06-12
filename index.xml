@@ -129,7 +129,7 @@ The ticketing data format is just an example defined for demonstration purposes.
 &lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></description></item><item><title>Keyple plugin for Coppernic smart card reader</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/coppernic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/coppernic/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>Calypso card configuration audit tool</title><link>https://keyple-support.calypsonet.org/add-ons/tool/card-audit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/tool/card-audit/</guid><description>&lt;br>
+&lt;/table></description></item><item><title>Keyple plugin for Coppernic smart card reader</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/coppernic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/coppernic/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>Keyple plugin for Famoco smart card reader</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/famoco/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/famoco/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>Keyple plugin for Flowbird smart card reader</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/flowbird/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/flowbird/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>Keyple plugin for Bluebird smart card reader</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/bluebird/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/bluebird/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>Keyple plugin for Spirtech Calypso HSM</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/hsm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/hsm/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>Calypso card configuration audit tool</title><link>https://keyple-support.calypsonet.org/add-ons/tool/card-audit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/tool/card-audit/</guid><description>&lt;br>
 &lt;h4 id="what-is-the-cna-tool-card-analyzer-app-suite">What is the CNA Tool Card Analyzer App Suite?&lt;/h4>
 &lt;p>The CNA Tool Card Analyzer App Suite consists of two command-line tools:&lt;/p>
 &lt;ul>
@@ -572,7 +572,146 @@ knowledge of smart card technology and command-line interfaces is recommended.&l
 &lt;li>Ensure proper handling of the card and responsible use&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></description></item><item><title>Keyple plugin for Famoco smart card reader</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/famoco/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/famoco/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>Keyple plugin for Flowbird smart card reader</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/flowbird/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/flowbird/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>Basic keyset legacy SAM personalization tool</title><link>https://keyple-support.calypsonet.org/add-ons/tool/basic-sam/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/tool/basic-sam/</guid><description>&lt;br>
+&lt;/ul></description></item><item><title>Calypso keyset basic card personalization tool</title><link>https://keyple-support.calypsonet.org/add-ons/tool/basic-card/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/tool/basic-card/</guid><description>&lt;br>
+&lt;h4 id="what-is-the-calypso-basic-card-personalization-tool">What is the Calypso Basic Card Personalization Tool?&lt;/h4>
+&lt;p>The Calypso Basic Card Personalization Tool is a desktop application designed for personalizing &lt;strong>Calypso Basic&lt;/strong> cards by
+injecting Application Identifiers (AID) and security keys.&lt;/p>
+&lt;p>&lt;strong>Key Features:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>AID and Key Injection&lt;/strong>: Enables the injection of AID and encryption keys into a blank &lt;strong>Calypso Basic&lt;/strong> card.&lt;/li>
+&lt;li>&lt;strong>Dual Reader Setup&lt;/strong>: Requires a Target Card Reader for the blank card and a SAM Reader containing the &lt;strong>SAM CPP&lt;/strong> for secure key injection.&lt;/li>
+&lt;/ul>
+&lt;h4 id="why-use-the-calypso-basic-card-personalization-tool">Why use the Calypso Basic Card Personalization Tool?&lt;/h4>
+&lt;p>This tool is essential for operators seeking to personalize &lt;strong>Calypso Basic&lt;/strong> cards for use on their network by
+injecting keys stored in the &lt;strong>SAM CV/CV&lt;/strong> available in the field. It utilizes a &lt;strong>SAM CPP&lt;/strong> that has
+been personalized using the &lt;a href="./add-ons/tool/basic-sam/">basic-legacysam-personalizer&lt;/a> tool.&lt;/p>
+&lt;br>
+&lt;p>This user guide explains how to personalize a &lt;strong>Calypso Basic&lt;/strong> card (AID and keys injection).&lt;/p>
+&lt;br>
+&lt;h2 id="hardware-requirements">Hardware Requirements&lt;/h2>
+&lt;p>This tool requires two PC/SC readers:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Target Card Reader:&lt;/strong> this contactless reader holds the &lt;strong>blank card&lt;/strong> you want to personalize.&lt;/li>
+&lt;li>&lt;strong>SAM Reader:&lt;/strong> this contact reader contains the &lt;strong>SAM CPP&lt;/strong> used for keys injection.&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;h2 id="installation">Installation&lt;/h2>
+&lt;ol>
+&lt;li>The software is available in a GitHub repository. Go to
+the &lt;a href="https://github.com/calypsonet/cna-tool-basic-legacysam-perso-app/releases" target="_blank" rel="noopener">releases page&lt;/a> to download it. (Note:
+the GitHub repository is private. Please request access from &lt;a href="https://calypsonet.org" target="_blank" rel="noopener">CNA&lt;/a>). Choose the installation
+file that matches your operating system:
+&lt;ul>
+&lt;li>&lt;strong>Windows:&lt;/strong> &lt;code>.msi&lt;/code> package&lt;/li>
+&lt;li>&lt;strong>macOS:&lt;/strong> &lt;code>.dmg&lt;/code> package (available in both arm64 version for Apple Silicon Macs and x64 version for Intel Macs)&lt;/li>
+&lt;li>&lt;strong>Linux:&lt;/strong> &lt;code>.deb&lt;/code> package&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Windows:&lt;/strong> double-click the &lt;code>.msi&lt;/code> package to start the installation process.&lt;/li>
+&lt;li>&lt;strong>macOS:&lt;/strong>
+&lt;ul>
+&lt;li>Open the &lt;code>.dmg&lt;/code> file and drag the application to the Applications folder&lt;/li>
+&lt;li>Since the application is not signed with an Apple developer certificate, you&amp;rsquo;ll need to authorize it:
+&lt;ol>
+&lt;li>When first launching the app, you may see a security warning&lt;/li>
+&lt;li>Go to System Settings &amp;gt; Privacy &amp;amp; Security&lt;/li>
+&lt;li>Scroll down to find the message about the blocked application&lt;/li>
+&lt;li>Click &amp;ldquo;Open Anyway&amp;rdquo; to authorize the application&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Linux:&lt;/strong> use your distribution&amp;rsquo;s package manager to install the &lt;code>.deb&lt;/code> package.&lt;/li>
+&lt;li>&lt;strong>Important note:&lt;/strong> currently, the installer does not automatically create a shortcut in the Start Menu (Windows) or
+Applications menu (macOS). If you want quick access, you will need to create a shortcut manually.&lt;/li>
+&lt;/ol>
+&lt;br>
+&lt;h2 id="launch-the-tool">Launch the Tool&lt;/h2>
+&lt;ol>
+&lt;li>Once the installation is complete, you can find the executable in the installation directory. The default location
+varies depending on your operating system:
+&lt;ul>
+&lt;li>&lt;strong>Windows:&lt;/strong> &lt;code>C:\Program Files\cna-tool-basic-card-perso-app\&lt;/code>&lt;/li>
+&lt;li>&lt;strong>macOS:&lt;/strong> &lt;code>/Applications/cna-tool-basic-card-perso-app/&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Linux:&lt;/strong> &lt;code>/opt/cna-tool-basic-card-perso-app/&lt;/code> (or in your user&amp;rsquo;s home directory if you installed it
+locally)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Double-click the executable to launch the &lt;strong>Calypso Basic Card Personalization Tool&lt;/strong>.&lt;/li>
+&lt;/ol>
+&lt;br>
+&lt;h2 id="application-ui">Application UI&lt;/h2>
+&lt;p>The application window has a top menu and two tabs:&lt;/p>
+&lt;h3 id="settings-menu">Settings Menu&lt;/h3>
+&lt;ol>
+&lt;li>Click the &lt;strong>Settings&lt;/strong> menu.&lt;/li>
+&lt;li>Select the &lt;strong>Target Card Reader&lt;/strong> name. This is where you will present your blank Calypso Basic card.&lt;/li>
+&lt;li>Select the &lt;strong>SAM Reader&lt;/strong> name.&lt;/li>
+&lt;li>Enter the &lt;strong>SAM Unlock Value&lt;/strong> if required.&lt;/li>
+&lt;li>Select the directory for the log file.&lt;/li>
+&lt;/ol>
+&lt;h3 id="tabs">Tabs&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Basic Card Personalization:&lt;/strong> configure and personalize the card. Set parameters like AID, KVC, and KIFs, and
+start/stop the personalization process.&lt;/li>
+&lt;li>&lt;strong>Application Info:&lt;/strong> view logs and events related to the application and card reader. Useful for troubleshooting.&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;h2 id="personalize-a-card">Personalize a Card&lt;/h2>
+&lt;ol>
+&lt;li>Select the &lt;strong>Basic Card Personalization&lt;/strong> tab.&lt;/li>
+&lt;li>Insert the &lt;strong>SAM CPP&lt;/strong> into the SAM reader.&lt;/li>
+&lt;li>Enter the personalization parameters:
+&lt;ul>
+&lt;li>&lt;strong>AID&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>System keys KVC&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Work keys KIF and KVC&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Click &lt;strong>Start&lt;/strong> to begin scanning for the card.&lt;/li>
+&lt;li>Present a blank card to the card reader&amp;rsquo;s antenna.&lt;/li>
+&lt;/ol>
+&lt;br>
+&lt;h2 id="refresh-reader-detection">Refresh Reader Detection&lt;/h2>
+&lt;p>If you connect or disconnect card readers while the application is running, switch between the tabs (Basic Card
+Personalization, Application Info) to make the application recognize the changes.&lt;/p>
+&lt;br>
+&lt;h2 id="screenshots">Screenshots&lt;/h2>
+&lt;h3 id="installation-1">Installation&lt;/h3>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./media/cna-tool-basic-card-perso-app/install-dialog.png" alt="Installation" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;h3 id="settings">Settings&lt;/h3>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./media/cna-tool-basic-card-perso-app/settings-dialog.png" alt="Settings" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;h3 id="card-personalization">Card personalization&lt;/h3>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./media/cna-tool-basic-card-perso-app/personalization-tab.png" alt="Card personalization" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;h3 id="application-info">Application info&lt;/h3>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./media/cna-tool-basic-card-perso-app/info-and-logs-tab.png" alt="Application info" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;br>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>This tool is provided by CNA for its members. Only active CNA members are authorized to use this tool. A member is not
+authorized to distribute this tool to other parties.&lt;/p>
+&lt;br>
+&lt;h2 id="user-requirements-and-responsibilities">User Requirements and Responsibilities&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Target Audience:&lt;/strong> users familiar with Calypso Basic card personalization. Basic knowledge of smart card technology
+and security concepts is assumed.&lt;/li>
+&lt;li>&lt;strong>Prerequisites:&lt;/strong> necessary hardware (card reader, SAM reader) and software (drivers) installed and configured
+correctly.&lt;/li>
+&lt;li>&lt;strong>Responsibilities:&lt;/strong> ensure correct selection of the target card and SAM, proper handling of unlock values and
+sensitive information, and entering the correct personalization parameters (AID, KVC, KIFs).&lt;/li>
+&lt;li>&lt;strong>Usage:&lt;/strong> authorized personnel only. Misuse or unauthorized distribution is strictly prohibited.&lt;/li>
+&lt;/ul></description></item><item><title>Basic keyset legacy SAM personalization tool</title><link>https://keyple-support.calypsonet.org/add-ons/tool/basic-sam/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/tool/basic-sam/</guid><description>&lt;br>
 &lt;h4 id="what-is-the-calypso-basic-legacy-sam-personalization-tool">What is the Calypso Basic Legacy SAM Personalization Tool?&lt;/h4>
 &lt;p>The Calypso Basic Legacy SAM Personalization Tool is a desktop application designed to create a &lt;strong>SAM CPP&lt;/strong> specifically
 dedicated to the personalization of &lt;strong>Calypso Basic&lt;/strong> cards by injecting the necessary keys.&lt;/p>
@@ -714,143 +853,4 @@ authorized to distribute this tool to other parties.&lt;/p>
 &lt;li>&lt;strong>Responsibilities:&lt;/strong> ensure the correct selection of target and origin SAMs, and the proper handling of unlock values
 and other sensitive information.&lt;/li>
 &lt;li>&lt;strong>Usage:&lt;/strong> authorized personnel only. Misuse or unauthorized distribution is strictly prohibited.&lt;/li>
-&lt;/ul></description></item><item><title>Keyple plugin for Bluebird smart card reader</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/bluebird/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/bluebird/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>Calypso keyset basic card personalization tool</title><link>https://keyple-support.calypsonet.org/add-ons/tool/basic-card/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/tool/basic-card/</guid><description>&lt;br>
-&lt;h4 id="what-is-the-calypso-basic-card-personalization-tool">What is the Calypso Basic Card Personalization Tool?&lt;/h4>
-&lt;p>The Calypso Basic Card Personalization Tool is a desktop application designed for personalizing &lt;strong>Calypso Basic&lt;/strong> cards by
-injecting Application Identifiers (AID) and security keys.&lt;/p>
-&lt;p>&lt;strong>Key Features:&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>AID and Key Injection&lt;/strong>: Enables the injection of AID and encryption keys into a blank &lt;strong>Calypso Basic&lt;/strong> card.&lt;/li>
-&lt;li>&lt;strong>Dual Reader Setup&lt;/strong>: Requires a Target Card Reader for the blank card and a SAM Reader containing the &lt;strong>SAM CPP&lt;/strong> for secure key injection.&lt;/li>
-&lt;/ul>
-&lt;h4 id="why-use-the-calypso-basic-card-personalization-tool">Why use the Calypso Basic Card Personalization Tool?&lt;/h4>
-&lt;p>This tool is essential for operators seeking to personalize &lt;strong>Calypso Basic&lt;/strong> cards for use on their network by
-injecting keys stored in the &lt;strong>SAM CV/CV&lt;/strong> available in the field. It utilizes a &lt;strong>SAM CPP&lt;/strong> that has
-been personalized using the &lt;a href="./add-ons/tool/basic-sam/">basic-legacysam-personalizer&lt;/a> tool.&lt;/p>
-&lt;br>
-&lt;p>This user guide explains how to personalize a &lt;strong>Calypso Basic&lt;/strong> card (AID and keys injection).&lt;/p>
-&lt;br>
-&lt;h2 id="hardware-requirements">Hardware Requirements&lt;/h2>
-&lt;p>This tool requires two PC/SC readers:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Target Card Reader:&lt;/strong> this contactless reader holds the &lt;strong>blank card&lt;/strong> you want to personalize.&lt;/li>
-&lt;li>&lt;strong>SAM Reader:&lt;/strong> this contact reader contains the &lt;strong>SAM CPP&lt;/strong> used for keys injection.&lt;/li>
-&lt;/ul>
-&lt;br>
-&lt;h2 id="installation">Installation&lt;/h2>
-&lt;ol>
-&lt;li>The software is available in a GitHub repository. Go to
-the &lt;a href="https://github.com/calypsonet/cna-tool-basic-legacysam-perso-app/releases" target="_blank" rel="noopener">releases page&lt;/a> to download it. (Note:
-the GitHub repository is private. Please request access from &lt;a href="https://calypsonet.org" target="_blank" rel="noopener">CNA&lt;/a>). Choose the installation
-file that matches your operating system:
-&lt;ul>
-&lt;li>&lt;strong>Windows:&lt;/strong> &lt;code>.msi&lt;/code> package&lt;/li>
-&lt;li>&lt;strong>macOS:&lt;/strong> &lt;code>.dmg&lt;/code> package (available in both arm64 version for Apple Silicon Macs and x64 version for Intel Macs)&lt;/li>
-&lt;li>&lt;strong>Linux:&lt;/strong> &lt;code>.deb&lt;/code> package&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>Windows:&lt;/strong> double-click the &lt;code>.msi&lt;/code> package to start the installation process.&lt;/li>
-&lt;li>&lt;strong>macOS:&lt;/strong>
-&lt;ul>
-&lt;li>Open the &lt;code>.dmg&lt;/code> file and drag the application to the Applications folder&lt;/li>
-&lt;li>Since the application is not signed with an Apple developer certificate, you&amp;rsquo;ll need to authorize it:
-&lt;ol>
-&lt;li>When first launching the app, you may see a security warning&lt;/li>
-&lt;li>Go to System Settings &amp;gt; Privacy &amp;amp; Security&lt;/li>
-&lt;li>Scroll down to find the message about the blocked application&lt;/li>
-&lt;li>Click &amp;ldquo;Open Anyway&amp;rdquo; to authorize the application&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>Linux:&lt;/strong> use your distribution&amp;rsquo;s package manager to install the &lt;code>.deb&lt;/code> package.&lt;/li>
-&lt;li>&lt;strong>Important note:&lt;/strong> currently, the installer does not automatically create a shortcut in the Start Menu (Windows) or
-Applications menu (macOS). If you want quick access, you will need to create a shortcut manually.&lt;/li>
-&lt;/ol>
-&lt;br>
-&lt;h2 id="launch-the-tool">Launch the Tool&lt;/h2>
-&lt;ol>
-&lt;li>Once the installation is complete, you can find the executable in the installation directory. The default location
-varies depending on your operating system:
-&lt;ul>
-&lt;li>&lt;strong>Windows:&lt;/strong> &lt;code>C:\Program Files\cna-tool-basic-card-perso-app\&lt;/code>&lt;/li>
-&lt;li>&lt;strong>macOS:&lt;/strong> &lt;code>/Applications/cna-tool-basic-card-perso-app/&lt;/code>&lt;/li>
-&lt;li>&lt;strong>Linux:&lt;/strong> &lt;code>/opt/cna-tool-basic-card-perso-app/&lt;/code> (or in your user&amp;rsquo;s home directory if you installed it
-locally)&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Double-click the executable to launch the &lt;strong>Calypso Basic Card Personalization Tool&lt;/strong>.&lt;/li>
-&lt;/ol>
-&lt;br>
-&lt;h2 id="application-ui">Application UI&lt;/h2>
-&lt;p>The application window has a top menu and two tabs:&lt;/p>
-&lt;h3 id="settings-menu">Settings Menu&lt;/h3>
-&lt;ol>
-&lt;li>Click the &lt;strong>Settings&lt;/strong> menu.&lt;/li>
-&lt;li>Select the &lt;strong>Target Card Reader&lt;/strong> name. This is where you will present your blank Calypso Basic card.&lt;/li>
-&lt;li>Select the &lt;strong>SAM Reader&lt;/strong> name.&lt;/li>
-&lt;li>Enter the &lt;strong>SAM Unlock Value&lt;/strong> if required.&lt;/li>
-&lt;li>Select the directory for the log file.&lt;/li>
-&lt;/ol>
-&lt;h3 id="tabs">Tabs&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>Basic Card Personalization:&lt;/strong> configure and personalize the card. Set parameters like AID, KVC, and KIFs, and
-start/stop the personalization process.&lt;/li>
-&lt;li>&lt;strong>Application Info:&lt;/strong> view logs and events related to the application and card reader. Useful for troubleshooting.&lt;/li>
-&lt;/ul>
-&lt;br>
-&lt;h2 id="personalize-a-card">Personalize a Card&lt;/h2>
-&lt;ol>
-&lt;li>Select the &lt;strong>Basic Card Personalization&lt;/strong> tab.&lt;/li>
-&lt;li>Insert the &lt;strong>SAM CPP&lt;/strong> into the SAM reader.&lt;/li>
-&lt;li>Enter the personalization parameters:
-&lt;ul>
-&lt;li>&lt;strong>AID&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>System keys KVC&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Work keys KIF and KVC&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Click &lt;strong>Start&lt;/strong> to begin scanning for the card.&lt;/li>
-&lt;li>Present a blank card to the card reader&amp;rsquo;s antenna.&lt;/li>
-&lt;/ol>
-&lt;br>
-&lt;h2 id="refresh-reader-detection">Refresh Reader Detection&lt;/h2>
-&lt;p>If you connect or disconnect card readers while the application is running, switch between the tabs (Basic Card
-Personalization, Application Info) to make the application recognize the changes.&lt;/p>
-&lt;br>
-&lt;h2 id="screenshots">Screenshots&lt;/h2>
-&lt;h3 id="installation-1">Installation&lt;/h3>
-&lt;figure >
-&lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="./media/cna-tool-basic-card-perso-app/install-dialog.png" alt="Installation" loading="lazy" data-zoomable />&lt;/div>
-&lt;/div>&lt;/figure>
-&lt;h3 id="settings">Settings&lt;/h3>
-&lt;figure >
-&lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="./media/cna-tool-basic-card-perso-app/settings-dialog.png" alt="Settings" loading="lazy" data-zoomable />&lt;/div>
-&lt;/div>&lt;/figure>
-&lt;h3 id="card-personalization">Card personalization&lt;/h3>
-&lt;figure >
-&lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="./media/cna-tool-basic-card-perso-app/personalization-tab.png" alt="Card personalization" loading="lazy" data-zoomable />&lt;/div>
-&lt;/div>&lt;/figure>
-&lt;h3 id="application-info">Application info&lt;/h3>
-&lt;figure >
-&lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="./media/cna-tool-basic-card-perso-app/info-and-logs-tab.png" alt="Application info" loading="lazy" data-zoomable />&lt;/div>
-&lt;/div>&lt;/figure>
-&lt;br>
-&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
-&lt;p>This tool is provided by CNA for its members. Only active CNA members are authorized to use this tool. A member is not
-authorized to distribute this tool to other parties.&lt;/p>
-&lt;br>
-&lt;h2 id="user-requirements-and-responsibilities">User Requirements and Responsibilities&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Target Audience:&lt;/strong> users familiar with Calypso Basic card personalization. Basic knowledge of smart card technology
-and security concepts is assumed.&lt;/li>
-&lt;li>&lt;strong>Prerequisites:&lt;/strong> necessary hardware (card reader, SAM reader) and software (drivers) installed and configured
-correctly.&lt;/li>
-&lt;li>&lt;strong>Responsibilities:&lt;/strong> ensure correct selection of the target card and SAM, proper handling of unlock values and
-sensitive information, and entering the correct personalization parameters (AID, KVC, KIFs).&lt;/li>
-&lt;li>&lt;strong>Usage:&lt;/strong> authorized personnel only. Misuse or unauthorized distribution is strictly prohibited.&lt;/li>
-&lt;/ul></description></item><item><title>Keyple plugin for Spirtech Calypso HSM</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/hsm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/hsm/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item></channel></rss>
+&lt;/ul></description></item></channel></rss>

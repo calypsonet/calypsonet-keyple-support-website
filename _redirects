@@ -1,15 +1,15 @@
 # Netlify redirects
 # Automatically generated
 # Documentation: https://docs.netlify.com/routing/redirects/
-/keyple-support/ticketing-demo/ /add-ons/demo/ticketing/
 /keyple-support/introduction/ /basics/introduction/
-/assistance-tools/card-configuration-audit/ /add-ons/tool/card-audit/
 /keyple-support/test-kit/ /basics/test-kit/
-/assistance-tools/basic-legacysam-personalizer/ /add-ons/tool/basic-sam/
 /keyple-support/compliance/ /basics/compliance/
-/assistance-tools/basic-card-personalizer/ /add-ons/tool/basic-card/
 /assistance-tools/overview/ /add-ons/tool/
 /assistance-tools/ /add-ons/tool/
 /keyple-support/reader-plugins/ /basics/reader-plugins/
 /keyple-support/licenses/ /basics/licenses/
+/keyple-support/ticketing-demo/ /add-ons/demo/ticketing/
+/assistance-tools/card-configuration-audit/ /add-ons/tool/card-audit/
+/assistance-tools/basic-card-personalizer/ /add-ons/tool/basic-card/
+/assistance-tools/basic-legacysam-personalizer/ /add-ons/tool/basic-sam/
 /keyple-support/ /basics/
