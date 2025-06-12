@@ -1,6 +1,6 @@
 ---
 title: Keyple extension for smart card solutions
-linkTitle: "Card Solution Extension"
+linkTitle: "Keyple extension - Card Solutions"
 type: book
 toc: false
 weight: 30

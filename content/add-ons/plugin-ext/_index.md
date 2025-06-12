@@ -1,6 +1,6 @@
 ---
 title: Keyple plugins for proprietary smart card readers
-linkTitle: "Keyple reader plugins"
+linkTitle: "Keyple extension - reader plugins"
 type: book
 toc: false
 weight: 20

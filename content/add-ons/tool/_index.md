@@ -1,6 +1,6 @@
 ---
 title: Assistance Tools built with Keyple
-linkTitle: "Assistance Tools"
+linkTitle: "Keyple-based Assistance Tools"
 aliases:
   - /assistance-tools/overview/
   - /assistance-tools/

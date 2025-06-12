@@ -1,6 +1,6 @@
 ---
 title: Demonstrator of Keyple
-linkTitle: "Keyple-based Demo"
+linkTitle: "Keyple Demonstrators"
 type: book
 weight: 10
 ---
