@@ -417,7 +417,7 @@ They are organized into four groups (&lt;code>group0&lt;/code> to &lt;code>group
 &lt;/li>
 &lt;/ul>
 &lt;h3 id="json-schema">JSON schema&lt;/h3>
-&lt;p>A JSON schema &lt;a href="./card-audit/calypso_app_profile.schema.json">calypso_app_profile.schema.json&lt;/a> is provided to validate the structure
+&lt;p>A JSON schema &lt;a href="./calypso_app_profile.schema.json">calypso_app_profile.schema.json&lt;/a> is provided to validate the structure
 and data types of your Calypso application profile.&lt;/p>
 &lt;br>
 &lt;h2 id="troubleshooting">Troubleshooting&lt;/h2>
