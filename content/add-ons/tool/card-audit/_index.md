@@ -420,7 +420,7 @@ They are organized into four groups (`group0` to `group3`), each representing a 
 
 ### JSON schema
 
-A JSON schema [calypso_app_profile.schema.json](calypso_app_profile.schema.json) is provided to validate the structure
+A JSON schema [calypso_app_profile.schema.json](./calypso_app_profile.schema.json) is provided to validate the structure
 and data types of your Calypso application profile.
 
 <br>
