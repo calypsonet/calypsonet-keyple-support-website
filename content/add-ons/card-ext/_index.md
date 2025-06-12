@@ -3,7 +3,7 @@ title: Keyple extension for smart card solutions
 linkTitle: "Card Solution Extension"
 type: book
 toc: false
-weight: 20
+weight: 30
 ---
 
 Complementary extensions to Keyple are scheduled for release in 2025 to manage other smart card solutions:

@@ -5,7 +5,7 @@ aliases:
   - /assistance-tools/basic-legacysam-personalizer/
 type: book
 toc: true
-weight: 30
+weight: 420
 ---
 
 <br>

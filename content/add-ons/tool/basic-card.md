@@ -5,7 +5,7 @@ aliases:
   - /assistance-tools/basic-card-personalizer/
 type: book
 toc: true
-weight: 40
+weight: 410
 ---
 
 <br>

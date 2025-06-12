@@ -5,7 +5,7 @@ aliases:
   - /assistance-tools/card-configuration-audit/
 type: book
 toc: true
-weight: 20
+weight: 400
 ---
 
 <br>
