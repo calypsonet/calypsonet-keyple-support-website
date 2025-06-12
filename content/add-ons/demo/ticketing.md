@@ -3,6 +3,7 @@ title: Keyple-based advanced ticketing demonstrator
 linkTitle: 🌍 Advanced Ticketing
 aliases:
   - /keyple-support/ticketing-demo/
+  - /add-ons/
 type: book
 toc: true
 weight: 100
