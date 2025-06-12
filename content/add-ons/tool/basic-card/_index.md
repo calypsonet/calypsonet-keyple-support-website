@@ -23,7 +23,7 @@ injecting Application Identifiers (AID) and security keys.
 
 This tool is essential for operators seeking to personalize **Calypso Basic** cards for use on their network by
 injecting keys stored in the **SAM CV/CV** available in the field. It utilizes a **SAM CPP** that has
-been personalized using the [basic-legacysam-personalizer]({{< relref "../basic-legacysam-personalizer" >}}) tool.
+been personalized using the [basic-legacysam-personalizer]({{< relref "../basic-sam/" >}}) tool.
 
 <br>
 

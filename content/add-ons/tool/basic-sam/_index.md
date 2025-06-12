@@ -23,7 +23,7 @@ dedicated to the personalization of **Calypso Basic** cards by injecting the nec
 
 #### Why use the Calypso Basic Legacy SAM Personalization Tool?
 This tool helps for operators who need to prepare **SAM CPP** for field deployment of **Calypso Basic** card 
-personalized with the [basic-card-personalizer]({{< relref "../basic-card-personalizer" >}}) tool.
+personalized with the [basic-card-personalizer]({{< relref "../basic-card/" >}}) tool.
 
 <br>
 
