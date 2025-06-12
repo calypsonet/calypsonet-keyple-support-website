@@ -1,6 +1,5 @@
 ---
-title: Assistance Tools built with Keyple
-linkTitle: "Assistance Tools"
+title: CNA add-ons of Keyple
 
 type: book
 ---
