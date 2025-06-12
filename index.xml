@@ -1,1 +1,856 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Calypso Networks Association Keyple Support</title><link>https://keyple-support.calypsonet.org/</link><atom:link href="https://keyple-support.calypsonet.org/index.xml" rel="self" type="application/rss+xml"/><description>Calypso Networks Association Keyple Support</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://keyple-support.calypsonet.org/media/logo.svg</url><title>Calypso Networks Association Keyple Support</title><link>https://keyple-support.calypsonet.org/</link></image><item><title>Keyple plugin for Coppernic smart card reader</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/coppernic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/coppernic/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>Keyple plugin for Famoco smart card reader</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/famoco/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/famoco/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>Keyple plugin for Flowbird smart card reader</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/flowbird/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/flowbird/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>Keyple plugin for Bluebird smart card reader</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/bluebird/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/bluebird/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>Keyple plugin for Spirtech Calyspo HSM</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/hsm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/hsm/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Calypso Networks Association Keyple Support</title><link>https://keyple-support.calypsonet.org/</link><atom:link href="https://keyple-support.calypsonet.org/index.xml" rel="self" type="application/rss+xml"/><description>Calypso Networks Association Keyple Support</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://keyple-support.calypsonet.org/media/logo.svg</url><title>Calypso Networks Association Keyple Support</title><link>https://keyple-support.calypsonet.org/</link></image><item><title>Keyple-based advanced ticketing demonstrator</title><link>https://keyple-support.calypsonet.org/add-ons/demo/ticketing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/demo/ticketing/</guid><description>&lt;p>To illustrate an advanced implementation of the Keyple Java middleware for Calypso-based ticketing systems, CNA has released a full ticketing demonstrator under the &lt;a href="https://opensource.org/license/bsd-3-clause" target="_blank" rel="noopener">3-Clause BSD License&lt;/a>.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th scope="col" rowspan="2">Ticketing Service &amp; repository&lt;/th>
+&lt;th scope="col" rowspan="2">Keyple integration&lt;/th>
+&lt;th scope="colgroup" colspan="2">Smartcard readers involved&lt;/th>
+&lt;th scope="col" rowspan="2">Optimization targets&lt;/th>
+&lt;/tr>
+&lt;tr>
+&lt;th scope="col">Calypso card&lt;/th>
+&lt;th scope="col">Calypso SAM&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;th scope="row">&lt;a href="https://github.com/calypsonet/keyple-java-demo-remote" target="_blank" rel="noopener">Remote sales &amp; reloading&lt;/a>&lt;/th>
+&lt;td>distributed Calypso applications
+&lt;ul>&lt;li>server with ticketing intelligence, based on Keyple&lt;/li>
+&lt;li>light client, Keyple-based or not&lt;/li>&lt;/ul>
+&lt;/td>
+&lt;td>Integrated on the distributed client side&lt;/td>
+&lt;td>Integrated on the distributed server side&lt;/td>
+&lt;td>
+&lt;ul>&lt;li>Limit the number of network messages between client and server&lt;/li>
+&lt;li>Enable client to be hosted on any light terminal without Keyple dependency&lt;/li>&lt;/ul>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;th scope="row">&lt;a href="https://github.com/calypsonet/keyple-android-demo-validation" target="_blank" rel="noopener">Validation&lt;/a>&lt;/th>
+&lt;td rowspan="2">standalone Calypso terminal application based on Keyple&lt;/td>
+&lt;td rowspan="2">Locally embedded&lt;/td>
+&lt;td rowspan="2">Locally embedded&lt;/td>
+&lt;td rowspan="2">Limit the number of card and SAM commands during the card transaction&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;th scope="row">&lt;a href="https://github.com/calypsonet/keyple-android-demo-control" target="_blank" rel="noopener">Control&lt;/a>&lt;/th>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="stand-alone-validation-and-control-terminals">Stand-alone validation and control terminals&lt;/h2>
+&lt;p>The architecture of validation and control tools is very similar, with only the ticketing transaction differing:&lt;/p>
+&lt;ul>
+&lt;li>For validation, the terminal checks that a valid ticket is present, records an event and authorizes access.&lt;/li>
+&lt;li>For control, the terminal checks that a recent validation event is valid.
+The ticketing data format is just an example defined for demonstration purposes.&lt;/li>
+&lt;/ul>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th scope="col">Terminal application&lt;/th>
+&lt;th scope="col">Language&lt;/th>
+&lt;th scope="col">OS&lt;/th>
+&lt;th scope="col">Supported devices&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;th scope="row">Validation&lt;/th>
+&lt;td rowspan="2">Kotlin&lt;/td>
+&lt;td rowspan="2">Android&lt;/td>
+&lt;td rowspan="2">Any Android device having
+&lt;ul>&lt;li>a contactless reader&lt;/li>
+&lt;li>&amp; a SAM reader&lt;/li>&lt;/ul>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;th scope="row">Control&lt;/th>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>These demos can be installed on various Android terminals such as Coppernic, Famoco, Flowbird, or Bluebird using the plugins provided by CNA.&lt;/p>
+&lt;p>Validation scenario:&lt;/p>
+&lt;ul>
+&lt;li>An autonomous validator on Android-based ticketing terminal that seamlessly starts a secure session when a contactless card is detected.&lt;/li>
+&lt;li>The machine checks the last transport event and the available ticketing contracts.&lt;/li>
+&lt;li>If access is granted, a new event is written.&lt;/li>
+&lt;/ul>
+&lt;p>Control scenario:&lt;/p>
+&lt;ul>
+&lt;li>A hand-held inspection terminal on Android portable terminal that allows an operator to check the content of a card.&lt;/li>
+&lt;li>The application verifies the validity of the last transport event regarding the current time and location.&lt;/li>
+&lt;li>Finally, it displays the result.&lt;/li>
+&lt;/ul>
+&lt;h2 id="remote-sales-and-reloading-distributed-service">Remote sales and reloading distributed service&lt;/h2>
+&lt;p>This demo requires a client/server environment:&lt;/p>
+&lt;ul>
+&lt;li>On the server side, the back-office includes a Java server application to process the ticketing sale and manage the Calypso secure session to reload contracts in remote cards. The server manages a pool of Calypso SAM using the PC/SC plugin and the Calypso SAM resource manager.&lt;/li>
+&lt;li>On the client side, &lt;span style="color: red;">any&lt;/span> terminal with a contactless reader provides the means to a customer to make the ticket purchase. The Calypso card commands are fully managed by the back-office ticketing server using the Keyple Distributed solution.&lt;/li>
+&lt;/ul>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th scope="col" colspan="2">Terminal application&lt;/th>
+&lt;th scope="col">Language / folder&lt;/th>
+&lt;th scope="col">OS&lt;/th>
+&lt;th scope="col">Supported devices&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;th scope="row" colspan="2">Sales / Reloading server&lt;br>(Keyple based)&lt;/th>
+&lt;td>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/tree/main/server" target="_blank" rel="noopener">Java&lt;/a>&lt;/td>
+&lt;td>Windows, Linux, macOS&lt;/td>
+&lt;td>Java Server with PC/SC SAM readers&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;th scope="rowgroup" rowspan="3">Sales / Reloading client&lt;/th>
+&lt;th scope="row">Keyple-based&lt;/th>
+&lt;td>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/tree/main/client/keyple-mobile-android" target="_blank" rel="noopener">Kotlin&lt;/a>&lt;/td>
+&lt;td rowspan="1">Android&lt;/td>
+&lt;td rowspan="1">Android NFC phone&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;th scope="rowgroup" rowspan="2">Keyple-less&lt;/th>
+&lt;td>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/tree/main/client/pc-dotnet" target="_blank" rel="noopener">.NET C#&lt;/a>&lt;br/>(without "interop" libs)&lt;/td>
+&lt;td>Windows&lt;/td>
+&lt;td>Windows PC with a PC/SC reader&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/tree/main/client/interop-mobile-multiplatform" target="_blank" rel="noopener">
+&lt;ul>&lt;li>Kotlin Multiplatform&lt;/li>
+&lt;li>&amp; Compose Multiplatform&lt;/li>&lt;/ul>
+&lt;/a>&lt;br/>(with "interop" libs)&lt;/td>
+&lt;td>&lt;!--Windows, Linux, macOS, -->Android, iOS&lt;/td>
+&lt;td>
+&lt;ul>&lt;li>&lt;span style="color: red;">any&lt;/span> NFC mobile&lt;/li>
+&lt;!--&lt;li>&lt;span style="color: red;">any&lt;/span> PC with a PC/SC reader&lt;/li>-->&lt;/ul>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Keyple plugin for Coppernic smart card reader</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/coppernic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/coppernic/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>Calypso card configuration audit tool</title><link>https://keyple-support.calypsonet.org/add-ons/tool/card-audit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/tool/card-audit/</guid><description>&lt;br>
+&lt;h4 id="what-is-the-cna-tool-card-analyzer-app-suite">What is the CNA Tool Card Analyzer App Suite?&lt;/h4>
+&lt;p>The CNA Tool Card Analyzer App Suite consists of two command-line tools:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Tool_AnalyzeCardFileStructure:&lt;/strong> analyzes the file structure of a Calypso smart card and generates a JSON report
+containing the card&amp;rsquo;s structure and application data.&lt;/li>
+&lt;li>&lt;strong>Tool_CheckCardFileStructure:&lt;/strong> checks the file structure of a Calypso card against a given JSON file containing the
+expected file structure.&lt;/li>
+&lt;/ul>
+&lt;h4 id="why-use-the-cna-tool-card-analyzer-app-suite">Why use the CNA Tool Card Analyzer App Suite?&lt;/h4>
+&lt;p>This suite helps developers and testers:&lt;/p>
+&lt;ul>
+&lt;li>Understand the data stored on a Calypso card.&lt;/li>
+&lt;li>Verify compliance with Calypso specifications.&lt;/li>
+&lt;li>Troubleshoot potential issues.&lt;/li>
+&lt;li>Compare card structure against a predefined template.&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;p>The following sections provide detailed instructions on using the CNA Tool Card Analyzer App Suite to retrieve and
+analyze the contents of a Calypso card and to verify its compliance against a reference file.&lt;/p>
+&lt;br>
+&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Java:&lt;/strong> ensure you have a Java Runtime Environment (JRE) installed on your system. You can download it
+from &lt;a href="https://www.java.com" target="_blank" rel="noopener">www.java.com&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>PC/SC card reader:&lt;/strong> a contactless PC/SC compliant card reader is required to interact with the Calypso card.&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;h2 id="download-the-apps">Download the Apps&lt;/h2>
+&lt;ol>
+&lt;li>Go to the &lt;a href="https://github.com/calypsonet/calypso-card-analyzer/releases" target="_blank" rel="noopener">releases page&lt;/a> to download the latest
+version of the application suite.&lt;/li>
+&lt;li>Download the executable JAR files:
+&lt;ul>
+&lt;li>&lt;code>Tool_AnalyzeCardFileStructure-x.y.z.jar&lt;/code>&lt;/li>
+&lt;li>&lt;code>Tool_CheckCardFileStructure-x.y.z.jar&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;br>
+&lt;h2 id="analyze-a-card">Analyze a Card&lt;/h2>
+&lt;ol>
+&lt;li>Open a terminal or command prompt.&lt;/li>
+&lt;li>Navigate to the directory containing &lt;code>Tool_AnalyzeCardFileStructure-x.y.z.jar&lt;/code>.&lt;/li>
+&lt;li>Place your Calypso card on the reader.&lt;/li>
+&lt;li>Execute the following command:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">java -jar Tool_AnalyzeCardFileStructure-x.y.z.jar &lt;span class="o">[&lt;/span>readerNameRegex&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;code>readerNameRegex&lt;/code> (optional): a regular expression to filter the card readers. If not provided, a default regex (
+&lt;code>.*(ASK.*|Identiv.*2|ACS ACR122U|SCR3310).*&lt;/code>) is used.&lt;/li>
+&lt;/ul>
+&lt;ol start="5">
+&lt;li>The analysis results will be displayed in the terminal and JSON file containing the card structure will be saved.&lt;/li>
+&lt;/ol>
+&lt;h3 id="supported-aid-prefixes">Supported AID Prefixes&lt;/h3>
+&lt;p>The &lt;code>Tool_AnalyzeCardFileStructure&lt;/code> is configured to recognize and analyze Calypso cards with specific AID prefixes. The
+supported prefixes are:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>A000000291&lt;/code>&lt;/li>
+&lt;li>&lt;code>A000000404&lt;/code>&lt;/li>
+&lt;li>&lt;code>D276000085&lt;/code>&lt;/li>
+&lt;li>&lt;code>334D54522E&lt;/code>&lt;/li>
+&lt;li>&lt;code>315449432E&lt;/code>&lt;/li>
+&lt;li>&lt;code>304554502E&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;p>If the card’s DF Name does not match one of the supported AID prefixes, you will need to update the configuration in the
+source code to include the new AID prefix and recompile the application for proper analysis.&lt;/p>
+&lt;h3 id="json-output">JSON Output&lt;/h3>
+&lt;p>The JSON output generated by &lt;code>Tool_AnalyzeCardFileStructure&lt;/code> provides a structured view of the Calypso smart card data
+analyzed. Below is an explanation of the key fields found in the JSON output:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;id&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;infos&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;date&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;version&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;integer&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;software&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;traceability&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;applicationList&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;fci&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;calypsoRevision&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;aid&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;applicationType&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;applicationSubtype&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;issuer&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;value&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;name&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;csn&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;csnDec&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;integer&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;sessionModif&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;sessionModifDec&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;integer&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;bufferSize&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;integer&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;platform&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;version&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;revision&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;transactionCounter&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;transactionCounterDec&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;integer&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;accessConditions&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;group0&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;accessCondition&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;keyLevel&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;description&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;group1&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;accessCondition&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;keyLevel&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;description&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;group2&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;accessCondition&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;keyLevel&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;description&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;group3&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;accessCondition&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;keyLevel&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;description&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;status&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;kif1&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;kif2&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;kif3&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;kvc1&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;kvc2&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;kvc3&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;lid&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;fileList&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;sfi&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;lid&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;efType&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;recSize&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;recSizeDec&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;integer&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;numRec&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;numRecDec&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;integer&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;accessConditions&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;group0&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;accessCondition&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;keyLevel&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;description&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;group1&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;accessCondition&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;keyLevel&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;description&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;group2&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;accessCondition&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;keyLevel&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;description&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;group3&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;accessCondition&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;keyLevel&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;description&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;ref&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;recordDataList&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;index&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;value&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="field-descriptions">Field Descriptions&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>id&lt;/strong>: &lt;em>string&lt;/em>, unique identifier for the profile.&lt;/li>
+&lt;li>&lt;strong>infos&lt;/strong>: &lt;em>string&lt;/em>, type of analysis performed (e.g., &lt;code>&amp;quot;AnalyzeCardFileStructure&amp;quot;&lt;/code>).&lt;/li>
+&lt;li>&lt;strong>date&lt;/strong>: &lt;em>string&lt;/em>, date and time when the analysis was conducted.&lt;/li>
+&lt;li>&lt;strong>version&lt;/strong>: &lt;em>integer&lt;/em>, JSON model version.&lt;/li>
+&lt;li>&lt;strong>software&lt;/strong>: &lt;em>string&lt;/em>, name of the software used for analysis (e.g., &lt;code>&amp;quot;Calypso Card Analyzer&amp;quot;&lt;/code>).&lt;/li>
+&lt;li>&lt;strong>traceability&lt;/strong>: &lt;em>string&lt;/em>, hexadecimal string encoding traceability information for auditing.&lt;/li>
+&lt;/ul>
+&lt;h4 id="application-list">Application List&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>applicationList&lt;/strong>: &lt;em>array&lt;/em>, list of applications on the card, each application containing the following fields:
+&lt;ul>
+&lt;li>&lt;strong>fci&lt;/strong>: &lt;em>string&lt;/em>, File Control Information for the application.&lt;/li>
+&lt;li>&lt;strong>calypsoRevision&lt;/strong>: &lt;em>string&lt;/em>, Calypso specification version, e.g., &lt;code>&amp;quot;PRIME_REVISION_3&amp;quot;&lt;/code>.&lt;/li>
+&lt;li>&lt;strong>aid&lt;/strong>: &lt;em>string&lt;/em>, Application Identifier (AID) in hexadecimal, (10-32 hexadecimal characters, 5-16 bytes).&lt;/li>
+&lt;li>&lt;strong>applicationType&lt;/strong>: &lt;em>string&lt;/em>, application type (2 hexadecimal characters, 1 byte).&lt;/li>
+&lt;li>&lt;strong>applicationSubtype&lt;/strong>: &lt;em>string&lt;/em>, application subtype (2 hexadecimal characters, 1 byte).&lt;/li>
+&lt;li>&lt;strong>issuer&lt;/strong>: &lt;em>object&lt;/em>, issuer information:
+&lt;ul>
+&lt;li>&lt;strong>value&lt;/strong>: &lt;em>string&lt;/em>, issuer identifier (2 hexadecimal characters, 1 byte).&lt;/li>
+&lt;li>&lt;strong>name&lt;/strong>: &lt;em>string&lt;/em>, issuer name.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>csn&lt;/strong>: &lt;em>string&lt;/em>, Card Serial Number in hexadecimal format.&lt;/li>
+&lt;li>&lt;strong>csnDec&lt;/strong>: &lt;em>integer&lt;/em>, Card Serial Number in decimal format.&lt;/li>
+&lt;li>&lt;strong>sessionModif&lt;/strong>: &lt;em>string&lt;/em>, session modification identifier in hexadecimal.&lt;/li>
+&lt;li>&lt;strong>sessionModifDec&lt;/strong>: &lt;em>integer&lt;/em>, session modification identifier in decimal.&lt;/li>
+&lt;li>&lt;strong>bufferSize&lt;/strong>: &lt;em>integer&lt;/em>, maximum buffer size allowed for the application.&lt;/li>
+&lt;li>&lt;strong>platform&lt;/strong>: &lt;em>string&lt;/em>, platform identifier.&lt;/li>
+&lt;li>&lt;strong>version&lt;/strong>: &lt;em>string&lt;/em>, application version (2 hexadecimal characters, 1 byte).&lt;/li>
+&lt;li>&lt;strong>revision&lt;/strong>: &lt;em>string&lt;/em>, application revision (2 hexadecimal characters, 1 byte).&lt;/li>
+&lt;li>&lt;strong>transactionCounter&lt;/strong>: &lt;em>string&lt;/em>, transaction counter in hexadecimal or &lt;code>&amp;quot;Not available&amp;quot;&lt;/code>.&lt;/li>
+&lt;li>&lt;strong>transactionCounterDec&lt;/strong>: &lt;em>integer&lt;/em>, transaction counter in decimal format.&lt;/li>
+&lt;li>&lt;strong>accessConditions&lt;/strong>: &lt;em>object&lt;/em>, access conditions by group:
+&lt;ul>
+&lt;li>&lt;strong>group0&lt;/strong> to &lt;strong>group3&lt;/strong>: each group includes:
+&lt;ul>
+&lt;li>&lt;strong>accessCondition&lt;/strong>: &lt;em>string&lt;/em>, access condition (2 hexadecimal characters, 1 byte).&lt;/li>
+&lt;li>&lt;strong>keyLevel&lt;/strong>: &lt;em>string&lt;/em>, key level (2 hexadecimal characters, 1 byte).&lt;/li>
+&lt;li>&lt;strong>description&lt;/strong>: &lt;em>string&lt;/em>, description of the access condition.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>status&lt;/strong>: &lt;em>string&lt;/em>, application status (2 hexadecimal characters, 1 byte).&lt;/li>
+&lt;li>&lt;strong>kif1&lt;/strong> to &lt;strong>kif3&lt;/strong>: &lt;em>string&lt;/em>, key identifiers (2 hexadecimal characters, 1 byte).&lt;/li>
+&lt;li>&lt;strong>kvc1&lt;/strong> to &lt;strong>kvc3&lt;/strong>: &lt;em>string&lt;/em>, key version and category (2 hexadecimal characters, 1 byte).&lt;/li>
+&lt;li>&lt;strong>lid&lt;/strong>: &lt;em>string&lt;/em>, long identifier of the application (4 hexadecimal characters, 2 bytes).&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="file-list">File List&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>fileList&lt;/strong>: &lt;em>array&lt;/em>, list of files within the application, each file containing the following fields:
+&lt;ul>
+&lt;li>&lt;strong>sfi&lt;/strong>: &lt;em>string&lt;/em>, short file identifier (2 hexadecimal characters, 1 byte).&lt;/li>
+&lt;li>&lt;strong>lid&lt;/strong>: &lt;em>string&lt;/em>, long file identifier (4 hexadecimal characters, 2 bytes).&lt;/li>
+&lt;li>&lt;strong>efType&lt;/strong>: &lt;em>string&lt;/em>, elementary file (EF) type (2 hexadecimal characters, 1 byte), e.g., &lt;code>&amp;quot;00&amp;quot;&lt;/code> for DF, &lt;code>&amp;quot;01&amp;quot;&lt;/code> for binary file, &lt;code>&amp;quot;02&amp;quot;&lt;/code> for linear file.&lt;/li>
+&lt;li>&lt;strong>recSize&lt;/strong>: &lt;em>string&lt;/em>, record size in hexadecimal (4 characters, 2 bytes).&lt;/li>
+&lt;li>&lt;strong>recSizeDec&lt;/strong>: &lt;em>integer&lt;/em>, record size in decimal.&lt;/li>
+&lt;li>&lt;strong>numRec&lt;/strong>: &lt;em>string&lt;/em>, number of records in hexadecimal (2 characters, 1 byte).&lt;/li>
+&lt;li>&lt;strong>numRecDec&lt;/strong>: &lt;em>integer&lt;/em>, number of records in decimal.&lt;/li>
+&lt;li>&lt;strong>accessConditions&lt;/strong>: &lt;em>object&lt;/em>, file-specific access conditions with groups &lt;strong>group0&lt;/strong> to &lt;strong>group3&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>ref&lt;/strong>: &lt;em>string&lt;/em>, reference identifier for the file.&lt;/li>
+&lt;li>&lt;strong>recordDataList&lt;/strong>: &lt;em>array&lt;/em>, list of record data in the file, each entry containing:
+&lt;ul>
+&lt;li>&lt;strong>index&lt;/strong>: &lt;em>string&lt;/em>, record index in hexadecimal (2 characters, 1 byte).&lt;/li>
+&lt;li>&lt;strong>value&lt;/strong>: &lt;em>string&lt;/em>, record data in hexadecimal.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="check-a-card-structure">Check a card structure&lt;/h2>
+&lt;ol>
+&lt;li>Open a terminal or command prompt.&lt;/li>
+&lt;li>Navigate to the directory containing &lt;code>Tool_CheckCardFileStructure-x.y.z.jar&lt;/code>.&lt;/li>
+&lt;li>&lt;strong>Obtain a JSON file defining the expected card structure:&lt;/strong>
+&lt;ul>
+&lt;li>You can use a pre-defined JSON file from the &lt;code>card_profiles&lt;/code> directory in the GitHub repository. The file names
+indicate the type of product they correspond to.&lt;/li>
+&lt;li>Alternatively, you can create your own JSON file defining the expected structure.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Place your Calypso card on the reader and keep it still.&lt;/li>
+&lt;li>Execute the following command:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">java -jar Tool_CheckCardFileStructure-x.y.z.jar &amp;lt;path-to-json-file&amp;gt; &lt;span class="o">[&lt;/span>readerNameRegex&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;code>&amp;lt;path-to-json-file&amp;gt;&lt;/code>: &lt;strong>(Required)&lt;/strong> The path to the JSON file containing the expected card structure. This argument
+should be replaced with the actual path to your JSON file (e.g., &lt;code>card_profiles/my_card_profile.json&lt;/code>).&lt;/li>
+&lt;li>&lt;code>readerNameRegex&lt;/code> (optional): a regular expression to filter the card readers. If not provided, a default regex (
+&lt;code>.*(ASK.*|Identiv.*2|ACS ACR122U|SCR3310).*&lt;/code>) is used.&lt;/li>
+&lt;/ul>
+&lt;ol start="6">
+&lt;li>The tool will compare the card&amp;rsquo;s structure with the provided JSON file and display a report showing the differences
+if any.&lt;/li>
+&lt;/ol>
+&lt;br>
+&lt;h2 id="understanding-the-json-card-profile">Understanding the JSON card profile&lt;/h2>
+&lt;p>The JSON file used by the &lt;code>Tool_CheckCardFileStructure&lt;/code> tool defines the expected structure of a Calypso card.
+This section provides a detailed description of the JSON profile.&lt;/p>
+&lt;h3 id="overview">Overview&lt;/h3>
+&lt;p>The file is organized hierarchically with the following elements:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>id:&lt;/strong> A unique identifier for the profile.&lt;/li>
+&lt;li>&lt;strong>version:&lt;/strong> Version number of the profile format.&lt;/li>
+&lt;li>&lt;strong>applicationList:&lt;/strong> A list of all Calypso applications expected to be present in the card. Each application is
+represented by a JSON object with specific details.&lt;/li>
+&lt;/ul>
+&lt;h3 id="json-structure">JSON Structure&lt;/h3>
+&lt;p>Here&amp;rsquo;s a representation of the JSON structure, showing the hierarchy of elements:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;id&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;version&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;integer&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;applicationList&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;calypsoRevision&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;aid&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;applicationType&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;applicationSubtype&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;accessConditions&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;group0&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;accessCondition&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;keyLevel&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;group1&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;accessCondition&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;keyLevel&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;group2&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;accessCondition&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;keyLevel&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;group3&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;accessCondition&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;keyLevel&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;status&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;kif1&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;kif2&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;kif3&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;kvc1&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;kvc2&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;kvc3&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;lid&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;fileList&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;sfi&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;lid&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;efType&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;recSize&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;numRec&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;accessConditions&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;group0&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;accessCondition&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;keyLevel&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;group1&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;accessCondition&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;keyLevel&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;group2&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;accessCondition&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;keyLevel&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;group3&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;accessCondition&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;keyLevel&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;string&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="application-structure">Application Structure&lt;/h3>
+&lt;p>Each &amp;ldquo;application&amp;rdquo; object in &lt;code>applicationList&lt;/code> contains the following information:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>calypsoRevision:&lt;/strong> Version of the Calypso specification used. Possible values are: &lt;code>PRIME_REVISION_3&lt;/code>, &lt;code>LIGHT&lt;/code>, &lt;code>BASIC&lt;/code>.&lt;/li>
+&lt;li>&lt;strong>aid:&lt;/strong> Application Identifier (AID) as defined in ISO7816-4, a unique identifier for the application.&lt;/li>
+&lt;li>&lt;strong>applicationType:&lt;/strong> Type of product (string, 2 hexadecimal characters, 1 byte). This field indicates the general category of the application on the Calypso
+card. For the purposes of this profile, the relevant values are:
+&lt;ul>
+&lt;li>&lt;code>2x&lt;/code>: Calypso Prime Revision 3. The &lt;code>x&lt;/code> digit further specifies the available options within Prime Revision 3.&lt;/li>
+&lt;li>&lt;code>90h&lt;/code>: Calypso Light.&lt;/li>
+&lt;li>&lt;code>98h&lt;/code>: Calypso Basic.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>applicationSubtype:&lt;/strong> Identifier of the application&amp;rsquo;s file structure (string, 2 hexadecimal characters, 1 byte, for
+values see Calypso Files specification).&lt;/li>
+&lt;li>&lt;strong>accessConditions:&lt;/strong> &lt;a href="#access-conditions">See Access Conditions&lt;/a>&lt;/li>
+&lt;li>&lt;strong>status:&lt;/strong> Status of the application (string, 2 hexadecimal characters, 1 byte). This field indicates the operational status of the application. It is expected
+to be &lt;code>00h&lt;/code>.&lt;/li>
+&lt;li>&lt;strong>kif1&lt;/strong>, &lt;strong>kif2&lt;/strong>, &lt;strong>kif3:&lt;/strong> Key Identifiers associated with the three key levels: Issuer, Load, Debit (string, 2 hexadecimal characters, 1 byte).&lt;/li>
+&lt;li>&lt;strong>kvc1&lt;/strong>, &lt;strong>kvc2&lt;/strong>, &lt;strong>kvc3:&lt;/strong> Key Version and Category associated with the three key levels: Issuer, Load, Debit (string, 2 hexadecimal characters, 1 byte).&lt;/li>
+&lt;li>&lt;strong>lid:&lt;/strong> Long File Identifier of the DF (string, 4 hexadecimal characters, 2 bytes).&lt;/li>
+&lt;li>&lt;strong>fileList:&lt;/strong> A list of files within the application &lt;a href="#file-structure">See File Structure&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h3 id="file-structure">File Structure&lt;/h3>
+&lt;p>Each &amp;ldquo;file&amp;rdquo; object in &lt;code>fileList&lt;/code> contains the following:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>sfi:&lt;/strong> Short File Identifier identifying an EF (string, 2 hexadecimal characters, 1 byte, value from 01h to 1Eh). An EF may have no SFI (indicated
+by the value 00h).&lt;/li>
+&lt;li>&lt;strong>lid:&lt;/strong> Long File Identifier (string, 4 hexadecimal characters, 2 bytes).&lt;/li>
+&lt;li>&lt;strong>efType:&lt;/strong> Elementary File type (string, 2 hexadecimal characters, 1 byte):
+&lt;ul>
+&lt;li>&lt;code>00h&lt;/code>: DF&lt;/li>
+&lt;li>&lt;code>01h&lt;/code>: Binary file&lt;/li>
+&lt;li>&lt;code>02h&lt;/code>: Linear file&lt;/li>
+&lt;li>&lt;code>04h&lt;/code>: Cyclic file&lt;/li>
+&lt;li>&lt;code>08h&lt;/code>: Simulated Counter file&lt;/li>
+&lt;li>&lt;code>09h&lt;/code>: Counters file&lt;/li>
+&lt;li>Other: RFU value (forbidden)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>recSize:&lt;/strong> Record size in bytes (string, 4 hexadecimal characters, 2 byte).&lt;/li>
+&lt;li>&lt;strong>numRec:&lt;/strong> Number of records in the file (string, 2 hexadecimal characters, 1 byte).&lt;/li>
+&lt;li>&lt;strong>accessConditions:&lt;/strong> &lt;a href="#access-conditions">See Access Conditions&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="access-conditions">Access Conditions&lt;/h3>
+&lt;p>Access conditions define the security rules for accessing files and executing commands within a Calypso application.
+They are organized into four groups (&lt;code>group0&lt;/code> to &lt;code>group3&lt;/code>), each representing a category of commands.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>accessCondition:&lt;/strong> Specifies the access condition (string, 2 hexadecimal characters, 1 byte). Possible values are:
+&lt;ul>
+&lt;li>&lt;code>00h&lt;/code>: Never or no command associated with this group&lt;/li>
+&lt;li>&lt;code>01h&lt;/code>: PIN&lt;/li>
+&lt;li>&lt;code>10h&lt;/code>: Session&lt;/li>
+&lt;li>&lt;code>14h&lt;/code>: Confidential&lt;/li>
+&lt;li>&lt;code>15h&lt;/code>: Confidential &amp;amp; PIN&lt;/li>
+&lt;li>&lt;code>1Fh&lt;/code>: Always&lt;/li>
+&lt;li>Other: RFU value (forbidden)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>keyLevel:&lt;/strong> Key level for access validation (string, 2 hexadecimal characters, 1 byte):
+&lt;ul>
+&lt;li>&lt;code>01h&lt;/code>: Issuer Key&lt;/li>
+&lt;li>&lt;code>02h&lt;/code>: Load Key&lt;/li>
+&lt;li>&lt;code>03h&lt;/code>: Debit Key&lt;/li>
+&lt;li>Other: RFU value (forbidden)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="json-schema">JSON schema&lt;/h3>
+&lt;p>A JSON schema &lt;a href="./card-audit/calypso_app_profile.schema.json">calypso_app_profile.schema.json&lt;/a> is provided to validate the structure
+and data types of your Calypso application profile.&lt;/p>
+&lt;br>
+&lt;h2 id="troubleshooting">Troubleshooting&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Card not found:&lt;/strong> ensure your card reader is correctly connected and installed, and that the card is presented
+correctly.&lt;/li>
+&lt;li>&lt;strong>Java not found:&lt;/strong> ensure Java is installed and that its directory is added to your system&amp;rsquo;s PATH environment variable.&lt;/li>
+&lt;li>&lt;strong>Error messages:&lt;/strong> carefully read any error messages displayed in the terminal for clues on how to resolve the issue.&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>This software is provided under the terms of the Eclipse Public License 2.0. See the LICENSE file for more information.&lt;/p>
+&lt;br>
+&lt;h2 id="user-requirements-and-responsibilities">User Requirements and Responsibilities&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Target Audience:&lt;/strong> Developers, testers, and anyone interested in analyzing or verifying Calypso card data. Basic
+knowledge of smart card technology and command-line interfaces is recommended.&lt;/li>
+&lt;li>&lt;strong>Prerequisites:&lt;/strong> Java Runtime Environment, a PC/SC compliant contactless card reader, and necessary drivers.&lt;/li>
+&lt;li>&lt;strong>Responsibilities:&lt;/strong>
+&lt;ul>
+&lt;li>Ensure proper handling of the card and responsible use&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Keyple plugin for Famoco smart card reader</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/famoco/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/famoco/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>Keyple plugin for Flowbird smart card reader</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/flowbird/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/flowbird/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>Basic keyset legacy SAM personalization tool</title><link>https://keyple-support.calypsonet.org/add-ons/tool/basic-sam/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/tool/basic-sam/</guid><description>&lt;br>
+&lt;h4 id="what-is-the-calypso-basic-legacy-sam-personalization-tool">What is the Calypso Basic Legacy SAM Personalization Tool?&lt;/h4>
+&lt;p>The Calypso Basic Legacy SAM Personalization Tool is a desktop application designed to create a &lt;strong>SAM CPP&lt;/strong> specifically
+dedicated to the personalization of &lt;strong>Calypso Basic&lt;/strong> cards by injecting the necessary keys.&lt;/p>
+&lt;p>&lt;strong>Key Features:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>SAM Dump&lt;/strong>: Displays the SAM parameters and keys settings.&lt;/li>
+&lt;li>&lt;strong>SAM Personalization&lt;/strong>: Enables the transfer of keys and configurations from an origin &lt;strong>SAM SP&lt;/strong> to a blank
+&lt;strong>SAM CPP&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Dual Reader Setup&lt;/strong>: Requires a Target SAM Reader for the blank SAM and an Origin SAM Reader containing the
+&lt;strong>SAM SP&lt;/strong> with desired settings and keys.&lt;/li>
+&lt;/ul>
+&lt;h4 id="why-use-the-calypso-basic-legacy-sam-personalization-tool">Why use the Calypso Basic Legacy SAM Personalization Tool?&lt;/h4>
+&lt;p>This tool helps for operators who need to prepare &lt;strong>SAM CPP&lt;/strong> for field deployment of &lt;strong>Calypso Basic&lt;/strong> card
+personalized with the &lt;a href="./add-ons/tool/basic-card/">basic-card-personalizer&lt;/a> tool.&lt;/p>
+&lt;br>
+&lt;p>This user guide explains how to personalize a &lt;strong>SAM CPP&lt;/strong> needed for &lt;strong>Calypso Basic&lt;/strong> card keys injection.&lt;/p>
+&lt;br>
+&lt;h2 id="hardware-requirements">Hardware Requirements&lt;/h2>
+&lt;p>This tool requires two PC/SC contact readers:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Target SAM Reader:&lt;/strong> this reader holds the blank &lt;strong>SAM CPP&lt;/strong> you want to personalize.&lt;/li>
+&lt;li>&lt;strong>Origin SAM Reader:&lt;/strong> this reader contains the &lt;strong>SAM SP&lt;/strong> with the desired keys and settings.&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;h2 id="installation">Installation&lt;/h2>
+&lt;ol>
+&lt;li>The software is available in a GitHub repository. Go to
+the &lt;a href="https://github.com/calypsonet/cna-tool-basic-card-perso-app/releases" target="_blank" rel="noopener">releases page&lt;/a> to download it. (Note:
+the GitHub repository is private. Please request access from &lt;a href="https://calypsonet.org" target="_blank" rel="noopener">CNA&lt;/a>). Choose the installation
+file that matches your operating system:
+&lt;ul>
+&lt;li>&lt;strong>Windows:&lt;/strong> &lt;code>.msi&lt;/code> package&lt;/li>
+&lt;li>&lt;strong>macOS:&lt;/strong> &lt;code>.dmg&lt;/code> package (available in both arm64 version for Apple Silicon Macs and x64 version for Intel Macs)&lt;/li>
+&lt;li>&lt;strong>Linux:&lt;/strong> &lt;code>.deb&lt;/code> package&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Windows:&lt;/strong> double-click the &lt;code>.msi&lt;/code> package to start the installation.&lt;/li>
+&lt;li>&lt;strong>macOS:&lt;/strong>
+&lt;ul>
+&lt;li>Open the &lt;code>.dmg&lt;/code> file and drag the application to the Applications folder&lt;/li>
+&lt;li>Since the application is not signed with an Apple developer certificate, you&amp;rsquo;ll need to authorize it:
+&lt;ol>
+&lt;li>When first launching the app, you may see a security warning&lt;/li>
+&lt;li>Go to System Settings &amp;gt; Privacy &amp;amp; Security&lt;/li>
+&lt;li>Scroll down to find the message about the blocked application&lt;/li>
+&lt;li>Click &amp;ldquo;Open Anyway&amp;rdquo; to authorize the application&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Linux:&lt;/strong> use your distribution&amp;rsquo;s package manager to install the &lt;code>.deb&lt;/code> package.&lt;/li>
+&lt;li>&lt;strong>Important note:&lt;/strong> the installer does not automatically create a shortcut in the Start Menu (Windows) or
+Applications menu (macOS). You need to create one manually.
+&lt;br>&lt;/li>
+&lt;/ol>
+&lt;h2 id="launch-the-tool">Launch the Tool&lt;/h2>
+&lt;ol>
+&lt;li>After installation, find the executable in the installation directory:
+&lt;ul>
+&lt;li>&lt;strong>Windows:&lt;/strong> &lt;code>C:\Program Files\cna-tool-basic-legacysam-perso-app\&lt;/code>&lt;/li>
+&lt;li>&lt;strong>macOS:&lt;/strong> &lt;code>/Applications/cna-tool-basic-legacysam-perso-app/&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Linux:&lt;/strong> &lt;code>/opt/cna-tool-basic-legacysam-perso-app/&lt;/code> (or your user&amp;rsquo;s home directory)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Double-click the executable to launch the Calypso Basic Legacy SAM Personalization Tool.&lt;/li>
+&lt;/ol>
+&lt;br>
+&lt;h2 id="application-ui">Application UI&lt;/h2>
+&lt;p>The application window has a top menu and three tabs:&lt;/p>
+&lt;h3 id="settings-menu">Settings Menu&lt;/h3>
+&lt;ol>
+&lt;li>Click the &lt;strong>Settings&lt;/strong> menu.&lt;/li>
+&lt;li>Select the &lt;strong>Target SAM Reader&lt;/strong> name. This is where you will insert your blank SAM.&lt;/li>
+&lt;li>Select the &lt;strong>Origin SAM Reader&lt;/strong> name. This SAM contains the data you want to transfer to the target SAM.&lt;/li>
+&lt;li>Enter the &lt;strong>Origin SAM Unlock Value&lt;/strong> if required.&lt;/li>
+&lt;/ol>
+&lt;h3 id="tabs">Tabs&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>SAM Dump:&lt;/strong> shows the detailed information and parameters of the SAM inserted in the target SAM reader.&lt;/li>
+&lt;li>&lt;strong>SAM Personalization:&lt;/strong> configure and execute the personalization process.&lt;/li>
+&lt;li>&lt;strong>Application Info:&lt;/strong> view logs and events related to the application and SAM readers. Useful for troubleshooting.&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;h2 id="personalize-a-sam-cpp">Personalize a SAM CPP&lt;/h2>
+&lt;ol>
+&lt;li>Select the &lt;strong>SAM Personalization&lt;/strong> tab.&lt;/li>
+&lt;li>Insert a blank SAM in the target SAM reader.&lt;/li>
+&lt;li>Insert the SAM SP in the origin SAM reader.&lt;/li>
+&lt;li>Set the parameters:
+&lt;ul>
+&lt;li>Parameter version and owner data (informative)&lt;/li>
+&lt;li>System keys KVC&lt;/li>
+&lt;li>Work keys KIF and KVC&lt;/li>
+&lt;li>Lock parameters&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Click &lt;strong>Execute&lt;/strong> to personalize your SAM.&lt;/li>
+&lt;/ol>
+&lt;br>
+&lt;h2 id="refresh-reader-detection">Refresh Reader Detection&lt;/h2>
+&lt;p>If you connect or disconnect SAM readers while the application is running, you might need to switch between the tabs
+(SAM Dump, SAM Personalization, Application Info) for the application to recognize the changes.&lt;/p>
+&lt;br>
+&lt;h2 id="screenshots">Screenshots&lt;/h2>
+&lt;h3 id="installation-1">Installation&lt;/h3>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./media/cna-tool-basic-legacysam-perso-app/install-dialog.png" alt="Installation" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;h3 id="settings">Settings&lt;/h3>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./media/cna-tool-basic-legacysam-perso-app/settings-dialog.png" alt="Settings" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;h3 id="sam-dump">SAM dump&lt;/h3>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./media/cna-tool-basic-legacysam-perso-app/dump-tab.png" alt="SAM dump" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;h3 id="sam-personalization">SAM personalization&lt;/h3>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./media/cna-tool-basic-legacysam-perso-app/personalization-tab.png" alt="SAM personalization" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;h3 id="application-info">Application info&lt;/h3>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./media/cna-tool-basic-legacysam-perso-app/info-and-logs-tab.png" alt="Application info" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;br>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>This tool is provided by CNA for its members. Only active CNA members are authorized to use this tool. A member is not
+authorized to distribute this tool to other parties.&lt;/p>
+&lt;br>
+&lt;h2 id="user-requirements-and-responsibilities">User Requirements and Responsibilities&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Target Audience:&lt;/strong> users familiar with SAM personalization and the Calypso system.&lt;/li>
+&lt;li>&lt;strong>Prerequisites:&lt;/strong> necessary hardware (SAM readers) and software (drivers) installed and configured correctly.&lt;/li>
+&lt;li>&lt;strong>Responsibilities:&lt;/strong> ensure the correct selection of target and origin SAMs, and the proper handling of unlock values
+and other sensitive information.&lt;/li>
+&lt;li>&lt;strong>Usage:&lt;/strong> authorized personnel only. Misuse or unauthorized distribution is strictly prohibited.&lt;/li>
+&lt;/ul></description></item><item><title>Keyple plugin for Bluebird smart card reader</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/bluebird/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/bluebird/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>Calypso keyset basic card personalization tool</title><link>https://keyple-support.calypsonet.org/add-ons/tool/basic-card/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/tool/basic-card/</guid><description>&lt;br>
+&lt;h4 id="what-is-the-calypso-basic-card-personalization-tool">What is the Calypso Basic Card Personalization Tool?&lt;/h4>
+&lt;p>The Calypso Basic Card Personalization Tool is a desktop application designed for personalizing &lt;strong>Calypso Basic&lt;/strong> cards by
+injecting Application Identifiers (AID) and security keys.&lt;/p>
+&lt;p>&lt;strong>Key Features:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>AID and Key Injection&lt;/strong>: Enables the injection of AID and encryption keys into a blank &lt;strong>Calypso Basic&lt;/strong> card.&lt;/li>
+&lt;li>&lt;strong>Dual Reader Setup&lt;/strong>: Requires a Target Card Reader for the blank card and a SAM Reader containing the &lt;strong>SAM CPP&lt;/strong> for secure key injection.&lt;/li>
+&lt;/ul>
+&lt;h4 id="why-use-the-calypso-basic-card-personalization-tool">Why use the Calypso Basic Card Personalization Tool?&lt;/h4>
+&lt;p>This tool is essential for operators seeking to personalize &lt;strong>Calypso Basic&lt;/strong> cards for use on their network by
+injecting keys stored in the &lt;strong>SAM CV/CV&lt;/strong> available in the field. It utilizes a &lt;strong>SAM CPP&lt;/strong> that has
+been personalized using the &lt;a href="./add-ons/tool/basic-sam/">basic-legacysam-personalizer&lt;/a> tool.&lt;/p>
+&lt;br>
+&lt;p>This user guide explains how to personalize a &lt;strong>Calypso Basic&lt;/strong> card (AID and keys injection).&lt;/p>
+&lt;br>
+&lt;h2 id="hardware-requirements">Hardware Requirements&lt;/h2>
+&lt;p>This tool requires two PC/SC readers:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Target Card Reader:&lt;/strong> this contactless reader holds the &lt;strong>blank card&lt;/strong> you want to personalize.&lt;/li>
+&lt;li>&lt;strong>SAM Reader:&lt;/strong> this contact reader contains the &lt;strong>SAM CPP&lt;/strong> used for keys injection.&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;h2 id="installation">Installation&lt;/h2>
+&lt;ol>
+&lt;li>The software is available in a GitHub repository. Go to
+the &lt;a href="https://github.com/calypsonet/cna-tool-basic-legacysam-perso-app/releases" target="_blank" rel="noopener">releases page&lt;/a> to download it. (Note:
+the GitHub repository is private. Please request access from &lt;a href="https://calypsonet.org" target="_blank" rel="noopener">CNA&lt;/a>). Choose the installation
+file that matches your operating system:
+&lt;ul>
+&lt;li>&lt;strong>Windows:&lt;/strong> &lt;code>.msi&lt;/code> package&lt;/li>
+&lt;li>&lt;strong>macOS:&lt;/strong> &lt;code>.dmg&lt;/code> package (available in both arm64 version for Apple Silicon Macs and x64 version for Intel Macs)&lt;/li>
+&lt;li>&lt;strong>Linux:&lt;/strong> &lt;code>.deb&lt;/code> package&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Windows:&lt;/strong> double-click the &lt;code>.msi&lt;/code> package to start the installation process.&lt;/li>
+&lt;li>&lt;strong>macOS:&lt;/strong>
+&lt;ul>
+&lt;li>Open the &lt;code>.dmg&lt;/code> file and drag the application to the Applications folder&lt;/li>
+&lt;li>Since the application is not signed with an Apple developer certificate, you&amp;rsquo;ll need to authorize it:
+&lt;ol>
+&lt;li>When first launching the app, you may see a security warning&lt;/li>
+&lt;li>Go to System Settings &amp;gt; Privacy &amp;amp; Security&lt;/li>
+&lt;li>Scroll down to find the message about the blocked application&lt;/li>
+&lt;li>Click &amp;ldquo;Open Anyway&amp;rdquo; to authorize the application&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Linux:&lt;/strong> use your distribution&amp;rsquo;s package manager to install the &lt;code>.deb&lt;/code> package.&lt;/li>
+&lt;li>&lt;strong>Important note:&lt;/strong> currently, the installer does not automatically create a shortcut in the Start Menu (Windows) or
+Applications menu (macOS). If you want quick access, you will need to create a shortcut manually.&lt;/li>
+&lt;/ol>
+&lt;br>
+&lt;h2 id="launch-the-tool">Launch the Tool&lt;/h2>
+&lt;ol>
+&lt;li>Once the installation is complete, you can find the executable in the installation directory. The default location
+varies depending on your operating system:
+&lt;ul>
+&lt;li>&lt;strong>Windows:&lt;/strong> &lt;code>C:\Program Files\cna-tool-basic-card-perso-app\&lt;/code>&lt;/li>
+&lt;li>&lt;strong>macOS:&lt;/strong> &lt;code>/Applications/cna-tool-basic-card-perso-app/&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Linux:&lt;/strong> &lt;code>/opt/cna-tool-basic-card-perso-app/&lt;/code> (or in your user&amp;rsquo;s home directory if you installed it
+locally)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Double-click the executable to launch the &lt;strong>Calypso Basic Card Personalization Tool&lt;/strong>.&lt;/li>
+&lt;/ol>
+&lt;br>
+&lt;h2 id="application-ui">Application UI&lt;/h2>
+&lt;p>The application window has a top menu and two tabs:&lt;/p>
+&lt;h3 id="settings-menu">Settings Menu&lt;/h3>
+&lt;ol>
+&lt;li>Click the &lt;strong>Settings&lt;/strong> menu.&lt;/li>
+&lt;li>Select the &lt;strong>Target Card Reader&lt;/strong> name. This is where you will present your blank Calypso Basic card.&lt;/li>
+&lt;li>Select the &lt;strong>SAM Reader&lt;/strong> name.&lt;/li>
+&lt;li>Enter the &lt;strong>SAM Unlock Value&lt;/strong> if required.&lt;/li>
+&lt;li>Select the directory for the log file.&lt;/li>
+&lt;/ol>
+&lt;h3 id="tabs">Tabs&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Basic Card Personalization:&lt;/strong> configure and personalize the card. Set parameters like AID, KVC, and KIFs, and
+start/stop the personalization process.&lt;/li>
+&lt;li>&lt;strong>Application Info:&lt;/strong> view logs and events related to the application and card reader. Useful for troubleshooting.&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;h2 id="personalize-a-card">Personalize a Card&lt;/h2>
+&lt;ol>
+&lt;li>Select the &lt;strong>Basic Card Personalization&lt;/strong> tab.&lt;/li>
+&lt;li>Insert the &lt;strong>SAM CPP&lt;/strong> into the SAM reader.&lt;/li>
+&lt;li>Enter the personalization parameters:
+&lt;ul>
+&lt;li>&lt;strong>AID&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>System keys KVC&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Work keys KIF and KVC&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Click &lt;strong>Start&lt;/strong> to begin scanning for the card.&lt;/li>
+&lt;li>Present a blank card to the card reader&amp;rsquo;s antenna.&lt;/li>
+&lt;/ol>
+&lt;br>
+&lt;h2 id="refresh-reader-detection">Refresh Reader Detection&lt;/h2>
+&lt;p>If you connect or disconnect card readers while the application is running, switch between the tabs (Basic Card
+Personalization, Application Info) to make the application recognize the changes.&lt;/p>
+&lt;br>
+&lt;h2 id="screenshots">Screenshots&lt;/h2>
+&lt;h3 id="installation-1">Installation&lt;/h3>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./media/cna-tool-basic-card-perso-app/install-dialog.png" alt="Installation" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;h3 id="settings">Settings&lt;/h3>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./media/cna-tool-basic-card-perso-app/settings-dialog.png" alt="Settings" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;h3 id="card-personalization">Card personalization&lt;/h3>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./media/cna-tool-basic-card-perso-app/personalization-tab.png" alt="Card personalization" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;h3 id="application-info">Application info&lt;/h3>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./media/cna-tool-basic-card-perso-app/info-and-logs-tab.png" alt="Application info" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;br>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>This tool is provided by CNA for its members. Only active CNA members are authorized to use this tool. A member is not
+authorized to distribute this tool to other parties.&lt;/p>
+&lt;br>
+&lt;h2 id="user-requirements-and-responsibilities">User Requirements and Responsibilities&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Target Audience:&lt;/strong> users familiar with Calypso Basic card personalization. Basic knowledge of smart card technology
+and security concepts is assumed.&lt;/li>
+&lt;li>&lt;strong>Prerequisites:&lt;/strong> necessary hardware (card reader, SAM reader) and software (drivers) installed and configured
+correctly.&lt;/li>
+&lt;li>&lt;strong>Responsibilities:&lt;/strong> ensure correct selection of the target card and SAM, proper handling of unlock values and
+sensitive information, and entering the correct personalization parameters (AID, KVC, KIFs).&lt;/li>
+&lt;li>&lt;strong>Usage:&lt;/strong> authorized personnel only. Misuse or unauthorized distribution is strictly prohibited.&lt;/li>
+&lt;/ul></description></item><item><title>Keyple plugin for Spirtech Calypso HSM</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/hsm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/hsm/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item></channel></rss>
