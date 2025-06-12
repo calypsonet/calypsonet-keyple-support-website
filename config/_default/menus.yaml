@@ -9,5 +9,5 @@ main:
     weight: 10
 
   - name: Keyple Add-ons
-    url: '/add-ons/demo/'
+    url: '/add-ons/'
     weight: 20
