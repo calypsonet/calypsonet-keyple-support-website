@@ -1,5 +1,5 @@
 ---
-title: Keyple plugin for Spirtech Calyspo HSM
+title: Keyple plugin for Spirtech Calypso HSM
 linkTitle: "🌍 Spirtech Calyspo HSM"
 type: book
 weight: 50
