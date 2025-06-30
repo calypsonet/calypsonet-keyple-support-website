@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
   <diagram id="ugRn2NZ_iOeZW2UWXEU1" name="Page-1">
-    <mxGraphModel dx="1473" dy="2081" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3105" dy="2441" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -95,7 +95,7 @@
             <mxPoint x="15" y="-9" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="sJ9qkVe-992G4J2jnNbK-8" value="&lt;span style=&quot;color: rgb(51, 51, 51); font-weight: 700; background-color: rgb(255, 255, 255);&quot;&gt;Internal API&lt;/span&gt;&lt;br style=&quot;color: rgb(51, 51, 51); font-weight: 700;&quot;&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-weight: 700; background-color: rgb(255, 255, 255);&quot;&gt;(invisible from application)&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="V6izYeQOWG8l3TrPsfdA-68">
+        <mxCell id="sJ9qkVe-992G4J2jnNbK-8" value="&lt;span style=&quot;color: rgb(51, 51, 51); font-weight: 700; background-color: rgb(255, 255, 255);&quot;&gt;Internal API&lt;/span&gt;&lt;br style=&quot;color: rgb(51, 51, 51); font-weight: 700;&quot;&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-weight: 700; background-color: rgb(255, 255, 255);&quot;&gt;(invisible from application)&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="V6izYeQOWG8l3TrPsfdA-68" vertex="1">
           <mxGeometry x="10" y="70" width="170" height="30" as="geometry" />
         </mxCell>
         <mxCell id="P8h1JKQHrEOADxgDFcXR-7" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;" parent="1" source="P8h1JKQHrEOADxgDFcXR-6" target="P8h1JKQHrEOADxgDFcXR-5" edge="1">
@@ -155,29 +155,29 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="sJ9qkVe-992G4J2jnNbK-3" value="&lt;b&gt;CNA open - Bluebird Reader Plugin Lib&lt;/b&gt;&lt;br&gt;use&amp;nbsp;&lt;b style=&quot;border-color: var(--border-color); background-color: rgb(255, 255, 153);&quot;&gt;Keyple Util Lib&lt;/b&gt;&lt;br&gt;use &lt;b style=&quot;background-color: rgb(153, 255, 255);&quot;&gt;Keyple Common API&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=0" vertex="1" parent="1">
+        <mxCell id="sJ9qkVe-992G4J2jnNbK-3" value="&lt;b&gt;CNA open - Bluebird Reader Plugin Lib&lt;/b&gt;&lt;br&gt;use&amp;nbsp;&lt;b style=&quot;border-color: var(--border-color); background-color: rgb(255, 255, 153);&quot;&gt;Keyple Util Lib&lt;/b&gt;&lt;br&gt;use &lt;b style=&quot;background-color: rgb(153, 255, 255);&quot;&gt;Keyple Common API&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=0" parent="1" vertex="1">
           <mxGeometry x="1280" y="240" width="240" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="sJ9qkVe-992G4J2jnNbK-4" value="&lt;b&gt;Keyple Android NFC Reader Plugin Lib&lt;/b&gt;&lt;br&gt;&lt;br&gt;use&amp;nbsp;&lt;b style=&quot;border-color: var(--border-color); background-color: rgb(255, 255, 153);&quot;&gt;Keyple Util Lib&lt;/b&gt;&lt;br&gt;use &lt;b style=&quot;background-color: rgb(153, 255, 255);&quot;&gt;Keyple Common API&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=0" vertex="1" parent="1">
+        <mxCell id="sJ9qkVe-992G4J2jnNbK-4" value="&lt;b&gt;Keyple Android NFC Reader Plugin Lib&lt;/b&gt;&lt;br&gt;&lt;br&gt;use&amp;nbsp;&lt;b style=&quot;border-color: var(--border-color); background-color: rgb(255, 255, 153);&quot;&gt;Keyple Util Lib&lt;/b&gt;&lt;br&gt;use &lt;b style=&quot;background-color: rgb(153, 255, 255);&quot;&gt;Keyple Common API&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=0" parent="1" vertex="1">
           <mxGeometry x="920" y="240" width="240" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="sJ9qkVe-992G4J2jnNbK-5" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;exitX=0.167;exitY=0.017;exitDx=0;exitDy=0;entryX=0.833;entryY=1.05;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="sJ9qkVe-992G4J2jnNbK-4" target="V6izYeQOWG8l3TrPsfdA-12">
+        <mxCell id="sJ9qkVe-992G4J2jnNbK-5" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;exitX=0.167;exitY=0.017;exitDx=0;exitDy=0;entryX=0.833;entryY=1.05;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" source="sJ9qkVe-992G4J2jnNbK-4" target="V6izYeQOWG8l3TrPsfdA-12" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="870" y="420" as="sourcePoint" />
             <mxPoint x="900" y="340" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="sJ9qkVe-992G4J2jnNbK-6" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.817;entryY=1.033;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;dashed=1;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="sJ9qkVe-992G4J2jnNbK-3" target="ppmKoIEsNBY7Kqpl7rI8-6">
+        <mxCell id="sJ9qkVe-992G4J2jnNbK-6" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.817;entryY=1.033;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;dashed=1;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="sJ9qkVe-992G4J2jnNbK-3" target="ppmKoIEsNBY7Kqpl7rI8-6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1100" y="400" as="sourcePoint" />
             <mxPoint x="1100" y="350" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1400" y="210" />
-              <mxPoint x="1116" y="210" />
+              <mxPoint x="1400" y="220" />
+              <mxPoint x="1116" y="220" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="sJ9qkVe-992G4J2jnNbK-7" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="sJ9qkVe-992G4J2jnNbK-3" target="V6izYeQOWG8l3TrPsfdA-12">
+        <mxCell id="sJ9qkVe-992G4J2jnNbK-7" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="sJ9qkVe-992G4J2jnNbK-3" target="V6izYeQOWG8l3TrPsfdA-12" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1200" y="350" as="sourcePoint" />
             <mxPoint x="600" y="200" as="targetPoint" />
@@ -187,6 +187,9 @@
               <mxPoint x="610" y="150" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="mRtADUEKv6Na8HXL9Mwt-1" value="&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;libraries available only for CNA members&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="-320" width="280" height="520" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
