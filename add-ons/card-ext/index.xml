@@ -2,9 +2,9 @@
 &lt;p>For a long time, the Calypso card product range was limited to ‘Calypso Prime’, in order to cater for season ticket holders and regular travellers. But to manage &amp;lsquo;occasional&amp;rsquo; travelers with single or limited-use card products, many ticketing systems used contactless memory ticketing solutions (such as Mifare UL, CT512, ST25) in addition to Calypso cards. Since then, the Calypso card range has been expanded with the Calypso Light and Calypso Basic solutions.
 Pending migration to support Light and Basic products, many ticketing systems still require their terminals to handle Calypso cards alongside contactless memory ticket solutions. To assist CNA members and facilitate the management of contactless memory tickets on Calypso terminals based on the Keyple middleware: CNA offers its members the privilege of benefiting from Keyple extensions enabling them to process contactless memory tickets.&lt;/p>
 &lt;ul>
-&lt;li>🌍All the APIs needed to support memory tickets are open source and hosted by the Keypop and Keyple projects.&lt;/li>
-&lt;li>🌍CNA also offers open source examples of contactless memory ticket processing.&lt;/li>
-&lt;li>🚫Only CNA members can benefit from CNA libraries supporting contactless memory ticket processing.&lt;/li>
+&lt;li>🌍 All the APIs needed to support memory tickets are open source and hosted by the Keypop and Keyple projects.&lt;/li>
+&lt;li>🌍 CNA also offers open source examples of contactless memory ticket processing.&lt;/li>
+&lt;li>🚫 Only CNA members can benefit from CNA libraries supporting contactless memory ticket processing.&lt;/li>
 &lt;/ul>
 &lt;h2 id="involved-software-components">Involved software components&lt;/h2>
 &lt;p>In addition to the &lt;a href="https://keyple.org/components/overview/components-map/" target="_blank" rel="noopener">Keyple global component dependency guide&lt;/a>, the diagram below focuses on the components involved in handling contactless memory tickets.
