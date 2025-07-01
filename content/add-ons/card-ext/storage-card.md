@@ -16,7 +16,7 @@ To assist CNA members and facilitate the management of contactless memory ticket
 - 🌍 CNA also offers open source examples of contactless memory ticket processing.
 - 🚫 Only CNA members can benefit from CNA libraries supporting contactless memory ticket processing.
 
-$\text{\color{red}This is the first solution to easily operate proprietary contactless memory ticket solutions on a Keyple terminal. It is possible that it may lack useful features for your needs: if this is the case, don't hesitate to report it to CNA (potentially through issues on the relevant repositories).}$
+<span style="color: red;">This is the first solution to easily operate proprietary contactless memory ticket solutions on a Keyple terminal. It is possible that it may lack useful features for your needs: if this is the case, don't hesitate to report it to CNA (potentially through [issues on the CNA StorageCard API definition repository](https://github.com/calypsonet/calypsonet-terminal-storagecard-uml-api/issues)).</span>
 
 ## Involved software components
 In addition to the [Keyple global component dependency guide](https://keyple.org/components/overview/components-map/), the diagram below focuses on the components involved in handling contactless memory tickets.
