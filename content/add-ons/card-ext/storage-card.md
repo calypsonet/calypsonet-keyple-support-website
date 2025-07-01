@@ -8,8 +8,9 @@ weight: 300
 
 <br>
 
-For a long time, the Calypso card product range was limited to ‘Calypso Prime’, in order to cater for season ticket holders and regular travellers. But to manage 'occasional' travelers with single or limited-use card products, many ticketing systems used contactless memory ticketing solutions (such as Mifare UL, CT512, ST25) in addition to Calypso cards. Since then, the Calypso card range has been expanded with the Calypso Light and Calypso Basic solutions.
-Pending migration to support Light and Basic products, many ticketing systems still require their terminals to handle Calypso cards alongside contactless memory ticket solutions. To assist CNA members and facilitate the management of contactless memory tickets on Calypso terminals based on the Keyple middleware: CNA offers its members the privilege of benefiting from Keyple extensions enabling them to process contactless memory tickets.
+For a long time, the Calypso card product range was limited to ‘Calypso Prime’, in order to cater for season ticket holders and regular travellers. But to manage 'occasional' travelers with single or limited-use card products, many ticketing systems used contactless memory ticketing solutions (such as **Mifare UltraLight**, **CT512**, **ST25**) in addition to Calypso cards. Since then, the Calypso card range has been expanded with the Calypso Light and Calypso Basic solutions.
+Pending migration to support Light and Basic products, many ticketing systems still require their terminals to handle Calypso cards alongside contactless memory ticket solutions.
+To assist CNA members and facilitate the management of contactless memory tickets on Calypso terminals based on the Keyple middleware: **CNA offers its members the privilege of benefiting from libraries enabling them to process contactless memory tickets on Keyple-based terminal**.
 - 🌍 All the APIs needed to support memory tickets are open source and hosted by the Keypop and Keyple projects.
 - 🌍 CNA also offers open source examples of contactless memory ticket processing.
 - 🚫 Only CNA members can benefit from CNA libraries supporting contactless memory ticket processing.
@@ -49,8 +50,11 @@ A reader plugin that uses this API can then be extended to support contactless m
 ### CNA Library to add contactless memory ticket command wrapping to Keyple plugins
 To assist CNA members needing to integrate contactless memory ticket processing on a Keyple-based terminal with readers other than PC/SC: CNA provides a members-only library that enables APDU wrapping of ticket commands to be integrated into a Keyple plugin: the [Plugin Storage Card library](https://github.com/calypsonet/keyple-plugin-cna-storagecard-java-lib).
 
-## example of a terminal application processing contactless memory tickets
+## Examples of contactless memory ticket processing in a terminal application
+The Keyple project hosts basic examples in [Java](https://github.com/eclipse-keyple/keyple-java-example) and [C++](https://github.com/eclipse-keyple/keyple-cpp-example) showing how to implement Keyple components. CNA offers complementary [basic Java examples](https://github.com/calypsonet/keyple-cna-java-example), including one dedicated to the processing of contactless memory tickets on a PC terminal equipped with PC/SC readers.
+- [contactless ticket processing on a PC/SC reader](https://github.com/calypsonet/keyple-cna-java-example/tree/main/storagecard-pcsc)
+
 All the applications of the CNA advanced ticketing demonstrator will be updated to integrate the processing of contactless ticketing solutions in addition to Calypso cards.
 - The first application to integrate this support is the distributed ticket reloading service (for the time being in the 'storagecard' branch).
-  - [contactless ticket memory selection](https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/blob/storagecard/client/keyple-mobile-android/app/src/main/kotlin/org/calypsonet/keyple/demo/reload/remote/domain/TicketingService.kt#L65)
-  - [contactless memory ticket data writing](https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/blob/storagecard/server/src/main/java/org/calypsonet/keyple/demo/reload/remote/server/card/CardRepository.java#L207)
+  - [contactless ticket memory selection](https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/blob/storagecard/client/keyple-mobile-android/app/src/main/kotlin/org/calypsonet/keyple/demo/reload/remote/domain/TicketingService.kt#L65) on a distributed reload local client.
+  - [contactless memory ticket data writing](https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/blob/storagecard/server/src/main/java/org/calypsonet/keyple/demo/reload/remote/server/card/CardRepository.java#L207) managed by a distributed remote server.
