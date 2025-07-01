@@ -55,7 +55,7 @@ To assist CNA members needing to integrate contactless memory ticket processing 
 
 ## Examples of contactless memory ticket processing in a terminal application
 The Keyple project hosts basic examples in [Java](https://github.com/eclipse-keyple/keyple-java-example) and [C++](https://github.com/eclipse-keyple/keyple-cpp-example) showing how to implement Keyple components. CNA offers complementary [basic Java examples](https://github.com/calypsonet/keyple-cna-java-example), including one dedicated to the processing of contactless memory tickets on a PC terminal equipped with PC/SC readers.
-- [contactless ticket processing on a PC/SC reader](https://github.com/calypsonet/keyple-cna-java-example/tree/main/storagecard-pcsc)
+- [contactless ticket processing on a PC/SC reader](https://github.com/calypsonet/keyple-cna-java-example/tree/main/StorageCard_PCSC)
 
 All the applications of the CNA advanced ticketing demonstrator will be updated to integrate the processing of contactless ticketing solutions in addition to Calypso cards.
 - The first application to integrate this support is the distributed ticket reloading service (for the time being in the 'storagecard' branch).
