@@ -10,7 +10,7 @@ weight: 10
 ## Objectives for ticketing terminals
 
 <span style="color: DarkOrange;">**Ensure interoperability between ticketing terminals and contactless cards**</span>
-- CNA has specified a set of [requirements for the different software layers of a ticketing terminal](https://keyple-support.calypsonet.org/keyple-support/introduction/#ticketing-terminal-requirements).
+- CNA has specified a set of [requirements for the different software layers of a ticketing terminal](./#ticketing-terminal-requirements).
 
 <span style="color: DarkOrange;">**Enable ticketing applications to be portable independently of terminal solutions**</span>
 - [CNA (the Calypso Networks Association)](https://calypsonet.org/) has standardized interfaces for the different software layers of a terminal: the [ticketing terminal APIs](https://terminal-api.calypsonet.org/).
@@ -78,7 +78,7 @@ To use, integrate or extend Keyple, it is not necessary to have complete knowled
 - develop a plugin to interface another smartcard reader solution,
 - develop a new extension library to handle other types of smartcard solution.
 
-The Keyple project also includes many simple [examples in Java and C++ code](https://keyple.org/learn/code-samples/) to illustrate all these types of development.
+The Keyple project also includes many simple [examples in Java and C++ code](https://keyple.org/learn/code-samples/) to illustrate all these types of development. For Keyple extensions external to the project, CNA offers [additional basic examples](../../add-ons/demo/example/).
 
 CNA's technical support also offers a more advanced Calypso example on implementing the Keyple solution with an open source [complete Keyple ticketing demonstrator](../../add-ons/demo/ticketing/): including remote ticket reloading, embedded validation and control.
 <br>CNA also [supplies test cards and SAMs](../test-kit/) for running Keyple.

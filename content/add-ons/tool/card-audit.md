@@ -45,7 +45,7 @@ analyze the contents of a Calypso card and to verify its compliance against a re
 
 ## Download the Apps
 
-1. Go to the [releases page](https://github.com/calypsonet/calypso-card-analyzer/releases) to download the latest
+1. Go to the [releases page](https://github.com/calypsonet/cna-tool-card-analyzer-app/releases) to download the latest
    version of the application suite.
 2.  Download the executable JAR files:
     *   `Tool_AnalyzeCardFileStructure-x.y.z.jar`
