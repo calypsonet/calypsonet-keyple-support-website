@@ -42,11 +42,11 @@ To facilitate and factorize the integration of APDU wrapping for plugins for rea
 &lt;h3 id="cna-library-to-add-contactless-memory-ticket-command-wrapping-to-keyple-plugins">CNA Library to add contactless memory ticket command wrapping to Keyple plugins&lt;/h3>
 &lt;p>To assist CNA members needing to integrate contactless memory ticket processing on a Keyple-based terminal with readers other than PC/SC: CNA provides a members-only library that enables APDU wrapping of ticket commands to be integrated into a Keyple plugin: the &lt;a href="https://github.com/calypsonet/keyple-plugin-cna-storagecard-java-lib" target="_blank" rel="noopener">Plugin Storage Card library&lt;/a>.&lt;/p>
 &lt;h2 id="examples-of-contactless-memory-ticket-processing-in-a-terminal-application">Examples of contactless memory ticket processing in a terminal application&lt;/h2>
-&lt;p>The Keyple project hosts basic examples in &lt;a href="https://github.com/eclipse-keyple/keyple-java-example" target="_blank" rel="noopener">Java&lt;/a> and &lt;a href="https://github.com/eclipse-keyple/keyple-cpp-example" target="_blank" rel="noopener">C++&lt;/a> showing how to implement Keyple components. CNA offers complementary &lt;a href="https://github.com/calypsonet/keyple-cna-java-example" target="_blank" rel="noopener">basic Java examples&lt;/a>, including one dedicated to the processing of contactless memory tickets on a PC terminal equipped with PC/SC readers.&lt;/p>
+&lt;p>Among the &lt;a href="../../demo/example/">basic examples of Keyple implementation supplemented by CNA&lt;/a>, one is dedicated to the processing of contactless memory tickets on a PC terminal equipped with PC/SC readers:&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/calypsonet/keyple-cna-java-example/tree/main/StorageCard_PCSC" target="_blank" rel="noopener">contactless ticket processing on a PC/SC reader&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;p>All the applications of the CNA advanced ticketing demonstrator will be updated to integrate the processing of contactless ticketing solutions in addition to Calypso cards.&lt;/p>
+&lt;p>All the applications of the &lt;a href="../../demo/ticketing/">CNA advanced ticketing demonstrator&lt;/a> are currently being updated to integrate the processing of contactless ticketing solutions in addition to Calypso cards.&lt;/p>
 &lt;ul>
 &lt;li>The first application to integrate this support is the distributed ticket reloading service (for the time being in the &amp;lsquo;storagecard&amp;rsquo; branch).
 &lt;ul>
