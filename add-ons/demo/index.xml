@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Demonstrator of Keyple | Calypso Networks Association Keyple Support</title><link>https://keyple-support.calypsonet.org/add-ons/demo/</link><atom:link href="https://keyple-support.calypsonet.org/add-ons/demo/index.xml" rel="self" type="application/rss+xml"/><description>Demonstrator of Keyple</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://keyple-support.calypsonet.org/media/logo.svg</url><title>Demonstrator of Keyple</title><link>https://keyple-support.calypsonet.org/add-ons/demo/</link></image><item><title>Simple examples of Keyple implementation</title><link>https://keyple-support.calypsonet.org/add-ons/demo/example/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/demo/example/</guid><description>&lt;p>The Keyple project already hosts basic examples in &lt;a href="https://github.com/eclipse-keyple/keyple-java-example" target="_blank" rel="noopener">Java&lt;/a> and &lt;a href="https://github.com/eclipse-keyple/keyple-cpp-example" target="_blank" rel="noopener">C++&lt;/a> showing how to implement Keyple components in a simple way.&lt;/p>
 &lt;p>To show how to use Keyple extensions that are not hosted by the project, CNA offers complementary &lt;a href="https://github.com/calypsonet/keyple-cna-java-example" target="_blank" rel="noopener">basic Java examples&lt;/a> for Keyple extensions.&lt;/p></description></item><item><title>Keyple-based advanced ticketing demonstrator</title><link>https://keyple-support.calypsonet.org/add-ons/demo/ticketing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/demo/ticketing/</guid><description>&lt;p>To illustrate an advanced implementation of the Keyple Java middleware for Calypso-based ticketing systems, CNA has released a full ticketing demonstrator under the &lt;a href="https://opensource.org/license/bsd-3-clause" target="_blank" rel="noopener">3-Clause BSD License&lt;/a>.&lt;/p>
+&lt;style>
+.hachured {
+background-image: repeating-linear-gradient(
+45deg,
+transparent,
+transparent 5px,
+rgba(0, 0, 0, 0.1) 5px,
+rgba(0, 0, 0, 0.1) 10px
+);
+color: black;
+}
+&lt;/style>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -15,7 +27,7 @@
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;th scope="row">&lt;a href="https://github.com/calypsonet/keyple-java-demo-remote" target="_blank" rel="noopener">Remote sales &amp; reloading&lt;/a>&lt;/th>
+&lt;th scope="row">&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote" target="_blank" rel="noopener">Remote sales &amp; reloading&lt;/a>&lt;/th>
 &lt;td>distributed Calypso applications
 &lt;ul>&lt;li>server with ticketing intelligence, based on Keyple&lt;/li>
 &lt;li>light client, Keyple-based or not&lt;/li>&lt;/ul>
@@ -28,14 +40,19 @@
 &lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;th scope="row">&lt;a href="https://github.com/calypsonet/keyple-android-demo-validation" target="_blank" rel="noopener">Validation&lt;/a>&lt;/th>
+&lt;th scope="row">&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing-validation-app" target="_blank" rel="noopener">Validation&lt;/a>&lt;/th>
 &lt;td rowspan="2">standalone Calypso terminal application based on Keyple&lt;/td>
 &lt;td rowspan="2">Locally embedded&lt;/td>
 &lt;td rowspan="2">Locally embedded&lt;/td>
 &lt;td rowspan="2">Limit the number of card and SAM commands during the card transaction&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;th scope="row">&lt;a href="https://github.com/calypsonet/keyple-android-demo-control" target="_blank" rel="noopener">Control&lt;/a>&lt;/th>
+&lt;th scope="row">&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing-control-app" target="_blank" rel="noopener">Control&lt;/a>&lt;/th>
+&lt;/tr>
+&lt;tr>
+&lt;th scope="row">&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing-common-lib" target="_blank" rel="noopener">Common ticketing data processing&lt;/a>&lt;/th>
+&lt;td>support library for ticketing data model&lt;/td>
+&lt;td colspan="3" class="hachured">&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
