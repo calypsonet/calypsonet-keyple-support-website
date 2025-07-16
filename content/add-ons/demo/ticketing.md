@@ -9,6 +9,18 @@ weight: 110
 ---
 To illustrate an advanced implementation of the Keyple Java middleware for Calypso-based ticketing systems, CNA has released a full ticketing demonstrator under the <a href="https://opensource.org/license/bsd-3-clause" target="_blank" rel="noopener">3-Clause BSD License</a>.
 
+<style>
+    .hachured {
+        background-image: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 5px,
+        rgba(0, 0, 0, 0.1) 5px,
+        rgba(0, 0, 0, 0.1) 10px
+        );
+        color: black;
+    }
+</style>
 <table>
 	<thead>
 		<tr>
@@ -24,7 +36,7 @@ To illustrate an advanced implementation of the Keyple Java middleware for Calyp
 	</thead>
 	<tbody>
 		<tr>
-			<th scope="row"><a href="https://github.com/calypsonet/keyple-java-demo-remote" target="_blank" rel="noopener">Remote sales & reloading</a></th>
+			<th scope="row"><a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote" target="_blank" rel="noopener">Remote sales & reloading</a></th>
 			<td>distributed Calypso applications
                 <ul><li>server with ticketing intelligence, based on Keyple</li>
                 <li>light client, Keyple-based or not</li></ul>
@@ -37,14 +49,19 @@ To illustrate an advanced implementation of the Keyple Java middleware for Calyp
             </td>
 		</tr>
 		<tr>
-			<th scope="row"><a href="https://github.com/calypsonet/keyple-android-demo-validation" target="_blank" rel="noopener">Validation</a></th>
+			<th scope="row"><a href="https://github.com/calypsonet/keyple-demo-ticketing-validation-app" target="_blank" rel="noopener">Validation</a></th>
 			<td rowspan="2">standalone Calypso terminal application based on Keyple</td>
 			<td rowspan="2">Locally embedded</td>
 			<td rowspan="2">Locally embedded</td>
 			<td rowspan="2">Limit the number of card and SAM commands during the card transaction</td>
 		</tr>
 		<tr>
-			<th scope="row"><a href="https://github.com/calypsonet/keyple-android-demo-control" target="_blank" rel="noopener">Control</a></th>
+			<th scope="row"><a href="https://github.com/calypsonet/keyple-demo-ticketing-control-app" target="_blank" rel="noopener">Control</a></th>
+		</tr>
+		<tr>
+			<th scope="row"><a href="https://github.com/calypsonet/keyple-demo-ticketing-common-lib" target="_blank" rel="noopener">Common ticketing data processing</a></th>
+			<td>support library for ticketing data model</td>
+			<td colspan="3" class="hachured"></td>
 		</tr>
 	</tbody>
 </table>
