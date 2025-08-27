@@ -27,7 +27,7 @@ color: black;
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;th scope="row">&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote" target="_blank" rel="noopener">Remote sales &amp; reloading&lt;/a>&lt;/th>
+&lt;th scope="row">&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/reloading-remote" target="_blank" rel="noopener">Remote sales &amp; reloading&lt;/a>&lt;/th>
 &lt;td>distributed Calypso applications
 &lt;ul>&lt;li>server with ticketing intelligence, based on Keyple&lt;/li>
 &lt;li>light client, Keyple-based or not&lt;/li>&lt;/ul>
@@ -40,17 +40,17 @@ color: black;
 &lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;th scope="row">&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing-validation-app" target="_blank" rel="noopener">Validation&lt;/a>&lt;/th>
+&lt;th scope="row">&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/validation" target="_blank" rel="noopener">Validation&lt;/a>&lt;/th>
 &lt;td rowspan="2">standalone Calypso terminal application based on Keyple&lt;/td>
 &lt;td rowspan="2">Locally embedded&lt;/td>
 &lt;td rowspan="2">Locally embedded&lt;/td>
 &lt;td rowspan="2">Limit the number of card and SAM commands during the card transaction&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;th scope="row">&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing-control-app" target="_blank" rel="noopener">Control&lt;/a>&lt;/th>
+&lt;th scope="row">&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/control" target="_blank" rel="noopener">Control&lt;/a>&lt;/th>
 &lt;/tr>
 &lt;tr>
-&lt;th scope="row">&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing-common-lib" target="_blank" rel="noopener">Common ticketing data processing&lt;/a>&lt;/th>
+&lt;th scope="row">&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/common" target="_blank" rel="noopener">Common ticketing data processing&lt;/a>&lt;/th>
 &lt;td>support library for ticketing data model&lt;/td>
 &lt;td colspan="3" class="hachured">&lt;/td>
 &lt;/tr>
@@ -118,25 +118,25 @@ The ticketing data format is just an example defined for demonstration purposes.
 &lt;tbody>
 &lt;tr>
 &lt;th scope="row" colspan="2">Sales / Reloading server&lt;br>(Keyple based)&lt;/th>
-&lt;td>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/tree/main/server" target="_blank" rel="noopener">Java&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/reloading-remote/server" target="_blank" rel="noopener">Java&lt;/a>&lt;/td>
 &lt;td>Windows, Linux, macOS&lt;/td>
 &lt;td>Java Server with PC/SC SAM readers&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;th scope="rowgroup" rowspan="3">Sales / Reloading client&lt;/th>
 &lt;th scope="row">Keyple-based&lt;/th>
-&lt;td>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/tree/main/client/keyple-mobile-android" target="_blank" rel="noopener">Kotlin&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/reloading-remote/client/keyple-mobile-android" target="_blank" rel="noopener">Kotlin&lt;/a>&lt;/td>
 &lt;td rowspan="1">Android&lt;/td>
 &lt;td rowspan="1">Android NFC phone&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;th scope="rowgroup" rowspan="2">Keyple-less&lt;/th>
-&lt;td>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/tree/main/client/pc-dotnet" target="_blank" rel="noopener">.NET C#&lt;/a>&lt;br/>(without "interop" libs)&lt;/td>
+&lt;td>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/reloading-remote/client/pc-dotnet" target="_blank" rel="noopener">.NET C#&lt;/a>&lt;br/>(without "interop" libs)&lt;/td>
 &lt;td>Windows&lt;/td>
 &lt;td>Windows PC with a PC/SC reader&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/tree/main/client/interop-mobile-multiplatform" target="_blank" rel="noopener">
+&lt;td>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/reloading-remote/client/interop-mobile-multiplatform" target="_blank" rel="noopener">
 &lt;ul>&lt;li>Kotlin Multiplatform&lt;/li>
 &lt;li>&amp; Compose Multiplatform&lt;/li>&lt;/ul>
 &lt;/a>&lt;br/>(with "interop" libs)&lt;/td>
@@ -195,12 +195,13 @@ To facilitate and factorize the integration of APDU wrapping for plugins for rea
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/calypsonet/keyple-cna-java-example/tree/main/StorageCard_PCSC" target="_blank" rel="noopener">contactless ticket processing on a PC/SC reader&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;p>All the applications of the &lt;a href="../../demo/ticketing/">CNA advanced ticketing demonstrator&lt;/a> are currently being updated to integrate the processing of contactless ticketing solutions in addition to Calypso cards.&lt;/p>
+&lt;p>All the applications of the &lt;a href="../../demo/ticketing/">CNA advanced ticketing demonstrator&lt;/a> integrate the processing of
+contactless ticketing solutions in addition to Calypso cards.&lt;/p>
 &lt;ul>
-&lt;li>The first application to integrate this support is the distributed ticket reloading service (for the time being in the &amp;lsquo;storagecard&amp;rsquo; branch).
+&lt;li>Here are some examples of the treatments used:
 &lt;ul>
-&lt;li>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/blob/storagecard/client/keyple-mobile-android/app/src/main/kotlin/org/calypsonet/keyple/demo/reload/remote/domain/TicketingService.kt#L65" target="_blank" rel="noopener">contactless ticket memory selection&lt;/a> on a distributed reload local client.&lt;/li>
-&lt;li>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/blob/storagecard/server/src/main/java/org/calypsonet/keyple/demo/reload/remote/server/card/CardRepository.java#L207" target="_blank" rel="noopener">contactless memory ticket data writing&lt;/a> managed by a distributed remote server.&lt;/li>
+&lt;li>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/blob/2e1559b7ed492313748044e9ecfe178868e0780f/src/reloading-remote/client/keyple-mobile-android/app/src/main/kotlin/org/calypsonet/keyple/demo/reload/remote/domain/TicketingService.kt#L68" target="_blank" rel="noopener">contactless ticket memory selection&lt;/a> on a distributed reload local client.&lt;/li>
+&lt;li>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/blob/2e1559b7ed492313748044e9ecfe178868e0780f/src/reloading-remote/server/src/main/java/org/calypsonet/keyple/demo/reload/remote/server/card/CardRepository.java#L157" target="_blank" rel="noopener">contactless memory ticket data management&lt;/a> managed by a distributed remote server.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul></description></item><item><title>Calypso card configuration audit tool</title><link>https://keyple-support.calypsonet.org/add-ons/tool/card-audit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/tool/card-audit/</guid><description>&lt;br>
