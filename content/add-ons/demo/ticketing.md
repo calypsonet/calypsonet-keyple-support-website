@@ -36,7 +36,7 @@ To illustrate an advanced implementation of the Keyple Java middleware for Calyp
 	</thead>
 	<tbody>
 		<tr>
-			<th scope="row"><a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote" target="_blank" rel="noopener">Remote sales & reloading</a></th>
+			<th scope="row"><a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/reloading-remote" target="_blank" rel="noopener">Remote sales & reloading</a></th>
 			<td>distributed Calypso applications
                 <ul><li>server with ticketing intelligence, based on Keyple</li>
                 <li>light client, Keyple-based or not</li></ul>
@@ -49,17 +49,17 @@ To illustrate an advanced implementation of the Keyple Java middleware for Calyp
             </td>
 		</tr>
 		<tr>
-			<th scope="row"><a href="https://github.com/calypsonet/keyple-demo-ticketing-validation-app" target="_blank" rel="noopener">Validation</a></th>
+			<th scope="row"><a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/validation" target="_blank" rel="noopener">Validation</a></th>
 			<td rowspan="2">standalone Calypso terminal application based on Keyple</td>
 			<td rowspan="2">Locally embedded</td>
 			<td rowspan="2">Locally embedded</td>
 			<td rowspan="2">Limit the number of card and SAM commands during the card transaction</td>
 		</tr>
 		<tr>
-			<th scope="row"><a href="https://github.com/calypsonet/keyple-demo-ticketing-control-app" target="_blank" rel="noopener">Control</a></th>
+			<th scope="row"><a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/control" target="_blank" rel="noopener">Control</a></th>
 		</tr>
 		<tr>
-			<th scope="row"><a href="https://github.com/calypsonet/keyple-demo-ticketing-common-lib" target="_blank" rel="noopener">Common ticketing data processing</a></th>
+			<th scope="row"><a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/common" target="_blank" rel="noopener">Common ticketing data processing</a></th>
 			<td>support library for ticketing data model</td>
 			<td colspan="3" class="hachured"></td>
 		</tr>
@@ -128,25 +128,25 @@ This demo requires a client/server environment:
 	<tbody>
 		<tr>
 			<th scope="row" colspan="2">Sales / Reloading server<br>(Keyple based)</th>
-			<td><a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/tree/main/server" target="_blank" rel="noopener">Java</a></td>
+			<td><a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/reloading-remote/server" target="_blank" rel="noopener">Java</a></td>
 			<td>Windows, Linux, macOS</td>
 			<td>Java Server with PC/SC SAM readers</td>
 		</tr>
 		<tr>
 			<th scope="rowgroup" rowspan="3">Sales / Reloading client</th>
 			<th scope="row">Keyple-based</th>
-			<td><a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/tree/main/client/keyple-mobile-android" target="_blank" rel="noopener">Kotlin</a></td>
+			<td><a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/reloading-remote/client/keyple-mobile-android" target="_blank" rel="noopener">Kotlin</a></td>
 			<td rowspan="1">Android</td>
 			<td rowspan="1">Android NFC phone</td>
 		</tr>
 		<tr>
 			<th scope="rowgroup" rowspan="2">Keyple-less</th>
-			<td><a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/tree/main/client/pc-dotnet" target="_blank" rel="noopener">.NET C#</a><br/>(without "interop" libs)</td>
+			<td><a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/reloading-remote/client/pc-dotnet" target="_blank" rel="noopener">.NET C#</a><br/>(without "interop" libs)</td>
 			<td>Windows</td>
 			<td>Windows PC with a PC/SC reader</td>
 		</tr>
 		<tr>
-			<td><a href="https://github.com/calypsonet/keyple-demo-ticketing-reloading-remote/tree/main/client/interop-mobile-multiplatform" target="_blank" rel="noopener">
+			<td><a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/reloading-remote/client/interop-mobile-multiplatform" target="_blank" rel="noopener">
                 <ul><li>Kotlin Multiplatform</li>
                 <li>& Compose Multiplatform</li></ul>
             </a><br/>(with "interop" libs)</td>
