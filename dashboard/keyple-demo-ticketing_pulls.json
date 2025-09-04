@@ -34,10 +34,10 @@
     },
     "body": "Fix a few issues with ios build config:\r\n- corrupted PNG file (icon)\r\n- missing materialExtendedIcons dependency\r\n- update all dependencies\r\n- erroneous package folder (folder named \"keyple.demo\" instead of \"keyple\"/\"demo\") ",
     "created_at": "2025-09-02T16:02:31Z",
-    "updated_at": "2025-09-03T18:11:33Z",
+    "updated_at": "2025-09-04T09:48:54Z",
     "closed_at": null,
     "merged_at": null,
-    "merge_commit_sha": "bc0893b344ffd0c724b247c25ef096fc662e9bb2",
+    "merge_commit_sha": "23464d011d27e40b91027eeb999ea95103571119",
     "assignee": null,
     "assignees": [
 
@@ -57,11 +57,11 @@
     "review_comments_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/pulls/2/comments",
     "review_comment_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/pulls/comments{/number}",
     "comments_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/issues/2/comments",
-    "statuses_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/statuses/7378543bf6b2d63d08ba1efb7dd1aa71ac4e035e",
+    "statuses_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/statuses/ac3236e94d265749bc1720d2394a3b86f66c8bcf",
     "head": {
       "label": "tdassonville:fixIos",
       "ref": "fixIos",
-      "sha": "7378543bf6b2d63d08ba1efb7dd1aa71ac4e035e",
+      "sha": "ac3236e94d265749bc1720d2394a3b86f66c8bcf",
       "user": {
         "login": "tdassonville",
         "id": 1982823,
@@ -152,7 +152,7 @@
         "deployments_url": "https://api.github.com/repos/tdassonville/keyple-demo-ticketing/deployments",
         "created_at": "2025-09-02T15:46:40Z",
         "updated_at": "2025-09-02T15:46:40Z",
-        "pushed_at": "2025-09-03T18:11:32Z",
+        "pushed_at": "2025-09-04T09:48:53Z",
         "git_url": "git://github.com/tdassonville/keyple-demo-ticketing.git",
         "ssh_url": "git@github.com:tdassonville/keyple-demo-ticketing.git",
         "clone_url": "https://github.com/tdassonville/keyple-demo-ticketing.git",
@@ -351,7 +351,7 @@
         "href": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/pulls/2/commits"
       },
       "statuses": {
-        "href": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/statuses/7378543bf6b2d63d08ba1efb7dd1aa71ac4e035e"
+        "href": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/statuses/ac3236e94d265749bc1720d2394a3b86f66c8bcf"
       }
     },
     "author_association": "FIRST_TIME_CONTRIBUTOR",
