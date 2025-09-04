@@ -74,17 +74,15 @@ loadProjectDashboard = async function() {
 
         // column doc
         cell = row.insertCell(-1);
-        if (project[1] === true) {
-            cell.setAttribute("class", "text-center");
-            let space = document.createTextNode("  ");
-            cell.appendChild(space);
-            a = document.createElement('a');
-            cell.appendChild(space);
-            a.innerHTML = "<i class=\"fas fa-book\"></i>";
-            a.title = "Documentation for " + json.name;
-            a.href = "https://keyple-support.calypsonet.org/add-ons/" + project[3];
-            cell.appendChild(a);
-        }
+        cell.setAttribute("class", "text-center");
+        let space = document.createTextNode("  ");
+        cell.appendChild(space);
+        a = document.createElement('a');
+        cell.appendChild(space);
+        a.innerHTML = "<i class=\"fas fa-book\"></i>";
+        a.title = "Documentation for " + json.name;
+        a.href = "https://keyple-support.calypsonet.org/add-ons/" + project[3];
+        cell.appendChild(a);
 
         // column repos status
         cell = row.insertCell(-1);
