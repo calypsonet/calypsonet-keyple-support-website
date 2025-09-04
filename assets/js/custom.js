@@ -36,7 +36,7 @@ loadProjectDashboard = async function() {
         const row = document.getElementById(rowIndex);
 
         // column type
-        cell = row.insertCell(-1);
+        let cell = row.insertCell(-1);
         cell.setAttribute("class", "text-center");
         switch (project[1]) {
             case "demonstrator":
@@ -58,7 +58,7 @@ loadProjectDashboard = async function() {
         }
 
         // column repos name
-        let cell = row.insertCell(-1);
+        cell = row.insertCell(-1);
         let a = document.createElement('a');
         let linkText = document.createTextNode(json.name);
         a.appendChild(linkText);
