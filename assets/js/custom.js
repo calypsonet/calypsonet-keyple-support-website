@@ -319,9 +319,10 @@ loadProjectDashboard = async function() {
                         dashboard.rows[0].cells[i].style.whiteSpace = 'normal';
                     }
                     if (dashboard.scrollWidth > window.innerWidth - 50) {
-                        // Remove nowrap style for first cell of all rows
+                        // Remove nowrap style for 2nd/3rd cells of all rows
                         for (let i = 0; i < dashboard.rows.length; i++) {
                             dashboard.rows[i].cells[1].style.whiteSpace = 'normal';
+                            dashboard.rows[i].cells[2].style.whiteSpace = 'normal';
                         }
                     }
                 }
