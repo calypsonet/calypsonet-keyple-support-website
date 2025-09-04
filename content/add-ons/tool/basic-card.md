@@ -43,7 +43,7 @@ This tool requires two PC/SC readers:
 ## Installation
 
 1. The software is available in a GitHub repository. Go to
-   the [releases page](https://github.com/calypsonet/cna-tool-basic-legacysam-perso-app/releases) to download it. (Note:
+   the [releases page](https://github.com/calypsonet/cna-tool-basic-card-perso-app/releases) to download it. (Note:
    the GitHub repository is private. Please request access from [CNA](https://calypsonet.org)). Choose the installation
    file that matches your operating system:
     * **Windows:** `.msi` package
