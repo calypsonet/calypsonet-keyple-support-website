@@ -38,18 +38,23 @@ loadProjectDashboard = async function() {
         // column type
         cell = row.insertCell(-1);
         cell.setAttribute("class", "text-center");
-        if (project[1] === "demonstrator") {
-            cell.innerHTML = "<i class=\"fas fa-chalkboard-teacher\"></i>";
-            cell.title = "Demonstrator";
-        } else if (project[1] === "plugin") {
-            cell.innerHTML = "<i class=\"fas fa-cogs\"></i>";
-            cell.title = "Reader extension";
-        } else if (project[1] === "card") {
-            cell.innerHTML = "<i class=\"fas fa-id-card\"></i>";
-            cell.title = "Card extension";
-        } else if (project[1] === "tool") {
-            cell.innerHTML = "<i class=\"fas fa-tools\"></i>";
-            cell.title = "Assistance tool";
+        switch (project[1]) {
+            case "demonstrator":
+                cell.innerHTML = '<i class="fas fa-chalkboard-teacher"></i>';
+                cell.title = "Demonstrator";
+                break;
+            case "plugin":
+                cell.innerHTML = '<i class="fas fa-cogs"></i>';
+                cell.title = "Reader extension";
+                break;
+            case "card":
+                cell.innerHTML = '<i class="fas fa-id-card"></i>';
+                cell.title = "Card extension";
+                break;
+            case "tool":
+                cell.innerHTML = '<i class="fas fa-tools"></i>';
+                cell.title = "Assistance tool";
+                break;
         }
 
         // column repos name
