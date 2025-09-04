@@ -321,7 +321,7 @@ loadProjectDashboard = async function() {
                     if (dashboard.scrollWidth > window.innerWidth - 50) {
                         // Remove nowrap style for first cell of all rows
                         for (let i = 0; i < dashboard.rows.length; i++) {
-                            dashboard.rows[i].cells[0].style.whiteSpace = 'normal';
+                            dashboard.rows[i].cells[1].style.whiteSpace = 'normal';
                         }
                     }
                 }
