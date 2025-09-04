@@ -1,0 +1,62 @@
+[
+  {
+    "name": "2.0.2",
+    "zipball_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-coppernic-cone2-java-lib/zipball/refs/tags/2.0.2",
+    "tarball_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-coppernic-cone2-java-lib/tarball/refs/tags/2.0.2",
+    "commit": {
+      "sha": "de8dcb4609ac17b9639bade5a79011b353beab39",
+      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-coppernic-cone2-java-lib/commits/de8dcb4609ac17b9639bade5a79011b353beab39"
+    },
+    "node_id": "MDM6UmVmMjc2Mzc0MTA5OnJlZnMvdGFncy8yLjAuMg=="
+  },
+  {
+    "name": "2.0.1",
+    "zipball_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-coppernic-cone2-java-lib/zipball/refs/tags/2.0.1",
+    "tarball_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-coppernic-cone2-java-lib/tarball/refs/tags/2.0.1",
+    "commit": {
+      "sha": "3758de8684f259b2130ce7683c3290d634ecca4c",
+      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-coppernic-cone2-java-lib/commits/3758de8684f259b2130ce7683c3290d634ecca4c"
+    },
+    "node_id": "MDM6UmVmMjc2Mzc0MTA5OnJlZnMvdGFncy8yLjAuMQ=="
+  },
+  {
+    "name": "2.0.0",
+    "zipball_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-coppernic-cone2-java-lib/zipball/refs/tags/2.0.0",
+    "tarball_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-coppernic-cone2-java-lib/tarball/refs/tags/2.0.0",
+    "commit": {
+      "sha": "7bf74a460f4eeb4e4cc8b2d1a5a522a5fc738b5c",
+      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-coppernic-cone2-java-lib/commits/7bf74a460f4eeb4e4cc8b2d1a5a522a5fc738b5c"
+    },
+    "node_id": "MDM6UmVmMjc2Mzc0MTA5OnJlZnMvdGFncy8yLjAuMA=="
+  },
+  {
+    "name": "2.0.0-rc1",
+    "zipball_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-coppernic-cone2-java-lib/zipball/refs/tags/2.0.0-rc1",
+    "tarball_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-coppernic-cone2-java-lib/tarball/refs/tags/2.0.0-rc1",
+    "commit": {
+      "sha": "1201e1e85f8215dd31bc7d542708b85502da9e08",
+      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-coppernic-cone2-java-lib/commits/1201e1e85f8215dd31bc7d542708b85502da9e08"
+    },
+    "node_id": "MDM6UmVmMjc2Mzc0MTA5OnJlZnMvdGFncy8yLjAuMC1yYzE="
+  },
+  {
+    "name": "1.0.0",
+    "zipball_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-coppernic-cone2-java-lib/zipball/refs/tags/1.0.0",
+    "tarball_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-coppernic-cone2-java-lib/tarball/refs/tags/1.0.0",
+    "commit": {
+      "sha": "2b74411f3c1e5fd969deda99a4696f71454a31c8",
+      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-coppernic-cone2-java-lib/commits/2b74411f3c1e5fd969deda99a4696f71454a31c8"
+    },
+    "node_id": "MDM6UmVmMjc2Mzc0MTA5OnJlZnMvdGFncy8xLjAuMA=="
+  },
+  {
+    "name": "0.9.0",
+    "zipball_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-coppernic-cone2-java-lib/zipball/refs/tags/0.9.0",
+    "tarball_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-coppernic-cone2-java-lib/tarball/refs/tags/0.9.0",
+    "commit": {
+      "sha": "43d26130179072baa2c387d13e329f82cce276d2",
+      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-coppernic-cone2-java-lib/commits/43d26130179072baa2c387d13e329f82cce276d2"
+    },
+    "node_id": "MDM6UmVmMjc2Mzc0MTA5OnJlZnMvdGFncy8wLjkuMA=="
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "name": "main",
+    "commit": {
+      "sha": "834065b12e23f2c2174592a0324782c43b469476",
+      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-famoco-se-communication-java-lib/commits/834065b12e23f2c2174592a0324782c43b469476"
+    },
+    "protected": true,
+    "protection": {
+      "enabled": true,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-famoco-se-communication-java-lib/branches/main/protection"
+  }
+]

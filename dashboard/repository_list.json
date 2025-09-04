@@ -1,0 +1,13 @@
+[
+["keyple-demo-ticketing",demonstrator,3-Clause BSD,demo/ticketing/,true],
+["keyple-cna-java-example",demonstrator,3-Clause BSD,demo/example/,true],
+["keyple-plugin-cna-coppernic-cone2-java-lib",plugin,EPL-2.0,plugin-ext/coppernic/,true],
+["keyple-plugin-cna-famoco-se-communication-java-lib",plugin,EPL-2.0,plugin-ext/famoco/,true],
+["keyple-plugin-cna-flowbird-android-java-lib",plugin,EPL-2.0,plugin-ext/flowbird/,true],
+["keyple-plugin-cna-bluebird-specific-nfc-java-lib",plugin,EPL-2.0,plugin-ext/bluebird/,true],
+["keyple-plugin-cna-legacyhsm-java-lib",plugin,EPL-2.0,plugin-ext/hsm/,true],
+["keyple-card-cna-storagecard-java-lib",card,CNA Lib,card-ext/storage-card/,true],
+["cna-tool-card-analyzer-app",tool,EPL-2.0,tool/card-audit/,true],
+["cna-tool-basic-card-perso-app",tool,CNA App,tool/basic-card/,true],
+["cna-tool-basic-legacysam-perso-app",tool,CNA App,tool/basic-sam/,true]
+]

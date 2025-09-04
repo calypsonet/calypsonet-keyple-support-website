@@ -1,0 +1,23 @@
+[
+  {
+    "name": "main",
+    "commit": {
+      "sha": "c9a9418e77d79d6b2562efe9d86f5b66e96126bd",
+      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-legacyhsm-java-lib/commits/c9a9418e77d79d6b2562efe9d86f5b66e96126bd"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-legacyhsm-java-lib/branches/main/protection"
+  }
+]

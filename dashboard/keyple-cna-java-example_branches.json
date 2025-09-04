@@ -1,0 +1,23 @@
+[
+  {
+    "name": "main",
+    "commit": {
+      "sha": "4799ab18f4e22ec0debdc7a9fd7071418ec7a9e7",
+      "url": "https://api.github.com/repos/calypsonet/keyple-cna-java-example/commits/4799ab18f4e22ec0debdc7a9fd7071418ec7a9e7"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/calypsonet/keyple-cna-java-example/branches/main/protection"
+  }
+]

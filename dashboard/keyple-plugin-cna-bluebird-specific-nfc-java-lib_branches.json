@@ -1,0 +1,23 @@
+[
+  {
+    "name": "main",
+    "commit": {
+      "sha": "2f53429f4285d292dc710d5216e7f40a4ddf801c",
+      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/commits/2f53429f4285d292dc710d5216e7f40a4ddf801c"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/branches/main/protection"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "fix/obfuscation",
+    "commit": {
+      "sha": "dcee639d874d26a68e7d29346d89efd7a13c3f2e",
+      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-coppernic-cone2-java-lib/commits/dcee639d874d26a68e7d29346d89efd7a13c3f2e"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-coppernic-cone2-java-lib/branches/fix/obfuscation/protection"
+  },
+  {
+    "name": "main",
+    "commit": {
+      "sha": "6d360afab3971b5e57d6e2cf08c022360b7dbd04",
+      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-coppernic-cone2-java-lib/commits/6d360afab3971b5e57d6e2cf08c022360b7dbd04"
+    },
+    "protected": true,
+    "protection": {
+      "enabled": true,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-coppernic-cone2-java-lib/branches/main/protection"
+  }
+]

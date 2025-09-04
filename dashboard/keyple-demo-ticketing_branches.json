@@ -1,0 +1,23 @@
+[
+  {
+    "name": "main",
+    "commit": {
+      "sha": "bf24692fd5a0d0ae914949d93f841933379059a0",
+      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/bf24692fd5a0d0ae914949d93f841933379059a0"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/main/protection"
+  }
+]

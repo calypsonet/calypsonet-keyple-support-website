@@ -1,0 +1,22 @@
+[
+  {
+    "name": "1.0.1",
+    "zipball_url": "https://api.github.com/repos/calypsonet/cna-tool-basic-legacysam-perso-app/zipball/refs/tags/1.0.1",
+    "tarball_url": "https://api.github.com/repos/calypsonet/cna-tool-basic-legacysam-perso-app/tarball/refs/tags/1.0.1",
+    "commit": {
+      "sha": "b679fbe9f0a51b3485d8e62f3b3f963dc687c110",
+      "url": "https://api.github.com/repos/calypsonet/cna-tool-basic-legacysam-perso-app/commits/b679fbe9f0a51b3485d8e62f3b3f963dc687c110"
+    },
+    "node_id": "REF_kwDOM-7Aqq9yZWZzL3RhZ3MvMS4wLjE"
+  },
+  {
+    "name": "1.0.0",
+    "zipball_url": "https://api.github.com/repos/calypsonet/cna-tool-basic-legacysam-perso-app/zipball/refs/tags/1.0.0",
+    "tarball_url": "https://api.github.com/repos/calypsonet/cna-tool-basic-legacysam-perso-app/tarball/refs/tags/1.0.0",
+    "commit": {
+      "sha": "0095925b39dc1e600303782956faaba03e9702dc",
+      "url": "https://api.github.com/repos/calypsonet/cna-tool-basic-legacysam-perso-app/commits/0095925b39dc1e600303782956faaba03e9702dc"
+    },
+    "node_id": "REF_kwDOM-7Aqq9yZWZzL3RhZ3MvMS4wLjA"
+  }
+]
