@@ -40,19 +40,19 @@ loadProjectDashboard = async function() {
         cell.setAttribute("class", "text-center");
         switch (project[1]) {
             case "demonstrator":
-                cell.innerHTML = '<i class="fas fa-chalkboard-teacher"></i>';
+                cell.innerHTML = '<span style="display:none">1</span><i class="fas fa-chalkboard-teacher"></i>';
                 cell.title = "Demonstrator";
                 break;
             case "plugin":
-                cell.innerHTML = '<i class="fas fa-cogs"></i>';
-                cell.title = "Reader extension";
+                cell.innerHTML = '<span style="display:none">2</span><i class="fas fa-cogs"></i>';
+                cell.title = "Reader plugin";
                 break;
             case "card":
-                cell.innerHTML = '<i class="fas fa-id-card"></i>';
+                cell.innerHTML = '<span style="display:none">3</span><i class="fas fa-id-card"></i>';
                 cell.title = "Card extension";
                 break;
             case "tool":
-                cell.innerHTML = '<i class="fas fa-tools"></i>';
+                cell.innerHTML = '<span style="display:none">4</span><i class="fas fa-tools"></i>';
                 cell.title = "Assistance tool";
                 break;
         }
@@ -98,12 +98,6 @@ loadProjectDashboard = async function() {
         // column release date
         cell = row.insertCell(-1);
         cell.setAttribute("id", "release-date-" + rowIndex);
-        cell.setAttribute("class", "text-center");
-        cell.appendChild(document.createTextNode(""));
-
-        // column latest tag
-        cell = row.insertCell(-1);
-        cell.setAttribute("id", "latest-tag-" + rowIndex);
         cell.setAttribute("class", "text-center");
         cell.appendChild(document.createTextNode(""));
 
@@ -153,7 +147,6 @@ loadProjectDashboard = async function() {
         await getPullData(rowIndex, owner, project[0]);
         await getLatestRelease(rowIndex, owner, project[0]);
         await getReleaseDate(rowIndex, owner, project[0]);
-        await getLatestTag(rowIndex, owner, project[0]);
         if (project[4] === true) {
             await getStatus(rowIndex, owner, project[0]);
         }
@@ -198,15 +191,6 @@ loadProjectDashboard = async function() {
             if (json.tag_name !== undefined) {
                 cell.innerHTML = formatDate(json.published_at);
             }
-        } catch (err) {
-        }
-    }
-
-    async function getLatestTag(rowIndex, owner, repos) {
-        let cell = document.getElementById("latest-tag-" + rowIndex);
-        try {
-            const json = await getJsonRepositoryData(repos, "_tags");
-            cell.innerHTML = json[0].name;
         } catch (err) {
         }
     }
@@ -304,7 +288,7 @@ loadProjectDashboard = async function() {
                 $('#project-dashboard-table').DataTable({
                     "lengthMenu": [25, 50, 75, 100],
                     "pageLength": 50,
-                    "order": [[13, 'desc']],
+                    "order": [[12, 'desc']],
                     "oLanguage": {"sSearch": "Filter:"}
                 });
                 $('.dataTables_length').addClass('bs-select');

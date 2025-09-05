@@ -16,5 +16,4 @@ echo -n "[\"$repository_name\",\"$type\",\"$license\",\"$doc_relative_url\","$ci
 ../.github/scripts/dashboard_update_repo_curl.sh $token $repository_name "/issues" "issues"
 ../.github/scripts/dashboard_update_repo_curl.sh $token $repository_name "/pulls" "pulls"
 ../.github/scripts/dashboard_update_repo_curl.sh $token $repository_name "/releases/latest" "releases_latest"
-../.github/scripts/dashboard_update_repo_curl.sh $token $repository_name "/tags" "tags"
 ../.github/scripts/dashboard_update_repo_curl.sh $token $repository_name "/commits/main/check-runs" "check_runs"
