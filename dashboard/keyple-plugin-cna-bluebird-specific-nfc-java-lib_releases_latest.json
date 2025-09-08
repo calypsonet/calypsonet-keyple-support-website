@@ -1,9 +1,9 @@
 {
-  "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/releases/242805438",
-  "assets_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/releases/242805438/assets",
-  "upload_url": "https://uploads.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/releases/242805438/assets{?name,label}",
-  "html_url": "https://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/releases/tag/3.1.1",
-  "id": 242805438,
+  "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/releases/245438618",
+  "assets_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/releases/245438618/assets",
+  "upload_url": "https://uploads.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/releases/245438618/assets{?name,label}",
+  "html_url": "https://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/releases/tag/3.1.2",
+  "id": 245438618,
   "author": {
     "login": "jeanpierrefortune",
     "id": 1011563,
@@ -25,22 +25,22 @@
     "user_view_type": "public",
     "site_admin": false
   },
-  "node_id": "RE_kwDOIieu584OeOq-",
-  "tag_name": "3.1.1",
+  "node_id": "RE_kwDOIieu584OoRia",
+  "tag_name": "3.1.2",
   "target_commitish": "main",
-  "name": "3.1.1",
+  "name": "3.1.2",
   "draft": false,
   "immutable": false,
   "prerelease": false,
-  "created_at": "2025-08-27T08:38:00Z",
-  "updated_at": "2025-08-27T08:51:25Z",
-  "published_at": "2025-08-27T08:49:23Z",
+  "created_at": "2025-09-08T07:46:18Z",
+  "updated_at": "2025-09-08T07:50:31Z",
+  "published_at": "2025-09-08T07:48:10Z",
   "assets": [
     {
-      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/releases/assets/286702516",
-      "id": 286702516,
-      "node_id": "RA_kwDOIieu584RFru0",
-      "name": "keyple-plugin-cna-bluebird-specific-nfc-java-lib-3.1.1-release-mock.aar",
+      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/releases/assets/290864810",
+      "id": 290864810,
+      "node_id": "RA_kwDOIieu584RVj6q",
+      "name": "keyple-plugin-cna-bluebird-specific-nfc-java-lib-3.1.2-release-mock.aar",
       "label": "",
       "uploader": {
         "login": "github-actions[bot]",
@@ -67,13 +67,13 @@
       "state": "uploaded",
       "size": 7197,
       "digest": "sha256:7eca00b197c94e408ee67278a4ca798519d4b967c32eed7c6b1a8ce1f9988f31",
-      "download_count": 1,
-      "created_at": "2025-08-27T08:51:25Z",
-      "updated_at": "2025-08-27T08:51:25Z",
-      "browser_download_url": "https://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/releases/download/3.1.1/keyple-plugin-cna-bluebird-specific-nfc-java-lib-3.1.1-release-mock.aar"
+      "download_count": 0,
+      "created_at": "2025-09-08T07:50:31Z",
+      "updated_at": "2025-09-08T07:50:31Z",
+      "browser_download_url": "https://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/releases/download/3.1.2/keyple-plugin-cna-bluebird-specific-nfc-java-lib-3.1.2-release-mock.aar"
     }
   ],
-  "tarball_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/tarball/3.1.1",
-  "zipball_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/zipball/3.1.1",
-  "body": "### Fixed\r\n- Mock plugin name."
+  "tarball_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/tarball/3.1.2",
+  "zipball_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/zipball/3.1.2",
+  "body": "### Fixed\r\n- Update broadcast receiver registration for Android T+ compatibility."
 }
