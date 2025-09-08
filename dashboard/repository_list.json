@@ -6,6 +6,7 @@
 ["keyple-plugin-cna-flowbird-android-java-lib","plugin","EPL-2.0","plugin-ext/flowbird/",true],
 ["keyple-plugin-cna-bluebird-specific-nfc-java-lib","plugin","EPL-2.0","plugin-ext/bluebird/",true],
 ["keyple-plugin-cna-legacyhsm-java-lib","plugin","EPL-2.0","plugin-ext/hsm/",true],
+["keyple-plugin-cna-storagecard-java-lib","plugin","CNA Lib","card-ext/storage-card/",true],
 ["keyple-card-cna-storagecard-java-lib","card","CNA Lib","card-ext/storage-card/",true],
 ["cna-tool-card-analyzer-app","tool","EPL-2.0","tool/card-audit/",true],
 ["cna-tool-basic-card-perso-app","tool","CNA App","tool/basic-card/",true],
