@@ -33,6 +33,10 @@ fi
 if [ $? -eq 0 ]; then
   exit 0
 fi
+./.github/scripts/dashboard_check_repos_status_curl.sh $token keyple-plugin-cna-storagecard-java-lib
+if [ $? -eq 0 ]; then
+  exit 0
+fi
 ./.github/scripts/dashboard_check_repos_status_curl.sh $token keyple-card-cna-storagecard-java-lib
 if [ $? -eq 0 ]; then
   exit 0

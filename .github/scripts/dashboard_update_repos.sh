@@ -22,6 +22,8 @@ echo "," >> dashboard/repository_list.json
 echo "," >> dashboard/repository_list.json
 ../.github/scripts/dashboard_update_repo.sh $token keyple-plugin-cna-legacyhsm-java-lib "plugin" "EPL-2.0" "plugin-ext/hsm/" true
 echo "," >> dashboard/repository_list.json
+../.github/scripts/dashboard_update_repo.sh $token keyple-plugin-cna-storagecard-java-lib "plugin" "CNA Lib" "card-ext/storage-card/" true
+echo "," >> dashboard/repository_list.json
 ../.github/scripts/dashboard_update_repo.sh $token keyple-card-cna-storagecard-java-lib "card" "CNA Lib" "card-ext/storage-card/" true
 echo "," >> dashboard/repository_list.json
 ../.github/scripts/dashboard_update_repo.sh $token cna-tool-card-analyzer-app "tool" "EPL-2.0" "tool/card-audit/" true
