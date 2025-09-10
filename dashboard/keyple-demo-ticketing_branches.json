@@ -1,30 +1,9 @@
 [
   {
-    "name": "feat/control-pki",
-    "commit": {
-      "sha": "bc807e6e96c4b0ae6109495dabcfb30d81d2b727",
-      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/bc807e6e96c4b0ae6109495dabcfb30d81d2b727"
-    },
-    "protected": false,
-    "protection": {
-      "enabled": false,
-      "required_status_checks": {
-        "enforcement_level": "off",
-        "contexts": [
-
-        ],
-        "checks": [
-
-        ]
-      }
-    },
-    "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/feat/control-pki/protection"
-  },
-  {
     "name": "main",
     "commit": {
-      "sha": "70f9b2d6bb17c45aea76117eb96a914abb5d0140",
-      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/70f9b2d6bb17c45aea76117eb96a914abb5d0140"
+      "sha": "d574af0967144d65824273632bb33f35810138d5",
+      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/d574af0967144d65824273632bb33f35810138d5"
     },
     "protected": false,
     "protection": {

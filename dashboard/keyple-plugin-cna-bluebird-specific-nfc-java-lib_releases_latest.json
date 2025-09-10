@@ -67,7 +67,7 @@
       "state": "uploaded",
       "size": 7197,
       "digest": "sha256:7eca00b197c94e408ee67278a4ca798519d4b967c32eed7c6b1a8ce1f9988f31",
-      "download_count": 0,
+      "download_count": 1,
       "created_at": "2025-09-08T07:50:31Z",
       "updated_at": "2025-09-08T07:50:31Z",
       "browser_download_url": "https://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/releases/download/3.1.2/keyple-plugin-cna-bluebird-specific-nfc-java-lib-3.1.2-release-mock.aar"
