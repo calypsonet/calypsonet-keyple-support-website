@@ -1,5 +1,13 @@
 [
   {
+    "name": "github-package-publishing",
+    "commit": {
+      "sha": "73beb50fe5835567a604f62b5ad02481873e2cfc",
+      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-storagecard-java-lib/commits/73beb50fe5835567a604f62b5ad02481873e2cfc"
+    },
+    "protected": false
+  },
+  {
     "name": "main",
     "commit": {
       "sha": "3127d047318af6f20d5861a2b5f4d13b1a9593d2",
