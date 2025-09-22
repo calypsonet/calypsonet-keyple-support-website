@@ -34,10 +34,10 @@
     },
     "body": null,
     "created_at": "2025-09-19T16:54:26Z",
-    "updated_at": "2025-09-22T10:41:23Z",
+    "updated_at": "2025-09-22T12:17:14Z",
     "closed_at": null,
     "merged_at": null,
-    "merge_commit_sha": "0f8826f0b219f9ef216ff32fdfa434b37c5cc201",
+    "merge_commit_sha": "20c80209a2c408ca266c87ca320a3462edf2276b",
     "assignee": null,
     "assignees": [
 
@@ -77,11 +77,11 @@
     "review_comments_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-storagecard-java-lib/pulls/2/comments",
     "review_comment_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-storagecard-java-lib/pulls/comments{/number}",
     "comments_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-storagecard-java-lib/issues/2/comments",
-    "statuses_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-storagecard-java-lib/statuses/2add9d8ae98c2113c70a1887f329cef87996f5ec",
+    "statuses_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-storagecard-java-lib/statuses/b76c5c7ebd4b649e31ece0f9d429e55fd2e6bfeb",
     "head": {
       "label": "calypsonet:github-package-publishing",
       "ref": "github-package-publishing",
-      "sha": "2add9d8ae98c2113c70a1887f329cef87996f5ec",
+      "sha": "b76c5c7ebd4b649e31ece0f9d429e55fd2e6bfeb",
       "user": {
         "login": "calypsonet",
         "id": 36229037,
@@ -172,13 +172,13 @@
         "deployments_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-storagecard-java-lib/deployments",
         "created_at": "2025-05-07T08:55:36Z",
         "updated_at": "2025-07-09T10:01:54Z",
-        "pushed_at": "2025-09-22T10:41:22Z",
+        "pushed_at": "2025-09-22T12:17:13Z",
         "git_url": "git://github.com/calypsonet/keyple-plugin-cna-storagecard-java-lib.git",
         "ssh_url": "git@github.com:calypsonet/keyple-plugin-cna-storagecard-java-lib.git",
         "clone_url": "https://github.com/calypsonet/keyple-plugin-cna-storagecard-java-lib.git",
         "svn_url": "https://github.com/calypsonet/keyple-plugin-cna-storagecard-java-lib",
         "homepage": null,
-        "size": 94,
+        "size": 97,
         "stargazers_count": 0,
         "watchers_count": 0,
         "language": "Java",
@@ -307,13 +307,13 @@
         "deployments_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-storagecard-java-lib/deployments",
         "created_at": "2025-05-07T08:55:36Z",
         "updated_at": "2025-07-09T10:01:54Z",
-        "pushed_at": "2025-09-22T10:41:22Z",
+        "pushed_at": "2025-09-22T12:17:13Z",
         "git_url": "git://github.com/calypsonet/keyple-plugin-cna-storagecard-java-lib.git",
         "ssh_url": "git@github.com:calypsonet/keyple-plugin-cna-storagecard-java-lib.git",
         "clone_url": "https://github.com/calypsonet/keyple-plugin-cna-storagecard-java-lib.git",
         "svn_url": "https://github.com/calypsonet/keyple-plugin-cna-storagecard-java-lib",
         "homepage": null,
-        "size": 94,
+        "size": 97,
         "stargazers_count": 0,
         "watchers_count": 0,
         "language": "Java",
@@ -371,7 +371,7 @@
         "href": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-storagecard-java-lib/pulls/2/commits"
       },
       "statuses": {
-        "href": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-storagecard-java-lib/statuses/2add9d8ae98c2113c70a1887f329cef87996f5ec"
+        "href": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-storagecard-java-lib/statuses/b76c5c7ebd4b649e31ece0f9d429e55fd2e6bfeb"
       }
     },
     "author_association": "MEMBER",
