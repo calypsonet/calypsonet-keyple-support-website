@@ -73,7 +73,7 @@
   "clone_url": "https://github.com/calypsonet/keyple-card-cna-storagecard-java-lib.git",
   "svn_url": "https://github.com/calypsonet/keyple-card-cna-storagecard-java-lib",
   "homepage": null,
-  "size": 103,
+  "size": 104,
   "stargazers_count": 0,
   "watchers_count": 0,
   "language": "Java",
@@ -113,7 +113,7 @@
     "triage": true,
     "pull": true
   },
-  "temp_clone_token": "AGLDVHJAIMSQCSHZDDRN73LI2JYXG",
+  "temp_clone_token": "AGLDVHPUHZGAWY3SYMKJGOTI2J7XE",
   "allow_squash_merge": true,
   "allow_merge_commit": true,
   "allow_rebase_merge": true,
