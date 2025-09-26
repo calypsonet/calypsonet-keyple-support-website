@@ -67,7 +67,7 @@
       "state": "uploaded",
       "size": 895232,
       "digest": null,
-      "download_count": 75,
+      "download_count": 76,
       "created_at": "2024-07-30T12:51:04Z",
       "updated_at": "2024-07-30T12:51:05Z",
       "browser_download_url": "https://github.com/calypsonet/cna-tool-card-analyzer-app/releases/download/2.0.3/Tool_AnalyzeCardFileStructure-2.0.3.jar"
