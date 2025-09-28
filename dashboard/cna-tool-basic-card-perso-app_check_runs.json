@@ -2,27 +2,27 @@
   "total_count": 1,
   "check_runs": [
     {
-      "id": 50861012534,
+      "id": 51410548529,
       "name": "cleanup",
-      "node_id": "CR_kwDOM-66zM8AAAAL1412Ng",
+      "node_id": "CR_kwDOM-66zM8AAAAL-E63MQ",
       "head_sha": "eaeff293478abd294cac2c9cb5b6677136c82d08",
-      "external_id": "9b19f6ef-f334-5fdb-985c-4707cd0b4beb",
-      "url": "https://api.github.com/repos/calypsonet/cna-tool-basic-card-perso-app/check-runs/50861012534",
-      "html_url": "https://github.com/calypsonet/cna-tool-basic-card-perso-app/actions/runs/17886597100/job/50861012534",
-      "details_url": "https://github.com/calypsonet/cna-tool-basic-card-perso-app/actions/runs/17886597100/job/50861012534",
+      "external_id": "f51c8614-9a1d-5a10-96e2-cdaed150c938",
+      "url": "https://api.github.com/repos/calypsonet/cna-tool-basic-card-perso-app/check-runs/51410548529",
+      "html_url": "https://github.com/calypsonet/cna-tool-basic-card-perso-app/actions/runs/18066780696/job/51410548529",
+      "details_url": "https://github.com/calypsonet/cna-tool-basic-card-perso-app/actions/runs/18066780696/job/51410548529",
       "status": "completed",
       "conclusion": "success",
-      "started_at": "2025-09-21T00:22:47Z",
-      "completed_at": "2025-09-21T00:22:55Z",
+      "started_at": "2025-09-28T00:23:16Z",
+      "completed_at": "2025-09-28T00:23:27Z",
       "output": {
         "title": null,
         "summary": null,
         "text": null,
         "annotations_count": 0,
-        "annotations_url": "https://api.github.com/repos/calypsonet/cna-tool-basic-card-perso-app/check-runs/50861012534/annotations"
+        "annotations_url": "https://api.github.com/repos/calypsonet/cna-tool-basic-card-perso-app/check-runs/51410548529/annotations"
       },
       "check_suite": {
-        "id": 45937222970
+        "id": 46429809601
       },
       "app": {
         "id": 15368,
