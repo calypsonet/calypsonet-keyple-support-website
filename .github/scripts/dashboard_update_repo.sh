@@ -10,7 +10,7 @@ ci_status_flag=$7
 
 echo "Update the dashboard data of repository $repository_name..."
 
-echo -n "[\"$repository_name\",\"$type\",\"$license\",\"$doc_relative_url\","$ci_status_flag"]" >> dashboard/repository_list.json
+echo -n "[\"$repository_name\",\"$type\",\"$license\",\"$doc_relative_url\","$ci_status_flag",\"$organization\"]" >> dashboard/repository_list.json
 
 ../.github/scripts/dashboard_update_repo_curl.sh $token $organization $repository_name "" ""
 ../.github/scripts/dashboard_update_repo_curl.sh $token $organization $repository_name "/branches" "branches"

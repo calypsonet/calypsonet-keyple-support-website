@@ -261,8 +261,6 @@ loadProjectDashboard = async function() {
         return '<span data-toggle="tooltip" title="' + date + ' ' + time + '">' + date + '</span>';
     }
 
-    let owner = "calypsonet";
-
     const lastUpdate = await getJson('datetime');
     const date = new Date(lastUpdate.datetime);
 
@@ -278,7 +276,7 @@ loadProjectDashboard = async function() {
     const body = document.getElementById("project-dashboard-content");
     let promises = [];
     for (let i = 0; i < projects.length; i++) {
-        let promise = getReposData((i + 1).toString(), owner, projects[i])
+        let promise = getReposData((i + 1).toString(), projects[i][5], projects[i])
         promises.push(promise);
     }
 
