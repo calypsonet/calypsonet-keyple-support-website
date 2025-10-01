@@ -29,7 +29,7 @@ In order to facilitate the design of ticketing processing on a terminal interact
 An open source [Java translation of the Storage Card API](https://keypop.org/apis/card-layer-storagecard/storagecard-api/) definition has been released within the Eclipse Keypop project.
 
 ## CNA Library to process contactless memory tickets
-In order to assist CNA members who need to combine Calypso card processing with contactless memory ticket processing on their Keyple-based ticketing terminals, CNA provides its members with a dedicated card extension: the [CNA Storage Card Lib](https://github.com/calypsonet/keyple-card-cna-storagecard-java-lib).
+In order to assist CNA members who need to combine Calypso card processing with contactless memory ticket processing on their Keyple-based ticketing terminals, CNA provides its members with a dedicated card extension: the [CNA Storage Card Lib](https://github.com/calypsonet-member/keyple-card-cna-storagecard-java-lib).
 
 ## Reader support for contactless memory tickets
 To integrate smart card reader solutions with the Keyple middleware in a generic way, until now the Keyple project offered a simple plugin interface
@@ -51,7 +51,7 @@ A reader plugin that uses this API can then be extended to support contactless m
 - Among the Keyple 'add-ons' offered by CNA, the open source [plugin for Bluebird readers](https://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/tree/storagecard) has also evolved to use this API and thus support Mifare UL, CT512, and ST25 tickets (feature currently available in the ‘storagecard’ branch, integration in progress in the main branch)
 
 ### CNA Library to add contactless memory ticket command wrapping to Keyple plugins
-To assist CNA members needing to integrate contactless memory ticket processing on a Keyple-based terminal with readers other than PC/SC: CNA provides a members-only library that enables APDU wrapping of ticket commands to be integrated into a Keyple plugin: the [Plugin Storage Card library](https://github.com/calypsonet/keyple-plugin-cna-storagecard-java-lib).
+To assist CNA members needing to integrate contactless memory ticket processing on a Keyple-based terminal with readers other than PC/SC: CNA provides a members-only library that enables APDU wrapping of ticket commands to be integrated into a Keyple plugin: the [Plugin Storage Card library](https://github.com/calypsonet-member/keyple-plugin-cna-storagecard-java-lib).
 
 ## Examples of contactless memory ticket processing in a terminal application
 Among the [basic examples of Keyple implementation supplemented by CNA](../../demo/example/), one is dedicated to the processing of contactless memory tickets on a PC terminal equipped with PC/SC readers:

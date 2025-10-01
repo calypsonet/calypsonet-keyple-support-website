@@ -5,51 +5,51 @@
 
 token=$1
 
-./.github/scripts/dashboard_check_repos_status_curl.sh $token keyple-demo-ticketing
+./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet keyple-demo-ticketing
 if [ $? -eq 0 ]; then
   exit 0
 fi
-./.github/scripts/dashboard_check_repos_status_curl.sh $token keyple-cna-java-example
+./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet keyple-cna-java-example
 if [ $? -eq 0 ]; then
   exit 0
 fi
-./.github/scripts/dashboard_check_repos_status_curl.sh $token keyple-plugin-cna-coppernic-cone2-java-lib
+./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet keyple-plugin-cna-coppernic-cone2-java-lib
 if [ $? -eq 0 ]; then
   exit 0
 fi
-./.github/scripts/dashboard_check_repos_status_curl.sh $token keyple-plugin-cna-famoco-se-communication-java-lib
+./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet keyple-plugin-cna-famoco-se-communication-java-lib
 if [ $? -eq 0 ]; then
   exit 0
 fi
-./.github/scripts/dashboard_check_repos_status_curl.sh $token keyple-plugin-cna-flowbird-android-java-lib
+./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet keyple-plugin-cna-flowbird-android-java-lib
 if [ $? -eq 0 ]; then
   exit 0
 fi
-./.github/scripts/dashboard_check_repos_status_curl.sh $token keyple-plugin-cna-bluebird-specific-nfc-java-lib
+./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet keyple-plugin-cna-bluebird-specific-nfc-java-lib
 if [ $? -eq 0 ]; then
   exit 0
 fi
-./.github/scripts/dashboard_check_repos_status_curl.sh $token keyple-plugin-cna-legacyhsm-java-lib
+./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet keyple-plugin-cna-legacyhsm-java-lib
 if [ $? -eq 0 ]; then
   exit 0
 fi
-./.github/scripts/dashboard_check_repos_status_curl.sh $token keyple-plugin-cna-storagecard-java-lib
+./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet-member keyple-plugin-cna-storagecard-java-lib
 if [ $? -eq 0 ]; then
   exit 0
 fi
-./.github/scripts/dashboard_check_repos_status_curl.sh $token keyple-card-cna-storagecard-java-lib
+./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet-member keyple-card-cna-storagecard-java-lib
 if [ $? -eq 0 ]; then
   exit 0
 fi
-./.github/scripts/dashboard_check_repos_status_curl.sh $token cna-tool-card-analyzer-app
+./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet cna-tool-card-analyzer-app
 if [ $? -eq 0 ]; then
   exit 0
 fi
-./.github/scripts/dashboard_check_repos_status_curl.sh $token cna-tool-basic-card-perso-app
+./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet cna-tool-basic-card-perso-app
 if [ $? -eq 0 ]; then
   exit 0
 fi
-./.github/scripts/dashboard_check_repos_status_curl.sh $token cna-tool-basic-legacysam-perso-app
+./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet cna-tool-basic-legacysam-perso-app
 if [ $? -eq 0 ]; then
   exit 0
 fi
