@@ -1,10 +1,5 @@
-[
-  {
-    "name": "main",
-    "commit": {
-      "sha": "a9f82606b92698f783d9e69608c01ec450a36b89",
-      "url": "https://api.github.com/repos/calypsonet/keyple-card-cna-storagecard-java-lib/commits/a9f82606b92698f783d9e69608c01ec450a36b89"
-    },
-    "protected": false
-  }
-]
+{
+  "message": "Moved Permanently",
+  "url": "https://api.github.com/repositories/979269636/branches",
+  "documentation_url": "https://docs.github.com/rest/guides/best-practices-for-using-the-rest-api#follow-redirects"
+}
