@@ -2,27 +2,27 @@
   "total_count": 1,
   "check_runs": [
     {
-      "id": 51772524052,
+      "id": 51774082320,
       "name": "java-test",
-      "node_id": "CR_kwDOOl56JM8AAAAMDeIGFA",
-      "head_sha": "805741f8b794be225ece6c40fe24f07f49eef42f",
-      "external_id": "545b07ba-1c7f-504e-aaf4-5c9cd4b3b95e",
-      "url": "https://api.github.com/repos/calypsonet-member/keyple-plugin-cna-storagecard-java-lib/check-runs/51772524052",
-      "html_url": "https://github.com/calypsonet-member/keyple-plugin-cna-storagecard-java-lib/actions/runs/18186751491/job/51772524052",
-      "details_url": "https://github.com/calypsonet-member/keyple-plugin-cna-storagecard-java-lib/actions/runs/18186751491/job/51772524052",
+      "node_id": "CR_kwDOOl56JM8AAAAMDfnNEA",
+      "head_sha": "a688eb37a01e5937a2a073a44367dbf3f8aa4a6e",
+      "external_id": "bcc5f6fa-58a9-5058-b270-4ee4b5a838df",
+      "url": "https://api.github.com/repos/calypsonet-member/keyple-plugin-cna-storagecard-java-lib/check-runs/51774082320",
+      "html_url": "https://github.com/calypsonet-member/keyple-plugin-cna-storagecard-java-lib/actions/runs/18187242841/job/51774082320",
+      "details_url": "https://github.com/calypsonet-member/keyple-plugin-cna-storagecard-java-lib/actions/runs/18187242841/job/51774082320",
       "status": "completed",
       "conclusion": "success",
-      "started_at": "2025-10-02T07:46:11Z",
-      "completed_at": "2025-10-02T07:47:29Z",
+      "started_at": "2025-10-02T08:09:54Z",
+      "completed_at": "2025-10-02T08:11:07Z",
       "output": {
         "title": null,
         "summary": null,
         "text": null,
         "annotations_count": 0,
-        "annotations_url": "https://api.github.com/repos/calypsonet-member/keyple-plugin-cna-storagecard-java-lib/check-runs/51772524052/annotations"
+        "annotations_url": "https://api.github.com/repos/calypsonet-member/keyple-plugin-cna-storagecard-java-lib/check-runs/51774082320/annotations"
       },
       "check_suite": {
-        "id": 46744412047
+        "id": 46745619122
       },
       "app": {
         "id": 15368,
