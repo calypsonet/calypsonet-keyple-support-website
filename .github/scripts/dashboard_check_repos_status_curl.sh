@@ -28,7 +28,7 @@ github_hash=`echo $github_json | md5sum | cut -d ' ' -f 1`
 
 dashboard_json=`curl --request GET \
           --url https://keyple-support.calypsonet.org/dashboard/$repository_name"_.json" \
-          --header "content-type: application/json" | grep -v -e "size"$filter_website_repository`
+          --header "content-type: application/json" | grep -v -e "size" -e "temp_clone_token"$filter_website_repository`
 dashboard_hash=`echo $dashboard_json | md5sum | cut -d ' ' -f 1`
 
 if [ "$github_hash" = "$dashboard_hash" ]; then
