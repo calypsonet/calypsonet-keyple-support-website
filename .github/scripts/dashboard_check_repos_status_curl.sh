@@ -17,12 +17,13 @@ echo "Checking repository "$repository_name"..."
 
 # Compare hash value of the API result by excluding these fields:
 # - "size": Unknown reason of size changing.
+# - "temp_clone_token": Temporary token used to access the repository.
 # - "pushed_at": Cyclic commit when gh-pages branch is update (calypsonet-keyple-support-website).
 
 github_json=`curl --request GET \
           --url https://api.github.com/repos/$organization/$repository_name \
           --header "authorization: Bearer $token" \
-          --header "content-type: application/json" | grep -v -e "size"$filter_website_repository`
+          --header "content-type: application/json" | grep -v -e "size" -e "temp_clone_token"$filter_website_repository`
 github_hash=`echo $github_json | md5sum | cut -d ' ' -f 1`
 
 dashboard_json=`curl --request GET \
