@@ -64,6 +64,7 @@ loadProjectDashboard = async function() {
         a.appendChild(linkText);
         a.title = json.name;
         a.href = json.html_url;
+        a.target = "_blank";
         cell.appendChild(a);
 
         // column license
@@ -200,6 +201,7 @@ loadProjectDashboard = async function() {
         let a = document.createElement('a');
         let linkText = document.createTextNode("\u2b24");
         a.appendChild(linkText);
+        a.target = "_blank";
 
         try {
             json = await getJsonRepositoryData(repos, "_check_runs");
