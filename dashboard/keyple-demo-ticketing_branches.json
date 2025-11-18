@@ -61,5 +61,26 @@
       }
     },
     "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/main/protection"
+  },
+  {
+    "name": "validation-cpp",
+    "commit": {
+      "sha": "1c1c124611a17967a84c255452609820802cbde4",
+      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/1c1c124611a17967a84c255452609820802cbde4"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/validation-cpp/protection"
   }
 ]
