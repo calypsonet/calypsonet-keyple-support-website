@@ -6,5 +6,13 @@
       "url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/commits/e5773f4352eca8214ca05e97cbe322a8b2ed7d92"
     },
     "protected": false
+  },
+  {
+    "name": "process-commands",
+    "commit": {
+      "sha": "782f4f0f81700e5b613460a41b09e270b63de536",
+      "url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/commits/782f4f0f81700e5b613460a41b09e270b63de536"
+    },
+    "protected": false
   }
 ]
