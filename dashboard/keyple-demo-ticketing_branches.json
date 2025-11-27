@@ -1,26 +1,5 @@
 [
   {
-    "name": "business-isolation",
-    "commit": {
-      "sha": "0719384f956b2aeacfb879e0399255712e743483",
-      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/0719384f956b2aeacfb879e0399255712e743483"
-    },
-    "protected": false,
-    "protection": {
-      "enabled": false,
-      "required_status_checks": {
-        "enforcement_level": "off",
-        "contexts": [
-
-        ],
-        "checks": [
-
-        ]
-      }
-    },
-    "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/business-isolation/protection"
-  },
-  {
     "name": "hexagonal",
     "commit": {
       "sha": "71ecb97e4f244d77da45fa11b5959f68e353ad0f",
@@ -44,8 +23,8 @@
   {
     "name": "main",
     "commit": {
-      "sha": "80949e54b634a2e63db94cc0ca67338870b976f9",
-      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/80949e54b634a2e63db94cc0ca67338870b976f9"
+      "sha": "dfd2868f49e259c2107974ac60f19ab3f4fb66c2",
+      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/dfd2868f49e259c2107974ac60f19ab3f4fb66c2"
     },
     "protected": false,
     "protection": {

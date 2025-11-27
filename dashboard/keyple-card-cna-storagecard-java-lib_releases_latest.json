@@ -103,7 +103,7 @@
       "state": "uploaded",
       "size": 1703,
       "digest": "sha256:ad7061145ec1914f39295c62614b545d3bb13e2fdefae8c98fc01e6d93612afc",
-      "download_count": 0,
+      "download_count": 1,
       "created_at": "2025-11-21T10:45:02Z",
       "updated_at": "2025-11-21T10:45:02Z",
       "browser_download_url": "https://github.com/calypsonet-member/keyple-card-cna-storagecard-java-lib/releases/download/2.1.0/keyple-card-cna-storagecard-java-lib-2.1.0-mock.jar"
