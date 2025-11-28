@@ -1,26 +1,5 @@
 [
   {
-    "name": "doc",
-    "commit": {
-      "sha": "86bf12ce72d34c3bccff65d7b12bcb614ce6e2a1",
-      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/86bf12ce72d34c3bccff65d7b12bcb614ce6e2a1"
-    },
-    "protected": false,
-    "protection": {
-      "enabled": false,
-      "required_status_checks": {
-        "enforcement_level": "off",
-        "contexts": [
-
-        ],
-        "checks": [
-
-        ]
-      }
-    },
-    "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/doc/protection"
-  },
-  {
     "name": "hexagonal",
     "commit": {
       "sha": "71ecb97e4f244d77da45fa11b5959f68e353ad0f",
@@ -44,8 +23,8 @@
   {
     "name": "main",
     "commit": {
-      "sha": "bdc33016fa4b0ec1842e55e8485cba2de6be0aae",
-      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/bdc33016fa4b0ec1842e55e8485cba2de6be0aae"
+      "sha": "70537bc72f67b87195e9ce1c0cefed32ea7ea338",
+      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/70537bc72f67b87195e9ce1c0cefed32ea7ea338"
     },
     "protected": false,
     "protection": {
