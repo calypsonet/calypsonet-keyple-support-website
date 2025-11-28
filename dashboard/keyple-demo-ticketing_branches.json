@@ -1,5 +1,26 @@
 [
   {
+    "name": "doc",
+    "commit": {
+      "sha": "3d63e1f1d41e26fbf0fa66984aee59d7327bbf4b",
+      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/3d63e1f1d41e26fbf0fa66984aee59d7327bbf4b"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/doc/protection"
+  },
+  {
     "name": "hexagonal",
     "commit": {
       "sha": "71ecb97e4f244d77da45fa11b5959f68e353ad0f",
