@@ -1,5 +1,10 @@
-{
-  "message": "Moved Permanently",
-  "url": "https://api.github.com/repositories/871283404/branches",
-  "documentation_url": "https://docs.github.com/rest/guides/best-practices-for-using-the-rest-api#follow-redirects"
-}
+[
+  {
+    "name": "main",
+    "commit": {
+      "sha": "eaeff293478abd294cac2c9cb5b6677136c82d08",
+      "url": "https://api.github.com/repos/calypsonet-member/cna-tool-basic-card-perso-app/commits/eaeff293478abd294cac2c9cb5b6677136c82d08"
+    },
+    "protected": false
+  }
+]

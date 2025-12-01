@@ -1,5 +1,10 @@
-{
-  "message": "Moved Permanently",
-  "url": "https://api.github.com/repositories/871284906/branches",
-  "documentation_url": "https://docs.github.com/rest/guides/best-practices-for-using-the-rest-api#follow-redirects"
-}
+[
+  {
+    "name": "main",
+    "commit": {
+      "sha": "a13d560cb0153cb8bd465c36f626352273ced3a4",
+      "url": "https://api.github.com/repos/calypsonet-member/cna-tool-basic-legacysam-perso-app/commits/a13d560cb0153cb8bd465c36f626352273ced3a4"
+    },
+    "protected": false
+  }
+]
