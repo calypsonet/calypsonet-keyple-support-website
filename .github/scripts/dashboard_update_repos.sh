@@ -28,8 +28,8 @@ echo "," >> dashboard/repository_list.json
 echo "," >> dashboard/repository_list.json
 ../.github/scripts/dashboard_update_repo.sh $token calypsonet cna-tool-card-analyzer-app "tool" "EPL-2.0" "tool/card-audit/" true
 echo "," >> dashboard/repository_list.json
-../.github/scripts/dashboard_update_repo.sh $token calypsonet cna-tool-basic-card-perso-app "tool" "CNA App" "tool/basic-card/" true
+../.github/scripts/dashboard_update_repo.sh $token calypsonet-member cna-tool-basic-card-perso-app "tool" "CNA App" "tool/basic-card/" true
 echo "," >> dashboard/repository_list.json
-../.github/scripts/dashboard_update_repo.sh $token calypsonet cna-tool-basic-legacysam-perso-app "tool" "CNA App" "tool/basic-sam/" true
+../.github/scripts/dashboard_update_repo.sh $token calypsonet-member cna-tool-basic-legacysam-perso-app "tool" "CNA App" "tool/basic-sam/" true
 echo "" >> dashboard/repository_list.json
 echo "]" >> dashboard/repository_list.json
