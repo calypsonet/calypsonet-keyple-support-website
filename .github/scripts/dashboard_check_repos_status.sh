@@ -45,11 +45,11 @@ fi
 if [ $? -eq 0 ]; then
   exit 0
 fi
-./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet cna-tool-basic-card-perso-app
+./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet-member cna-tool-basic-card-perso-app
 if [ $? -eq 0 ]; then
   exit 0
 fi
-./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet cna-tool-basic-legacysam-perso-app
+./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet-member cna-tool-basic-legacysam-perso-app
 if [ $? -eq 0 ]; then
   exit 0
 fi
