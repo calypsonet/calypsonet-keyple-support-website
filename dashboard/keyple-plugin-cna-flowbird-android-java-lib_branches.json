@@ -1,5 +1,26 @@
 [
   {
+    "name": "develop",
+    "commit": {
+      "sha": "c985d004443d80977363dc5d8aea155095901472",
+      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-flowbird-android-java-lib/commits/c985d004443d80977363dc5d8aea155095901472"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-flowbird-android-java-lib/branches/develop/protection"
+  },
+  {
     "name": "main",
     "commit": {
       "sha": "6f6b768b15c920d5c8fd810ad1af4f6f3386cbff",
