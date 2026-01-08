@@ -19,5 +19,26 @@
       }
     },
     "protection_url": "https://api.github.com/repos/calypsonet/keyple-cna-java-example/branches/main/protection"
+  },
+  {
+    "name": "mifare-classic",
+    "commit": {
+      "sha": "af53d2559474ef66865f4537b02597afb09ee575",
+      "url": "https://api.github.com/repos/calypsonet/keyple-cna-java-example/commits/af53d2559474ef66865f4537b02597afb09ee575"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/calypsonet/keyple-cna-java-example/branches/mifare-classic/protection"
   }
 ]
