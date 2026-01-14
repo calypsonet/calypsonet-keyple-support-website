@@ -34,7 +34,7 @@
     },
     "body": null,
     "created_at": "2026-01-13T14:39:54Z",
-    "updated_at": "2026-01-14T11:10:16Z",
+    "updated_at": "2026-01-14T12:24:46Z",
     "closed_at": null,
     "merged_at": null,
     "merge_commit_sha": "897ec6063dfa7402fa4ed0ae27c11576584e8a66",
@@ -43,27 +43,7 @@
 
     ],
     "requested_reviewers": [
-      {
-        "login": "andrei-cristea",
-        "id": 26622621,
-        "node_id": "MDQ6VXNlcjI2NjIyNjIx",
-        "avatar_url": "https://avatars.githubusercontent.com/u/26622621?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/andrei-cristea",
-        "html_url": "https://github.com/andrei-cristea",
-        "followers_url": "https://api.github.com/users/andrei-cristea/followers",
-        "following_url": "https://api.github.com/users/andrei-cristea/following{/other_user}",
-        "gists_url": "https://api.github.com/users/andrei-cristea/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/andrei-cristea/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/andrei-cristea/subscriptions",
-        "organizations_url": "https://api.github.com/users/andrei-cristea/orgs",
-        "repos_url": "https://api.github.com/users/andrei-cristea/repos",
-        "events_url": "https://api.github.com/users/andrei-cristea/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/andrei-cristea/received_events",
-        "type": "User",
-        "user_view_type": "public",
-        "site_admin": false
-      }
+
     ],
     "requested_teams": [
 
