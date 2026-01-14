@@ -10,8 +10,8 @@
   {
     "name": "mifare-classic",
     "commit": {
-      "sha": "41d21020360a1f503bfbf222d4d936cec4d6aa4d",
-      "url": "https://api.github.com/repos/calypsonet-member/keyple-plugin-cna-storagecard-java-lib/commits/41d21020360a1f503bfbf222d4d936cec4d6aa4d"
+      "sha": "896d855cb028c1d0faafe5f9c12882b42cc68ad8",
+      "url": "https://api.github.com/repos/calypsonet-member/keyple-plugin-cna-storagecard-java-lib/commits/896d855cb028c1d0faafe5f9c12882b42cc68ad8"
     },
     "protected": false
   }
