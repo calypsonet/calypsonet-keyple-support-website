@@ -34,10 +34,10 @@
     },
     "body": null,
     "created_at": "2026-01-13T14:42:18Z",
-    "updated_at": "2026-01-13T14:42:47Z",
+    "updated_at": "2026-01-15T15:38:18Z",
     "closed_at": null,
     "merged_at": null,
-    "merge_commit_sha": "8f3220ca59eeb4810f9539251e56ca2d9ed9dde9",
+    "merge_commit_sha": "2940fd36fc36a07f68c0fbf7b34cdcdca2312458",
     "assignee": null,
     "assignees": [
 
@@ -77,11 +77,11 @@
     "review_comments_url": "https://api.github.com/repos/calypsonet/keyple-cna-java-example/pulls/1/comments",
     "review_comment_url": "https://api.github.com/repos/calypsonet/keyple-cna-java-example/pulls/comments{/number}",
     "comments_url": "https://api.github.com/repos/calypsonet/keyple-cna-java-example/issues/1/comments",
-    "statuses_url": "https://api.github.com/repos/calypsonet/keyple-cna-java-example/statuses/169d284e28fc13c61f6d1abfb38db3287d741721",
+    "statuses_url": "https://api.github.com/repos/calypsonet/keyple-cna-java-example/statuses/05c978bb6c17c2883bee005b50d2b9b37c2120a2",
     "head": {
       "label": "calypsonet:mifare-classic",
       "ref": "mifare-classic",
-      "sha": "169d284e28fc13c61f6d1abfb38db3287d741721",
+      "sha": "05c978bb6c17c2883bee005b50d2b9b37c2120a2",
       "user": {
         "login": "calypsonet",
         "id": 36229037,
@@ -172,7 +172,7 @@
         "deployments_url": "https://api.github.com/repos/calypsonet/keyple-cna-java-example/deployments",
         "created_at": "2025-06-27T09:23:47Z",
         "updated_at": "2025-07-01T09:11:26Z",
-        "pushed_at": "2026-01-13T10:12:10Z",
+        "pushed_at": "2026-01-15T15:38:17Z",
         "git_url": "git://github.com/calypsonet/keyple-cna-java-example.git",
         "ssh_url": "git@github.com:calypsonet/keyple-cna-java-example.git",
         "clone_url": "https://github.com/calypsonet/keyple-cna-java-example.git",
@@ -307,7 +307,7 @@
         "deployments_url": "https://api.github.com/repos/calypsonet/keyple-cna-java-example/deployments",
         "created_at": "2025-06-27T09:23:47Z",
         "updated_at": "2025-07-01T09:11:26Z",
-        "pushed_at": "2026-01-13T10:12:10Z",
+        "pushed_at": "2026-01-15T15:38:17Z",
         "git_url": "git://github.com/calypsonet/keyple-cna-java-example.git",
         "ssh_url": "git@github.com:calypsonet/keyple-cna-java-example.git",
         "clone_url": "https://github.com/calypsonet/keyple-cna-java-example.git",
@@ -371,7 +371,7 @@
         "href": "https://api.github.com/repos/calypsonet/keyple-cna-java-example/pulls/1/commits"
       },
       "statuses": {
-        "href": "https://api.github.com/repos/calypsonet/keyple-cna-java-example/statuses/169d284e28fc13c61f6d1abfb38db3287d741721"
+        "href": "https://api.github.com/repos/calypsonet/keyple-cna-java-example/statuses/05c978bb6c17c2883bee005b50d2b9b37c2120a2"
       }
     },
     "author_association": "MEMBER",
