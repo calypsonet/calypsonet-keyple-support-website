@@ -1,6 +1,5 @@
 {
-  "total_count": 0,
-  "check_runs": [
-
-  ]
+  "message": "Moved Permanently",
+  "url": "https://api.github.com/repositories/573048637/commits/main/check-runs",
+  "documentation_url": "https://docs.github.com/rest/guides/best-practices-for-using-the-rest-api#follow-redirects"
 }
