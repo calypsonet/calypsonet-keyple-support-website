@@ -19,5 +19,26 @@
       }
     },
     "protection_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/branches/main/protection"
+  },
+  {
+    "name": "mifare-classic",
+    "commit": {
+      "sha": "b104d2960349b20336ec6cac47c14c8c56f97304",
+      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/commits/b104d2960349b20336ec6cac47c14c8c56f97304"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/branches/mifare-classic/protection"
   }
 ]
