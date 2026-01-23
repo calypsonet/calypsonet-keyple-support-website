@@ -34,10 +34,10 @@
     },
     "body": null,
     "created_at": "2026-01-22T19:02:39Z",
-    "updated_at": "2026-01-22T19:02:49Z",
+    "updated_at": "2026-01-23T10:26:25Z",
     "closed_at": null,
     "merged_at": null,
-    "merge_commit_sha": "81b323080891e6ee74ad1a1a88c3244767bad185",
+    "merge_commit_sha": "aeaf09d7416357cc6961100626f1855ac07be6b4",
     "assignee": null,
     "assignees": [
 
@@ -77,11 +77,11 @@
     "review_comments_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/pulls/5/comments",
     "review_comment_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/pulls/comments{/number}",
     "comments_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/issues/5/comments",
-    "statuses_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/statuses/b104d2960349b20336ec6cac47c14c8c56f97304",
+    "statuses_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/statuses/d43bffa858abae02cdeeb52b0ef21d6b0d5c6697",
     "head": {
       "label": "calypsonet:mifare-classic",
       "ref": "mifare-classic",
-      "sha": "b104d2960349b20336ec6cac47c14c8c56f97304",
+      "sha": "d43bffa858abae02cdeeb52b0ef21d6b0d5c6697",
       "user": {
         "login": "calypsonet",
         "id": 36229037,
@@ -172,13 +172,13 @@
         "deployments_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/deployments",
         "created_at": "2022-12-01T14:40:51Z",
         "updated_at": "2025-09-23T12:12:05Z",
-        "pushed_at": "2026-01-22T19:01:26Z",
+        "pushed_at": "2026-01-23T10:26:24Z",
         "git_url": "git://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib.git",
         "ssh_url": "git@github.com:calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib.git",
         "clone_url": "https://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib.git",
         "svn_url": "https://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib",
         "homepage": "",
-        "size": 238,
+        "size": 276,
         "stargazers_count": 1,
         "watchers_count": 1,
         "language": "Kotlin",
@@ -307,13 +307,13 @@
         "deployments_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/deployments",
         "created_at": "2022-12-01T14:40:51Z",
         "updated_at": "2025-09-23T12:12:05Z",
-        "pushed_at": "2026-01-22T19:01:26Z",
+        "pushed_at": "2026-01-23T10:26:24Z",
         "git_url": "git://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib.git",
         "ssh_url": "git@github.com:calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib.git",
         "clone_url": "https://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib.git",
         "svn_url": "https://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib",
         "homepage": "",
-        "size": 238,
+        "size": 276,
         "stargazers_count": 1,
         "watchers_count": 1,
         "language": "Kotlin",
@@ -371,7 +371,7 @@
         "href": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/pulls/5/commits"
       },
       "statuses": {
-        "href": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/statuses/b104d2960349b20336ec6cac47c14c8c56f97304"
+        "href": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/statuses/d43bffa858abae02cdeeb52b0ef21d6b0d5c6697"
       }
     },
     "author_association": "MEMBER",
