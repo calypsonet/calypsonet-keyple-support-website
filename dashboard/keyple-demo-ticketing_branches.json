@@ -42,6 +42,27 @@
     "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/main/protection"
   },
   {
+    "name": "mifare_classic",
+    "commit": {
+      "sha": "c048ff723ad856d894f8175749a969211bc2fee8",
+      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/c048ff723ad856d894f8175749a969211bc2fee8"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/mifare_classic/protection"
+  },
+  {
     "name": "validation-cpp",
     "commit": {
       "sha": "1c1c124611a17967a84c255452609820802cbde4",
