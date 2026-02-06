@@ -2,16 +2,8 @@
   {
     "name": "main",
     "commit": {
-      "sha": "e48c3734023f21614f1c23ab39665c39aee9ee5e",
-      "url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/commits/e48c3734023f21614f1c23ab39665c39aee9ee5e"
-    },
-    "protected": false
-  },
-  {
-    "name": "mifare-classic",
-    "commit": {
-      "sha": "a47b16fb4ab2554fb8703887a8bd81a718fc396f",
-      "url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/commits/a47b16fb4ab2554fb8703887a8bd81a718fc396f"
+      "sha": "68b123440dd07cf9e95e7ae9967802768a8555f5",
+      "url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/commits/68b123440dd07cf9e95e7ae9967802768a8555f5"
     },
     "protected": false
   }

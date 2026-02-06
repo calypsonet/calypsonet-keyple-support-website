@@ -2,27 +2,27 @@
   "total_count": 2,
   "check_runs": [
     {
-      "id": 56034383424,
+      "id": 62762798752,
       "name": "build-and-attach",
-      "node_id": "CR_kwDOOl54BM8AAAANC-jWQA",
-      "head_sha": "e48c3734023f21614f1c23ab39665c39aee9ee5e",
-      "external_id": "918841ff-f794-50f3-be09-ee57b931421f",
-      "url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/check-runs/56034383424",
-      "html_url": "https://github.com/calypsonet-member/keyple-card-cna-storagecard-java-lib/actions/runs/19567943913/job/56034383424",
-      "details_url": "https://github.com/calypsonet-member/keyple-card-cna-storagecard-java-lib/actions/runs/19567943913/job/56034383424",
+      "node_id": "CR_kwDOOl54BM8AAAAOnPROoA",
+      "head_sha": "68b123440dd07cf9e95e7ae9967802768a8555f5",
+      "external_id": "c8309071-0d9a-5c8a-b73e-2103a8bf066d",
+      "url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/check-runs/62762798752",
+      "html_url": "https://github.com/calypsonet-member/keyple-card-cna-storagecard-java-lib/actions/runs/21755031017/job/62762798752",
+      "details_url": "https://github.com/calypsonet-member/keyple-card-cna-storagecard-java-lib/actions/runs/21755031017/job/62762798752",
       "status": "completed",
       "conclusion": "success",
-      "started_at": "2025-11-21T10:43:02Z",
-      "completed_at": "2025-11-21T10:45:06Z",
+      "started_at": "2026-02-06T14:59:03Z",
+      "completed_at": "2026-02-06T15:01:24Z",
       "output": {
         "title": null,
         "summary": null,
         "text": null,
         "annotations_count": 0,
-        "annotations_url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/check-runs/56034383424/annotations"
+        "annotations_url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/check-runs/62762798752/annotations"
       },
       "check_suite": {
-        "id": 50469984973
+        "id": 56626954813
       },
       "app": {
         "id": 15368,
@@ -117,27 +117,27 @@
       ]
     },
     {
-      "id": 56034321142,
+      "id": 62762518032,
       "name": "java-test",
-      "node_id": "CR_kwDOOl54BM8AAAANC-fi9g",
-      "head_sha": "e48c3734023f21614f1c23ab39665c39aee9ee5e",
-      "external_id": "0e91933b-c4bd-5cb2-b5f4-e4c9df7bcb9a",
-      "url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/check-runs/56034321142",
-      "html_url": "https://github.com/calypsonet-member/keyple-card-cna-storagecard-java-lib/actions/runs/19567924513/job/56034321142",
-      "details_url": "https://github.com/calypsonet-member/keyple-card-cna-storagecard-java-lib/actions/runs/19567924513/job/56034321142",
+      "node_id": "CR_kwDOOl54BM8AAAAOnPAGEA",
+      "head_sha": "68b123440dd07cf9e95e7ae9967802768a8555f5",
+      "external_id": "8a4fa353-d0a2-5a47-8464-27a69e380726",
+      "url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/check-runs/62762518032",
+      "html_url": "https://github.com/calypsonet-member/keyple-card-cna-storagecard-java-lib/actions/runs/21754952259/job/62762518032",
+      "details_url": "https://github.com/calypsonet-member/keyple-card-cna-storagecard-java-lib/actions/runs/21754952259/job/62762518032",
       "status": "completed",
       "conclusion": "success",
-      "started_at": "2025-11-21T10:42:17Z",
-      "completed_at": "2025-11-21T10:43:29Z",
+      "started_at": "2026-02-06T14:56:34Z",
+      "completed_at": "2026-02-06T14:57:50Z",
       "output": {
         "title": null,
         "summary": null,
         "text": null,
         "annotations_count": 0,
-        "annotations_url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/check-runs/56034321142/annotations"
+        "annotations_url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/check-runs/62762518032/annotations"
       },
       "check_suite": {
-        "id": 50469933428
+        "id": 56626707327
       },
       "app": {
         "id": 15368,
