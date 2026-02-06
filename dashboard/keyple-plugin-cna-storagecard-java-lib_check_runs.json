@@ -2,24 +2,24 @@
   "total_count": 2,
   "check_runs": [
     {
-      "id": 62777246431,
+      "id": 62778906137,
       "name": "build-and-attach",
-      "node_id": "CR_kwDOOl56JM8AAAAOndDC3w",
+      "node_id": "CR_kwDOOl56JM8AAAAOneoWGQ",
       "head_sha": "67879a8cb67ba3575192e091ee24e8cb49d39751",
-      "external_id": "385f52cb-a642-5548-839d-6aaa238f0c73",
-      "url": "https://api.github.com/repos/calypsonet-member/keyple-plugin-cna-storagecard-java-lib/check-runs/62777246431",
-      "html_url": "https://github.com/calypsonet-member/keyple-plugin-cna-storagecard-java-lib/actions/runs/21759012583/job/62777246431",
-      "details_url": "https://github.com/calypsonet-member/keyple-plugin-cna-storagecard-java-lib/actions/runs/21759012583/job/62777246431",
+      "external_id": "f8d5ebaf-1833-51b6-a005-763716f35a03",
+      "url": "https://api.github.com/repos/calypsonet-member/keyple-plugin-cna-storagecard-java-lib/check-runs/62778906137",
+      "html_url": "https://github.com/calypsonet-member/keyple-plugin-cna-storagecard-java-lib/actions/runs/21759012583/job/62778906137",
+      "details_url": "https://github.com/calypsonet-member/keyple-plugin-cna-storagecard-java-lib/actions/runs/21759012583/job/62778906137",
       "status": "completed",
-      "conclusion": "failure",
-      "started_at": "2026-02-06T17:05:40Z",
-      "completed_at": "2026-02-06T17:06:51Z",
+      "conclusion": "success",
+      "started_at": "2026-02-06T17:21:02Z",
+      "completed_at": "2026-02-06T17:22:58Z",
       "output": {
         "title": null,
         "summary": null,
         "text": null,
-        "annotations_count": 1,
-        "annotations_url": "https://api.github.com/repos/calypsonet-member/keyple-plugin-cna-storagecard-java-lib/check-runs/62777246431/annotations"
+        "annotations_count": 0,
+        "annotations_url": "https://api.github.com/repos/calypsonet-member/keyple-plugin-cna-storagecard-java-lib/check-runs/62778906137/annotations"
       },
       "check_suite": {
         "id": 56639169677

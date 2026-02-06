@@ -23,8 +23,8 @@
   {
     "name": "mifare-classic",
     "commit": {
-      "sha": "94be30f0b74191354d8a0981791fe52535eaa9bf",
-      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/commits/94be30f0b74191354d8a0981791fe52535eaa9bf"
+      "sha": "7938ce07b7396bf6518ae2b551bf3c617dbb1601",
+      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/commits/7938ce07b7396bf6518ae2b551bf3c617dbb1601"
     },
     "protected": false,
     "protection": {
