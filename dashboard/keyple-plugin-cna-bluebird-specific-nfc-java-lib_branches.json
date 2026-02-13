@@ -1,9 +1,30 @@
 [
   {
+    "name": "github-packages",
+    "commit": {
+      "sha": "29ba95e3596b51cdbf61662338f130b12c7724a0",
+      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/commits/29ba95e3596b51cdbf61662338f130b12c7724a0"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/branches/github-packages/protection"
+  },
+  {
     "name": "main",
     "commit": {
-      "sha": "8d31f25144fd2778534961bfeea8390ebc6fd335",
-      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/commits/8d31f25144fd2778534961bfeea8390ebc6fd335"
+      "sha": "6d269a62c019df2c5e0e35bdfcdd015334617df7",
+      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/commits/6d269a62c019df2c5e0e35bdfcdd015334617df7"
     },
     "protected": false,
     "protection": {
@@ -19,27 +40,6 @@
       }
     },
     "protection_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/branches/main/protection"
-  },
-  {
-    "name": "mifare-classic",
-    "commit": {
-      "sha": "7938ce07b7396bf6518ae2b551bf3c617dbb1601",
-      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/commits/7938ce07b7396bf6518ae2b551bf3c617dbb1601"
-    },
-    "protected": false,
-    "protection": {
-      "enabled": false,
-      "required_status_checks": {
-        "enforcement_level": "off",
-        "contexts": [
-
-        ],
-        "checks": [
-
-        ]
-      }
-    },
-    "protection_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/branches/mifare-classic/protection"
   },
   {
     "name": "publish-gp",
