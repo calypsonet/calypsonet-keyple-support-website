@@ -2,27 +2,27 @@
   "total_count": 1,
   "check_runs": [
     {
-      "id": 63530751083,
+      "id": 63547752663,
       "name": "java-test",
-      "node_id": "CR_kwDOIieu588AAAAOyrpUaw",
-      "head_sha": "6d269a62c019df2c5e0e35bdfcdd015334617df7",
-      "external_id": "5d16bc8a-bdc0-5a18-a3eb-82fcdf1c7803",
-      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/check-runs/63530751083",
-      "html_url": "https://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/actions/runs/21989032807/job/63530751083",
-      "details_url": "https://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/actions/runs/21989032807/job/63530751083",
+      "node_id": "CR_kwDOIieu588AAAAOy73A1w",
+      "head_sha": "19f2b7a4c8d03db5913a5e9eadeabc156aecfb3e",
+      "external_id": "14611054-f505-5d6e-8bee-b7aa372afa69",
+      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/check-runs/63547752663",
+      "html_url": "https://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/actions/runs/21993733279/job/63547752663",
+      "details_url": "https://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/actions/runs/21993733279/job/63547752663",
       "status": "completed",
       "conclusion": "success",
-      "started_at": "2026-02-13T13:43:50Z",
-      "completed_at": "2026-02-13T13:46:40Z",
+      "started_at": "2026-02-13T16:07:38Z",
+      "completed_at": "2026-02-13T16:10:29Z",
       "output": {
         "title": null,
         "summary": null,
         "text": null,
         "annotations_count": 0,
-        "annotations_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/check-runs/63530751083/annotations"
+        "annotations_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/check-runs/63547752663/annotations"
       },
       "check_suite": {
-        "id": 57335973381
+        "id": 57351331744
       },
       "app": {
         "id": 15368,
