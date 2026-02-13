@@ -44,8 +44,8 @@
   {
     "name": "mifare_classic",
     "commit": {
-      "sha": "f61752a8766fddace983e97be1aa3adb72a9026b",
-      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/f61752a8766fddace983e97be1aa3adb72a9026b"
+      "sha": "5c69d276b2ca293c6ba076fd7fd0df7b5c942939",
+      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/5c69d276b2ca293c6ba076fd7fd0df7b5c942939"
     },
     "protected": false,
     "protection": {
