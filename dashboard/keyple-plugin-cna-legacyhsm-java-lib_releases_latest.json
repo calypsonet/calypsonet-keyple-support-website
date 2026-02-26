@@ -103,7 +103,7 @@
       "state": "uploaded",
       "size": 9754,
       "digest": null,
-      "download_count": 5,
+      "download_count": 6,
       "created_at": "2023-05-15T14:23:18Z",
       "updated_at": "2023-05-15T14:23:18Z",
       "browser_download_url": "https://github.com/calypsonet/keyple-plugin-cna-legacyhsm-java-lib/releases/download/1.0.1/keyple-plugin-cna-legacyhsm-java-lib-1.0.1-sources.jar"

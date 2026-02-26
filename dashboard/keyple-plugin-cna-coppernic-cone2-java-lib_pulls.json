@@ -38,27 +38,6 @@
     "closed_at": null,
     "merged_at": null,
     "merge_commit_sha": "3a4ac34427ac8be077e0cc941889a131aaf6608a",
-    "assignee": {
-      "login": "pterr",
-      "id": 36192444,
-      "node_id": "MDQ6VXNlcjM2MTkyNDQ0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/36192444?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/pterr",
-      "html_url": "https://github.com/pterr",
-      "followers_url": "https://api.github.com/users/pterr/followers",
-      "following_url": "https://api.github.com/users/pterr/following{/other_user}",
-      "gists_url": "https://api.github.com/users/pterr/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/pterr/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/pterr/subscriptions",
-      "organizations_url": "https://api.github.com/users/pterr/orgs",
-      "repos_url": "https://api.github.com/users/pterr/repos",
-      "events_url": "https://api.github.com/users/pterr/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/pterr/received_events",
-      "type": "User",
-      "user_view_type": "public",
-      "site_admin": false
-    },
     "assignees": [
       {
         "login": "pterr",
@@ -400,6 +379,27 @@
     },
     "author_association": "CONTRIBUTOR",
     "auto_merge": null,
+    "assignee": {
+      "login": "pterr",
+      "id": 36192444,
+      "node_id": "MDQ6VXNlcjM2MTkyNDQ0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36192444?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/pterr",
+      "html_url": "https://github.com/pterr",
+      "followers_url": "https://api.github.com/users/pterr/followers",
+      "following_url": "https://api.github.com/users/pterr/following{/other_user}",
+      "gists_url": "https://api.github.com/users/pterr/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/pterr/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/pterr/subscriptions",
+      "organizations_url": "https://api.github.com/users/pterr/orgs",
+      "repos_url": "https://api.github.com/users/pterr/repos",
+      "events_url": "https://api.github.com/users/pterr/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/pterr/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
     "active_lock_reason": null
   }
 ]
