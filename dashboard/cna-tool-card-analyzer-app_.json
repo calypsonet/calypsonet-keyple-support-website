@@ -114,8 +114,8 @@
   "watchers": 4,
   "default_branch": "main",
   "permissions": {
-    "admin": false,
-    "maintain": false,
+    "admin": true,
+    "maintain": true,
     "push": true,
     "triage": true,
     "pull": true
@@ -155,6 +155,23 @@
     "type": "Organization",
     "user_view_type": "public",
     "site_admin": false
+  },
+  "security_and_analysis": {
+    "secret_scanning": {
+      "status": "disabled"
+    },
+    "secret_scanning_push_protection": {
+      "status": "disabled"
+    },
+    "dependabot_security_updates": {
+      "status": "disabled"
+    },
+    "secret_scanning_non_provider_patterns": {
+      "status": "disabled"
+    },
+    "secret_scanning_validity_checks": {
+      "status": "disabled"
+    }
   },
   "network_count": 0,
   "subscribers_count": 3
