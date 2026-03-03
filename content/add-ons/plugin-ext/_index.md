@@ -15,7 +15,7 @@ To illustrate some other ways of designing plugins, CNA has also released additi
 
 4 plugins are designed for integration into Android based embedded ticketing terminals equipped with a contactless card reader, as well as one or more contact readers for SAMs.
 - The Famoco plugin interfaces only with SAM readers, as the contactless reader on the Famoco supported terminals is based on the standard Android NFC API (natively supported by Keyple).
-- In addition to SAM readers, the Coppernic, Flowbird and Bluebird plug-ins manage an observable contactless reader (capable of detecting the card presence).
+- In addition to SAM readers, the Coppernic, Arrive and Bluebird plug-ins manage an observable contactless reader (capable of detecting the card presence).
 
 The 5th plugin enables a Calypso legacy HSM to be interfaced on a Linux server equipped with a Spirtech HSM.
 
@@ -45,7 +45,7 @@ The 5th plugin enables a Calypso legacy HSM to be interfaced on a Linux server e
         <td class="text-center">public</td>
     </tr>
     <tr>
-        <td class="text-center"><a href="https://github.com/calypsonet/keyple-plugin-cna-flowbird-android-java-lib" target="_blank" rel="noopener">Flowbird</a></td>
+        <td class="text-center"><a href="https://github.com/calypsonet/keyple-plugin-cna-arrive-android-jvm-lib" target="_blank" rel="noopener">Arrive</a></td>
         <td class="text-center">Axio Touch Validator/MTBorne validator, Magnetic Axio Touch Validator, Axio 4 Validator, Infigo Driver Console, Voyager Embedded Ticketing Vending Machine, Coppernic C-One, Coppernic C-One V2, Zebra TC77, ACTIA PSDT</td>
         <td class="text-center">private</td>
     </tr>
@@ -103,7 +103,7 @@ document.body.onload = function() {
 			<th scope="col" colspan="2">Plugin API implemented interfaces for each plugin</th>
 			<th scope="col">Coppernic</th>
 			<th scope="col">Famoco</th>
-			<th scope="col">Flowbird</th>
+			<th scope="col">Arrive</th>
 			<th scope="col">Bluebird</th>
 			<th scope="col">Legacy<br>HSM</th>			
 		</tr>

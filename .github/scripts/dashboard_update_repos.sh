@@ -16,7 +16,7 @@ echo "," >> dashboard/repository_list.json
 echo "," >> dashboard/repository_list.json
 ../.github/scripts/dashboard_update_repo.sh $token calypsonet keyple-plugin-cna-famoco-se-communication-java-lib "plugin" "EPL-2.0" "plugin-ext/famoco/" true
 echo "," >> dashboard/repository_list.json
-../.github/scripts/dashboard_update_repo.sh $token calypsonet keyple-plugin-cna-flowbird-android-java-lib "plugin" "EPL-2.0" "plugin-ext/flowbird/" true
+../.github/scripts/dashboard_update_repo.sh $token calypsonet keyple-plugin-cna-arrive-android-jvm-lib "plugin" "EPL-2.0" "plugin-ext/flowbird/" true
 echo "," >> dashboard/repository_list.json
 ../.github/scripts/dashboard_update_repo.sh $token calypsonet keyple-plugin-cna-bluebird-specific-nfc-java-lib "plugin" "EPL-2.0" "plugin-ext/bluebird/" true
 echo "," >> dashboard/repository_list.json

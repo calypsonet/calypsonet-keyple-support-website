@@ -98,7 +98,7 @@ The architecture of validation and control tools is very similar, with only the 
 	</tbody>
 </table>
 
-These demos can be installed on various Android terminals such as Coppernic, Famoco, Flowbird, or Bluebird using the plugins provided by CNA.
+These demos can be installed on various Android terminals such as Coppernic, Famoco, Arrive, or Bluebird using the plugins provided by CNA.
 
 Validation scenario:
 - An autonomous validator on Android-based ticketing terminal that seamlessly starts a secure session when a contactless card is detected.

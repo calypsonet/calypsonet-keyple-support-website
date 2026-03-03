@@ -1,6 +1,6 @@
 ---
-title: Keyple plugin for Flowbird smart card reader
-linkTitle: "🌍 Flowbird plugin"
+title: Keyple plugin for Arrive smart card reader
+linkTitle: "🌍 Arrive plugin"
 type: book
 weight: 220
 ---
