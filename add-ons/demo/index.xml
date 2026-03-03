@@ -87,7 +87,7 @@ The ticketing data format is just an example defined for demonstration purposes.
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;p>These demos can be installed on various Android terminals such as Coppernic, Famoco, Flowbird, or Bluebird using the plugins provided by CNA.&lt;/p>
+&lt;p>These demos can be installed on various Android terminals such as Coppernic, Famoco, Arrive, or Bluebird using the plugins provided by CNA.&lt;/p>
 &lt;p>Validation scenario:&lt;/p>
 &lt;ul>
 &lt;li>An autonomous validator on Android-based ticketing terminal that seamlessly starts a secure session when a contactless card is detected.&lt;/li>
