@@ -60,6 +60,18 @@ The Calypso Basic Card Personalization Tool is dedicated to personalization of C
 {{% /modal %}}
         </td>
     </tr>
+    <tr>
+        <td class="text-center"><a href="./certificate-legacyprime/">Calypso Legacy Prime Certificate Tool</a></td>
+        <td class="text-center">Windows, Linux, macOS</td>
+        <td class="text-center">Java</td>
+        <td class="text-center"><a href="https://www.eclipse.org/legal/epl-2.0/" target="_blank" rel="noopener">EPL-2.0</a></td>
+        <td class="text-center">Open Source</td>
+        <td class="text-center">
+{{% modal title="Calypso Legacy Prime Certificate Generation Tool" %}}
+The Calypso Legacy Prime Certificate Generation Tool is a set of libraries and demo apps to manage CA and Card certificates compliant with the Legacy Prime specification.
+{{% /modal %}}
+        </td>
+    </tr>
     </tbody>
 </table>
 
