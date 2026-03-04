@@ -722,4 +722,147 @@ authorized to distribute this tool to other parties.&lt;/p>
 &lt;li>&lt;strong>Responsibilities:&lt;/strong> ensure the correct selection of target and origin SAMs, and the proper handling of unlock values
 and other sensitive information.&lt;/li>
 &lt;li>&lt;strong>Usage:&lt;/strong> authorized personnel only. Misuse or unauthorized distribution is strictly prohibited.&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/ul></description></item><item><title>Calypso Legacy Prime Certificate Generation Tool</title><link>https://keyple-support.calypsonet.org/add-ons/tool/certificate-legacyprime/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/tool/certificate-legacyprime/</guid><description>&lt;br>
+&lt;h4 id="what-is-the-calypso-legacy-prime-certificate-generation-tool">What is the Calypso Legacy Prime Certificate Generation Tool?&lt;/h4>
+&lt;p>The &lt;strong>Calypso Legacy Prime Certificate Generation Tool&lt;/strong> is a set of libraries and demonstration applications designed to manage the generation and validation of certificates compliant with the &lt;strong>Calypso Legacy Prime&lt;/strong> specification.&lt;/p>
+&lt;p>It allows for the creation of a chain of trust from a &lt;strong>Prime Certificate Authority (PCA)&lt;/strong> to &lt;strong>Intermediate CAs&lt;/strong> and finally to &lt;strong>Calypso Cards&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>Key Features:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Certificate Generation&lt;/strong>: Create CA (Certificate Authority) and Card certificates.&lt;/li>
+&lt;li>&lt;strong>Certificate Store&lt;/strong>: Manage PCA public keys and CA certificates for validation.&lt;/li>
+&lt;li>&lt;strong>Certificate Validation&lt;/strong>: Parse and validate certificate signatures using RSA 2048-bit keys.&lt;/li>
+&lt;li>&lt;strong>Hybrid Cryptography&lt;/strong>: Support for RSA 2048-bit (for CAs) and ECC secp256r1 (for cards).&lt;/li>
+&lt;li>&lt;strong>ISO 9796-2 PSS&lt;/strong>: Implementation of RSA signatures with message recovery to optimize certificate size.&lt;/li>
+&lt;/ul>
+&lt;h4 id="why-use-the-calypso-legacy-prime-certificate-generation-tool">Why use the Calypso Legacy Prime Certificate Generation Tool?&lt;/h4>
+&lt;p>This tool is essential for developers and operators who need to:&lt;/p>
+&lt;ul>
+&lt;li>Implement a PKI (Public Key Infrastructure) for Calypso Legacy Prime systems.&lt;/li>
+&lt;li>Generate valid card certificates for secure transactions.&lt;/li>
+&lt;li>Understand and test the Calypso certificate chain of trust.&lt;/li>
+&lt;li>Integrate certificate management into their own back-office or personalization systems.&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;h2 id="involved-software-components">Involved software components&lt;/h2>
+&lt;p>The solution is divided into three main components:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>JVM API&lt;/strong>: Defines the generic interfaces for certificate generation, storage, and signing.&lt;/li>
+&lt;li>&lt;strong>JVM Lib&lt;/strong>: The reference Java implementation of the API, providing the cryptographic logic and certificate building.&lt;/li>
+&lt;li>&lt;strong>Demonstration App&lt;/strong>: A console-based application showing how to use the libraries in various scenarios.&lt;/li>
+&lt;/ol>
+&lt;figure id="figure-class-diagram-of-the-calypso-legacy-prime-certificate-api">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="../../media/cna-tool-certificate-legacyprime/api_class_diagram.svg" alt="Class diagram of the Calypso Legacy Prime Certificate API" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption data-pre="Figure&amp;nbsp;" data-post=":&amp;nbsp;" class="numbered">
+Class diagram of the Calypso Legacy Prime Certificate API
+&lt;/figcaption>&lt;/figure>
+&lt;br>
+&lt;h2 id="how-to-use-the-api">How to use the API&lt;/h2>
+&lt;h3 id="1-initialize-the-service">1. Initialize the Service&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="n">CalypsoCertificateLegacyPrimeService&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">service&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">CalypsoCertificateLegacyPrimeService&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">getInstance&lt;/span>&lt;span class="p">();&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">CalypsoCertificateLegacyPrimeApiFactory&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">factory&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">service&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">getCalypsoCertificateLegacyPrimeApiFactory&lt;/span>&lt;span class="p">();&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">CalypsoCertificateLegacyPrimeStore&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">store&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">factory&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">getCalypsoCertificateLegacyPrimeStore&lt;/span>&lt;span class="p">();&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="2-load-pca-public-key">2. Load PCA Public Key&lt;/h3>
+&lt;p>The store manages the root of trust by holding PCA public keys.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// From a raw RSA modulus (256 bytes)&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="kt">byte&lt;/span>&lt;span class="o">[]&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">pcaPublicKeyModulus&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">...;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">store&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">addPcaPublicKey&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">pcaKeyReference&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">pcaPublicKeyModulus&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="3-generate-ca-certificate">3. Generate CA Certificate&lt;/h3>
+&lt;p>Use the factory to create a generator and provide a signer implementation (SPI).&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="n">CalypsoCaCertificateLegacyPrimeGenerator&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">caGenerator&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">factory&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">createCalypsoCaCertificateLegacyPrimeGenerator&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">issuerKeyReference&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">customSigner&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="kt">byte&lt;/span>&lt;span class="o">[]&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">caCertificate&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">caGenerator&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">withCaPublicKey&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">caKeyReference&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">caPublicKey&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">withStartDate&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">2024&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">1&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">1&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">withEndDate&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">2034&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">12&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">31&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">withCaRights&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">0x0A&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c1">// May sign CA and Card&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">generate&lt;/span>&lt;span class="p">();&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="c1">// Add the generated CA to the store for further card signing&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">store&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">addCalypsoCaCertificateLegacyPrime&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">caCertificate&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="4-generate-card-certificate">4. Generate Card Certificate&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="n">CalypsoCardCertificateLegacyPrimeGenerator&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">cardGenerator&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">factory&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">createCalypsoCardCertificateLegacyPrimeGenerator&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">caKeyReference&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">customSigner&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="kt">byte&lt;/span>&lt;span class="o">[]&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">cardCertificate&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">cardGenerator&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">withCardAid&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">cardAid&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">withCardPublicKey&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">cardEccPublicKey&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c1">// 64 bytes (X+Y)&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">withCardSerialNumber&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">serialNumber&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">withStartDate&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">2024&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">1&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">1&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">withEndDate&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">2029&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">12&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">31&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">generate&lt;/span>&lt;span class="p">();&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;br>
+&lt;h2 id="demonstration-project">Demonstration Project&lt;/h2>
+&lt;p>An open-source &lt;a href="https://github.com/calypsonet/cna-demo-calypso-certificate-legacyprime-generator-app" target="_blank" rel="noopener">demonstration project&lt;/a> is available to illustrate the full lifecycle:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>In-Memory Demo&lt;/strong>: Quick demonstration with ephemeral keys.&lt;/li>
+&lt;li>&lt;strong>Advanced Demo&lt;/strong>: Shows how to manage persistent keys in &lt;strong>PEM format&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Self-Signed CA&lt;/strong>: Demonstrates a root CA configuration.&lt;/li>
+&lt;/ul>
+&lt;h3 id="prerequisites">Prerequisites&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Java 11&lt;/strong> or higher.&lt;/li>
+&lt;li>&lt;strong>Gradle 7&lt;/strong> or higher.&lt;/li>
+&lt;/ul>
+&lt;h3 id="quick-launch">Quick Launch&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Build the demo&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">./gradlew build
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Run the in-memory demonstration&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">java -cp &lt;span class="s2">&amp;#34;build/classes/java/main:...&amp;#34;&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> org.calypsonet.demo.calypso.certificate.legacyprime.generator.CalypsoCertificateDemoInMemory
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;br>
+&lt;h2 id="certificate-formats">Certificate Formats&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Certificate Type&lt;/th>
+&lt;th>Size&lt;/th>
+&lt;th>Signature Type&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;strong>CA Certificate&lt;/strong>&lt;/td>
+&lt;td>384 bytes&lt;/td>
+&lt;td>RSA 2048-bit (ISO 9796-2 PSS)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>Card Certificate&lt;/strong>&lt;/td>
+&lt;td>316 bytes&lt;/td>
+&lt;td>RSA 2048-bit with message recovery&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;br>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>GitHub Repositories&lt;/strong>:
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/calypsonet/calypsonet-terminal-calypso-certificate-legacyprime-uml-api" target="_blank" rel="noopener">UML API&lt;/a> (Design and specifications)&lt;/li>
+&lt;li>&lt;a href="https://github.com/calypsonet/calypsonet-terminal-calypso-certificate-legacyprime-jvm-api" target="_blank" rel="noopener">JVM API&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/calypsonet/calypsonet-terminal-calypso-certificate-legacyprime-jvm-lib" target="_blank" rel="noopener">JVM Lib&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/calypsonet/cna-demo-calypso-certificate-legacyprime-generator-app" target="_blank" rel="noopener">Console Demo&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>License&lt;/strong>:
+&lt;ul>
+&lt;li>API: &lt;strong>MIT License&lt;/strong>&lt;/li>
+&lt;li>Library: &lt;strong>EPL-2.0&lt;/strong>&lt;/li>
+&lt;li>Demo: &lt;strong>3-Clause BSD License&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>This software is provided by CNA to facilitate the implementation of Calypso systems. Users are responsible for the secure management of their private keys and the integrity of their PKI infrastructure.&lt;/p></description></item></channel></rss>
