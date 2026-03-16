@@ -2,8 +2,8 @@
   {
     "name": "main",
     "commit": {
-      "sha": "4799ab18f4e22ec0debdc7a9fd7071418ec7a9e7",
-      "url": "https://api.github.com/repos/calypsonet/keyple-cna-java-example/commits/4799ab18f4e22ec0debdc7a9fd7071418ec7a9e7"
+      "sha": "3ff02c5d2e77330f131afdec299ec592df7a0075",
+      "url": "https://api.github.com/repos/calypsonet/keyple-cna-java-example/commits/3ff02c5d2e77330f131afdec299ec592df7a0075"
     },
     "protected": false,
     "protection": {
@@ -19,26 +19,5 @@
       }
     },
     "protection_url": "https://api.github.com/repos/calypsonet/keyple-cna-java-example/branches/main/protection"
-  },
-  {
-    "name": "mifare-classic",
-    "commit": {
-      "sha": "28ad1f9707bb7665ad9a1c63b60263a72a5d593e",
-      "url": "https://api.github.com/repos/calypsonet/keyple-cna-java-example/commits/28ad1f9707bb7665ad9a1c63b60263a72a5d593e"
-    },
-    "protected": false,
-    "protection": {
-      "enabled": false,
-      "required_status_checks": {
-        "enforcement_level": "off",
-        "contexts": [
-
-        ],
-        "checks": [
-
-        ]
-      }
-    },
-    "protection_url": "https://api.github.com/repos/calypsonet/keyple-cna-java-example/branches/mifare-classic/protection"
   }
 ]
