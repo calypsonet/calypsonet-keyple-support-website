@@ -73,7 +73,7 @@
   "clone_url": "https://github.com/calypsonet/keyple-cna-java-example.git",
   "svn_url": "https://github.com/calypsonet/keyple-cna-java-example",
   "homepage": null,
-  "size": 8777,
+  "size": 287,
   "stargazers_count": 0,
   "watchers_count": 0,
   "language": "Kotlin",
@@ -169,5 +169,5 @@
     }
   },
   "network_count": 0,
-  "subscribers_count": 0
+  "subscribers_count": 1
 }
