@@ -2,27 +2,27 @@
   "total_count": 2,
   "check_runs": [
     {
-      "id": 65427479783,
+      "id": 67712252989,
       "name": "build-and-attach",
-      "node_id": "CR_kwDOOl54BM8AAAAPO8gc5w",
-      "head_sha": "3d2c413d09eda7b056511b27fdfbd64e651b84de",
-      "external_id": "3c3f06f5-8f1e-58a5-bc8a-85ac58b4a465",
-      "url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/check-runs/65427479783",
-      "html_url": "https://github.com/calypsonet-member/keyple-card-cna-storagecard-java-lib/actions/runs/22585048736/job/65427479783",
-      "details_url": "https://github.com/calypsonet-member/keyple-card-cna-storagecard-java-lib/actions/runs/22585048736/job/65427479783",
+      "node_id": "CR_kwDOOl54BM8AAAAPw_b8PQ",
+      "head_sha": "1a22c5308c4726d385ea31514487b01ff1806af9",
+      "external_id": "21d54037-0359-5b86-abf7-44d099b0eafa",
+      "url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/check-runs/67712252989",
+      "html_url": "https://github.com/calypsonet-member/keyple-card-cna-storagecard-java-lib/actions/runs/23286836927/job/67712252989",
+      "details_url": "https://github.com/calypsonet-member/keyple-card-cna-storagecard-java-lib/actions/runs/23286836927/job/67712252989",
       "status": "completed",
       "conclusion": "success",
-      "started_at": "2026-03-02T16:21:55Z",
-      "completed_at": "2026-03-02T16:24:04Z",
+      "started_at": "2026-03-19T08:45:23Z",
+      "completed_at": "2026-03-19T08:47:14Z",
       "output": {
         "title": null,
         "summary": null,
         "text": null,
-        "annotations_count": 0,
-        "annotations_url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/check-runs/65427479783/annotations"
+        "annotations_count": 1,
+        "annotations_url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/check-runs/67712252989/annotations"
       },
       "check_suite": {
-        "id": 59071048893
+        "id": 61203112939
       },
       "app": {
         "id": 15368,
@@ -117,27 +117,27 @@
       ]
     },
     {
-      "id": 65427241595,
+      "id": 67712092516,
       "name": "java-test",
-      "node_id": "CR_kwDOOl54BM8AAAAPO8R6ew",
-      "head_sha": "3d2c413d09eda7b056511b27fdfbd64e651b84de",
-      "external_id": "79254ef1-4214-5bf9-897d-264dbdd0de37",
-      "url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/check-runs/65427241595",
-      "html_url": "https://github.com/calypsonet-member/keyple-card-cna-storagecard-java-lib/actions/runs/22584983188/job/65427241595",
-      "details_url": "https://github.com/calypsonet-member/keyple-card-cna-storagecard-java-lib/actions/runs/22584983188/job/65427241595",
+      "node_id": "CR_kwDOOl54BM8AAAAPw_SJZA",
+      "head_sha": "1a22c5308c4726d385ea31514487b01ff1806af9",
+      "external_id": "68feeff7-3e73-5b41-b5ce-201203e302b0",
+      "url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/check-runs/67712092516",
+      "html_url": "https://github.com/calypsonet-member/keyple-card-cna-storagecard-java-lib/actions/runs/23286786012/job/67712092516",
+      "details_url": "https://github.com/calypsonet-member/keyple-card-cna-storagecard-java-lib/actions/runs/23286786012/job/67712092516",
       "status": "completed",
       "conclusion": "success",
-      "started_at": "2026-03-02T16:20:17Z",
-      "completed_at": "2026-03-02T16:21:35Z",
+      "started_at": "2026-03-19T08:43:59Z",
+      "completed_at": "2026-03-19T08:45:16Z",
       "output": {
         "title": null,
         "summary": null,
         "text": null,
-        "annotations_count": 0,
-        "annotations_url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/check-runs/65427241595/annotations"
+        "annotations_count": 1,
+        "annotations_url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/check-runs/67712092516/annotations"
       },
       "check_suite": {
-        "id": 59070850643
+        "id": 61202971476
       },
       "app": {
         "id": 15368,
