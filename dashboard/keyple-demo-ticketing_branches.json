@@ -42,6 +42,27 @@
     "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/main/protection"
   },
   {
+    "name": "refactor",
+    "commit": {
+      "sha": "99fe2824822f1cf94f4f4ecdf5ef6a5a34f96464",
+      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/99fe2824822f1cf94f4f4ecdf5ef6a5a34f96464"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/refactor/protection"
+  },
+  {
     "name": "validation-cpp",
     "commit": {
       "sha": "1c1c124611a17967a84c255452609820802cbde4",
