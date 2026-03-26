@@ -34,10 +34,10 @@
     },
     "body": null,
     "created_at": "2026-02-20T16:29:00Z",
-    "updated_at": "2026-02-20T16:40:12Z",
+    "updated_at": "2026-03-26T15:50:49Z",
     "closed_at": null,
     "merged_at": null,
-    "merge_commit_sha": "6eace3a92737e787875c2d709aed5f023c6b3034",
+    "merge_commit_sha": "68f86fe2616a8cf8927d0c83ad24ef99b13a4b8d",
     "assignees": [
 
     ],
@@ -56,11 +56,11 @@
     "review_comments_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-arrive-android-jvm-lib/pulls/3/comments",
     "review_comment_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-arrive-android-jvm-lib/pulls/comments{/number}",
     "comments_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-arrive-android-jvm-lib/issues/3/comments",
-    "statuses_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-arrive-android-jvm-lib/statuses/5bd6b171aa0154ad4a9e4ba030c46d7c572e0440",
+    "statuses_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-arrive-android-jvm-lib/statuses/0533ade827dd5eae3bde20f25f055d75e4d3f110",
     "head": {
       "label": "calypsonet:develop",
       "ref": "develop",
-      "sha": "5bd6b171aa0154ad4a9e4ba030c46d7c572e0440",
+      "sha": "0533ade827dd5eae3bde20f25f055d75e4d3f110",
       "user": {
         "login": "calypsonet",
         "id": 36229037,
@@ -151,7 +151,7 @@
         "deployments_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-arrive-android-jvm-lib/deployments",
         "created_at": "2022-12-01T15:33:31Z",
         "updated_at": "2026-02-13T14:16:39Z",
-        "pushed_at": "2026-02-20T16:40:11Z",
+        "pushed_at": "2026-03-26T15:50:48Z",
         "git_url": "git://github.com/calypsonet/keyple-plugin-cna-arrive-android-jvm-lib.git",
         "ssh_url": "git@github.com:calypsonet/keyple-plugin-cna-arrive-android-jvm-lib.git",
         "clone_url": "https://github.com/calypsonet/keyple-plugin-cna-arrive-android-jvm-lib.git",
@@ -288,7 +288,7 @@
         "deployments_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-arrive-android-jvm-lib/deployments",
         "created_at": "2022-12-01T15:33:31Z",
         "updated_at": "2026-02-13T14:16:39Z",
-        "pushed_at": "2026-02-20T16:40:11Z",
+        "pushed_at": "2026-03-26T15:50:48Z",
         "git_url": "git://github.com/calypsonet/keyple-plugin-cna-arrive-android-jvm-lib.git",
         "ssh_url": "git@github.com:calypsonet/keyple-plugin-cna-arrive-android-jvm-lib.git",
         "clone_url": "https://github.com/calypsonet/keyple-plugin-cna-arrive-android-jvm-lib.git",
@@ -354,7 +354,7 @@
         "href": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-arrive-android-jvm-lib/pulls/3/commits"
       },
       "statuses": {
-        "href": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-arrive-android-jvm-lib/statuses/5bd6b171aa0154ad4a9e4ba030c46d7c572e0440"
+        "href": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-arrive-android-jvm-lib/statuses/0533ade827dd5eae3bde20f25f055d75e4d3f110"
       }
     },
     "author_association": "MEMBER",

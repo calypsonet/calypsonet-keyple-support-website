@@ -23,8 +23,8 @@
   {
     "name": "main",
     "commit": {
-      "sha": "bf8736337cebfe5f4497ee1a11cc0ed42a89f4ff",
-      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/bf8736337cebfe5f4497ee1a11cc0ed42a89f4ff"
+      "sha": "f71dbd85a48d2b3b8f46a57733d1ff97d408ab9c",
+      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/f71dbd85a48d2b3b8f46a57733d1ff97d408ab9c"
     },
     "protected": false,
     "protection": {
@@ -44,8 +44,8 @@
   {
     "name": "refactor",
     "commit": {
-      "sha": "e581839bc5db00fdcae4197f081fd4869cbff13d",
-      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/e581839bc5db00fdcae4197f081fd4869cbff13d"
+      "sha": "77c56af70fa8a03ae0fffb588951b0fb429c7dbe",
+      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/77c56af70fa8a03ae0fffb588951b0fb429c7dbe"
     },
     "protected": false,
     "protection": {
