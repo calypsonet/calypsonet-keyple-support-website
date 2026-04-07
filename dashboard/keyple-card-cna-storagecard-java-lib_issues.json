@@ -1,3 +1,81 @@
 [
+  {
+    "url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/issues/11",
+    "repository_url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib",
+    "labels_url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/issues/11/labels{/name}",
+    "comments_url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/issues/11/comments",
+    "events_url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/issues/11/events",
+    "html_url": "https://github.com/calypsonet-member/keyple-card-cna-storagecard-java-lib/issues/11",
+    "id": 4216630088,
+    "node_id": "I_kwDOOl54BM77VKtI",
+    "number": 11,
+    "title": "Documentation: explicitely state that incompatible writes are not checked by keyple",
+    "user": {
+      "login": "lbureau-billettiqueservices",
+      "id": 102300863,
+      "node_id": "U_kgDOBhj8vw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/102300863?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lbureau-billettiqueservices",
+      "html_url": "https://github.com/lbureau-billettiqueservices",
+      "followers_url": "https://api.github.com/users/lbureau-billettiqueservices/followers",
+      "following_url": "https://api.github.com/users/lbureau-billettiqueservices/following{/other_user}",
+      "gists_url": "https://api.github.com/users/lbureau-billettiqueservices/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/lbureau-billettiqueservices/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/lbureau-billettiqueservices/subscriptions",
+      "organizations_url": "https://api.github.com/users/lbureau-billettiqueservices/orgs",
+      "repos_url": "https://api.github.com/users/lbureau-billettiqueservices/repos",
+      "events_url": "https://api.github.com/users/lbureau-billettiqueservices/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/lbureau-billettiqueservices/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "labels": [
 
+    ],
+    "state": "open",
+    "locked": false,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2026-04-07T09:06:39Z",
+    "updated_at": "2026-04-07T09:06:39Z",
+    "closed_at": null,
+    "assignee": null,
+    "author_association": "MEMBER",
+    "type": null,
+    "active_lock_reason": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "issue_dependencies_summary": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "body": "Hello again,\n\nWhile doing various tests with the storage card API, we realised that, as expected, if the user requests a prepareWriteBlock command that is incompatible with the ticket's underlying components, the command fails as it wasn't entirely executed. For example on SRT512, if we send a write on a counter block that is incompatible (trying to add value to the counter), the write fails as expected.\n\nThe corner case we saw was for the system block, itself made of OTP bits. For example, if we were to try to write 0000FFFF to a block that's already at FFFFFFFE, the behaviour of OTP would make a final state of 0000FFFE. The safe read for SRT512 would fail, as the final state of the block is not the full expected write.\n\nOur opinion on the subject is that keyple should not bother with trying to know how all blocks of all tickets work, and not try to deduce what the user wanted to do. Modifying the API to be able to answer questions such as \"Did the user just wanted to ensure that the first 2 bytes are set to 0 and used a mask, or was it supposed to be exactly 0000FFFF?\" would complicate the interfaces for a limited added value.\n\nWe think that it could be nice to explicitely state in the `prepareWriteBlock` function's documentation that it's the end user's full responsability to ensure that the write are coherent that the value passed should be the expected final state of the block after write.\n\nWhat do you think of this?\n",
+    "closed_by": null,
+    "reactions": {
+      "url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/issues/11/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "timeline_url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/issues/11/timeline",
+    "performed_via_github_app": null,
+    "state_reason": null,
+    "pinned_comment": null
+  }
 ]
