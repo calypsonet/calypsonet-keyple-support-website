@@ -139,7 +139,7 @@
       "state": "uploaded",
       "size": 112471144,
       "digest": "sha256:10d435e9c6417765e68c66fe3fc5b43dbbf0b58aad753877d2e60a79bdd89c27",
-      "download_count": 1,
+      "download_count": 2,
       "created_at": "2025-12-01T08:48:04Z",
       "updated_at": "2025-12-01T08:48:09Z",
       "browser_download_url": "https://github.com/calypsonet/keyple-demo-ticketing/releases/download/25.12.01/kdt-reloading-multiplatform-app-25.12.01.dmg"
@@ -319,7 +319,7 @@
       "state": "uploaded",
       "size": 80638105,
       "digest": "sha256:58f2b8a15a57159f4cc0c553c363cbff518115ac53d153106f3e8c962e6d8096",
-      "download_count": 1,
+      "download_count": 2,
       "created_at": "2025-12-01T08:49:57Z",
       "updated_at": "2025-12-01T08:50:00Z",
       "browser_download_url": "https://github.com/calypsonet/keyple-demo-ticketing/releases/download/25.12.01/kdt-reloading-multiplatform-app-windows-x64-25.12.01.jar"
