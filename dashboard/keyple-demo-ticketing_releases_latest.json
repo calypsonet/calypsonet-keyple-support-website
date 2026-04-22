@@ -67,7 +67,7 @@
       "state": "uploaded",
       "size": 13210290,
       "digest": "sha256:7d7eef2135220609c923b426a3520a86f4f87c07e4863ef1fe18c6905750d5ad",
-      "download_count": 4,
+      "download_count": 5,
       "created_at": "2025-12-01T08:48:22Z",
       "updated_at": "2025-12-01T08:48:23Z",
       "browser_download_url": "https://github.com/calypsonet/keyple-demo-ticketing/releases/download/25.12.01/kdt-control-app-25.12.01-debug.apk"
@@ -103,7 +103,7 @@
       "state": "uploaded",
       "size": 9461956,
       "digest": "sha256:13a1395a7d4d5fb0e63304961f05cfd48a8711c2b9968fa7a7c18e12d66c39a7",
-      "download_count": 3,
+      "download_count": 4,
       "created_at": "2025-12-01T08:47:02Z",
       "updated_at": "2025-12-01T08:47:03Z",
       "browser_download_url": "https://github.com/calypsonet/keyple-demo-ticketing/releases/download/25.12.01/kdt-reloading-android-app-25.12.01-debug.apk"
