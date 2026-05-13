@@ -22,6 +22,8 @@ echo "," >> dashboard/repository_list.json
 echo "," >> dashboard/repository_list.json
 ../.github/scripts/dashboard_update_repo.sh $token calypsonet keyple-plugin-cna-legacyhsm-java-lib "plugin" "EPL-2.0" "plugin-ext/hsm/" true
 echo "," >> dashboard/repository_list.json
+../.github/scripts/dashboard_update_repo.sh $token calypsonet keyple-plugin-cna-paragonid-gen5xx-pcsc-jvm-lib "plugin" "EPL-2.0" "plugin-ext/paragonid/" true
+echo "," >> dashboard/repository_list.json
 ../.github/scripts/dashboard_update_repo.sh $token calypsonet-member keyple-plugin-cna-storagecard-java-lib "plugin" "CNA Lib" "card-ext/storage-card/" true
 echo "," >> dashboard/repository_list.json
 ../.github/scripts/dashboard_update_repo.sh $token calypsonet-member keyple-card-cna-storagecard-java-lib "card" "CNA Lib" "card-ext/storage-card/" true

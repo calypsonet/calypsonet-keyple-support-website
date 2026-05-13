@@ -9,15 +9,17 @@ weight: 20
 ## Additional 'Reader Plugins' provided by CNA
 The Keyple project already hosts several [plugins for interfacing with "standard" smartcard reader solutions](https://keyple.org/components/standard-reader-plugins/) (PC/SC, Android NFC / OMAPI), or for emulating readers.
 
-To illustrate some other ways of designing plugins, CNA has also released additional plugins under the [Eclipse Public License version 2](https://www.eclipse.org/legal/epl-2.0/):
-- For some of these plugins, the native libraries of the reader solutions are public, in this case, the plugin can be compiled autonomously.
-- In the opposite case, a mock is used to compensate the unavailability of the native reader library, meaning that it is necessary to contact the manufacturer in order to compile the plugin.
+In addition, CNA has released the following plugins under the [Eclipse Public License version 2](https://www.eclipse.org/legal/epl-2.0/) to illustrate further integration patterns:
+- When the native library of a reader solution is **publicly available**, the plugin can be compiled autonomously.
+- When it is **not publicly available**, a mock is provided as a substitute; the actual native library must be obtained directly from the manufacturer to build the plugin.
 
-4 plugins are designed for integration into Android based embedded ticketing terminals equipped with a contactless card reader, as well as one or more contact readers for SAMs.
-- The Famoco plugin interfaces only with SAM readers, as the contactless reader on the Famoco supported terminals is based on the standard Android NFC API (natively supported by Keyple).
-- In addition to SAM readers, the Coppernic, Arrive and Bluebird plug-ins manage an observable contactless reader (capable of detecting the card presence).
+**Four plugins** target Android-based embedded ticketing terminals, each equipped with a contactless card reader and one or more SAM contact slots:
+- **Famoco** — interfaces with SAM readers only; the contactless reader on Famoco terminals relies on the standard Android NFC API, which Keyple supports natively.
+- **Coppernic**, **Arrive** and **Bluebird** — manage both SAM readers and an observable contactless reader (capable of detecting card insertion and removal).
 
-The 5th plugin enables a Calypso legacy HSM to be interfaced on a Linux server equipped with a Spirtech HSM.
+**Two additional plugins** target server or workstation environments:
+- The **Legacy HSM** plugin enables a Calypso legacy HSM to be interfaced on a Linux server equipped with a Spirtech HSM.
+- The **Paragon ID Gen5XX** plugin provides access to the 4 SAM slot readers of Gen5XX PC/SC devices on Windows and Linux. It is designed to complement the standard Keyple PC/SC plugin, which handles the contactless interface of the same device.
 
 <table id="external-resource-table-1" class="table table-striped">
     <thead>
@@ -62,12 +64,20 @@ The 5th plugin enables a Calypso legacy HSM to be interfaced on a Linux server e
         <td class="text-center">Linux</td>
         <td class="text-center">Java</td>
     </tr>
+    <tr>
+        <td class="text-center"><a href="https://github.com/calypsonet/keyple-plugin-cna-paragonid-gen5xx-pcsc-jvm-lib" target="_blank" rel="noopener">Paragon ID Gen5XX</a></td>
+        <td class="text-center">GEN5XX CCID, CPL108</td>
+        <td class="text-center">public</td>
+        <td class="text-center">PC/SC</td>
+        <td class="text-center">Windows, Linux, macOS</td>
+        <td class="text-center">Java</td>
+    </tr>
     </tbody>
 </table>
 
-Some special features:
-- The embedded Android terminals addressed by these plugins only support static configurations for their contactless card and contact SAM readers. However, the Coppernic and Famoco plugins are designed as “observable” plugins, because when these portable terminals are in standby mode, their readers are no longer powered (as if they were unplugged).
-- Most of these readers for embedded terminals are “configurable” to enable the support of specific communications protocols. In addition, the Bluebird plugin can be configured to support the Enhanced Contactless Polling (ECP) protocol specific to Apple NFC devices.
+Some special features of the Android plugins:
+- The embedded terminals targeted by these plugins only support static configurations for their readers. However, the **Coppernic** and **Famoco** plugins implement the *observable plugin* pattern: when the terminal enters standby mode, its readers lose power and behave as if unplugged, so the plugin must detect and report these connect/disconnect events autonomously.
+- All four Android plugins expose “configurable” readers to enable support for specific communication protocols. In addition, the **Bluebird** plugin can be configured to support the Enhanced Contactless Polling (ECP) protocol specific to Apple NFC devices.
 <script type="text/javascript">
 document.body.onload = function() {
     initExternalResourceTable("external-resource-table-1");
@@ -105,13 +115,15 @@ document.body.onload = function() {
 			<th scope="col">Famoco</th>
 			<th scope="col">Arrive</th>
 			<th scope="col">Bluebird</th>
-			<th scope="col">Legacy<br>HSM</th>			
+			<th scope="col">Legacy<br>HSM</th>
+			<th scope="col">Paragon ID<br>Gen5XX</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<th scope="rowgroup" rowspan="4">plugin</th>
 			<td>PluginSpi</td>
+			<td>✓</td>
 			<td>✓</td>
 			<td>✓</td>
 			<td>✓</td>
@@ -125,6 +137,7 @@ document.body.onload = function() {
 			<td></td>
 			<td></td>
 			<td></td>
+			<td></td>
 		</tr>
 		<tr>
 			<td>AutonomousObservablePluginSpi</td>
@@ -133,6 +146,7 @@ document.body.onload = function() {
 			<td></td>
 			<td></td>
 			<td></td>
+			<td>✓</td>
 		</tr>
 		<tr>
 			<td>PoolPluginSpi</td>
@@ -141,10 +155,12 @@ document.body.onload = function() {
 			<td></td>
 			<td></td>
 			<td>✓</td>
+			<td></td>
 		</tr>
 		<tr>
 			<th scope="rowgroup" rowspan="4">contact</th>
 			<td>ReaderSpi</td>
+			<td>✓</td>
 			<td>✓</td>
 			<td>✓</td>
 			<td>✓</td>
@@ -158,9 +174,11 @@ document.body.onload = function() {
 			<td></td>
 			<td></td>
 			<td></td>
+			<td></td>
 		</tr>
 		<tr>
 			<td>AutonomousSelectionReaderSpi</td>
+			<td></td>
 			<td></td>
 			<td></td>
 			<td></td>
@@ -174,6 +192,7 @@ document.body.onload = function() {
 			<td></td>
 			<td></td>
 			<td>✓</td>
+			<td></td>
 		</tr>
 		<tr>
 			<th scope="rowgroup" rowspan="12">contact<br>-less</th>
@@ -182,7 +201,8 @@ document.body.onload = function() {
 			<td rowspan="12" class="hachured"></td>
 			<td>✓</td>
 			<td>✓</td>
-			<td rowspan="12"  class="hachured"></td>
+			<td rowspan="12" class="hachured"></td>
+			<td rowspan="12" class="hachured"></td>
 		</tr>
 		<tr>
 			<td>ConfigurableReaderSpi</td>
