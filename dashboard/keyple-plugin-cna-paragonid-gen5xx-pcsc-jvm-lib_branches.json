@@ -1,0 +1,23 @@
+[
+  {
+    "name": "main",
+    "commit": {
+      "sha": "4f96d300caabf2f677b9738280110a46a953c3ea",
+      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-paragonid-gen5xx-pcsc-jvm-lib/commits/4f96d300caabf2f677b9738280110a46a953c3ea"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-paragonid-gen5xx-pcsc-jvm-lib/branches/main/protection"
+  }
+]
