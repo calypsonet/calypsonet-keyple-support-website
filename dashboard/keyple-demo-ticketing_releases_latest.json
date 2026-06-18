@@ -175,7 +175,7 @@
       "state": "uploaded",
       "size": 101311030,
       "digest": "sha256:205d287290009916fe1ff69e54bb67bf9a200ca791ad642ba2c84a51e151e601",
-      "download_count": 1,
+      "download_count": 2,
       "created_at": "2025-12-01T08:49:57Z",
       "updated_at": "2025-12-01T08:50:01Z",
       "browser_download_url": "https://github.com/calypsonet/keyple-demo-ticketing/releases/download/25.12.01/kdt-reloading-multiplatform-app-25.12.01.msi"
@@ -247,7 +247,7 @@
       "state": "uploaded",
       "size": 83237752,
       "digest": "sha256:405ef37fa11f2576675b43937ad26e4647c9ee7f82e2aa4400c89018af1c680e",
-      "download_count": 2,
+      "download_count": 3,
       "created_at": "2025-12-01T08:47:00Z",
       "updated_at": "2025-12-01T08:47:03Z",
       "browser_download_url": "https://github.com/calypsonet/keyple-demo-ticketing/releases/download/25.12.01/kdt-reloading-multiplatform-app-linux-x64-25.12.01.jar"
@@ -283,7 +283,7 @@
       "state": "uploaded",
       "size": 88480885,
       "digest": "sha256:4a3cb262b6688eba7f4630e21c3e540719f756064ff7da7f44ba8dbe6cc76573",
-      "download_count": 2,
+      "download_count": 3,
       "created_at": "2025-12-01T08:48:04Z",
       "updated_at": "2025-12-01T08:48:08Z",
       "browser_download_url": "https://github.com/calypsonet/keyple-demo-ticketing/releases/download/25.12.01/kdt-reloading-multiplatform-app-macos-arm64-25.12.01.jar"
@@ -319,7 +319,7 @@
       "state": "uploaded",
       "size": 80638105,
       "digest": "sha256:58f2b8a15a57159f4cc0c553c363cbff518115ac53d153106f3e8c962e6d8096",
-      "download_count": 2,
+      "download_count": 3,
       "created_at": "2025-12-01T08:49:57Z",
       "updated_at": "2025-12-01T08:50:00Z",
       "browser_download_url": "https://github.com/calypsonet/keyple-demo-ticketing/releases/download/25.12.01/kdt-reloading-multiplatform-app-windows-x64-25.12.01.jar"
