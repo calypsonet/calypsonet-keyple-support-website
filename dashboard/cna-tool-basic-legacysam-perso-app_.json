@@ -79,7 +79,7 @@
   "language": "Kotlin",
   "has_issues": true,
   "has_projects": false,
-  "has_downloads": true,
+  "has_downloads": false,
   "has_wiki": false,
   "has_pages": false,
   "has_discussions": false,
@@ -115,7 +115,7 @@
     "triage": true,
     "pull": true
   },
-  "temp_clone_token": "AGLDVHP4DBZIRIDHRT7ESO3KLOXDI",
+  "temp_clone_token": "AGLDVHPESODALEBTVQB5VYDKL63LM",
   "allow_squash_merge": true,
   "allow_merge_commit": true,
   "allow_rebase_merge": true,
