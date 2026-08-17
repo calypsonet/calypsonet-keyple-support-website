@@ -5,19 +5,6 @@
       "sha": "3ff02c5d2e77330f131afdec299ec592df7a0075",
       "url": "https://api.github.com/repos/calypsonet/keyple-cna-java-example/commits/3ff02c5d2e77330f131afdec299ec592df7a0075"
     },
-    "protected": false,
-    "protection": {
-      "enabled": false,
-      "required_status_checks": {
-        "enforcement_level": "off",
-        "contexts": [
-
-        ],
-        "checks": [
-
-        ]
-      }
-    },
-    "protection_url": "https://api.github.com/repos/calypsonet/keyple-cna-java-example/branches/main/protection"
+    "protected": false
   }
 ]

@@ -5,20 +5,7 @@
       "sha": "71ecb97e4f244d77da45fa11b5959f68e353ad0f",
       "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/71ecb97e4f244d77da45fa11b5959f68e353ad0f"
     },
-    "protected": false,
-    "protection": {
-      "enabled": false,
-      "required_status_checks": {
-        "enforcement_level": "off",
-        "contexts": [
-
-        ],
-        "checks": [
-
-        ]
-      }
-    },
-    "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/hexagonal/protection"
+    "protected": false
   },
   {
     "name": "main",
@@ -26,20 +13,7 @@
       "sha": "f71dbd85a48d2b3b8f46a57733d1ff97d408ab9c",
       "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/f71dbd85a48d2b3b8f46a57733d1ff97d408ab9c"
     },
-    "protected": false,
-    "protection": {
-      "enabled": false,
-      "required_status_checks": {
-        "enforcement_level": "off",
-        "contexts": [
-
-        ],
-        "checks": [
-
-        ]
-      }
-    },
-    "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/main/protection"
+    "protected": false
   },
   {
     "name": "refactor",
@@ -47,20 +21,7 @@
       "sha": "617f87193b5e9ee6f5668d86477f30c2b73e7691",
       "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/617f87193b5e9ee6f5668d86477f30c2b73e7691"
     },
-    "protected": false,
-    "protection": {
-      "enabled": false,
-      "required_status_checks": {
-        "enforcement_level": "off",
-        "contexts": [
-
-        ],
-        "checks": [
-
-        ]
-      }
-    },
-    "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/refactor/protection"
+    "protected": false
   },
   {
     "name": "validation-cpp",
@@ -68,19 +29,6 @@
       "sha": "1c1c124611a17967a84c255452609820802cbde4",
       "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/1c1c124611a17967a84c255452609820802cbde4"
     },
-    "protected": false,
-    "protection": {
-      "enabled": false,
-      "required_status_checks": {
-        "enforcement_level": "off",
-        "contexts": [
-
-        ],
-        "checks": [
-
-        ]
-      }
-    },
-    "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/validation-cpp/protection"
+    "protected": false
   }
 ]
