@@ -115,7 +115,6 @@
     "triage": true,
     "pull": true
   },
-  "temp_clone_token": "AGLDVHIDVDO7WGOSJHX5663KQKH2S",
   "allow_squash_merge": true,
   "allow_merge_commit": true,
   "allow_rebase_merge": true,

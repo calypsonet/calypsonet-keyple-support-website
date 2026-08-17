@@ -5,19 +5,6 @@
       "sha": "978c5e6a7d5fe6e32da8d2fc76228d021368582c",
       "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-arrive-android-jvm-lib/commits/978c5e6a7d5fe6e32da8d2fc76228d021368582c"
     },
-    "protected": false,
-    "protection": {
-      "enabled": false,
-      "required_status_checks": {
-        "enforcement_level": "off",
-        "contexts": [
-
-        ],
-        "checks": [
-
-        ]
-      }
-    },
-    "protection_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-arrive-android-jvm-lib/branches/main/protection"
+    "protected": false
   }
 ]
