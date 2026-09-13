@@ -39,7 +39,9 @@
         "name": "documentation",
         "color": "0075ca",
         "default": true,
-        "description": "Improvements or additions to documentation"
+        "description": "Improvements or additions to documentation",
+        "archived_at": null,
+        "archived_by": null
       }
     ],
     "state": "open",

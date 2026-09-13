@@ -83,7 +83,7 @@
   "has_wiki": false,
   "has_pages": false,
   "has_discussions": false,
-  "forks_count": 1,
+  "forks_count": 0,
   "mirror_url": null,
   "archived": false,
   "disabled": false,
@@ -104,7 +104,7 @@
 
   ],
   "visibility": "private",
-  "forks": 1,
+  "forks": 0,
   "open_issues": 1,
   "watchers": 0,
   "default_branch": "main",
@@ -115,7 +115,7 @@
     "triage": true,
     "pull": true
   },
-  "temp_clone_token": "AGLDVHJT6IWANFMKY4EWTJ3KUEZ6O",
+  "temp_clone_token": "AGLDVHLOURGDK3GMLZDO66LKU2MNI",
   "allow_squash_merge": true,
   "allow_merge_commit": true,
   "allow_rebase_merge": true,
@@ -151,6 +151,6 @@
     "user_view_type": "public",
     "site_admin": false
   },
-  "network_count": 1,
+  "network_count": 0,
   "subscribers_count": 2
 }
