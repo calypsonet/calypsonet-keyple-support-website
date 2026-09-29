@@ -2,16 +2,8 @@
   {
     "name": "main",
     "commit": {
-      "sha": "1a22c5308c4726d385ea31514487b01ff1806af9",
-      "url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/commits/1a22c5308c4726d385ea31514487b01ff1806af9"
-    },
-    "protected": false
-  },
-  {
-    "name": "update-doc",
-    "commit": {
-      "sha": "abe46ff3d4d61c1c57b90003af25b1fe8920fa8c",
-      "url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/commits/abe46ff3d4d61c1c57b90003af25b1fe8920fa8c"
+      "sha": "c561a3227c6f4b709d82cfc7fdf2a5bda4747cf4",
+      "url": "https://api.github.com/repos/calypsonet-member/keyple-card-cna-storagecard-java-lib/commits/c561a3227c6f4b709d82cfc7fdf2a5bda4747cf4"
     },
     "protected": false
   }
