@@ -357,7 +357,7 @@
         "href": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/statuses/c13ccb7383c7160bbdf87107f0c0dbd4d6c9a200"
       }
     },
-    "author_association": "COLLABORATOR",
+    "author_association": "FIRST_TIME_CONTRIBUTOR",
     "auto_merge": null,
     "assignee": null,
     "active_lock_reason": null
@@ -720,7 +720,7 @@
         "href": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/statuses/0a39a9634184b32f2b25db3a0befe15acde56a46"
       }
     },
-    "author_association": "COLLABORATOR",
+    "author_association": "FIRST_TIME_CONTRIBUTOR",
     "auto_merge": null,
     "assignee": null,
     "active_lock_reason": null

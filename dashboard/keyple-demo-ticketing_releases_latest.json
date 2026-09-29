@@ -283,7 +283,7 @@
       "state": "uploaded",
       "size": 88480885,
       "digest": "sha256:4a3cb262b6688eba7f4630e21c3e540719f756064ff7da7f44ba8dbe6cc76573",
-      "download_count": 3,
+      "download_count": 4,
       "created_at": "2025-12-01T08:48:04Z",
       "updated_at": "2025-12-01T08:48:08Z",
       "browser_download_url": "https://github.com/calypsonet/keyple-demo-ticketing/releases/download/25.12.01/kdt-reloading-multiplatform-app-macos-arm64-25.12.01.jar"
