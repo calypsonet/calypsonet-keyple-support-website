@@ -44,8 +44,8 @@
   {
     "name": "refactor",
     "commit": {
-      "sha": "0a39a9634184b32f2b25db3a0befe15acde56a46",
-      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/0a39a9634184b32f2b25db3a0befe15acde56a46"
+      "sha": "ca9630a1036b53370d8d22da1039e3dc008c9519",
+      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/ca9630a1036b53370d8d22da1039e3dc008c9519"
     },
     "protected": false,
     "protection": {
@@ -61,27 +61,6 @@
       }
     },
     "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/refactor/protection"
-  },
-  {
-    "name": "update-readme",
-    "commit": {
-      "sha": "c13ccb7383c7160bbdf87107f0c0dbd4d6c9a200",
-      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/c13ccb7383c7160bbdf87107f0c0dbd4d6c9a200"
-    },
-    "protected": false,
-    "protection": {
-      "enabled": false,
-      "required_status_checks": {
-        "enforcement_level": "off",
-        "contexts": [
-
-        ],
-        "checks": [
-
-        ]
-      }
-    },
-    "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/update-readme/protection"
   },
   {
     "name": "validation-cpp",
