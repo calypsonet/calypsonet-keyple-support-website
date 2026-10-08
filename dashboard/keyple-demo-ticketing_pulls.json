@@ -34,10 +34,10 @@
     },
     "body": "[Issue #62](https://github.com/calypsonet-internal/cna-keyple-dev/issues/62)",
     "created_at": "2026-03-25T16:04:11Z",
-    "updated_at": "2026-10-08T13:51:39Z",
+    "updated_at": "2026-10-08T15:08:06Z",
     "closed_at": null,
     "merged_at": null,
-    "merge_commit_sha": "3b19633b4d0cfb37417d9f712618e97957dc2c5d",
+    "merge_commit_sha": "d4ca80e5c46bcf1fdd9d791035fd083f77bdb829",
     "assignees": [
 
     ],
@@ -76,11 +76,11 @@
     "review_comments_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/pulls/9/comments",
     "review_comment_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/pulls/comments{/number}",
     "comments_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/issues/9/comments",
-    "statuses_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/statuses/ab0ad4094f7983bb932c6703533962c1f45181df",
+    "statuses_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/statuses/56c9f34da4edbd06bfe5310603d0c1d162c278ed",
     "head": {
       "label": "calypsonet:refactor",
       "ref": "refactor",
-      "sha": "ab0ad4094f7983bb932c6703533962c1f45181df",
+      "sha": "56c9f34da4edbd06bfe5310603d0c1d162c278ed",
       "user": {
         "login": "calypsonet",
         "id": 36229037,
@@ -171,13 +171,13 @@
         "deployments_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/deployments",
         "created_at": "2025-07-24T07:38:19Z",
         "updated_at": "2026-03-26T15:57:53Z",
-        "pushed_at": "2026-10-08T13:51:37Z",
+        "pushed_at": "2026-10-08T15:08:04Z",
         "git_url": "git://github.com/calypsonet/keyple-demo-ticketing.git",
         "ssh_url": "git@github.com:calypsonet/keyple-demo-ticketing.git",
         "clone_url": "https://github.com/calypsonet/keyple-demo-ticketing.git",
         "svn_url": "https://github.com/calypsonet/keyple-demo-ticketing",
         "homepage": null,
-        "size": 2295,
+        "size": 2326,
         "stargazers_count": 2,
         "watchers_count": 2,
         "language": "Kotlin",
@@ -308,13 +308,13 @@
         "deployments_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/deployments",
         "created_at": "2025-07-24T07:38:19Z",
         "updated_at": "2026-03-26T15:57:53Z",
-        "pushed_at": "2026-10-08T13:51:37Z",
+        "pushed_at": "2026-10-08T15:08:04Z",
         "git_url": "git://github.com/calypsonet/keyple-demo-ticketing.git",
         "ssh_url": "git@github.com:calypsonet/keyple-demo-ticketing.git",
         "clone_url": "https://github.com/calypsonet/keyple-demo-ticketing.git",
         "svn_url": "https://github.com/calypsonet/keyple-demo-ticketing",
         "homepage": null,
-        "size": 2295,
+        "size": 2326,
         "stargazers_count": 2,
         "watchers_count": 2,
         "language": "Kotlin",
@@ -374,7 +374,7 @@
         "href": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/pulls/9/commits"
       },
       "statuses": {
-        "href": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/statuses/ab0ad4094f7983bb932c6703533962c1f45181df"
+        "href": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/statuses/56c9f34da4edbd06bfe5310603d0c1d162c278ed"
       }
     },
     "author_association": "FIRST_TIME_CONTRIBUTOR",
