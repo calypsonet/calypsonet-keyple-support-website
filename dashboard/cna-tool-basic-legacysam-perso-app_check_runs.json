@@ -2,27 +2,27 @@
   "total_count": 1,
   "check_runs": [
     {
-      "id": 111365676464,
+      "id": 114390948352,
       "name": "cleanup",
-      "node_id": "CR_kwDOM-7Aqs8AAAAZ7eldsA",
+      "node_id": "CR_kwDOM-7Aqs8AAAAaojtaAA",
       "head_sha": "a13d560cb0153cb8bd465c36f626352273ced3a4",
-      "external_id": "6aad280f-7945-523c-bed7-0982bf67a853",
-      "url": "https://api.github.com/repos/calypsonet-member/cna-tool-basic-legacysam-perso-app/check-runs/111365676464",
-      "html_url": "https://github.com/calypsonet-member/cna-tool-basic-legacysam-perso-app/actions/runs/37178371814/job/111365676464",
-      "details_url": "https://github.com/calypsonet-member/cna-tool-basic-legacysam-perso-app/actions/runs/37178371814/job/111365676464",
+      "external_id": "23e8a5cf-2aba-58a6-a320-8f8ece1e17e1",
+      "url": "https://api.github.com/repos/calypsonet-member/cna-tool-basic-legacysam-perso-app/check-runs/114390948352",
+      "html_url": "https://github.com/calypsonet-member/cna-tool-basic-legacysam-perso-app/actions/runs/38112551226/job/114390948352",
+      "details_url": "https://github.com/calypsonet-member/cna-tool-basic-legacysam-perso-app/actions/runs/38112551226/job/114390948352",
       "status": "completed",
       "conclusion": "success",
-      "started_at": "2026-10-04T04:55:07Z",
-      "completed_at": "2026-10-04T04:55:17Z",
+      "started_at": "2026-10-11T04:44:46Z",
+      "completed_at": "2026-10-11T04:44:59Z",
       "output": {
         "title": null,
         "summary": null,
         "text": null,
         "annotations_count": 2,
-        "annotations_url": "https://api.github.com/repos/calypsonet-member/cna-tool-basic-legacysam-perso-app/check-runs/111365676464/annotations"
+        "annotations_url": "https://api.github.com/repos/calypsonet-member/cna-tool-basic-legacysam-perso-app/check-runs/114390948352/annotations"
       },
       "check_suite": {
-        "id": 100703943103
+        "id": 103261637789
       },
       "app": {
         "id": 15368,
