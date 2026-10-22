@@ -23,8 +23,8 @@
   {
     "name": "main",
     "commit": {
-      "sha": "f71dbd85a48d2b3b8f46a57733d1ff97d408ab9c",
-      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/f71dbd85a48d2b3b8f46a57733d1ff97d408ab9c"
+      "sha": "2a0e7dbe39137c41cb0334c793483b06a36e9e08",
+      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/2a0e7dbe39137c41cb0334c793483b06a36e9e08"
     },
     "protected": false,
     "protection": {
@@ -40,27 +40,6 @@
       }
     },
     "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/main/protection"
-  },
-  {
-    "name": "refactor",
-    "commit": {
-      "sha": "654c2f2aaf77a311aef34553e5be631ba749fd99",
-      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/654c2f2aaf77a311aef34553e5be631ba749fd99"
-    },
-    "protected": false,
-    "protection": {
-      "enabled": false,
-      "required_status_checks": {
-        "enforcement_level": "off",
-        "contexts": [
-
-        ],
-        "checks": [
-
-        ]
-      }
-    },
-    "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/refactor/protection"
   },
   {
     "name": "validation-cpp",
