@@ -80,5 +80,5 @@ To use, integrate or extend Keyple, it is not necessary to have complete knowled
 
 The Keyple project also includes many simple [examples in Java and C++ code](https://keyple.org/learn/code-samples/) to illustrate all these types of development. For Keyple extensions external to the project, CNA offers [additional basic examples](../../add-ons/demo/example/).
 
-CNA's technical support also offers a more advanced Calypso example on implementing the Keyple solution with an open source [complete Keyple ticketing demonstrator](../../add-ons/demo/ticketing/): including remote ticket reloading, embedded validation and control.
+CNA's technical support also offers a more advanced Calypso example on implementing the Keyple solution with an open source [complete Keyple ticketing demonstrator](../../add-ons/demo/ticketing/): including card personalization, remote ticket sales and loading, embedded validation and inspection.
 <br>CNA also [supplies test cards and SAMs](../test-kit/) for running Keyple.
