@@ -1,13 +1,13 @@
 ---
 title: Keyple-based advanced ticketing demonstrator
-linkTitle: 🌍 Advanced Ticketing Demos
+linkTitle: 🌍 Advanced Ticketing Demo
 aliases:
   - /keyple-support/ticketing-demo/
 type: book
 toc: true
 weight: 110
 ---
-To illustrate an advanced implementation of the Keyple Java middleware for Calypso-based ticketing systems, CNA has released a complete ticketing demonstrator under the <a href="https://opensource.org/license/bsd-3-clause" target="_blank" rel="noopener">3-Clause BSD License</a>.
+To illustrate an advanced implementation of the Keyple Java middleware for Calypso-based ticketing systems, CNA has released **Keyple Demo Ticketing**, a complete ticketing demonstrator, under the <a href="https://opensource.org/license/bsd-3-clause" target="_blank" rel="noopener">3-Clause BSD License</a>.
 
 It covers the lifecycle of a contactless transit ticket: personalization of the card, sale and loading of the tickets (season pass, multi-trip ticket), access validation, and ticket inspection.
 
