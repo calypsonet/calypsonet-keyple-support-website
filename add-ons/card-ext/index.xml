@@ -46,13 +46,6 @@ To facilitate and factorize the integration of APDU wrapping for plugins for rea
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/calypsonet/keyple-cna-java-example/tree/main/StorageCard_PCSC" target="_blank" rel="noopener">contactless ticket processing on a PC/SC reader&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;p>All the applications of the &lt;a href="../../demo/ticketing/">CNA advanced ticketing demonstrator&lt;/a> integrate the processing of
-contactless ticketing solutions in addition to Calypso cards.&lt;/p>
-&lt;ul>
-&lt;li>Here are some examples of the treatments used:
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/blob/2e1559b7ed492313748044e9ecfe178868e0780f/src/reloading-remote/client/keyple-mobile-android/app/src/main/kotlin/org/calypsonet/keyple/demo/reload/remote/domain/TicketingService.kt#L68" target="_blank" rel="noopener">contactless ticket memory selection&lt;/a> on a distributed reload local client.&lt;/li>
-&lt;li>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/blob/2e1559b7ed492313748044e9ecfe178868e0780f/src/reloading-remote/server/src/main/java/org/calypsonet/keyple/demo/reload/remote/server/card/CardRepository.java#L157" target="_blank" rel="noopener">contactless memory ticket data management&lt;/a> managed by a distributed remote server.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;p>The Android applications of the &lt;a href="../../demo/ticketing/">CNA advanced ticketing demonstrator&lt;/a> (sales client, validation,
+and inspection) also process contactless memory tickets, in addition to Calypso cards. The cards supported by each
+application and terminal are detailed in the functional documentation of the demonstrator.&lt;/p></description></item></channel></rss>
