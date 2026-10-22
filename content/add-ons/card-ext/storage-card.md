@@ -57,8 +57,6 @@ To assist CNA members needing to integrate contactless memory ticket processing 
 Among the [basic examples of Keyple implementation supplemented by CNA](../../demo/example/), one is dedicated to the processing of contactless memory tickets on a PC terminal equipped with PC/SC readers:
 - [contactless ticket processing on a PC/SC reader](https://github.com/calypsonet/keyple-cna-java-example/tree/main/StorageCard_PCSC)
 
-All the applications of the [CNA advanced ticketing demonstrator](../../demo/ticketing/) integrate the processing of
-contactless ticketing solutions in addition to Calypso cards.
-- Here are some examples of the treatments used:
-  - [contactless ticket memory selection](https://github.com/calypsonet/keyple-demo-ticketing/blob/2e1559b7ed492313748044e9ecfe178868e0780f/src/reloading-remote/client/keyple-mobile-android/app/src/main/kotlin/org/calypsonet/keyple/demo/reload/remote/domain/TicketingService.kt#L68) on a distributed reload local client.
-  - [contactless memory ticket data management](https://github.com/calypsonet/keyple-demo-ticketing/blob/2e1559b7ed492313748044e9ecfe178868e0780f/src/reloading-remote/server/src/main/java/org/calypsonet/keyple/demo/reload/remote/server/card/CardRepository.java#L157) managed by a distributed remote server.
+The Android applications of the [CNA advanced ticketing demonstrator](../../demo/ticketing/) (sales client, validation,
+and inspection) also process contactless memory tickets, in addition to Calypso cards. The cards supported by each
+application and terminal are detailed in the functional documentation of the demonstrator.
