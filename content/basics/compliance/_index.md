@@ -288,12 +288,12 @@ Pending the future certification programme for Calypso layer libraries, CNA has 
 
 ### Calypso functional scope managed by Keyple
 Supported Calypso card solutions:
-- Using the  "Keyple Card Calypso Library" component in version 2.3.1+ or after: all Calypso Prime Extended features are supported → available both for Java and C++ implementations
-- Starting from the "Keyple Card Calypso Crypto PKI Library" component in version 0.2+ or later: all Calypso Prime PKI features are supported → currently available only for the Java implementation; C++ porting is planned for the first quarter of 2027
-- From the "Keyple Card Calypso Library" component in version 2.1+: all Calypso Prime Regular, Light and Basic features are supported.
+- Using the  "*Keyple Card Calypso Library*" component in *version 2.3.1+* or after: all Calypso `Prime Extended` features are supported → available both for Java and C++ implementations
+- Starting from the "*Keyple Card Calypso Crypto PKI Library*" component in *version 0.2+* or later: all Calypso `Prime PKI` features are supported → currently available *only* for the Java implementation; C++ porting is planned for the first quarter of 2027
+- From the "*Keyple Card Calypso Library*" component in *version 2.1+*: all Calypso `Prime Regular`, `Light` and `Basic` features are supported.
 
 Supported Calypso SAM Solutions:
-- Since "Keyple Card Calypso Library" component in version 2.1+: Calypso secure processing is optimized based on the capabilities of security modules such as SAM-C1, SAM-S1E, and SAM-S1D. (Support for the C-SAM F solution has not been tested.)
+- Since "*Keyple Card Calypso Library*" component in *version 2.1+*: Calypso secure processing is optimized based on the capabilities of security modules such as `SAM-C1`, `SAM-S1E`, and `SAM-S1D`. (Support for the `C-SAM F` solution has not been tested.)
 - The middleware is ready to receive a future extension to manage Open SAM, thanks to the use of the "Calypso Crypto Symmetric API" interface.
 
 ### Terminal requirements support declarations
