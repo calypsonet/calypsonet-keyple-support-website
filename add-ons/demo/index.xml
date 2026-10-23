@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Demonstrator of Keyple | Calypso Networks Association Keyple Support</title><link>https://keyple-support.calypsonet.org/add-ons/demo/</link><atom:link href="https://keyple-support.calypsonet.org/add-ons/demo/index.xml" rel="self" type="application/rss+xml"/><description>Demonstrator of Keyple</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://keyple-support.calypsonet.org/media/logo.svg</url><title>Demonstrator of Keyple</title><link>https://keyple-support.calypsonet.org/add-ons/demo/</link></image><item><title>Simple examples of Keyple implementation</title><link>https://keyple-support.calypsonet.org/add-ons/demo/example/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/demo/example/</guid><description>&lt;p>The Keyple project already hosts basic examples in &lt;a href="https://github.com/eclipse-keyple/keyple-java-example" target="_blank" rel="noopener">Java&lt;/a> and &lt;a href="https://github.com/eclipse-keyple/keyple-cpp-example" target="_blank" rel="noopener">C++&lt;/a> showing how to implement Keyple components in a simple way.&lt;/p>
-&lt;p>To show how to use Keyple extensions that are not hosted by the project, CNA offers complementary &lt;a href="https://github.com/calypsonet/keyple-cna-java-example" target="_blank" rel="noopener">basic Java examples&lt;/a> for Keyple extensions.&lt;/p></description></item><item><title>Keyple-based advanced ticketing demonstrator</title><link>https://keyple-support.calypsonet.org/add-ons/demo/ticketing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/demo/ticketing/</guid><description>&lt;p>To illustrate an advanced implementation of the Keyple Java middleware for Calypso-based ticketing systems, CNA has released &lt;strong>Keyple Demo Ticketing&lt;/strong>, a complete ticketing demonstrator, under the &lt;a href="https://opensource.org/license/bsd-3-clause" target="_blank" rel="noopener">3-Clause BSD License&lt;/a>.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Demonstrator of Keyple | Calypso Networks Association Keyple Support</title><link>https://keyple-support.calypsonet.org/add-ons/demo/</link><atom:link href="https://keyple-support.calypsonet.org/add-ons/demo/index.xml" rel="self" type="application/rss+xml"/><description>Demonstrator of Keyple</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://keyple-support.calypsonet.org/media/logo.svg</url><title>Demonstrator of Keyple</title><link>https://keyple-support.calypsonet.org/add-ons/demo/</link></image><item><title>Simple examples of Keyple implementation</title><link>https://keyple-support.calypsonet.org/add-ons/demo/example/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/demo/example/</guid><description>&lt;p>The Keyple project already hosts basic examples in &lt;a href="https://github.com/eclipse-keyple/keyple-java-example">Java&lt;/a> and &lt;a href="https://github.com/eclipse-keyple/keyple-cpp-example">C++&lt;/a> showing how to implement Keyple components in a simple way.&lt;/p>
+&lt;p>To show how to use Keyple extensions that are not hosted by the project, CNA offers complementary &lt;a href="https://github.com/calypsonet/keyple-cna-java-example">basic Java examples&lt;/a> for Keyple extensions.&lt;/p></description></item><item><title>Keyple-based advanced ticketing demonstrator</title><link>https://keyple-support.calypsonet.org/add-ons/demo/ticketing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/demo/ticketing/</guid><description>&lt;p>To illustrate an advanced implementation of the Keyple Java middleware for Calypso-based ticketing systems, CNA has released &lt;strong>Keyple Demo Ticketing&lt;/strong>, a complete ticketing demonstrator, under the &lt;a href="https://opensource.org/license/bsd-3-clause">3-Clause BSD License&lt;/a>.&lt;/p>
 &lt;p>It covers the lifecycle of a contactless transit ticket: personalization of the card, sale and loading of the tickets (season pass, multi-trip ticket), access validation, and ticket inspection.&lt;/p>
 &lt;br>
 &lt;h2 id="keyple-integration-patterns">Keyple integration patterns&lt;/h2>
@@ -14,17 +14,17 @@
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/sales" target="_blank" rel="noopener">&lt;strong>Sales&lt;/strong>&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/sales">&lt;strong>Sales&lt;/strong>&lt;/a>&lt;/td>
 &lt;td>Distributed application. The server, based on Keyple, holds the ticketing logic and the SAM. The light clients give access to the card, with or without Keyple (Keyple Interop libraries, Server JSON API).&lt;/td>
 &lt;td>Few network messages between client and server. Client on any light terminal, without Keyple.&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/validation" target="_blank" rel="noopener">&lt;strong>Validation&lt;/strong>&lt;/a> and &lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/inspection" target="_blank" rel="noopener">&lt;strong>Inspection&lt;/strong>&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/validation">&lt;strong>Validation&lt;/strong>&lt;/a> and &lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/inspection">&lt;strong>Inspection&lt;/strong>&lt;/a>&lt;/td>
 &lt;td>Standalone Android applications based on Keyple, with the card and the SAM read locally. Inspection also works without a SAM (card authenticated by PKI, or read without authentication).&lt;/td>
 &lt;td>Few card and SAM commands during the transaction.&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/common" target="_blank" rel="noopener">&lt;strong>Common&lt;/strong>&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/common">&lt;strong>Common&lt;/strong>&lt;/a>&lt;/td>
 &lt;td>Library of the data model of the card.&lt;/td>
 &lt;td>—&lt;/td>
 &lt;/tr>
@@ -40,12 +40,16 @@
 &lt;br>
 &lt;h2 id="getting-the-demonstrator">Getting the demonstrator&lt;/h2>
 &lt;ul>
-&lt;li>&lt;strong>Source code&lt;/strong>: the &lt;a href="https://github.com/calypsonet/keyple-demo-ticketing" target="_blank" rel="noopener">keyple-demo-ticketing&lt;/a> repository, whose README describes the components, the supported terminals and platforms, and how to build and install them.&lt;/li>
-&lt;li>&lt;strong>Applications&lt;/strong>: attached to each release of the repository (see the &lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/releases/latest" target="_blank" rel="noopener">latest release&lt;/a>).&lt;/li>
-&lt;li>&lt;strong>Functional documentation&lt;/strong>: attached as PDF and HTML files to each release. It describes the use cases, the business rules, and the messages of the demonstrator, as well as the data model of the card and the procedures executed on it.&lt;/li>
+&lt;li>&lt;strong>Source code&lt;/strong>: the &lt;a href="https://github.com/calypsonet/keyple-demo-ticketing">keyple-demo-ticketing&lt;/a> repository, whose README describes the components, the supported terminals and platforms, and how to build and install them.&lt;/li>
+&lt;li>&lt;strong>Applications&lt;/strong>: attached to each release of the repository (see the &lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/releases/latest">latest release&lt;/a>).&lt;/li>
+&lt;li>&lt;strong>Functional documentation&lt;/strong>: attached as PDF and HTML files to each release (see the &lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/releases/latest">latest release&lt;/a>). It describes the use cases, the business rules, and the messages of the demonstrator, as well as the data model of the card and the procedures executed on it.&lt;/li>
 &lt;/ul>
 &lt;div class="alert alert-note">
 &lt;div>
-The plugins of the Bluebird and Arrive terminals and the storage card libraries are &lt;a href="https://github.com/calypsonet/keyple-demo-ticketing#proprietary-plugins-available-on-request" target="_blank" rel="noopener">available on request&lt;/a> from CNA. Without them, the demonstrator is built with mocks: these terminals are not available, and the storage cards are not handled.
+&lt;p>Some components depend on libraries that are not publicly available: without them, the demonstrator is built with mocks (see the &lt;a href="https://github.com/calypsonet/keyple-demo-ticketing#proprietary-components">README&lt;/a>).&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Bluebird and Arrive terminals&lt;/strong>: the plugins are open source (see &lt;a href="../../plugin-ext/">Keyple reader extensions&lt;/a>), and are built with the native library of the terminal manufacturer. Without them, these terminals are not available.&lt;/li>
+&lt;li>&lt;strong>Storage cards&lt;/strong>: the CNA libraries are reserved for CNA members, and available on request. Without them, the storage cards are not handled.&lt;/li>
+&lt;/ul>
 &lt;/div>
 &lt;/div></description></item></channel></rss>

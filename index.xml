@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Calypso Networks Association Keyple Support</title><link>https://keyple-support.calypsonet.org/</link><atom:link href="https://keyple-support.calypsonet.org/index.xml" rel="self" type="application/rss+xml"/><description>Calypso Networks Association Keyple Support</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://keyple-support.calypsonet.org/media/logo.svg</url><title>Calypso Networks Association Keyple Support</title><link>https://keyple-support.calypsonet.org/</link></image><item><title>Simple examples of Keyple implementation</title><link>https://keyple-support.calypsonet.org/add-ons/demo/example/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/demo/example/</guid><description>&lt;p>The Keyple project already hosts basic examples in &lt;a href="https://github.com/eclipse-keyple/keyple-java-example" target="_blank" rel="noopener">Java&lt;/a> and &lt;a href="https://github.com/eclipse-keyple/keyple-cpp-example" target="_blank" rel="noopener">C++&lt;/a> showing how to implement Keyple components in a simple way.&lt;/p>
-&lt;p>To show how to use Keyple extensions that are not hosted by the project, CNA offers complementary &lt;a href="https://github.com/calypsonet/keyple-cna-java-example" target="_blank" rel="noopener">basic Java examples&lt;/a> for Keyple extensions.&lt;/p></description></item><item><title>Keyple-based advanced ticketing demonstrator</title><link>https://keyple-support.calypsonet.org/add-ons/demo/ticketing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/demo/ticketing/</guid><description>&lt;p>To illustrate an advanced implementation of the Keyple Java middleware for Calypso-based ticketing systems, CNA has released &lt;strong>Keyple Demo Ticketing&lt;/strong>, a complete ticketing demonstrator, under the &lt;a href="https://opensource.org/license/bsd-3-clause" target="_blank" rel="noopener">3-Clause BSD License&lt;/a>.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Calypso Networks Association Keyple Support</title><link>https://keyple-support.calypsonet.org/</link><atom:link href="https://keyple-support.calypsonet.org/index.xml" rel="self" type="application/rss+xml"/><description>Calypso Networks Association Keyple Support</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://keyple-support.calypsonet.org/media/logo.svg</url><title>Calypso Networks Association Keyple Support</title><link>https://keyple-support.calypsonet.org/</link></image><item><title>Simple examples of Keyple implementation</title><link>https://keyple-support.calypsonet.org/add-ons/demo/example/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/demo/example/</guid><description>&lt;p>The Keyple project already hosts basic examples in &lt;a href="https://github.com/eclipse-keyple/keyple-java-example">Java&lt;/a> and &lt;a href="https://github.com/eclipse-keyple/keyple-cpp-example">C++&lt;/a> showing how to implement Keyple components in a simple way.&lt;/p>
+&lt;p>To show how to use Keyple extensions that are not hosted by the project, CNA offers complementary &lt;a href="https://github.com/calypsonet/keyple-cna-java-example">basic Java examples&lt;/a> for Keyple extensions.&lt;/p></description></item><item><title>Keyple-based advanced ticketing demonstrator</title><link>https://keyple-support.calypsonet.org/add-ons/demo/ticketing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/demo/ticketing/</guid><description>&lt;p>To illustrate an advanced implementation of the Keyple Java middleware for Calypso-based ticketing systems, CNA has released &lt;strong>Keyple Demo Ticketing&lt;/strong>, a complete ticketing demonstrator, under the &lt;a href="https://opensource.org/license/bsd-3-clause">3-Clause BSD License&lt;/a>.&lt;/p>
 &lt;p>It covers the lifecycle of a contactless transit ticket: personalization of the card, sale and loading of the tickets (season pass, multi-trip ticket), access validation, and ticket inspection.&lt;/p>
 &lt;br>
 &lt;h2 id="keyple-integration-patterns">Keyple integration patterns&lt;/h2>
@@ -14,17 +14,17 @@
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/sales" target="_blank" rel="noopener">&lt;strong>Sales&lt;/strong>&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/sales">&lt;strong>Sales&lt;/strong>&lt;/a>&lt;/td>
 &lt;td>Distributed application. The server, based on Keyple, holds the ticketing logic and the SAM. The light clients give access to the card, with or without Keyple (Keyple Interop libraries, Server JSON API).&lt;/td>
 &lt;td>Few network messages between client and server. Client on any light terminal, without Keyple.&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/validation" target="_blank" rel="noopener">&lt;strong>Validation&lt;/strong>&lt;/a> and &lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/inspection" target="_blank" rel="noopener">&lt;strong>Inspection&lt;/strong>&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/validation">&lt;strong>Validation&lt;/strong>&lt;/a> and &lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/inspection">&lt;strong>Inspection&lt;/strong>&lt;/a>&lt;/td>
 &lt;td>Standalone Android applications based on Keyple, with the card and the SAM read locally. Inspection also works without a SAM (card authenticated by PKI, or read without authentication).&lt;/td>
 &lt;td>Few card and SAM commands during the transaction.&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/common" target="_blank" rel="noopener">&lt;strong>Common&lt;/strong>&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/tree/main/src/common">&lt;strong>Common&lt;/strong>&lt;/a>&lt;/td>
 &lt;td>Library of the data model of the card.&lt;/td>
 &lt;td>—&lt;/td>
 &lt;/tr>
@@ -40,15 +40,19 @@
 &lt;br>
 &lt;h2 id="getting-the-demonstrator">Getting the demonstrator&lt;/h2>
 &lt;ul>
-&lt;li>&lt;strong>Source code&lt;/strong>: the &lt;a href="https://github.com/calypsonet/keyple-demo-ticketing" target="_blank" rel="noopener">keyple-demo-ticketing&lt;/a> repository, whose README describes the components, the supported terminals and platforms, and how to build and install them.&lt;/li>
-&lt;li>&lt;strong>Applications&lt;/strong>: attached to each release of the repository (see the &lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/releases/latest" target="_blank" rel="noopener">latest release&lt;/a>).&lt;/li>
-&lt;li>&lt;strong>Functional documentation&lt;/strong>: attached as PDF and HTML files to each release. It describes the use cases, the business rules, and the messages of the demonstrator, as well as the data model of the card and the procedures executed on it.&lt;/li>
+&lt;li>&lt;strong>Source code&lt;/strong>: the &lt;a href="https://github.com/calypsonet/keyple-demo-ticketing">keyple-demo-ticketing&lt;/a> repository, whose README describes the components, the supported terminals and platforms, and how to build and install them.&lt;/li>
+&lt;li>&lt;strong>Applications&lt;/strong>: attached to each release of the repository (see the &lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/releases/latest">latest release&lt;/a>).&lt;/li>
+&lt;li>&lt;strong>Functional documentation&lt;/strong>: attached as PDF and HTML files to each release (see the &lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/releases/latest">latest release&lt;/a>). It describes the use cases, the business rules, and the messages of the demonstrator, as well as the data model of the card and the procedures executed on it.&lt;/li>
 &lt;/ul>
 &lt;div class="alert alert-note">
 &lt;div>
-The plugins of the Bluebird and Arrive terminals and the storage card libraries are &lt;a href="https://github.com/calypsonet/keyple-demo-ticketing#proprietary-plugins-available-on-request" target="_blank" rel="noopener">available on request&lt;/a> from CNA. Without them, the demonstrator is built with mocks: these terminals are not available, and the storage cards are not handled.
+&lt;p>Some components depend on libraries that are not publicly available: without them, the demonstrator is built with mocks (see the &lt;a href="https://github.com/calypsonet/keyple-demo-ticketing#proprietary-components">README&lt;/a>).&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Bluebird and Arrive terminals&lt;/strong>: the plugins are open source (see &lt;a href="../../plugin-ext/">Keyple reader extensions&lt;/a>), and are built with the native library of the terminal manufacturer. Without them, these terminals are not available.&lt;/li>
+&lt;li>&lt;strong>Storage cards&lt;/strong>: the CNA libraries are reserved for CNA members, and available on request. Without them, the storage cards are not handled.&lt;/li>
+&lt;/ul>
 &lt;/div>
-&lt;/div></description></item><item><title>Keyple plugin for Coppernic smart card reader</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/coppernic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/coppernic/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>Keyple plugin for Famoco smart card reader</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/famoco/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/famoco/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>Keyple plugin for Arrive smart card reader</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/flowbird/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/flowbird/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>Keyple plugin for Bluebird smart card reader</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/bluebird/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/bluebird/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>Keyple plugin for Spirtech Calypso HSM</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/hsm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/hsm/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>Keyple plugin for Paragon ID Gen5XX PC/SC smart card reader</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/paragonid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/paragonid/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>CNA member Keyple extension to manage contactless memory ticket solutions</title><link>https://keyple-support.calypsonet.org/add-ons/card-ext/storage-card/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/card-ext/storage-card/</guid><description>&lt;br>
+&lt;/div></description></item><item><title>CNA member Keyple extension to manage contactless memory ticket solutions</title><link>https://keyple-support.calypsonet.org/add-ons/card-ext/storage-card/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/card-ext/storage-card/</guid><description>&lt;br>
 &lt;p>For a long time, the Calypso card product range was limited to ‘Calypso Prime’, in order to cater for season ticket holders and regular travellers. But to manage &amp;lsquo;occasional&amp;rsquo; travelers with single or limited-use card products, many ticketing systems used contactless memory ticketing solutions (such as &lt;strong>Mifare UltraLight&lt;/strong>, &lt;strong>CT512&lt;/strong>, &lt;strong>ST25&lt;/strong>) in addition to Calypso cards. Since then, the Calypso card range has been expanded with the Calypso Light and Calypso Basic solutions.
 Pending migration to support Light and Basic products, many ticketing systems still require their terminals to handle Calypso cards alongside contactless memory ticket solutions.&lt;/p>
 &lt;p>To assist CNA members and facilitate the management of contactless memory tickets on Calypso terminals based on the Keyple middleware: &lt;strong>CNA offers its members the privilege of benefiting from libraries enabling them to process contactless memory tickets on Keyple-based terminal&lt;/strong>.&lt;/p>
@@ -57,44 +61,44 @@ Pending migration to support Light and Basic products, many ticketing systems st
 &lt;li>🌍 CNA also offers open source examples of contactless memory ticket processing.&lt;/li>
 &lt;li>🚫 Only CNA members can benefit from CNA libraries supporting contactless memory ticket processing.&lt;/li>
 &lt;/ul>
-&lt;p>&lt;span style="color: red;">This is the first solution to easily operate proprietary contactless memory ticket solutions on a Keyple terminal. It is possible that it may lack useful features for your needs: if this is the case, don&amp;rsquo;t hesitate to report it to CNA (potentially through &lt;a href="https://github.com/calypsonet/calypsonet-terminal-storagecard-uml-api/issues" target="_blank" rel="noopener">issues on the CNA StorageCard API definition repository&lt;/a>).&lt;/span>&lt;/p>
+&lt;p>&lt;span style="color: red;">This is the first solution to easily operate proprietary contactless memory ticket solutions on a Keyple terminal. It is possible that it may lack useful features for your needs: if this is the case, don&amp;rsquo;t hesitate to report it to CNA (potentially through &lt;a href="https://github.com/calypsonet/calypsonet-terminal-storagecard-uml-api/issues">issues on the CNA StorageCard API definition repository&lt;/a>).&lt;/span>&lt;/p>
 &lt;h2 id="involved-software-components">Involved software components&lt;/h2>
-&lt;p>In addition to the &lt;a href="https://keyple.org/components/overview/components-map/" target="_blank" rel="noopener">Keyple global component dependency guide&lt;/a>, the diagram below focuses on the components involved in handling contactless memory tickets.
+&lt;p>In addition to the &lt;a href="https://keyple.org/components/overview/components-map/">Keyple global component dependency guide&lt;/a>, the diagram below focuses on the components involved in handling contactless memory tickets.
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img src="./media/cna-storagecard-support/storagecard_component_dependencies.svg" alt="" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;h2 id="terminal-interface-to-drive-a-transaction-with-contactless-memory-tickets">Terminal Interface to drive a transaction with contactless memory tickets&lt;/h2>
-&lt;p>In order to facilitate the design of ticketing processing on a terminal interacting with contactless memory tickets, CNA has defined a dedicated universal interface: the &lt;a href="https://terminal-api.calypsonet.org/specifications/card-layer-storagecard/storagecard-api/" target="_blank" rel="noopener">Storage Card API&lt;/a>.&lt;/p>
+&lt;p>In order to facilitate the design of ticketing processing on a terminal interacting with contactless memory tickets, CNA has defined a dedicated universal interface: the &lt;a href="https://terminal-api.calypsonet.org/specifications/card-layer-storagecard/storagecard-api/">Storage Card API&lt;/a>.&lt;/p>
 &lt;h2 id="keypop-api-to-drive-a-transaction-with-contactless-memory-tickets">Keypop API to drive a transaction with contactless memory tickets&lt;/h2>
-&lt;p>An open source &lt;a href="https://keypop.org/apis/card-layer-storagecard/storagecard-api/" target="_blank" rel="noopener">Java translation of the Storage Card API&lt;/a> definition has been released within the Eclipse Keypop project.&lt;/p>
+&lt;p>An open source &lt;a href="https://keypop.org/apis/card-layer-storagecard/storagecard-api/">Java translation of the Storage Card API&lt;/a> definition has been released within the Eclipse Keypop project.&lt;/p>
 &lt;h2 id="cna-library-to-process-contactless-memory-tickets">CNA Library to process contactless memory tickets&lt;/h2>
-&lt;p>In order to assist CNA members who need to combine Calypso card processing with contactless memory ticket processing on their Keyple-based ticketing terminals, CNA provides its members with a dedicated card extension: the &lt;a href="https://github.com/calypsonet-member/keyple-card-cna-storagecard-java-lib" target="_blank" rel="noopener">CNA Storage Card Lib&lt;/a>.&lt;/p>
+&lt;p>In order to assist CNA members who need to combine Calypso card processing with contactless memory ticket processing on their Keyple-based ticketing terminals, CNA provides its members with a dedicated card extension: the &lt;a href="https://github.com/calypsonet-member/keyple-card-cna-storagecard-java-lib">CNA Storage Card Lib&lt;/a>.&lt;/p>
 &lt;h2 id="reader-support-for-contactless-memory-tickets">Reader support for contactless memory tickets&lt;/h2>
 &lt;p>To integrate smart card reader solutions with the Keyple middleware in a generic way, until now the Keyple project offered a simple plugin interface&lt;/p>
 &lt;ul>
-&lt;li>This &lt;a href="https://keyple.org/components/core/keyple-plugin-api/" target="_blank" rel="noopener">Keyple Plugin API&lt;/a> needs to be implemented by a specific plugin for the various reader solutions.&lt;/li>
-&lt;li>A &lt;a href="https://keyple.org/learn/developer-guide/reader-plugin-add-on/" target="_blank" rel="noopener">guide to developing plugins&lt;/a> for reader solutions is also provided by the Keyple project.&lt;/li>
+&lt;li>This &lt;a href="https://keyple.org/components/core/keyple-plugin-api/">Keyple Plugin API&lt;/a> needs to be implemented by a specific plugin for the various reader solutions.&lt;/li>
+&lt;li>A &lt;a href="https://keyple.org/learn/developer-guide/reader-plugin-add-on/">guide to developing plugins&lt;/a> for reader solutions is also provided by the Keyple project.&lt;/li>
 &lt;/ul>
 &lt;p>Proprietary contactless ticket solutions do not support the level 4 of the ISO 14443 standard: these solutions are therefore not compatible with the “APDU command” envelope format defined by the ISO 7816-4 standard. Communication with contactless tickets therefore relies on exchanges of non-standardized “byte blocks”: specific processing by reader solutions is required to handle memory tickets.&lt;/p>
 &lt;h3 id="native-support-of-contactless-memory-tickets-by-pcsc-readers">Native support of contactless memory tickets by PC/SC readers&lt;/h3>
-&lt;p>The PC/SC standard has defined an &lt;a href="https://pcscworkgroup.com/Download/Specifications/pcsc3_v2.01.09.pdf" target="_blank" rel="noopener">APDU &amp;lsquo;Storage Card&amp;rsquo; envelope format&lt;/a> to standardize the way data blocks are exchanged with contactless memory tickets. This envelope format is used by the Storage Card library proposed by CNA.
-Thus, the &lt;a href="https://keyple.org/components/standard-reader-plugins/keyple-plugin-pcsc-lib/" target="_blank" rel="noopener">PC/SC plugin&lt;/a> proposed by the Keyple project is natively compliant to support communication with contactless memory tickets.&lt;/p>
+&lt;p>The PC/SC standard has defined an &lt;a href="https://pcscworkgroup.com/Download/Specifications/pcsc3_v2.01.09.pdf">APDU &amp;lsquo;Storage Card&amp;rsquo; envelope format&lt;/a> to standardize the way data blocks are exchanged with contactless memory tickets. This envelope format is used by the Storage Card library proposed by CNA.
+Thus, the &lt;a href="https://keyple.org/components/standard-reader-plugins/keyple-plugin-pcsc-lib/">PC/SC plugin&lt;/a> proposed by the Keyple project is natively compliant to support communication with contactless memory tickets.&lt;/p>
 &lt;h3 id="keyple-interface-for-extending-a-plugin-to-manage-memory-ticket-command-wrapping">Keyple interface for extending a plugin to manage memory ticket command wrapping&lt;/h3>
 &lt;p>To support contactless memory tickets on Keyple terminals using reader solutions other than PC/SC, the reader plugin needs to manage the APDU wrapping of command blocks specific to contactless ticket solutions.
-To facilitate and factorize the integration of APDU wrapping for plugins for reader solutions other than PC/SC, the Keyple project offers an additional API: the &amp;lsquo;&lt;a href="https://keyple.org/components/core/keyple-plugin-storagecard-api/" target="_blank" rel="noopener">Plugin Storage Card API&lt;/a>&amp;rsquo;.&lt;/p>
+To facilitate and factorize the integration of APDU wrapping for plugins for reader solutions other than PC/SC, the Keyple project offers an additional API: the &amp;lsquo;&lt;a href="https://keyple.org/components/core/keyple-plugin-storagecard-api/">Plugin Storage Card API&lt;/a>&amp;rsquo;.&lt;/p>
 &lt;p>A reader plugin that uses this API can then be extended to support contactless memory tickets if it is interfaced with a library implementing this API.&lt;/p>
 &lt;ul>
-&lt;li>In the Keyple project, the &lt;a href="https://github.com/eclipse-keyple/keyple-plugin-android-nfc-java-lib/tree/storage-card-api" target="_blank" rel="noopener">Android NFC plugin&lt;/a> has been updated to use this interface, enabling an NFC reader to integrate support for Mifare UltraLight tickets (as CT512 or ST25 products are not part of the NFC standard). (feature currently available in the ‘storage-card-api’ branch, integration in progress in the main branch)&lt;/li>
-&lt;li>Among the Keyple &amp;lsquo;add-ons&amp;rsquo; offered by CNA, the open source &lt;a href="https://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/tree/storagecard" target="_blank" rel="noopener">plugin for Bluebird readers&lt;/a> has also evolved to use this API and thus support Mifare UL, CT512, and ST25 tickets (feature currently available in the ‘storagecard’ branch, integration in progress in the main branch)&lt;/li>
+&lt;li>In the Keyple project, the &lt;a href="https://github.com/eclipse-keyple/keyple-plugin-android-nfc-java-lib/tree/storage-card-api">Android NFC plugin&lt;/a> has been updated to use this interface, enabling an NFC reader to integrate support for Mifare UltraLight tickets (as CT512 or ST25 products are not part of the NFC standard). (feature currently available in the ‘storage-card-api’ branch, integration in progress in the main branch)&lt;/li>
+&lt;li>Among the Keyple &amp;lsquo;add-ons&amp;rsquo; offered by CNA, the open source &lt;a href="https://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/tree/storagecard">plugin for Bluebird readers&lt;/a> has also evolved to use this API and thus support Mifare UL, CT512, and ST25 tickets (feature currently available in the ‘storagecard’ branch, integration in progress in the main branch)&lt;/li>
 &lt;/ul>
 &lt;h3 id="cna-library-to-add-contactless-memory-ticket-command-wrapping-to-keyple-plugins">CNA Library to add contactless memory ticket command wrapping to Keyple plugins&lt;/h3>
-&lt;p>To assist CNA members needing to integrate contactless memory ticket processing on a Keyple-based terminal with readers other than PC/SC: CNA provides a members-only library that enables APDU wrapping of ticket commands to be integrated into a Keyple plugin: the &lt;a href="https://github.com/calypsonet-member/keyple-plugin-cna-storagecard-java-lib" target="_blank" rel="noopener">Plugin Storage Card library&lt;/a>.&lt;/p>
+&lt;p>To assist CNA members needing to integrate contactless memory ticket processing on a Keyple-based terminal with readers other than PC/SC: CNA provides a members-only library that enables APDU wrapping of ticket commands to be integrated into a Keyple plugin: the &lt;a href="https://github.com/calypsonet-member/keyple-plugin-cna-storagecard-java-lib">Plugin Storage Card library&lt;/a>.&lt;/p>
 &lt;h2 id="examples-of-contactless-memory-ticket-processing-in-a-terminal-application">Examples of contactless memory ticket processing in a terminal application&lt;/h2>
 &lt;p>Among the &lt;a href="../../demo/example/">basic examples of Keyple implementation supplemented by CNA&lt;/a>, one is dedicated to the processing of contactless memory tickets on a PC terminal equipped with PC/SC readers:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://github.com/calypsonet/keyple-cna-java-example/tree/main/StorageCard_PCSC" target="_blank" rel="noopener">contactless ticket processing on a PC/SC reader&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/calypsonet/keyple-cna-java-example/tree/main/StorageCard_PCSC">contactless ticket processing on a PC/SC reader&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>The Android applications of the &lt;a href="../../demo/ticketing/">CNA advanced ticketing demonstrator&lt;/a> (sales client, validation,
 and inspection) also process contactless memory tickets, in addition to Calypso cards. The cards supported by each
@@ -122,13 +126,13 @@ analyze the contents of a Calypso card and to verify its compliance against a re
 &lt;h2 id="prerequisites">Prerequisites&lt;/h2>
 &lt;ul>
 &lt;li>&lt;strong>Java:&lt;/strong> ensure you have a Java Runtime Environment (JRE) installed on your system. You can download it
-from &lt;a href="https://www.java.com" target="_blank" rel="noopener">www.java.com&lt;/a>.&lt;/li>
+from &lt;a href="https://www.java.com">www.java.com&lt;/a>.&lt;/li>
 &lt;li>&lt;strong>PC/SC card reader:&lt;/strong> a contactless PC/SC compliant card reader is required to interact with the Calypso card.&lt;/li>
 &lt;/ul>
 &lt;br>
 &lt;h2 id="download-the-apps">Download the Apps&lt;/h2>
 &lt;ol>
-&lt;li>Go to the &lt;a href="https://github.com/calypsonet/cna-tool-card-analyzer-app/releases" target="_blank" rel="noopener">releases page&lt;/a> to download the latest
+&lt;li>Go to the &lt;a href="https://github.com/calypsonet/cna-tool-card-analyzer-app/releases">releases page&lt;/a> to download the latest
 version of the application suite.&lt;/li>
 &lt;li>Download the executable JAR files:
 &lt;ul>
@@ -567,8 +571,8 @@ been personalized using the &lt;a href="./add-ons/tool/basic-sam/">basic-legacys
 &lt;h2 id="installation">Installation&lt;/h2>
 &lt;ol>
 &lt;li>The software is available in a GitHub repository. Go to
-the &lt;a href="https://github.com/calypsonet-member/cna-tool-basic-card-perso-app/releases" target="_blank" rel="noopener">releases page&lt;/a> to download it. (Note:
-the GitHub repository is private. Please request access from &lt;a href="https://calypsonet.org" target="_blank" rel="noopener">CNA&lt;/a>). Choose the installation
+the &lt;a href="https://github.com/calypsonet-member/cna-tool-basic-card-perso-app/releases">releases page&lt;/a> to download it. (Note:
+the GitHub repository is private. Please request access from &lt;a href="https://calypsonet.org">CNA&lt;/a>). Choose the installation
 file that matches your operating system:
 &lt;ul>
 &lt;li>&lt;strong>Windows:&lt;/strong> &lt;code>.msi&lt;/code> package&lt;/li>
@@ -708,8 +712,8 @@ personalized with the &lt;a href="./add-ons/tool/basic-card/">basic-card-persona
 &lt;h2 id="installation">Installation&lt;/h2>
 &lt;ol>
 &lt;li>The software is available in a GitHub repository. Go to
-the &lt;a href="https://github.com/calypsonet-member/cna-tool-basic-legacysam-perso-app/releases" target="_blank" rel="noopener">releases page&lt;/a> to download it. (Note:
-the GitHub repository is private. Please request access from &lt;a href="https://calypsonet.org" target="_blank" rel="noopener">CNA&lt;/a>). Choose the installation
+the &lt;a href="https://github.com/calypsonet-member/cna-tool-basic-legacysam-perso-app/releases">releases page&lt;/a> to download it. (Note:
+the GitHub repository is private. Please request access from &lt;a href="https://calypsonet.org">CNA&lt;/a>). Choose the installation
 file that matches your operating system:
 &lt;ul>
 &lt;li>&lt;strong>Windows:&lt;/strong> &lt;code>.msi&lt;/code> package&lt;/li>
@@ -903,7 +907,7 @@ Class diagram of the Calypso Legacy Prime Certificate API
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">generate&lt;/span>&lt;span class="p">();&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;br>
 &lt;h2 id="demonstration-project">Demonstration Project&lt;/h2>
-&lt;p>An open-source &lt;a href="https://github.com/calypsonet/cna-demo-calypso-certificate-legacyprime-generator-app" target="_blank" rel="noopener">demonstration project&lt;/a> is available to illustrate the full lifecycle:&lt;/p>
+&lt;p>An open-source &lt;a href="https://github.com/calypsonet/cna-demo-calypso-certificate-legacyprime-generator-app">demonstration project&lt;/a> is available to illustrate the full lifecycle:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>In-Memory Demo&lt;/strong>: Quick demonstration with ephemeral keys.&lt;/li>
 &lt;li>&lt;strong>Advanced Demo&lt;/strong>: Shows how to manage persistent keys in &lt;strong>PEM format&lt;/strong>.&lt;/li>
@@ -949,10 +953,10 @@ Class diagram of the Calypso Legacy Prime Certificate API
 &lt;ul>
 &lt;li>&lt;strong>GitHub Repositories&lt;/strong>:
 &lt;ul>
-&lt;li>&lt;a href="https://github.com/calypsonet/calypsonet-terminal-calypso-certificate-legacyprime-uml-api" target="_blank" rel="noopener">UML API&lt;/a> (Design and specifications)&lt;/li>
-&lt;li>&lt;a href="https://github.com/calypsonet/calypsonet-terminal-calypso-certificate-legacyprime-jvm-api" target="_blank" rel="noopener">JVM API&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/calypsonet/calypsonet-terminal-calypso-certificate-legacyprime-jvm-lib" target="_blank" rel="noopener">JVM Lib&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/calypsonet/cna-demo-calypso-certificate-legacyprime-generator-app" target="_blank" rel="noopener">Console Demo&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/calypsonet/calypsonet-terminal-calypso-certificate-legacyprime-uml-api">UML API&lt;/a> (Design and specifications)&lt;/li>
+&lt;li>&lt;a href="https://github.com/calypsonet/calypsonet-terminal-calypso-certificate-legacyprime-jvm-api">JVM API&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/calypsonet/calypsonet-terminal-calypso-certificate-legacyprime-jvm-lib">JVM Lib&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/calypsonet/cna-demo-calypso-certificate-legacyprime-generator-app">Console Demo&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>&lt;strong>License&lt;/strong>:
@@ -965,4 +969,4 @@ Class diagram of the Calypso Legacy Prime Certificate API
 &lt;/ul>
 &lt;br>
 &lt;h2 id="disclaimer">Disclaimer&lt;/h2>
-&lt;p>This software is provided by CNA to facilitate the implementation of Calypso systems. Users are responsible for the secure management of their private keys and the integrity of their PKI infrastructure.&lt;/p></description></item></channel></rss>
+&lt;p>This software is provided by CNA to facilitate the implementation of Calypso systems. Users are responsible for the secure management of their private keys and the integrity of their PKI infrastructure.&lt;/p></description></item><item><title>Keyple plugin for Arrive smart card reader</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/arrive/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/arrive/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>Keyple plugin for Bluebird smart card reader</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/bluebird/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/bluebird/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>Keyple plugin for Coppernic smart card reader</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/coppernic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/coppernic/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>Keyple plugin for Famoco smart card reader</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/famoco/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/famoco/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>Keyple plugin for Paragon ID Gen5XX PC/SC smart card reader</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/paragonid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/paragonid/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item><item><title>Keyple plugin for Spirtech Calypso HSM</title><link>https://keyple-support.calypsonet.org/add-ons/plugin-ext/hsm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keyple-support.calypsonet.org/add-ons/plugin-ext/hsm/</guid><description>&lt;meta http-equiv="refresh" content="0; url=./add-ons/plugin-ext/"></description></item></channel></rss>

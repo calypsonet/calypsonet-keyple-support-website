@@ -22,13 +22,13 @@ analyze the contents of a Calypso card and to verify its compliance against a re
 &lt;h2 id="prerequisites">Prerequisites&lt;/h2>
 &lt;ul>
 &lt;li>&lt;strong>Java:&lt;/strong> ensure you have a Java Runtime Environment (JRE) installed on your system. You can download it
-from &lt;a href="https://www.java.com" target="_blank" rel="noopener">www.java.com&lt;/a>.&lt;/li>
+from &lt;a href="https://www.java.com">www.java.com&lt;/a>.&lt;/li>
 &lt;li>&lt;strong>PC/SC card reader:&lt;/strong> a contactless PC/SC compliant card reader is required to interact with the Calypso card.&lt;/li>
 &lt;/ul>
 &lt;br>
 &lt;h2 id="download-the-apps">Download the Apps&lt;/h2>
 &lt;ol>
-&lt;li>Go to the &lt;a href="https://github.com/calypsonet/cna-tool-card-analyzer-app/releases" target="_blank" rel="noopener">releases page&lt;/a> to download the latest
+&lt;li>Go to the &lt;a href="https://github.com/calypsonet/cna-tool-card-analyzer-app/releases">releases page&lt;/a> to download the latest
 version of the application suite.&lt;/li>
 &lt;li>Download the executable JAR files:
 &lt;ul>
@@ -467,8 +467,8 @@ been personalized using the &lt;a href="../../add-ons/tool/basic-sam/">basic-leg
 &lt;h2 id="installation">Installation&lt;/h2>
 &lt;ol>
 &lt;li>The software is available in a GitHub repository. Go to
-the &lt;a href="https://github.com/calypsonet-member/cna-tool-basic-card-perso-app/releases" target="_blank" rel="noopener">releases page&lt;/a> to download it. (Note:
-the GitHub repository is private. Please request access from &lt;a href="https://calypsonet.org" target="_blank" rel="noopener">CNA&lt;/a>). Choose the installation
+the &lt;a href="https://github.com/calypsonet-member/cna-tool-basic-card-perso-app/releases">releases page&lt;/a> to download it. (Note:
+the GitHub repository is private. Please request access from &lt;a href="https://calypsonet.org">CNA&lt;/a>). Choose the installation
 file that matches your operating system:
 &lt;ul>
 &lt;li>&lt;strong>Windows:&lt;/strong> &lt;code>.msi&lt;/code> package&lt;/li>
@@ -608,8 +608,8 @@ personalized with the &lt;a href="../../add-ons/tool/basic-card/">basic-card-per
 &lt;h2 id="installation">Installation&lt;/h2>
 &lt;ol>
 &lt;li>The software is available in a GitHub repository. Go to
-the &lt;a href="https://github.com/calypsonet-member/cna-tool-basic-legacysam-perso-app/releases" target="_blank" rel="noopener">releases page&lt;/a> to download it. (Note:
-the GitHub repository is private. Please request access from &lt;a href="https://calypsonet.org" target="_blank" rel="noopener">CNA&lt;/a>). Choose the installation
+the &lt;a href="https://github.com/calypsonet-member/cna-tool-basic-legacysam-perso-app/releases">releases page&lt;/a> to download it. (Note:
+the GitHub repository is private. Please request access from &lt;a href="https://calypsonet.org">CNA&lt;/a>). Choose the installation
 file that matches your operating system:
 &lt;ul>
 &lt;li>&lt;strong>Windows:&lt;/strong> &lt;code>.msi&lt;/code> package&lt;/li>
@@ -803,7 +803,7 @@ Class diagram of the Calypso Legacy Prime Certificate API
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">generate&lt;/span>&lt;span class="p">();&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;br>
 &lt;h2 id="demonstration-project">Demonstration Project&lt;/h2>
-&lt;p>An open-source &lt;a href="https://github.com/calypsonet/cna-demo-calypso-certificate-legacyprime-generator-app" target="_blank" rel="noopener">demonstration project&lt;/a> is available to illustrate the full lifecycle:&lt;/p>
+&lt;p>An open-source &lt;a href="https://github.com/calypsonet/cna-demo-calypso-certificate-legacyprime-generator-app">demonstration project&lt;/a> is available to illustrate the full lifecycle:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>In-Memory Demo&lt;/strong>: Quick demonstration with ephemeral keys.&lt;/li>
 &lt;li>&lt;strong>Advanced Demo&lt;/strong>: Shows how to manage persistent keys in &lt;strong>PEM format&lt;/strong>.&lt;/li>
@@ -849,10 +849,10 @@ Class diagram of the Calypso Legacy Prime Certificate API
 &lt;ul>
 &lt;li>&lt;strong>GitHub Repositories&lt;/strong>:
 &lt;ul>
-&lt;li>&lt;a href="https://github.com/calypsonet/calypsonet-terminal-calypso-certificate-legacyprime-uml-api" target="_blank" rel="noopener">UML API&lt;/a> (Design and specifications)&lt;/li>
-&lt;li>&lt;a href="https://github.com/calypsonet/calypsonet-terminal-calypso-certificate-legacyprime-jvm-api" target="_blank" rel="noopener">JVM API&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/calypsonet/calypsonet-terminal-calypso-certificate-legacyprime-jvm-lib" target="_blank" rel="noopener">JVM Lib&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/calypsonet/cna-demo-calypso-certificate-legacyprime-generator-app" target="_blank" rel="noopener">Console Demo&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/calypsonet/calypsonet-terminal-calypso-certificate-legacyprime-uml-api">UML API&lt;/a> (Design and specifications)&lt;/li>
+&lt;li>&lt;a href="https://github.com/calypsonet/calypsonet-terminal-calypso-certificate-legacyprime-jvm-api">JVM API&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/calypsonet/calypsonet-terminal-calypso-certificate-legacyprime-jvm-lib">JVM Lib&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/calypsonet/cna-demo-calypso-certificate-legacyprime-generator-app">Console Demo&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>&lt;strong>License&lt;/strong>:
