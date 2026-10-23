@@ -241,7 +241,7 @@ Depending on the conditions of applicability, and provided that a compliant read
 <tbody>
 	<tr>
 		<th scope="row">Set Name</th>
-		<td><span style="color: DarkOrange;">Keyple <b>C++</b> 2026.09.22 Service with <b>PC/SC</b> plugin set</span></td>
+		<td><span style="color: DarkOrange;">Keyple <b>C++</b> 2026.09.22 Service with <b>PC/SC</b> plugin</span></td>
 	</tr>
 	<tr>
 		<th scope="row">Set Version</th>
@@ -302,7 +302,7 @@ Only a few requirements are, exceptionally, partially supported; here are the ex
 
 The `CL-SEL-SNHEADER.2` requirement, which is used to support the Calypso `HCE` feature, is not supported. The middleware does not provide a way to automate the validation of HCE tokens. This lack has a limited impact: the project provides a [development guide for managing HCE token validity](https://keyple.org/learn/user-guide/calypso-application/#hce-service-handling).
 
-Regarding the 'CL-PERF-HFLOW.1' requirement, the Keyple Calypso libraries have been designed to optimize card & SAM command exchanges with the best possible performance, depending on the terminal architecture:
+Regarding the `CL-PERF-HFLOW.1` requirement, the Keyple Calypso libraries have been designed to optimize card & SAM command exchanges with the best possible performance, depending on the terminal architecture:
 - for an [embedded architecture](https://terminal-api.calypsonet.org/specifications/calypso-layer/calypso-card-api/#_regular_-secure-session-span-stylecolor-redoptimized-for-fast-embedded-performancespan) (saving latencies of between 1 and 10 milliseconds on transmissions with local readers),
 - for a [distributed architecture](https://terminal-api.calypsonet.org/specifications/calypso-layer/calypso-card-api/#_regular_-secure-session-span-stylecolor-redoptimized-for-an-efficient-distributed-systemspan) (saving latencies of between 10 and 100 milliseconds on network exchanges with remote readers).
 
@@ -320,7 +320,7 @@ Support for requirements specific to the Prime PKI feature (`CL-PKI-ALGO.1`, `CL
 <tbody>
 	<tr>
 		<th scope="row">Set Name</th>
-		<td><span style="color: DarkOrange;">Keyple <b>Java</b> Calypso Prime <b>PKI</b> 2026.10.14 set</span></td>
+		<td><span style="color: DarkOrange;">Keyple <b>Java</b> Calypso Prime <b>PKI</b> 2026.10.14</span></td>
 	</tr>
 	<tr>
 		<th scope="row">Set Version</th>
@@ -382,7 +382,7 @@ Support for requirements specific to the Prime PKI feature (`CL-PKI-ALGO.1`, `CL
 <tbody>
 	<tr>
 		<th scope="row">Set Name</th>
-		<td><span style="color: DarkOrange;">Keyple <b>C++</b> Calypso Prime <b>Extended</b> 2026.09.22 set</span></td>
+		<td><span style="color: DarkOrange;">Keyple <b>C++</b> Calypso Prime <b>Extended</b> 2026.09.22</span></td>
 	</tr>
 	<tr>
 		<th scope="row">Set Version</th>
