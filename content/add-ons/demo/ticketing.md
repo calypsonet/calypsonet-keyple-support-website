@@ -41,5 +41,7 @@ The cards and terminals supported by each application are detailed in the functi
 - **Functional documentation**: attached as PDF and HTML files to each release. It describes the use cases, the business rules, and the messages of the demonstrator, as well as the data model of the card and the procedures executed on it.
 
 {{% callout note %}}
-The plugins of the Bluebird and Arrive terminals are open source (see [Keyple reader extensions](../../plugin-ext/)): integrators who have the native library of the terminal manufacturer can build them, then add them to the demonstrator. The storage card libraries are reserved for CNA members, and available on request. Without these components, the demonstrator is built with mocks: these terminals are not available, and the storage cards are not handled (see the <a href="https://github.com/calypsonet/keyple-demo-ticketing#proprietary-components">README</a>).
+Some components depend on libraries that are not publicly available: without them, the demonstrator is built with mocks (see the [README](https://github.com/calypsonet/keyple-demo-ticketing#proprietary-components)).
+- **Bluebird and Arrive terminals**: the plugins are open source (see [Keyple reader extensions](../../plugin-ext/)), and are built with the native library of the terminal manufacturer. Without them, these terminals are not available.
+- **Storage cards**: the CNA libraries are reserved for CNA members, and available on request. Without them, the storage cards are not handled.
 {{% /callout %}}
