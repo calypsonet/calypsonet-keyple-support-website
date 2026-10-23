@@ -1,0 +1,24 @@
+{{- /* Overrides the HugoBlox link render hook (same output) and fails the build when an internal link does not resolve to a page, a file or a heading anchor. */ -}}
+{{- $dest := .Destination -}}
+{{- $u := urls.Parse $dest -}}
+{{- /* External links, and destinations produced by a ref/relref shortcode (already checked by Hugo), are not checked here. */ -}}
+{{- if not (or $u.Scheme $u.Host (strings.Contains $dest "HAHAHUGOSHORTCODE")) -}}
+  {{- $target := .Page -}}
+  {{- with $u.Path -}}
+    {{- /* Relative links are resolved like the browser does, from the URL of the page (the site root for headless home widgets). */ -}}
+    {{- $p := . -}}
+    {{- if not (strings.HasPrefix $p "/") -}}
+      {{- $p = path.Join ($.Page.RelPermalink | default "/") $p -}}
+    {{- end -}}
+    {{- $target = site.GetPage $p -}}
+    {{- if and (not $target) (not (or (os.FileExists (path.Join "static" $p)) (os.FileExists (path.Join "content" $p)))) -}}
+      {{- errorf "%s: broken link %q: no page or file found at %q" $.Page.File.Path $dest $p -}}
+    {{- end -}}
+  {{- end -}}
+  {{- with $u.Fragment -}}
+    {{- if and $target (not ($target.Fragments.Identifiers.Contains .)) -}}
+      {{- errorf "%s: broken link %q: no heading with id %q in %q" $.Page.File.Path $dest . $target.RelPermalink -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+<a href="{{ .Destination | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank" rel="noopener"{{ end }}>{{ .Text | safeHTML }}</a>
