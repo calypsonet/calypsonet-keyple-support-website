@@ -284,17 +284,15 @@ The [Keyple's ‘Calypso’ libraries](https://keyple.org/components/card-extens
 - the versions of Keyple's Calypso libraries must be [compliant with versions 2.0 or higher of the terminal Calypso APIs](https://terminal-api.calypsonet.org/compliance/#from-reader-api-version-20--calypso-card-api-version-20),
 - & the reader software layer used as a basis (Keyple's ‘Core’ libraries + reader plugins) must comply with the terminal requirements for the reader layer.
 
-Pending the future certification programme for Calypso layer libraries, CNA has [published the self-declarations of conformity of the Keyple Calypso libraries ](https://calypsonet.org/registered-calypso-layer-libraries/) (independently of interfaced reader solutions, but on the basis of a compliant reader software layer).
-
-### Calypso functional scope managed by Keyple
-Supported Calypso card solutions:
-- Using the  "*Keyple Card Calypso Library*" component in *version 2.3.1+* or after: all Calypso `Prime Extended` features are supported → available both for Java and C++ implementations
-- Starting from the "*Keyple Card Calypso Crypto PKI Library*" component in *version 0.2+* or later: all Calypso `Prime PKI` features are supported → currently available *only* for the Java implementation; C++ porting is planned for the first quarter of 2027
-- From the "*Keyple Card Calypso Library*" component in *version 2.1+*: all Calypso `Prime Regular`, `Light` and `Basic` features are supported.
-
-Supported Calypso SAM Solutions:
-- Since "*Keyple Card Calypso Library*" component in *version 2.1+*: Calypso secure processing is optimized based on the capabilities of security modules such as `SAM-C1`, `SAM-S1E`, and `SAM-S1D`. (Support for the `C-SAM F` solution has not been tested.)
-- The middleware is ready to receive a future extension to manage Open SAM, thanks to the use of the "Calypso Crypto Symmetric API" interface.
+Pending the future certification programme for Calypso layer libraries, CNA has [published the self-declarations of conformity of the Keyple Calypso libraries ](https://calypsonet.org/registered-calypso-layer-libraries/) (independently of interfaced reader solutions, but on the basis of a compliant reader software layer):
+- [Keyple Java Calypso Prime PKI set 2](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-java-calypso-prime-pki-set-2-definition-still-span-stylecolor-darkorangeupdatedspan)
+- [Keyple Java Calypso Prime PKI set](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-java-calypso-prime-pki-set-definition)
+- [Keyple Java Calypso Prime Extended set](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-java-calypso-prime-extended-set-definition)
+- [Keyple Legacy Java Calypso Prime Extended set 2](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-legacy-java-calypso-prime-extended-set-2-definition-still-span-stylecolor-darkorangefixedspan)
+- [Keyple Legacy Java Calypso Prime Extended set](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-legacy-java-calypso-prime-extended-set-definition)
+- [Keyple Legacy Java Calypso Prime Regular set](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-legacy-java-calypso-prime-regular-set-definition)
+- [Keyple Legacy C++ Calypso Prime Regular set 2](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-legacy-c-calypso-prime-regular-set-2-definition-still-span-stylecolor-darkorangefixedspan)
+- [Keyple Legacy C++ Calypso Prime Regular set](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-legacy-c-calypso-prime-regular-set-definition)
 
 ### Terminal requirements support declarations
 All terminal requirements defined for the Calypso software layer that are necessary to ensure proper interoperability with Calypso card and SAM solutions are fully handled by the Keyple  Calypso extension libraries.
