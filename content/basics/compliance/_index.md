@@ -23,7 +23,7 @@ For terminals integrating contactless and/or contact readers, the [Keyple's ‘C
 
 The Keyple project hosts plugins for interfacing reader solutions based on standardized APIs: PC/SC and Android NFC. Pending the future certification programme for reader layer libraries, CNA plans to [publish the self-declarations of conformity of the Keyple Core libraries for reader solutions](https://calypsonet.org/registered-readers/) interfaced with these plugins.
 
-### Applicability et supported rules
+### Applicability and supported rules
 For a smart card reader solution integrated with the “Keyple Core” software libraries, the applicability of the “reader layer” requirements depends primarily on the characteristics of the reader solution.
 
 However, the Keyple Core libraries have a limitation regarding applicability: they do not support “Channels.”
