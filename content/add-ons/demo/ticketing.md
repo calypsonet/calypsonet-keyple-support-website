@@ -7,7 +7,7 @@ type: book
 toc: true
 weight: 110
 ---
-To illustrate an advanced implementation of the Keyple Java middleware for Calypso-based ticketing systems, CNA has released **Keyple Demo Ticketing**, a complete ticketing demonstrator, under the <a href="https://opensource.org/license/bsd-3-clause" target="_blank" rel="noopener">3-Clause BSD License</a>.
+To illustrate an advanced implementation of the Keyple Java middleware for Calypso-based ticketing systems, CNA has released **Keyple Demo Ticketing**, a complete ticketing demonstrator, under the <a href="https://opensource.org/license/bsd-3-clause">3-Clause BSD License</a>.
 
 It covers the lifecycle of a contactless transit ticket: personalization of the card, sale and loading of the tickets (season pass, multi-trip ticket), access validation, and ticket inspection.
 
@@ -36,10 +36,10 @@ The cards and terminals supported by each application are detailed in the functi
 
 ## Getting the demonstrator
 
-- **Source code**: the <a href="https://github.com/calypsonet/keyple-demo-ticketing" target="_blank" rel="noopener">keyple-demo-ticketing</a> repository, whose README describes the components, the supported terminals and platforms, and how to build and install them.
-- **Applications**: attached to each release of the repository (see the <a href="https://github.com/calypsonet/keyple-demo-ticketing/releases/latest" target="_blank" rel="noopener">latest release</a>).
+- **Source code**: the <a href="https://github.com/calypsonet/keyple-demo-ticketing">keyple-demo-ticketing</a> repository, whose README describes the components, the supported terminals and platforms, and how to build and install them.
+- **Applications**: attached to each release of the repository (see the <a href="https://github.com/calypsonet/keyple-demo-ticketing/releases/latest">latest release</a>).
 - **Functional documentation**: attached as PDF and HTML files to each release. It describes the use cases, the business rules, and the messages of the demonstrator, as well as the data model of the card and the procedures executed on it.
 
 {{% callout note %}}
-The plugins of the Bluebird and Arrive terminals and the storage card libraries are <a href="https://github.com/calypsonet/keyple-demo-ticketing#proprietary-plugins-available-on-request" target="_blank" rel="noopener">available on request</a> from CNA. Without them, the demonstrator is built with mocks: these terminals are not available, and the storage cards are not handled.
+The plugins of the Bluebird and Arrive terminals are open source (see [Keyple reader extensions](../../plugin-ext/)): integrators who have the native library of the terminal manufacturer can build them, then add them to the demonstrator. The storage card libraries are reserved for CNA members, and available on request. Without these components, the demonstrator is built with mocks: these terminals are not available, and the storage cards are not handled (see the <a href="https://github.com/calypsonet/keyple-demo-ticketing#proprietary-components">README</a>).
 {{% /callout %}}

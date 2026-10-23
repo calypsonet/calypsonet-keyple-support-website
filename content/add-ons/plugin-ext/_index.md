@@ -34,7 +34,7 @@ In addition, CNA has released the following plugins under the [Eclipse Public Li
     </thead>
     <tbody id="external-resource-table-1-content">
     <tr>
-        <td class="text-center"><a href="https://github.com/calypsonet/keyple-plugin-cna-coppernic-cone2-java-lib" target="_blank" rel="noopener">Coppernic</a></td>
+        <td class="text-center"><a href="https://github.com/calypsonet/keyple-plugin-cna-coppernic-cone2-java-lib">Coppernic</a></td>
         <td class="text-center">C-One v2</td>
         <td class="text-center">public</td>
         <td class="text-center" rowspan="4">Internal</td>
@@ -42,22 +42,22 @@ In addition, CNA has released the following plugins under the [Eclipse Public Li
         <td class="text-center" rowspan="4">Kotlin</td>
     </tr>
     <tr>
-        <td class="text-center"><a href="https://github.com/calypsonet/keyple-plugin-cna-famoco-se-communication-java-lib" target="_blank" rel="noopener">Famoco</a></td>
+        <td class="text-center"><a href="https://github.com/calypsonet/keyple-plugin-cna-famoco-se-communication-java-lib">Famoco</a></td>
         <td class="text-center">FX100, FX105, FX200, FX205, FX300, FX915, FX920</td>
         <td class="text-center">public</td>
     </tr>
     <tr>
-        <td class="text-center"><a href="https://github.com/calypsonet/keyple-plugin-cna-arrive-android-jvm-lib" target="_blank" rel="noopener">Arrive</a></td>
+        <td class="text-center"><a href="https://github.com/calypsonet/keyple-plugin-cna-arrive-android-jvm-lib">Arrive</a></td>
         <td class="text-center">Axio Touch Validator/MTBorne validator, Magnetic Axio Touch Validator, Axio 4 Validator, Infigo Driver Console, Voyager Embedded Ticketing Vending Machine, Coppernic C-One, Coppernic C-One V2, Zebra TC77, ACTIA PSDT</td>
         <td class="text-center">private</td>
     </tr>
     <tr>
-        <td class="text-center"><a href="https://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib" target="_blank" rel="noopener">Bluebird</a></td>
+        <td class="text-center"><a href="https://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib">Bluebird</a></td>
         <td class="text-center">EF501, EF551</td>
         <td class="text-center">private</td>
     </tr>
     <tr>
-        <td class="text-center"><a href="https://github.com/calypsonet/keyple-plugin-cna-legacyhsm-java-lib" target="_blank" rel="noopener">Legacy HSM</a></td>
+        <td class="text-center"><a href="https://github.com/calypsonet/keyple-plugin-cna-legacyhsm-java-lib">Legacy HSM</a></td>
         <td class="text-center">Spirtech HSM</td>
         <td class="text-center">private</td>
         <td class="text-center">IP</td>
@@ -65,7 +65,7 @@ In addition, CNA has released the following plugins under the [Eclipse Public Li
         <td class="text-center">Java</td>
     </tr>
     <tr>
-        <td class="text-center"><a href="https://github.com/calypsonet/keyple-plugin-cna-paragonid-gen5xx-pcsc-jvm-lib" target="_blank" rel="noopener">Paragon ID Gen5XX</a></td>
+        <td class="text-center"><a href="https://github.com/calypsonet/keyple-plugin-cna-paragonid-gen5xx-pcsc-jvm-lib">Paragon ID Gen5XX</a></td>
         <td class="text-center">GEN5XX CCID, CPL108</td>
         <td class="text-center">public</td>
         <td class="text-center">PC/SC</td>
