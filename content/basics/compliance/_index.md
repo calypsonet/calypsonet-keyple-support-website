@@ -132,13 +132,13 @@ Depending on the conditions of applicability, and provided that a compliant read
 	<tr>
 		<th scope="row" rowspan="2">Library Versions</th>
 		<td><ul>
-			<li>keypop-card-java-api (internal API) : 2.0+</li>
-			<li>keypop-reader-java-api (public API): 2.1+</li>
+			<li><a href="https://github.com/eclipse-keypop/keypop-card-java-api/">keypop-card-java-api</a> (internal API) : 2.0+</li>
+			<li><a href="https://github.com/eclipse-keypop/keypop-reader-java-api/">keypop-reader-java-api</a> (public API): 2.1+</li>
             <br/>
-			<li>keyple-common-java-api (internal API): 2.0+</li>
-			<li>keyple-plugin-java-api (internal API): 2.3+</li>
-			<li>keyple-service-java-lib: 3.5.0+</li>
-			<li>keyple-util-java-lib: 2.5.0+</li>
+			<li><a href="https://github.com/eclipse-keyple/keyple-common-java-api/">keyple-common-java-api</a> (internal API): 2.0+</li>
+			<li><a href="https://github.com/eclipse-keyple/keyple-plugin-java-api/">keyple-plugin-java-api</a> (internal API): 2.3+</li>
+			<li><a href="https://github.com/eclipse-keyple/keyple-service-java-lib/">keyple-service-java-lib</a>: 3.5.0+</li>
+			<li><a href="https://github.com/eclipse-keyple/keyple-util-java-lib/">keyple-util-java-lib</a>: 2.5.0+</li>
 		</ul></td>
 	</tr>
 	<tr>
@@ -166,10 +166,11 @@ Depending on the conditions of applicability, and provided that a compliant read
 	<tr>
 		<th scope="row" rowspan="2"><i>Specific</i> Plugin Library Version<br/>(in addition of Keyple Java Service libraries</th>
 		<td><ul>
-			<li>keyple-plugin-pcsc-java-lib: 2.6.3+</li>   
+			<li><a href="https://github.com/eclipse-keyple/keyple-plugin-pcsc-java-lib/">keyple-plugin-pcsc-java-lib</a>: 2.6.3+</li>
+			<li><a href="https://github.com/calypsonet/jnasmartcardio">calypsonet-jnasmartcardio-java-lib</a>: 0.3+</li>
 		</ul></td>
 		<td><ul>
-			<li>keyple-plugin-android-nfc-java-lib: 3.2.2+</li>   
+			<li><a href="https://github.com/eclipse-keyple/keyple-plugin-android-nfc-java-lib/">keyple-plugin-android-nfc-java-lib</a>: 3.2.2+</li>
 		</ul></td>
 	</tr>
 </tbody>
@@ -185,13 +186,13 @@ Depending on the conditions of applicability, and provided that a compliant read
 	<tr>
 		<th scope="row">Smart Card<br/>Solution Layer</th>
 		<td>Any smart card solution library based on:<ul>
-			<li>keypop-card-java-api (internal API): 2.0+</li>
+			<li><a href="https://github.com/eclipse-keypop/keypop-card-java-api/">keypop-card-java-api</a> (internal API): 2.0+</li>
         </ul></td>
 	</tr>
 	<tr>
 		<th scope="row">Ticketing Layer</th>
 		<td>Any ticketing application based on:<ul>			
-			<li>keypop-reader-java-api (public API): 2.1+</li>
+			<li><a href="https://github.com/eclipse-keypop/keypop-reader-java-api/">keypop-reader-java-api</a> (public API): 2.1+</li>
 		</ul></td>
 	</tr>
 </tbody>
@@ -217,13 +218,13 @@ Depending on the conditions of applicability, and provided that a compliant read
 	<tr>
 		<th scope="row" rowspan="2">Library Versions</th>
 		<td><ul>
-			<li>keypop-card-cpp-api (internal API) : 2.0+</li>
-			<li>keypop-reader-cpp-api (public API): 2.1+</li>
+			<li><a href="https://github.com/eclipse-keypop/keypop-card-cpp-api/">keypop-card-cpp-api</a> (internal API) : 2.0+</li>
+			<li><a href="https://github.com/eclipse-keypop/keypop-reader-cpp-api/">keypop-reader-cpp-api</a> (public API): 2.1+</li>
             <br/>
-			<li>keyple-common-cpp-api (internal API): 2.0+</li>
-			<li>keyple-plugin-cpp-api (internal API): 2.3+</li>
-			<li>keyple-service-cpp-lib: 3.4.1+</li>
-			<li>keyple-util-cpp-lib: 2.4.1+</li>
+			<li><a href="https://github.com/eclipse-keyple/keyple-common-cpp-api/">keyple-common-cpp-api</a> (internal API): 2.0+</li>
+			<li><a href="https://github.com/eclipse-keyple/keyple-plugin-cpp-api/">keyple-plugin-cpp-api</a> (internal API): 2.3+</li>
+			<li><a href="https://keyple.org/components/core/keyple-service-lib/">keyple-service-cpp-lib</a>: 3.4.1+</li>
+			<li><a href="https://keyple.org/components/core/keyple-util-lib/">keyple-util-cpp-lib</a>: 2.4.1+</li>
 		</ul></td>
 	</tr>
 	<tr>
@@ -250,7 +251,7 @@ Depending on the conditions of applicability, and provided that a compliant read
 	<tr>
 		<th scope="row" rowspan="2"><i>Specific</i> Plugin Library Version<br/>(in addition of Keyple C++ Service libraries</th>
 		<td><ul>
-			<li>keyple-plugin-pcsc-cpp-lib: 2.6.3+</li>   
+			<li><a href="https://github.com/eclipse-keyple/keyple-plugin-pcsc-cpp-lib/">keyple-plugin-pcsc-cpp-lib</a>: 2.6.3+</li>   
 		</ul></td>
 	</tr>
 </tbody>
@@ -266,13 +267,13 @@ Depending on the conditions of applicability, and provided that a compliant read
 	<tr>
 		<th scope="row">Smart Card<br/>Solution Layer</th>
 		<td>Any smart card solution library based on:<ul>
-            <li>keypop-card-cpp-api (internal API): 2.0+</li>
+            <li><a href="https://github.com/eclipse-keypop/keypop-card-cpp-api/">keypop-card-cpp-api</a> (internal API): 2.0+</li>
         </ul></td>
 	</tr>
 	<tr>
 		<th scope="row">Ticketing Layer</th>
 		<td>Any ticketing application based on:<ul>			
-            <li>keypop-reader-cpp-api (public API): 2.1+</li>
+            <li><a href="https://github.com/eclipse-keypop/keypop-reader-cpp-api/">keypop-reader-cpp-api</a> (public API): 2.1+</li>
 		</ul></td>
 	</tr>
 </tbody>
@@ -327,14 +328,14 @@ Support for requirements specific to the Prime PKI feature (`CL-PKI-ALGO.1`, `CL
 	<tr>
 		<th scope="row">Library Versions</th>
 		<td><ul>
-			<li>keypop-calypso-card-java-api (public API): 2.3+</li>
-			<li>keypop-calypso-crypto-legacysam-java-api (public API) : 1.0+</li>
-			<li>keypop-calypso-crypto-symmetric-java-api (internal API): 0.1+</li>
-			<li>keypop-calypso-crypto-asymmetric-java-api (internal API): 0.2+</li>
+			<li><a href="https://github.com/eclipse-keypop/keypop-calypso-card-java-api/">keypop-calypso-card-java-api</a> (public API): 2.3+</li>
+			<li><a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/">keypop-calypso-crypto-legacysam-java-api</a> (public API) : 1.0+</li>
+			<li><a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-symmetric-java-api/">keypop-calypso-crypto-symmetric-java-api</a> (internal API): 0.1+</li>
+			<li><a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-asymmetric-java-api/">keypop-calypso-crypto-asymmetric-java-api</a> (internal API): 0.2+</li>
             <br/>
-			<li>keyple-card-calypso-java-lib: 3.3.0+</li>
-			<li>keyple-card-calypso-crypto-legacysam-java-lib: 1.0.2+</li>
-			<li>keyple-card-calypso-crypto-pki-java-lib: 0.2.4+</li>
+			<li><a href="https://github.com/eclipse-keyple/keyple-card-calypso-java-lib/">keyple-card-calypso-java-lib</a>: 3.3.0+</li>
+			<li><a href="https://github.com/eclipse-keyple/keyple-card-calypso-crypto-legacysam-java-lib/">keyple-card-calypso-crypto-legacysam-java-lib</a>: 1.0.2+</li>
+			<li><a href="https://github.com/eclipse-keyple/keyple-card-calypso-crypto-pki-java-lib/">keyple-card-calypso-crypto-pki-java-lib</a>: 0.2.4+</li>
 		</ul></td>
 	</tr>
 </tbody>
@@ -350,21 +351,21 @@ Support for requirements specific to the Prime PKI feature (`CL-PKI-ALGO.1`, `CL
 	<tr>
 		<th scope="row">Reader Layer</th>
 		<td>Keyple Core Java set:<ul>			
-			<li>keypop-reader-java-api (public API): 2.1+</li>
-			<li>keypop-card-java-api (internal API): 2.0+</li>
+			<li><a href="https://github.com/eclipse-keypop/keypop-reader-java-api/">keypop-reader-java-api</a> (public API): 2.1+</li>
+			<li><a href="https://github.com/eclipse-keypop/keypop-card-java-api/">keypop-card-java-api</a> (internal API): 2.0+</li>
             <br/>
-			<li>keyple-plugin-java-api (internal API): 2.3+</li>
-			<li>keyple-common-java-api (internal API): 2.0+</li>
-			<li>keyple-service-java-lib: 3.5.0+</li>
-			<li>keyple-util-java-lib: 2.5.0+</li>
+			<li><a href="https://github.com/eclipse-keyple/keyple-plugin-java-api/">keyple-plugin-java-api</a> (internal API): 2.3+</li>
+			<li><a href="https://github.com/eclipse-keyple/keyple-common-java-api/">keyple-common-java-api</a> (internal API): 2.0+</li>
+			<li><a href="https://github.com/eclipse-keyple/keyple-service-java-lib/">keyple-service-java-lib</a>: 3.5.0+</li>
+			<li><a href="https://github.com/eclipse-keyple/keyple-util-java-lib/">keyple-util-java-lib</a>: 2.5.0+</li>
 		</ul>Integrated with reader plugin implementing the Keyple Plugin API.</td>
 	</tr>
 	<tr>
 		<th scope="row">Ticketing Layer</th>
 		<td>Any ticketing application based on:<ul>			
-			<li>keypop-reader-java-api (public API): 2.1+</li>
-			<li>keypop-calypso-card-java-api (public API): 2.3+</li>
-			<li>keypop-calypso-crypto-legacysam-java-api (public API) : 1.0+</li>
+			<li><a href="https://github.com/eclipse-keypop/keypop-reader-java-api/">keypop-reader-java-api</a> (public API): 2.1+</li>
+			<li><a href="https://github.com/eclipse-keypop/keypop-calypso-card-java-api/">keypop-calypso-card-java-api</a> (public API): 2.3+</li>
+			<li><a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/">keypop-calypso-crypto-legacysam-java-api</a> (public API) : 1.0+</li>
 		</ul></td>
 	</tr>
 </tbody>
@@ -389,12 +390,12 @@ Support for requirements specific to the Prime PKI feature (`CL-PKI-ALGO.1`, `CL
 	<tr>
 		<th scope="row">Library Versions</th>
 		<td><ul>
-			<li>keypop-calypso-card-cpp-api (public API): 2.2+</li>
-			<li>keypop-calypso-crypto-legacysam-cpp-api (public API) : 1.0+</li>
-			<li>keypop-calypso-crypto-symmetric-cpp-api (internal API): 0.1+</li>
+			<li><a href="https://github.com/eclipse-keypop/keypop-calypso-card-cpp-api/">keypop-calypso-card-cpp-api</a> (public API): 2.2+</li>
+			<li><a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-legacysam-cpp-api/">keypop-calypso-crypto-legacysam-cpp-api</a> (public API) : 1.0+</li>
+			<li><a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-symmetric-cpp-api/">keypop-calypso-crypto-symmetric-cpp-api</a> (internal API): 0.1+</li>
             <br/>
-			<li>keyple-card-calypso-cpp-lib: 3.2.2+</li>
-			<li>keyple-card-calypso-crypto-legacysam-cpp-lib: 1.0.1+</li>
+			<li><a href="https://github.com/eclipse-keyple/keyple-card-calypso-cpp-lib/">keyple-card-calypso-cpp-lib</a>: 3.2.2+</li>
+			<li><a href="https://github.com/eclipse-keyple/keyple-card-calypso-crypto-legacysam-cpp-lib/">keyple-card-calypso-crypto-legacysam-cpp-lib</a>: 1.0.1+</li>
 		</ul></td>
 	</tr>
 </tbody>
@@ -410,21 +411,21 @@ Support for requirements specific to the Prime PKI feature (`CL-PKI-ALGO.1`, `CL
 	<tr>
 		<th scope="row">Reader Layer</th>
 		<td>Keyple Core Java set:<ul>			
-			<li>keypop-reader-cpp-api (public API): 2.1+</li>
-			<li>keypop-card-cpp-api (internal API): 2.0+</li>
+			<li><a href="https://github.com/eclipse-keypop/keypop-reader-cpp-api/">keypop-reader-cpp-api</a> (public API): 2.1+</li>
+			<li><a href="https://github.com/eclipse-keypop/keypop-card-cpp-api/">keypop-card-cpp-api</a> (internal API): 2.0+</li>
             <br/>
-			<li>keyple-plugin-cpp-api (internal API): 2.3+</li>
-			<li>keyple-common-cpp-api (internal API): 2.0+</li>
-			<li>keyple-service-java-lib: 3.4.1+</li>
-			<li>keyple-util-java-lib: 2.4.1+</li>
+			<li><a href="https://github.com/eclipse-keyple/keyple-plugin-cpp-api/">keyple-plugin-cpp-api</a> (internal API): 2.3+</li>
+			<li><a href="https://github.com/eclipse-keyple/keyple-common-cpp-api/">keyple-common-cpp-api</a> (internal API): 2.0+</li>
+			<li><a href="https://github.com/eclipse-keyple/keyple-service-cpp-lib/">keyple-service-cpp-lib</a>: 3.4.1+</li>
+			<li><a href="https://github.com/eclipse-keyple/keyple-util-cpp-lib/">keyple-util-cpp-lib</a>: 2.4.1+</li>
 		</ul>Integrated with reader plugin implementing the Keyple Plugin API.</td>
 	</tr>
 	<tr>
 		<th scope="row">Ticketing Layer</th>
 		<td>Any ticketing application based on:<ul>			
-			<li>keypop-reader-java-api (public API): 2.1+</li>
-			<li>keypop-calypso-card-java-api (public API): 2.2+</li>
-			<li>keypop-calypso-crypto-legacysam-java-api (public API) : 1.0+</li>
+			<li><a href="https://github.com/eclipse-keypop/keypop-reader-cpp-api/">keypop-reader-cpp-api</a> (public API): 2.1+</li>
+			<li><a href="https://github.com/eclipse-keypop/keypop-calypso-card-cpp-api/">keypop-calypso-card-cpp-api</a> (public API): 2.2+</li>
+			<li><a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-legacysam-cpp-api/">keypop-calypso-crypto-legacysam-cpp-api</a> (public API) : 1.0+</li>
 		</ul></td>
 	</tr>
 </tbody>
