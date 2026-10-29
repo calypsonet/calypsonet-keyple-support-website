@@ -280,20 +280,11 @@ Depending on the conditions of applicability, and provided that a compliant read
 </table>
 
 ## **Calypso** software layer
-The [Keyple's ‘Calypso’ libraries](https://keyple.org/components/card-extensions/) have also been implemented to meet the terminal requirements for the Calypso layer, regardless of the reader solutions used.
-2 conditions must be met to guarantee « complete » compliance with the requirements of the Calypso layer:
-- the versions of Keyple's Calypso libraries must be [compliant with versions 2.0 or higher of the terminal Calypso APIs](https://terminal-api.calypsonet.org/compliance/#from-reader-api-version-20--calypso-card-api-version-20),
-- & the reader software layer used as a basis (Keyple's ‘Core’ libraries + reader plugins) must comply with the terminal requirements for the reader layer.
+The [Keyple's ‘Calypso’ libraries](https://keyple.org/components/card-extensions/) have also been implemented to meet the terminal requirements for the Calypso layer, regardless of the reader solutions used. To guarantee « complete » compliance with the requirements of the Calypso layer: the reader software layer used as a basis (Keyple's ‘Core’ libraries + reader plugins) must comply with the terminal requirements for the reader layer.
 
 Pending the future certification programme for Calypso layer libraries, CNA has [published the self-declarations of conformity of the Keyple Calypso libraries ](https://calypsonet.org/registered-calypso-layer-libraries/) (independently of interfaced reader solutions, but on the basis of a compliant reader software layer):
-- [Keyple Java Calypso Prime PKI set 2](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-java-calypso-prime-pki-set-2-definition-still-span-stylecolor-darkorangeupdatedspan)
-- [Keyple Java Calypso Prime PKI set](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-java-calypso-prime-pki-set-definition)
-- [Keyple Java Calypso Prime Extended set](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-java-calypso-prime-extended-set-definition)
-- [Keyple Legacy Java Calypso Prime Extended set 2](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-legacy-java-calypso-prime-extended-set-2-definition-still-span-stylecolor-darkorangefixedspan)
-- [Keyple Legacy Java Calypso Prime Extended set](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-legacy-java-calypso-prime-extended-set-definition)
-- [Keyple Legacy Java Calypso Prime Regular set](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-legacy-java-calypso-prime-regular-set-definition)
-- [Keyple Legacy C++ Calypso Prime Regular set 2](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-legacy-c-calypso-prime-regular-set-2-definition-still-span-stylecolor-darkorangefixedspan)
-- [Keyple Legacy C++ Calypso Prime Regular set](https://keyple-support.calypsonet.org/keyple-support/compliance/#keyple-legacy-c-calypso-prime-regular-set-definition)
+- [Keyple Java Calypso Prime PKI 2026.10.14 set](https://keyple-support.calypsonet.org/basics/compliance/#keyple-java-calypso-prime-pki-20261014-set-definition)
+- [Keyple C++ Calypso Prime Extended 2026.09.22 set](https://keyple-support.calypsonet.org/basics/compliance/#keyple-c-calypso-prime-extended-20260922-set-definition)
 
 ### Terminal requirements support declarations
 All terminal requirements defined for the Calypso software layer that are necessary to ensure proper interoperability with Calypso card and SAM solutions are fully handled by the Keyple  Calypso extension libraries.
