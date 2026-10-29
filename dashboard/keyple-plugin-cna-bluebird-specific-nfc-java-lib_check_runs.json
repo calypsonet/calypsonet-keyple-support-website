@@ -2,27 +2,27 @@
   "total_count": 2,
   "check_runs": [
     {
-      "id": 85030331497,
+      "id": 123513523861,
       "name": "build-and-attach",
-      "node_id": "CR_kwDOIieu588AAAATzDPkaQ",
-      "head_sha": "224d16aa98ba67ae2d47e6fc51ab19e624d44ce5",
-      "external_id": "d198887d-6d90-5276-be4e-24789e48b7a9",
-      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/check-runs/85030331497",
-      "html_url": "https://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/actions/runs/28669835574/job/85030331497",
-      "details_url": "https://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/actions/runs/28669835574/job/85030331497",
+      "node_id": "CR_kwDOIieu588AAAAcwfrOlQ",
+      "head_sha": "d5f559777b08c1b873b2e311e8d6e3474ad7ef5b",
+      "external_id": "d582fa05-bfc7-5111-bb84-38907c15ed0c",
+      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/check-runs/123513523861",
+      "html_url": "https://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/actions/runs/40892717811/job/123513523861",
+      "details_url": "https://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/actions/runs/40892717811/job/123513523861",
       "status": "completed",
       "conclusion": "success",
-      "started_at": "2026-07-03T15:27:53Z",
-      "completed_at": "2026-07-03T15:29:37Z",
+      "started_at": "2026-10-29T14:33:52Z",
+      "completed_at": "2026-10-29T14:36:00Z",
       "output": {
         "title": null,
         "summary": null,
         "text": null,
-        "annotations_count": 1,
-        "annotations_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/check-runs/85030331497/annotations"
+        "annotations_count": 3,
+        "annotations_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/check-runs/123513523861/annotations"
       },
       "check_suite": {
-        "id": 77480397418
+        "id": 110846727359
       },
       "app": {
         "id": 15368,
@@ -119,27 +119,27 @@
       ]
     },
     {
-      "id": 85030150767,
+      "id": 123512022925,
       "name": "java-test",
-      "node_id": "CR_kwDOIieu588AAAATzDEibw",
-      "head_sha": "224d16aa98ba67ae2d47e6fc51ab19e624d44ce5",
-      "external_id": "4831ed67-e187-5018-914c-b2e5eb36b387",
-      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/check-runs/85030150767",
-      "html_url": "https://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/actions/runs/28669778613/job/85030150767",
-      "details_url": "https://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/actions/runs/28669778613/job/85030150767",
+      "node_id": "CR_kwDOIieu588AAAAcwePnjQ",
+      "head_sha": "d5f559777b08c1b873b2e311e8d6e3474ad7ef5b",
+      "external_id": "79bd02aa-6a16-525f-abd6-2d983cf07b28",
+      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/check-runs/123512022925",
+      "html_url": "https://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/actions/runs/40892291387/job/123512022925",
+      "details_url": "https://github.com/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/actions/runs/40892291387/job/123512022925",
       "status": "completed",
       "conclusion": "success",
-      "started_at": "2026-07-03T15:26:42Z",
-      "completed_at": "2026-07-03T15:28:30Z",
+      "started_at": "2026-10-29T14:31:18Z",
+      "completed_at": "2026-10-29T14:33:08Z",
       "output": {
         "title": null,
         "summary": null,
         "text": null,
-        "annotations_count": 1,
-        "annotations_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/check-runs/85030150767/annotations"
+        "annotations_count": 3,
+        "annotations_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-bluebird-specific-nfc-java-lib/check-runs/123512022925/annotations"
       },
       "check_suite": {
-        "id": 77480229912
+        "id": 110845524814
       },
       "app": {
         "id": 15368,
