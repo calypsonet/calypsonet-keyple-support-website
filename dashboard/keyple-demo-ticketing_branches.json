@@ -1,5 +1,26 @@
 [
   {
+    "name": "fix/inspection-terminal-compatibility",
+    "commit": {
+      "sha": "9e5c732e639ff4dfb0313b57cbb827b32c05d5e6",
+      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/9e5c732e639ff4dfb0313b57cbb827b32c05d5e6"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/fix/inspection-terminal-compatibility/protection"
+  },
+  {
     "name": "hexagonal",
     "commit": {
       "sha": "71ecb97e4f244d77da45fa11b5959f68e353ad0f",
