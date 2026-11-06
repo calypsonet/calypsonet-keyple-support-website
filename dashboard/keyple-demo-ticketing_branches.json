@@ -21,6 +21,27 @@
     "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/fix/inspection-terminal-compatibility/protection"
   },
   {
+    "name": "gh-pages",
+    "commit": {
+      "sha": "f08811ed151ede369f14e10239e3adac63c2da88",
+      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/f08811ed151ede369f14e10239e3adac63c2da88"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/gh-pages/protection"
+  },
+  {
     "name": "hexagonal",
     "commit": {
       "sha": "71ecb97e4f244d77da45fa11b5959f68e353ad0f",
