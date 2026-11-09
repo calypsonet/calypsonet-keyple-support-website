@@ -1,9 +1,9 @@
 [
   {
-    "name": "fix/inspection-terminal-compatibility",
+    "name": "famoco-omapi",
     "commit": {
-      "sha": "75f964765bf8df6bec5b42dbfaf8e49b9d88b9c2",
-      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/75f964765bf8df6bec5b42dbfaf8e49b9d88b9c2"
+      "sha": "9a271c9fc4f53f0775276ebddfb8a5a6c8e47cc0",
+      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/9a271c9fc4f53f0775276ebddfb8a5a6c8e47cc0"
     },
     "protected": false,
     "protection": {
@@ -18,7 +18,7 @@
         ]
       }
     },
-    "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/fix/inspection-terminal-compatibility/protection"
+    "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/famoco-omapi/protection"
   },
   {
     "name": "gh-pages",
@@ -42,31 +42,10 @@
     "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/gh-pages/protection"
   },
   {
-    "name": "hexagonal",
-    "commit": {
-      "sha": "71ecb97e4f244d77da45fa11b5959f68e353ad0f",
-      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/71ecb97e4f244d77da45fa11b5959f68e353ad0f"
-    },
-    "protected": false,
-    "protection": {
-      "enabled": false,
-      "required_status_checks": {
-        "enforcement_level": "off",
-        "contexts": [
-
-        ],
-        "checks": [
-
-        ]
-      }
-    },
-    "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/hexagonal/protection"
-  },
-  {
     "name": "main",
     "commit": {
-      "sha": "627f5d9a92f14768ce27aaf8b5a348902f85494e",
-      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/627f5d9a92f14768ce27aaf8b5a348902f85494e"
+      "sha": "3ace592b87746125ccedb37583353cd62b931e56",
+      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/3ace592b87746125ccedb37583353cd62b931e56"
     },
     "protected": false,
     "protection": {
@@ -82,26 +61,5 @@
       }
     },
     "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/main/protection"
-  },
-  {
-    "name": "validation-cpp",
-    "commit": {
-      "sha": "1c1c124611a17967a84c255452609820802cbde4",
-      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/1c1c124611a17967a84c255452609820802cbde4"
-    },
-    "protected": false,
-    "protection": {
-      "enabled": false,
-      "required_status_checks": {
-        "enforcement_level": "off",
-        "contexts": [
-
-        ],
-        "checks": [
-
-        ]
-      }
-    },
-    "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/validation-cpp/protection"
   }
 ]
