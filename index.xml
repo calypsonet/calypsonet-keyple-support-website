@@ -42,7 +42,7 @@
 &lt;ul>
 &lt;li>&lt;strong>Source code&lt;/strong>: the &lt;a href="https://github.com/calypsonet/keyple-demo-ticketing">keyple-demo-ticketing&lt;/a> repository, whose README describes the components, the supported terminals and platforms, and how to build and install them.&lt;/li>
 &lt;li>&lt;strong>Applications&lt;/strong>: attached to each release of the repository (see the &lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/releases/latest">latest release&lt;/a>).&lt;/li>
-&lt;li>&lt;strong>Functional documentation&lt;/strong>: attached as PDF and HTML files to each release (see the &lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/releases/latest">latest release&lt;/a>). It describes the use cases, the business rules, and the messages of the demonstrator, as well as the data model of the card and the procedures executed on it.&lt;/li>
+&lt;li>&lt;strong>Functional documentation&lt;/strong>: &lt;a href="https://calypsonet.github.io/keyple-demo-ticketing/">readable online&lt;/a> in its latest version, and attached as PDF and HTML files to each release (see the &lt;a href="https://github.com/calypsonet/keyple-demo-ticketing/releases/latest">latest release&lt;/a>). It describes the use cases, the business rules, and the messages of the demonstrator, as well as the data model of the card and the procedures executed on it.&lt;/li>
 &lt;/ul>
 &lt;div class="alert alert-note">
 &lt;div>

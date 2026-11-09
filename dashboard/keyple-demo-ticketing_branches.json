@@ -2,8 +2,8 @@
   {
     "name": "fix/inspection-terminal-compatibility",
     "commit": {
-      "sha": "9e5c732e639ff4dfb0313b57cbb827b32c05d5e6",
-      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/9e5c732e639ff4dfb0313b57cbb827b32c05d5e6"
+      "sha": "75f964765bf8df6bec5b42dbfaf8e49b9d88b9c2",
+      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/75f964765bf8df6bec5b42dbfaf8e49b9d88b9c2"
     },
     "protected": false,
     "protection": {
@@ -65,8 +65,8 @@
   {
     "name": "main",
     "commit": {
-      "sha": "9bd9bc8bbc1019f60e131b42acb17beb08e1d904",
-      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/9bd9bc8bbc1019f60e131b42acb17beb08e1d904"
+      "sha": "627f5d9a92f14768ce27aaf8b5a348902f85494e",
+      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/627f5d9a92f14768ce27aaf8b5a348902f85494e"
     },
     "protected": false,
     "protection": {
