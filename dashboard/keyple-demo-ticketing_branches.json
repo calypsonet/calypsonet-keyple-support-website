@@ -1,30 +1,9 @@
 [
   {
-    "name": "famoco-omapi",
-    "commit": {
-      "sha": "ad5881be2791f617a8fcdf04920e03082954d6ef",
-      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/ad5881be2791f617a8fcdf04920e03082954d6ef"
-    },
-    "protected": false,
-    "protection": {
-      "enabled": false,
-      "required_status_checks": {
-        "enforcement_level": "off",
-        "contexts": [
-
-        ],
-        "checks": [
-
-        ]
-      }
-    },
-    "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/famoco-omapi/protection"
-  },
-  {
     "name": "gh-pages",
     "commit": {
-      "sha": "f08811ed151ede369f14e10239e3adac63c2da88",
-      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/f08811ed151ede369f14e10239e3adac63c2da88"
+      "sha": "5353d3b2ccbeec85a63b4c187d36152a2d1a6c10",
+      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/5353d3b2ccbeec85a63b4c187d36152a2d1a6c10"
     },
     "protected": false,
     "protection": {
@@ -44,8 +23,8 @@
   {
     "name": "main",
     "commit": {
-      "sha": "3ace592b87746125ccedb37583353cd62b931e56",
-      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/3ace592b87746125ccedb37583353cd62b931e56"
+      "sha": "4b1172bde3226cc0a754bf7c80f4f947a4149c53",
+      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/4b1172bde3226cc0a754bf7c80f4f947a4149c53"
     },
     "protected": false,
     "protection": {
