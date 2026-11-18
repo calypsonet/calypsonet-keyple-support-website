@@ -19,5 +19,26 @@
       }
     },
     "protection_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-famoco-se-communication-java-lib/branches/main/protection"
+  },
+  {
+    "name": "upgrade-ci",
+    "commit": {
+      "sha": "51f957cfe088d68e6bd74675aedf98c9d9807137",
+      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-famoco-se-communication-java-lib/commits/51f957cfe088d68e6bd74675aedf98c9d9807137"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-famoco-se-communication-java-lib/branches/upgrade-ci/protection"
   }
 ]
