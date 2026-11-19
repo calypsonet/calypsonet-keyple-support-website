@@ -23,8 +23,8 @@
   {
     "name": "upgrade-ci",
     "commit": {
-      "sha": "51f957cfe088d68e6bd74675aedf98c9d9807137",
-      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-famoco-se-communication-java-lib/commits/51f957cfe088d68e6bd74675aedf98c9d9807137"
+      "sha": "3d8aeebd3f4a94f879d319cded1344e6441a7dba",
+      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-famoco-se-communication-java-lib/commits/3d8aeebd3f4a94f879d319cded1344e6441a7dba"
     },
     "protected": false,
     "protection": {
