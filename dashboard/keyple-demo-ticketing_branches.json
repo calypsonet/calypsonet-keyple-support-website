@@ -1,5 +1,26 @@
 [
   {
+    "name": "feature/famoco-fx925",
+    "commit": {
+      "sha": "74d459200107b3c724fad5975c1337890a3070ad",
+      "url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/commits/74d459200107b3c724fad5975c1337890a3070ad"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/branches/feature/famoco-fx925/protection"
+  },
+  {
     "name": "gh-pages",
     "commit": {
       "sha": "5353d3b2ccbeec85a63b4c187d36152a2d1a6c10",

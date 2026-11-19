@@ -2,8 +2,8 @@
   {
     "name": "main",
     "commit": {
-      "sha": "834065b12e23f2c2174592a0324782c43b469476",
-      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-famoco-se-communication-java-lib/commits/834065b12e23f2c2174592a0324782c43b469476"
+      "sha": "8e0e2966ed4246e8a33e95d1fb4775a26a7c7514",
+      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-famoco-se-communication-java-lib/commits/8e0e2966ed4246e8a33e95d1fb4775a26a7c7514"
     },
     "protected": true,
     "protection": {
@@ -19,26 +19,5 @@
       }
     },
     "protection_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-famoco-se-communication-java-lib/branches/main/protection"
-  },
-  {
-    "name": "upgrade-ci",
-    "commit": {
-      "sha": "3d8aeebd3f4a94f879d319cded1344e6441a7dba",
-      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-famoco-se-communication-java-lib/commits/3d8aeebd3f4a94f879d319cded1344e6441a7dba"
-    },
-    "protected": false,
-    "protection": {
-      "enabled": false,
-      "required_status_checks": {
-        "enforcement_level": "off",
-        "contexts": [
-
-        ],
-        "checks": [
-
-        ]
-      }
-    },
-    "protection_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-famoco-se-communication-java-lib/branches/upgrade-ci/protection"
   }
 ]
