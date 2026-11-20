@@ -49,6 +49,7 @@
 &lt;p>Some components depend on libraries that are not publicly available: without them, the demonstrator is built with mocks (see the &lt;a href="https://github.com/calypsonet/keyple-demo-ticketing#proprietary-components">README&lt;/a>).&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Bluebird and Arrive terminals&lt;/strong>: the plugins are open source (see &lt;a href="../../plugin-ext/">Keyple reader extensions&lt;/a>), and are built with the native library of the terminal manufacturer. Without them, these terminals are not available.&lt;/li>
+&lt;li>&lt;strong>Famoco FX925 terminal&lt;/strong> (validation): its contactless reader, the Ingenico Open1500 module, is accessed with the PCL plugin of Famoco, proprietary and available on request from Famoco. Without it, this terminal is not available.&lt;/li>
 &lt;li>&lt;strong>Storage cards&lt;/strong>: the CNA libraries are reserved for CNA members, and available on request. Without them, the storage cards are not handled.&lt;/li>
 &lt;/ul>
 &lt;/div>

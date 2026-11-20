@@ -2,27 +2,27 @@
   "total_count": 1,
   "check_runs": [
     {
-      "id": 135665397484,
-      "name": "publish-release / reusable-publish-release",
-      "node_id": "CR_kwDOD3Qo3M8AAAAflkmu7A",
-      "head_sha": "8e0e2966ed4246e8a33e95d1fb4775a26a7c7514",
-      "external_id": "79124608-7987-5433-b9cd-79a4dc4eea71",
-      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-famoco-se-communication-java-lib/check-runs/135665397484",
-      "html_url": "https://github.com/calypsonet/keyple-plugin-cna-famoco-se-communication-java-lib/actions/runs/44554111729/job/135665397484",
-      "details_url": "https://github.com/calypsonet/keyple-plugin-cna-famoco-se-communication-java-lib/actions/runs/44554111729/job/135665397484",
+      "id": 136200257830,
+      "name": "publish-snapshot / reusable-publish-snapshot",
+      "node_id": "CR_kwDOD3Qo3M8AAAAftisBJg",
+      "head_sha": "877321926c9affc1c8cca9de17ef403230bd5a13",
+      "external_id": "81083f65-fa69-5bd6-b099-36971eb971e5",
+      "url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-famoco-se-communication-java-lib/check-runs/136200257830",
+      "html_url": "https://github.com/calypsonet/keyple-plugin-cna-famoco-se-communication-java-lib/actions/runs/44710380040/job/136200257830",
+      "details_url": "https://github.com/calypsonet/keyple-plugin-cna-famoco-se-communication-java-lib/actions/runs/44710380040/job/136200257830",
       "status": "completed",
-      "conclusion": "success",
-      "started_at": "2026-11-19T15:22:49Z",
-      "completed_at": "2026-11-19T15:26:02Z",
+      "conclusion": "failure",
+      "started_at": "2026-11-20T09:24:02Z",
+      "completed_at": "2026-11-20T09:24:10Z",
       "output": {
         "title": null,
         "summary": null,
         "text": null,
-        "annotations_count": 0,
-        "annotations_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-famoco-se-communication-java-lib/check-runs/135665397484/annotations"
+        "annotations_count": 1,
+        "annotations_url": "https://api.github.com/repos/calypsonet/keyple-plugin-cna-famoco-se-communication-java-lib/check-runs/136200257830/annotations"
       },
       "check_suite": {
-        "id": 120603385747
+        "id": 121019328804
       },
       "app": {
         "id": 15368,
