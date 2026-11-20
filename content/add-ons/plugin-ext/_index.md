@@ -14,7 +14,7 @@ In addition, CNA has released the following plugins under the [Eclipse Public Li
 - When it is **not publicly available**, a mock is provided as a substitute; the actual native library must be obtained directly from the manufacturer to build the plugin.
 
 **Four plugins** target Android-based embedded ticketing terminals, each equipped with a contactless card reader and one or more SAM contact slots:
-- **Famoco** — interfaces with SAM readers only; the contactless reader on Famoco terminals relies on the standard Android NFC API, which Keyple supports natively.
+- **Famoco** — interfaces with SAM readers only; the contactless reader of most Famoco terminals relies on the standard Android NFC API, which Keyple supports natively. The FX9xx terminals equipped with the Ingenico Open1500 contactless module (for example, the FX925) use instead the PCL plugin provided by Famoco, available on request from Famoco.
 - **Coppernic**, **Arrive** and **Bluebird** — manage both SAM readers and an observable contactless reader (capable of detecting card insertion and removal).
 
 **Two additional plugins** target server or workstation environments:
@@ -43,7 +43,7 @@ In addition, CNA has released the following plugins under the [Eclipse Public Li
     </tr>
     <tr>
         <td class="text-center"><a href="https://github.com/calypsonet/keyple-plugin-cna-famoco-se-communication-java-lib">Famoco</a></td>
-        <td class="text-center">FX100, FX105, FX200, FX205, FX300, FX915, FX920</td>
+        <td class="text-center">FX100, FX105, FX200, FX205, FX300, FX915, FX920, FX925</td>
         <td class="text-center">public</td>
     </tr>
     <tr>
