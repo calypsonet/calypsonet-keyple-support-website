@@ -34,10 +34,10 @@
     },
     "body": "- New FAMOCO_PCL terminal type: contactless cards read by the Ingenico Open1500 reader with the PCL plugin of Famoco (optional proprietary AAR in libs/, with famoco-pcl and famoco-pcl-mock source sets), SAM accessed with the Famoco plugin\n- Screen kept on and displayed in full screen (immersive mode)\n- Debug and verbose logs of the third-party libraries removed from release builds\n- Documentation of the terminal and of its proprietary plugin in the README of the validation application",
     "created_at": "2026-11-19T14:05:37Z",
-    "updated_at": "2026-11-19T16:20:14Z",
+    "updated_at": "2026-11-20T09:17:02Z",
     "closed_at": null,
     "merged_at": null,
-    "merge_commit_sha": "530429a8bd7630bc0886002c108a406064090099",
+    "merge_commit_sha": "9110bc16c4ecc83c1aac360f8dd5c840e0a7d87f",
     "assignees": [
 
     ],
@@ -56,11 +56,11 @@
     "review_comments_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/pulls/15/comments",
     "review_comment_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/pulls/comments{/number}",
     "comments_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/issues/15/comments",
-    "statuses_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/statuses/74d459200107b3c724fad5975c1337890a3070ad",
+    "statuses_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/statuses/181067d23bbc47abd81d2d24328585adc3ab3e98",
     "head": {
       "label": "calypsonet:feature/famoco-fx925",
       "ref": "feature/famoco-fx925",
-      "sha": "74d459200107b3c724fad5975c1337890a3070ad",
+      "sha": "181067d23bbc47abd81d2d24328585adc3ab3e98",
       "user": {
         "login": "calypsonet",
         "id": 36229037,
@@ -151,7 +151,7 @@
         "deployments_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/deployments",
         "created_at": "2025-07-24T07:38:19Z",
         "updated_at": "2026-11-09T15:16:57Z",
-        "pushed_at": "2026-11-19T16:20:12Z",
+        "pushed_at": "2026-11-20T09:17:01Z",
         "git_url": "git://github.com/calypsonet/keyple-demo-ticketing.git",
         "ssh_url": "git@github.com:calypsonet/keyple-demo-ticketing.git",
         "clone_url": "https://github.com/calypsonet/keyple-demo-ticketing.git",
@@ -288,7 +288,7 @@
         "deployments_url": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/deployments",
         "created_at": "2025-07-24T07:38:19Z",
         "updated_at": "2026-11-09T15:16:57Z",
-        "pushed_at": "2026-11-19T16:20:12Z",
+        "pushed_at": "2026-11-20T09:17:01Z",
         "git_url": "git://github.com/calypsonet/keyple-demo-ticketing.git",
         "ssh_url": "git@github.com:calypsonet/keyple-demo-ticketing.git",
         "clone_url": "https://github.com/calypsonet/keyple-demo-ticketing.git",
@@ -354,7 +354,7 @@
         "href": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/pulls/15/commits"
       },
       "statuses": {
-        "href": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/statuses/74d459200107b3c724fad5975c1337890a3070ad"
+        "href": "https://api.github.com/repos/calypsonet/keyple-demo-ticketing/statuses/181067d23bbc47abd81d2d24328585adc3ab3e98"
       }
     },
     "author_association": "MEMBER",
